@@ -1,2 +1,4 @@
 tmp/
+memory/index/
 __pycache__/
+backups/
