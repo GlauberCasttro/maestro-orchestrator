@@ -1,0 +1,134 @@
+// acceptance.json5 — gates G1–G16 e decisão GO/NO-GO; gerado por cs.py verify (approval* gravado por cs.py approve)
+{
+ approval: "human",
+ approval_at: "2026-10-03T21:03:33+00:00",
+ approval_by: "GlauberCasttro",
+ approval_decision: "GO",
+ at: "2026-10-03T21:03:15+00:00",
+ commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ decision: "GO",
+ enforcement: {"claude-code": "hook"},
+ gates: [
+  {
+   command: "cs.py team validate --stage final",
+   evidence: "regra 3 PASS: cobertura 1.0, sobreposições 0",
+   id: "G1",
+   name: "cobertura: todo arquivo de produto com 1 dono; escritores disjuntos",
+   passed: true
+  },
+  {
+   command: "cs.py probes existence",
+   evidence: "exit 0: Existence Ratio = 1.0 (908/908) → G2 PASS",
+   id: "G2",
+   name: "existência: Existence Ratio = 1,0",
+   passed: true
+  },
+  {
+   command: "cs.py probes antitemplate --control /Users/glaubercastro/.claude/skills/codebase-specialists/evals/reference/generic-cards",
+   evidence: "exit 0: reviewer               sim=0.0 (linhas=0.0 shingles=0.0 vs code-reviewer) ok | security               sim=0.0 (linhas=0.0 shingles=0.0 vs code-reviewer) ok | anti-template (≤0.35): PASS",
+   id: "G3",
+   name: "anti-template: similaridade ≤ 0,35 com o repo de controle",
+   passed: true
+  },
+  {
+   command: "cs.py probes check --all --final",
+   evidence: "exit 0: reviewer                 PASS território=1.0 cross=1.0 alucinações=0 delta=0.85 ciclo=1 | security                 PASS território=1.0 cross=1.0 alucinações=0 delta=0.8 ciclo=1 | probes check --all --final: ok",
+   id: "G4",
+   name: "maestria: sonda por agente (território/cross/alucinação/delta)",
+   passed: true
+  },
+  {
+   command: "leitura de .specialists/facts/operations.json5",
+   evidence: "ausência declarada: fato ops.test.absent",
+   id: "G5",
+   name: "operação: ≥1 comando de teste verified ou ausência declarada",
+   passed: true
+  },
+  {
+   command: "cs.py harness selftest",
+   evidence: "exit 0: OK    alvo real: principal escrevendo produto é bloqueado | OK    validate --strict do alvo (allow-empty: recém-instalado) | G6 VERDE",
+   id: "G6",
+   name: "harness: validador verde e guards bloqueiam sondas negativas",
+   passed: true
+  },
+  {
+   command: "cs.py emit validate",
+   evidence: "exit 0: G7 ok: 53 artefatos válidos (claude-code)",
+   id: "G7",
+   name: "plataformas: artefatos emitidos passam no validador de formato",
+   passed: true
+  },
+  {
+   command: "cs.py probes memory-recall",
+   evidence: "exit 0: miss P-dev-maestros-07: esperado gloss.agent | miss P-dev-maestros-09: esperado gloss.node | recall@5=0.9455 p95=6.8ms (parede 66.5ms) → G8 PASS",
+   id: "G8",
+   name: "memória: recall@5 ≥ 0,9 e p95 < 200 ms",
+   passed: true
+  },
+  {
+   command: "cd scripts/harness && python3 -m unittest discover -s tests -p test_router_session.py -k TestSession",
+   evidence: "exit 0: Ran 4 tests in 0.969s |  | OK",
+   id: "G9",
+   name: "sessão: load ≤2k tokens, delta, round-trip idempotente",
+   passed: true
+  },
+  {
+   command: "cd scripts/harness && python3 -m unittest discover -s tests -p test_machines.py -k TestM2M3 && cd scripts/harness && python3 -m unittest discover -s tests -p test_machines.py -k TestM1 && cd scripts/harness && python3 -m unittest discover -s tests -p test_guards.py -k TestAgentGuard",
+   evidence: "exit 0: Ran 12 tests in 3.815s |  | OK; exit 0: Ran 9 tests in 2.191s |  | OK; exit 0: Ran 5 tests in 1.857s |  | OK",
+   id: "G10",
+   name: "delegação: transição inválida recusada, despacho sem brief/colisão bloqueado",
+   passed: true
+  },
+  {
+   command: "cd scripts/harness && python3 -m unittest discover -s tests -p test_autonomy_install.py -k TestAutonomy",
+   evidence: "exit 0: Ran 8 tests in 2.819s |  | OK (parcial: eval end-to-end de evals/ não roda no verify)",
+   id: "G11",
+   name: "autonomia: loop, escalada e proibições do modo autônomo",
+   passed: true
+  },
+  {
+   command: "cd scripts/harness && python3 -m unittest discover -s tests -p test_machines.py -k TestProcess",
+   evidence: "exit 0: Ran 5 tests in 0.905s |  | OK",
+   id: "G12",
+   name: "processo: DoR/DoD, Bug sem teste não fica READY, rollup",
+   passed: true
+  },
+  {
+   command: "emit.maps.check_maps (parte de `cs.py emit validate`)",
+   evidence: "0 erro(s) de mapa; do_not_parallelize=23",
+   id: "G13",
+   name: "mapas: árvore, stack × lockfile, deps × grafo, colisão",
+   passed: true
+  },
+  {
+   command: "cd scripts/harness && python3 -m unittest discover -s tests -p test_router_session.py -k TestRouter",
+   evidence: "exit 0: Ran 4 tests in 0.872s |  | OK",
+   id: "G14",
+   name: "roteamento: tier barato no trivial, gate ≥ autor, sem model bloqueia",
+   passed: true
+  },
+  {
+   command: "cd scripts/memory && python3 -m unittest discover -s tests -p test_mem.py -k TestLessons",
+   evidence: "exit 0: Ran 7 tests in 2.000s |  | OK",
+   id: "G15",
+   name: "autocorreção: lição injetada, check reprova, promoção, teto",
+   passed: true
+  },
+  {
+   command: "leitura de .specialists/run.json5 && cd scripts/stage && python3 -m unittest discover -s tests -p test_*.py",
+   evidence: "exit 0: etapas init, scan, specialize, round-table-deep-specialize fechadas; exit 0: Ran 46 tests in 43.700s |  | OK",
+   id: "G16",
+   name: "etapas: load ≤2k, done não avança com check falho, retomada",
+   passed: true
+  }
+ ],
+ inputs: {
+  bank: "c67d8d54f0551fe72565c6b5aabafb1540667711d54cf568bd5311fc494efe89",
+  emit_manifest: "dc09d63111cfcef8e9e91d7813485d38006614bb35951a6b635f49555c9846c8",
+  facts_index: "27ded53e16bddf91958d85a4780f605fd79645970dc315ec4d862070cb876d13",
+  harness_manifest: "966ea434a2bde960bb2e974af8143a111d018865129249817cb1132a4fffc58e",
+  team: "1d29edd22ea367c770fc05baa4c711b32471831182384c01e997a6d9b0ac889a"
+ },
+ non_specialist: [],
+ schema_version: 1
+}

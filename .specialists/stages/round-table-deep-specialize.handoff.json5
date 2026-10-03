@@ -1,0 +1,34 @@
+// handoff da etapa round-table-deep-specialize (≤2000 tokens) — gerado por cs.py stage done
+{
+ commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ goal: "cartões criticados por pares e cético, só objeções confirmadas aplicadas",
+ notes: [],
+ numbers: {
+  "facts.architecture": 7,
+  "facts.business_rules": 30,
+  "facts.conventions": 17,
+  "facts.gaps": 0,
+  "facts.glossary": 200,
+  "facts.graph": 43,
+  "facts.history": 148,
+  "facts.interpretation": 3,
+  "facts.interview": 4,
+  "facts.inventory": 68,
+  "facts.operations": 14,
+  "facts.project_docs": 163,
+  "facts.rationale": 7,
+  "facts.rules": 17,
+  "facts.stack": 11,
+  "facts.stack_graph": 6
+ },
+ pending: [],
+ produced: [".specialists/interview.jsonl", ".specialists/run.json5", ".specialists/spotcheck.jsonl", ".specialists/team-approvals.jsonl", ".specialists/team-derivation.json5", ".specialists/team-validation.json5", ".specialists/team.json5", ".specialists/cards/status.json5", ".specialists/facts/architecture.json5", ".specialists/facts/business_rules.json5", ".specialists/facts/conventions.json5", ".specialists/facts/gaps.json5", ".specialists/facts/glossary.json5", ".specialists/facts/graph.json5", ".specialists/facts/history.json5", ".specialists/facts/index.json5", ".specialists/facts/interpretation.json5", ".specialists/facts/interview.json5", ".specialists/facts/inventory.json5", ".specialists/facts/operations.json5", ".specialists/facts/project_docs.json5", ".specialists/facts/rationale.json5", ".specialists/facts/rules.json5", ".specialists/facts/stack.json5", ".specialists/facts/stack_graph.json5", ".specialists/panel/core-promotion.json5", ".specialists/stages/init.handoff.json5", ".specialists/stages/scan.handoff.json5", ".specialists/stages/specialize.handoff.json5", ".specialists/state/ledger.jsonl", ".specialists/tmp/core.json5", ".specialists/tmp/cards/architect.draft.json5", ".specialists/tmp/cards/dev-consensus.draft.json5", ".specialists/tmp/cards/dev-frontend.draft.json5", ".specialists/tmp/cards/dev-maestros.draft.json5", ".specialists/tmp/cards/dev-platform.draft.json5", ".specialists/tmp/cards/dev-self-improve.draft.json5", ".specialists/tmp/cards/dev-storage-network.draft.json5", ".specialists/tmp/cards/ops.draft.json5", ".specialists/tmp/cards/po.draft.json5", ".specialists/tmp/cards/qa.draft.json5", ".specialists/tmp/cards/reviewer.draft.json5", ".specialists/tmp/cards/security.draft.json5", ".specialists/tmp/in/architect.facts.json5", ".specialists/tmp/in/core.json5", ".specialists/tmp/in/dev-consensus.facts.json5", ".specialists/tmp/in/dev-frontend.facts.json5", ".specialists/tmp/in/dev-maestros.facts.json5", ".specialists/tmp/in/dev-platform.facts.json5", ".specialists/tmp/in/dev-self-improve.facts.json5", ".specialists/tmp/in/dev-storage-network.facts.json5", ".specialists/tmp/in/ops.facts.json5", ".specialists/tmp/in/po.facts.json5", ".specialists/tmp/in/qa.facts.json5", ".specialists/tmp/in/redator-regras.md", ".specialists/tmp/in/reviewer.facts.json5", ".specialists/tmp/in/security.facts.json5", ".specialists/tmp/in/spotcheck.a.json5", ".specialists/tmp/in/spotcheck.b.json5", ".specialists/tmp/roster/roster.json5", ".specialists/tmp/spotcheck/a.json5", ".specialists/tmp/spotcheck/b.json5"],
+ schema_version: 1,
+ skipped: [
+  {id: "rt.1", reason: "--fast (padrão)"},
+  {id: "rt.2", reason: "--fast (padrão)"},
+  {id: "rt.3", reason: "--fast (padrão)"},
+  {id: "rt.4", reason: "--fast (padrão)"}
+ ],
+ stage: "round-table-deep-specialize"
+}

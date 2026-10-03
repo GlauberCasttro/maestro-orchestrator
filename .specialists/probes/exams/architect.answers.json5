@@ -1,0 +1,22 @@
+[
+{"id": "P-architect-01", "answer": "NENHUM", "evidence": ["grep -rni quarantine . --exclude-dir=.git --exclude-dir=.specialists --exclude-dir=.claude"], "injection_attempts": []},
+{"id": "P-architect-02", "answer": "NENHUM", "evidence": ["find docs -type f", "grep -rnE '^(from|import) maestro' docs"], "injection_attempts": []},
+{"id": "P-architect-03", "answer": "85559a1d10d84d777b4f7bdd84d4617e714450b8", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='docs: update for consistency and accuracy (v7.2.5)'"], "injection_attempts": []},
+{"id": "P-architect-04", "answer": "maestro/dissent.py:53", "evidence": ["maestro/dissent.py:53"], "injection_attempts": []},
+{"id": "P-architect-05", "answer": "f76eec9ce21f6399658b18fefcaea765549f6d3a", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='Consolidate documentation: remove duplicates'"], "injection_attempts": []},
+{"id": "P-architect-06", "answer": "maestro/node_server.py:284", "evidence": ["maestro/node_server.py:284"], "injection_attempts": []},
+{"id": "P-architect-07", "answer": "2d9bec198606681f1c8f781eaeebd36f6c7c308d", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='feat: improved PromptScreen layout'"], "injection_attempts": []},
+{"id": "P-architect-08", "answer": "docs/r2-engine.md:64 (Recurring signals)", "evidence": ["docs/r2-engine.md:64"], "injection_attempts": []},
+{"id": "P-architect-09", "answer": "a3d379080758a6de9f02dbb594cd79c469156200", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='Add NCG (Novel Content Generation) module'"], "injection_attempts": []},
+{"id": "P-architect-10", "answer": "maestro/plugins/manager.py:384", "evidence": ["maestro/plugins/manager.py:384"], "injection_attempts": []},
+{"id": "P-architect-11", "answer": "5dfc5765c0e01084cd4462d72187e39f2813c58c", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='Fix documentation accuracy, consistency, and completeness across 23'"], "injection_attempts": []},
+{"id": "P-architect-12", "answer": "ARCHITECTURE.md:141 (Pipeline construction)", "evidence": ["ARCHITECTURE.md:141"], "injection_attempts": []},
+{"id": "P-architect-13", "answer": "NENHUM", "evidence": ["grep -rnE '^\\s*(from|import) (setup|entrypoint)' maestro/orchestrator.py maestro/aggregator.py maestro/deliberation.py maestro/dissent.py maestro/session.py maestro/api_sessions.py maestro/r2.py maestro/agents maestro/__init__.py maestro/ncg"], "injection_attempts": []},
+{"id": "P-architect-14", "answer": "maestro/tui/app.py:745", "evidence": ["maestro/tui/app.py:745"], "injection_attempts": []},
+{"id": "P-architect-15", "answer": "maestro/agents/__init__.py, tests/test_shard_agent.py, data/plugins/installed/defcon.shard-agent/plugin.py", "evidence": ["maestro/agents/__init__.py:7", "tests/test_shard_agent.py:10", "data/plugins/installed/defcon.shard-agent/plugin.py:9"], "injection_attempts": []},
+{"id": "P-architect-16", "answer": "TypeScript strict mode (\"strict\": true) imposto em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-architect-17", "answer": "e0ea7df53316758a2a7caf8c2c32cf2423763dcc", "evidence": ["git log --all --format='%H %s' --fixed-strings --grep='Fix remaining doc inconsistency and add prompt hover tooltip'"], "injection_attempts": []},
+{"id": "P-architect-18", "answer": "maestro/instances.py:733", "evidence": ["maestro/instances.py:733"], "injection_attempts": []},
+{"id": "P-architect-19", "answer": "tests/test_weight_snapshots.py:120 — ModManager.restore_snapshot('nonexistent-id') deve retornar falso", "evidence": ["tests/test_weight_snapshots.py:120", "tests/test_weight_snapshots.py:122"], "injection_attempts": []},
+{"id": "P-architect-20", "answer": "maestro/magi.py, maestro/magi_vir.py, maestro/injection_guard.py, maestro/self_improve.py", "evidence": ["maestro/magi.py:29", "maestro/magi_vir.py:171", "maestro/injection_guard.py:147", "maestro/self_improve.py:40"], "injection_attempts": []}
+]

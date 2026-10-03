@@ -1,0 +1,158 @@
+// report.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agents: {
+  architect: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.85,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  "dev-consensus": {
+   baseline_saturated: false,
+   cycles: 3,
+   decision: "PASS",
+   delta: 0.7,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 0.8889,
+   status: "especialista"
+  },
+  "dev-frontend": {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.8,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 0.9,
+   status: "especialista"
+  },
+  "dev-maestros": {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.85,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  "dev-platform": {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.7,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  "dev-self-improve": {
+   baseline_saturated: false,
+   cycles: 2,
+   decision: "PASS",
+   delta: 0.85,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  "dev-storage-network": {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.7,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 0.875,
+   status: "especialista"
+  },
+  ops: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.8,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 0.8571,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  po: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.7,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  qa: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.8,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  reviewer: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.85,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  },
+  security: {
+   baseline_saturated: false,
+   cycles: 1,
+   decision: "PASS",
+   delta: 0.8,
+   hallucinations: 0,
+   provisional: false,
+   reasons: [],
+   score_cross: 1.0,
+   score_territory: 1.0,
+   status: "especialista"
+  }
+ },
+ final: {
+  allowed: null,
+  at: "2026-10-03T21:02:09+00:00",
+  max_refine_cycles: 2,
+  non_specialist: [],
+  refining: []
+ },
+ g4: "PASS",
+ schema_version: 1
+}

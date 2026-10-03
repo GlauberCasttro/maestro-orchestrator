@@ -1,0 +1,15 @@
+// issued.json5 — quando as sondas de cada agente foram emitidas (cs.py probes generate)
+{
+ architect: 1791059856.512,
+ "dev-consensus": 1791060869.182,
+ "dev-frontend": 1791059856.512,
+ "dev-maestros": 1791059856.512,
+ "dev-platform": 1791059856.512,
+ "dev-self-improve": 1791060655.592,
+ "dev-storage-network": 1791059856.512,
+ ops: 1791059856.512,
+ po: 1791059856.512,
+ qa: 1791059856.512,
+ reviewer: 1791059856.512,
+ security: 1791059856.512
+}

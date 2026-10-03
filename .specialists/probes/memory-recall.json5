@@ -1,0 +1,481 @@
+// memory-recall.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ gate: "G8",
+ k: 5,
+ latency_p95_ms: 6.8,
+ mem: "cli.py",
+ misses: [
+  {
+   expected: "gloss.shards",
+   hit: false,
+   id: "P-dev-consensus-r2-12",
+   ms: 3.4,
+   rank: null,
+   type: "term"
+  },
+  {
+   expected: "gloss.agent",
+   hit: false,
+   id: "P-dev-maestros-07",
+   ms: 3.1,
+   rank: null,
+   type: "term"
+  },
+  {
+   expected: "gloss.node",
+   hit: false,
+   id: "P-dev-maestros-09",
+   ms: 2.9,
+   rank: null,
+   type: "term"
+  }
+ ],
+ pass: true,
+ queries: 55,
+ recall_at_5: 0.9455,
+ rows: [
+  {
+   expected: "gloss.dissent-analyzer",
+   hit: true,
+   id: "P-architect-04",
+   ms: 2.6,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.infer",
+   hit: true,
+   id: "P-architect-06",
+   ms: 7.0,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.recurring-signals",
+   hit: true,
+   id: "P-architect-08",
+   ms: 5.4,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.disable",
+   hit: true,
+   id: "P-architect-10",
+   ms: 6.5,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.pipeline-construction",
+   hit: true,
+   id: "P-architect-12",
+   ms: 2.8,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.stop",
+   hit: true,
+   id: "P-architect-18",
+   ms: 2.9,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_restore_nonexistent_fails",
+   hit: true,
+   id: "P-architect-19",
+   ms: 6.9,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.gpt-4o",
+   hit: true,
+   id: "P-dev-consensus-r2-06",
+   ms: 2.8,
+   rank: 2,
+   type: "term"
+  },
+  {
+   expected: "brule.limit.quorum_threshold",
+   hit: true,
+   id: "P-dev-consensus-r2-07",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.shards",
+   hit: false,
+   id: "P-dev-consensus-r2-12",
+   ms: 3.4,
+   rank: null,
+   type: "term"
+  },
+  {
+   expected: "gloss.r2-data",
+   hit: true,
+   id: "P-dev-consensus-r2-17",
+   ms: 5.4,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_list_sessions_limit_offset",
+   hit: true,
+   id: "P-dev-consensus-r2-18",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.models",
+   hit: true,
+   id: "P-dev-frontend-06",
+   ms: 2.8,
+   rank: 2,
+   type: "term"
+  },
+  {
+   expected: "gloss.check",
+   hit: true,
+   id: "P-dev-frontend-11",
+   ms: 5.0,
+   rank: 2,
+   type: "term"
+  },
+  {
+   expected: "gloss.maestro-plugin",
+   hit: true,
+   id: "P-dev-frontend-17",
+   ms: 6.8,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.limit.default_challenge_window_seconds",
+   hit: true,
+   id: "P-dev-frontend-18",
+   ms: 2.6,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.discovery",
+   hit: true,
+   id: "P-dev-maestros-05",
+   ms: 3.0,
+   rank: 2,
+   type: "term"
+  },
+  {
+   expected: "gloss.weight-host",
+   hit: true,
+   id: "P-dev-maestros-06",
+   ms: 3.1,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.agent",
+   hit: false,
+   id: "P-dev-maestros-07",
+   ms: 3.1,
+   rank: null,
+   type: "term"
+  },
+  {
+   expected: "gloss.dispatch",
+   hit: true,
+   id: "P-dev-maestros-08",
+   ms: 3.2,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.node",
+   hit: false,
+   id: "P-dev-maestros-09",
+   ms: 2.9,
+   rank: null,
+   type: "term"
+  },
+  {
+   expected: "gloss.network",
+   hit: true,
+   id: "P-dev-maestros-10",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.discover",
+   hit: true,
+   id: "P-dev-maestros-12",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.activation-payload",
+   hit: true,
+   id: "P-dev-maestros-18",
+   ms: 2.8,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.limit.handshake_timeout",
+   hit: true,
+   id: "P-dev-maestros-19",
+   ms: 2.6,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.restart",
+   hit: true,
+   id: "P-dev-platform-06",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.states.pluginstate",
+   hit: true,
+   id: "P-dev-platform-07",
+   ms: 2.6,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.reputation",
+   hit: true,
+   id: "P-dev-platform-12",
+   ms: 2.7,
+   rank: 3,
+   type: "term"
+  },
+  {
+   expected: "gloss.spinner",
+   hit: true,
+   id: "P-dev-platform-18",
+   ms: 3.6,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.plugin-context",
+   hit: true,
+   id: "P-dev-self-improve-r1-05",
+   ms: 3.2,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.peers",
+   hit: true,
+   id: "P-dev-self-improve-r1-08",
+   ms: 3.2,
+   rank: 2,
+   type: "term"
+  },
+  {
+   expected: "gloss.storage-proof-engine",
+   hit: true,
+   id: "P-dev-self-improve-r1-11",
+   ms: 3.3,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_is_adjacent_requires_confirmed_and_alive",
+   hit: true,
+   id: "P-dev-self-improve-r1-18",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.verify",
+   hit: true,
+   id: "P-dev-storage-network-06",
+   ms: 2.6,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.validation.maestro-shard_manager.py.120",
+   hit: true,
+   id: "P-dev-storage-network-07",
+   ms: 2.9,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.direct-import",
+   hit: true,
+   id: "P-dev-storage-network-12",
+   ms: 2.6,
+   rank: 3,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_rate_limit_blocks",
+   hit: true,
+   id: "P-dev-storage-network-19",
+   ms: 3.6,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.reload",
+   hit: true,
+   id: "P-ops-05",
+   ms: 2.8,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.limit.health_retries",
+   hit: true,
+   id: "P-ops-06",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.task",
+   hit: true,
+   id: "P-ops-11",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.ask",
+   hit: true,
+   id: "P-ops-18",
+   ms: 2.6,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.ncg-benchmark",
+   hit: true,
+   id: "P-po-07",
+   ms: 3.3,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.validation.maestro-instances.py.245",
+   hit: true,
+   id: "P-po-08",
+   ms: 3.0,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.prompt-templates",
+   hit: true,
+   id: "P-po-12",
+   ms: 3.0,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.cluster-config",
+   hit: true,
+   id: "P-po-17",
+   ms: 2.8,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_injectable_unknown_category_blocked",
+   hit: true,
+   id: "P-po-18",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.orchestrator-py",
+   hit: true,
+   id: "P-qa-05",
+   ms: 3.1,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "brule.test.test_injectable_architecture_blocked",
+   hit: true,
+   id: "P-qa-06",
+   ms: 2.8,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "brule.test.test_rate_limit_blocks_injection",
+   hit: true,
+   id: "P-qa-12",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "brule.validation.maestro-deliberation.py.139",
+   hit: true,
+   id: "P-qa-19",
+   ms: 2.7,
+   rank: 1,
+   type: "business_rule"
+  },
+  {
+   expected: "gloss.enable",
+   hit: true,
+   id: "P-reviewer-07",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.node-cli",
+   hit: true,
+   id: "P-reviewer-12",
+   ms: 3.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.adjacency-state",
+   hit: true,
+   id: "P-security-07",
+   ms: 2.5,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.rollback-entry",
+   hit: true,
+   id: "P-security-12",
+   ms: 2.7,
+   rank: 1,
+   type: "term"
+  },
+  {
+   expected: "gloss.dissent-report",
+   hit: true,
+   id: "P-security-17",
+   ms: 2.5,
+   rank: 1,
+   type: "term"
+  }
+ ],
+ schema_version: 1,
+ thresholds: {latency_p95_ms: 200.0, recall_at_5: 0.9},
+ wall_p95_ms: 66.5
+}

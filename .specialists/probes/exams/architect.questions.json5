@@ -1,0 +1,33 @@
+// architect.questions.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "architect",
+ answer_file: ".specialists/probes/exams/architect.answers.json5",
+ answer_format: [
+  {answer: "texto (arquivo:linha, comando, sha ou NENHUM)", evidence: ["arquivo:linha", "comando"], id: "P-..."}
+ ],
+ instructions: "Responda cada pergunta com o que você sabe deste repositório. Para cada id, devolva {id, answer, evidence[]}; evidence = 'arquivo:linha' ou comando que prova. Se o que foi perguntado não existe, responda NENHUM. Não invente: afirmar algo inexistente veta o exame.",
+ probes_sha256: "882ead3aa22eaf2e4bf6c7ae2cd36529c560897cbd530fa5e4b4a0f49f197df0",
+ questions: [
+  {id: "P-architect-01", question: "Qual o limite de \"quarantine logging window\" e onde é imposto (arquivo:linha)? Se não houver, NENHUM.", type: "business_rule"},
+  {id: "P-architect-02", question: "Algum arquivo em `docs/**` importa diretamente de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-architect-03", question: "Qual commit (sha) corrigiu \"docs: update for consistency and accuracy (v7.2.5)\" (tocou 10 arquivo(s))?", type: "history"},
+  {id: "P-architect-04", question: "Onde é definido o termo técnico `DissentAnalyzer`? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-05", question: "Qual commit (sha) corrigiu \"Consolidate documentation: remove duplicates, merge overlapping guides\" (tocou 10 arquivo(s))?", type: "history"},
+  {id: "P-architect-06", question: "Onde é definido o termo técnico `infer`? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-07", question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?", type: "history"},
+  {id: "P-architect-08", question: "Onde é definido o termo de negócio que significa \"which signal types appear repeatedly?\"? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-09", question: "Qual commit (sha) corrigiu \"Add NCG (Novel Content Generation) module — parallel diversity benchmark track\" (tocou 7 arquivo(s))?", type: "history"},
+  {id: "P-architect-10", question: "Onde é definido o termo técnico `disable`? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-11", question: "Qual commit (sha) corrigiu \"Fix documentation accuracy, consistency, and completeness across 23 files\" (tocou 12 arquivo(s))?", type: "history"},
+  {id: "P-architect-12", question: "Onde é definido o termo de negócio que significa \"because a single WeightNode rarely holds a complete model; inference requires composing WeightNodes\"? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-13", question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-architect-14", question: "Onde está definido o símbolo (function) com assinatura `___(self, idx: int)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-architect-15", question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/agents/shard.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-architect-16", question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?", type: "prohibition"},
+  {id: "P-architect-17", question: "Qual commit (sha) corrigiu \"Fix remaining doc inconsistency and add prompt hover tooltip\" (tocou 2 arquivo(s))?", type: "history"},
+  {id: "P-architect-18", question: "Onde é definido o termo técnico `stop`? Responda arquivo:linha.", type: "term"},
+  {id: "P-architect-19", question: "Qual o test de \"test_restore_nonexistent_fails\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-architect-20", question: "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"}
+ ],
+ schema_version: 1
+}

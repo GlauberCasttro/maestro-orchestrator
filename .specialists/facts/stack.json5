@@ -1,0 +1,1194 @@
+// stack (L8) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ critical_api: [
+  {
+   api: [],
+   cmd: "node -e <introspecção node> @types/react",
+   eco: "node",
+   error: "Cannot find module '@types/react'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "19.2.14",
+   name: "@types/react",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> react",
+   eco: "node",
+   error: "Cannot find module 'react'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "19.1.0",
+   name: "react",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> @types/react-dom",
+   eco: "node",
+   error: "Cannot find module '@types/react-dom'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "19.2.3",
+   name: "@types/react-dom",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> @vitejs/plugin-react",
+   eco: "node",
+   error: "Cannot find module '@vitejs/plugin-react'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "4.5.1",
+   name: "@vitejs/plugin-react",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> react-dom",
+   eco: "node",
+   error: "Cannot find module 'react-dom'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "19.1.0",
+   name: "react-dom",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> vite",
+   eco: "node",
+   error: "Cannot find module 'vite'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "6.3.5",
+   name: "vite",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> rollup",
+   eco: "node",
+   error: "Cannot find module 'rollup'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "4.41.1",
+   name: "rollup",
+   status: "declared"
+  },
+  {
+   api: [],
+   cmd: "node -e <introspecção node> typescript",
+   eco: "node",
+   error: "Cannot find module 'typescript'\nRequire stack:\n- /Users/glaubercastro/Repositorios/maestro-orchestrator/[eval]",
+   installed_version: null,
+   lock_version: "5.8.3",
+   name: "typescript",
+   status: "declared"
+  }
+ ],
+ facts: [
+  {
+   claim: "node importa 4 módulos de terceiros (react (3), @vitejs/plugin-react (1), react-dom (1), vite (1)) e 0 da stdlib",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L8 classificação de imports externos (node)", exit: 0, out_sha256: "4c1201af898c5a536270eaff8acd89a5945096097ff1ff1f3ecd811735e68f6c"}
+   ],
+   fingerprint: "52412c528b0ac623a69bc9d55988e0e8f8f9a42fb5e36afbc6aada4b2936250b",
+   id: "stack.node.imports",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "python importa 13 módulos de terceiros (pytest (12), fastapi (11), httpx (9), pydantic (7), dotenv (4), textual (3), sentence_transformers (2), huggingface_hub (1), openai (1), redis (1)) e 41 da stdlib",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L8 classificação de imports externos (python)", exit: 0, out_sha256: "5a8e2c1b9195d23a6c9d7027e60b55a5b330483445678eb89e059f9742b7c434"}
+   ],
+   fingerprint: "959898a572d842d3358dc15a02712380b09f54ef7503678d347a070f3519cfba",
+   id: "stack.python.imports",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node @types/react 19.2.14 (frontend/package-lock.json:1126, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1126}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.types-react",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node @types/react-dom 19.2.3 (frontend/package-lock.json:1136, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1136}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.types-react-dom",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node @vitejs/plugin-react 4.5.1 (frontend/package-lock.json:1146, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1146}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.vitejs-plugin-react",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node react 19.1.0 (frontend/package-lock.json:1486, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1486}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.react",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node react-dom 19.1.0 (frontend/package-lock.json:1495, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1495}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.react-dom",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node rollup 4.41.1 (frontend/package-lock.json:1517, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1517}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.rollup",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node typescript 5.8.3 (frontend/package-lock.json:1600, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1600}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.typescript",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "node vite 6.3.5 (frontend/package-lock.json:1645, direta)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1645}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stack.node.vite",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Linguagens principais por LOC: python (22619), typescript (2559), rust (136), shell (117)",
+   confidence: "high",
+   evidence: [
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "61b8d17153d41746f10b676b468b929f0aac20e5357cc7ec2c2259d48a53e774",
+   id: "stack.languages",
+   layer: "stack",
+   origin: "mechanical",
+   scope: ["**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ imports_split: {
+  node: {
+   stdlib: {},
+   third_party: {
+    "@vitejs/plugin-react": 1,
+    react: 3,
+    "react-dom": 1,
+    vite: 1
+   }
+  },
+  python: {
+   stdlib: {
+    __future__: 5,
+    abc: 4,
+    argparse: 3,
+    ast: 2,
+    asyncio: 26,
+    base64: 3,
+    collections: 1,
+    contextlib: 2,
+    dataclasses: 32,
+    datetime: 18,
+    enum: 3,
+    functools: 1,
+    hashlib: 6,
+    importlib: 3,
+    io: 1,
+    itertools: 5,
+    json: 35,
+    logging: 4,
+    math: 1,
+    os: 37,
+    pathlib: 30,
+    platform: 1,
+    random: 3,
+    re: 7,
+    shutil: 14,
+    signal: 1,
+    socket: 3,
+    struct: 3,
+    subprocess: 6,
+    sys: 14,
+    tempfile: 10,
+    termios: 1,
+    textwrap: 1,
+    threading: 3,
+    time: 13,
+    tty: 1,
+    typing: 27,
+    unittest: 7,
+    urllib: 2,
+    uuid: 14,
+    webbrowser: 2
+   },
+   third_party: {
+    dotenv: 4,
+    fastapi: 11,
+    httpx: 9,
+    huggingface_hub: 1,
+    openai: 1,
+    pydantic: 7,
+    pytest: 12,
+    redis: 1,
+    requests: 1,
+    rich: 1,
+    sentence_transformers: 2,
+    textual: 3,
+    uvicorn: 1
+   }
+  }
+ },
+ introspection: true,
+ layer: "stack",
+ packages: [
+  {
+   direct: false,
+   eco: "node",
+   line: 23,
+   name: "@ampproject/remapping",
+   source: "frontend/package-lock.json",
+   version: "2.3.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 37,
+   name: "@babel/code-frame",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 52,
+   name: "@babel/compat-data",
+   source: "frontend/package-lock.json",
+   version: "7.27.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 62,
+   name: "@babel/core",
+   source: "frontend/package-lock.json",
+   version: "7.27.4"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 93,
+   name: "@babel/generator",
+   source: "frontend/package-lock.json",
+   version: "7.27.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 110,
+   name: "@babel/helper-compilation-targets",
+   source: "frontend/package-lock.json",
+   version: "7.27.2"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 127,
+   name: "@babel/helper-module-imports",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 141,
+   name: "@babel/helper-module-transforms",
+   source: "frontend/package-lock.json",
+   version: "7.27.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 159,
+   name: "@babel/helper-plugin-utils",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 169,
+   name: "@babel/helper-string-parser",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 179,
+   name: "@babel/helper-validator-identifier",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 189,
+   name: "@babel/helper-validator-option",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 199,
+   name: "@babel/helpers",
+   source: "frontend/package-lock.json",
+   version: "7.27.4"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 213,
+   name: "@babel/parser",
+   source: "frontend/package-lock.json",
+   version: "7.27.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 229,
+   name: "@babel/plugin-transform-react-jsx-self",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 245,
+   name: "@babel/plugin-transform-react-jsx-source",
+   source: "frontend/package-lock.json",
+   version: "7.27.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 261,
+   name: "@babel/template",
+   source: "frontend/package-lock.json",
+   version: "7.27.2"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 276,
+   name: "@babel/traverse",
+   source: "frontend/package-lock.json",
+   version: "7.27.4"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 295,
+   name: "@babel/types",
+   source: "frontend/package-lock.json",
+   version: "7.27.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 309,
+   name: "@esbuild/aix-ppc64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 326,
+   name: "@esbuild/android-arm",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 343,
+   name: "@esbuild/android-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 360,
+   name: "@esbuild/android-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 377,
+   name: "@esbuild/darwin-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 394,
+   name: "@esbuild/darwin-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 411,
+   name: "@esbuild/freebsd-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 428,
+   name: "@esbuild/freebsd-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 445,
+   name: "@esbuild/linux-arm",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 462,
+   name: "@esbuild/linux-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 479,
+   name: "@esbuild/linux-ia32",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 496,
+   name: "@esbuild/linux-loong64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 513,
+   name: "@esbuild/linux-mips64el",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 530,
+   name: "@esbuild/linux-ppc64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 547,
+   name: "@esbuild/linux-riscv64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 564,
+   name: "@esbuild/linux-s390x",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 581,
+   name: "@esbuild/linux-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 598,
+   name: "@esbuild/netbsd-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 615,
+   name: "@esbuild/netbsd-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 632,
+   name: "@esbuild/openbsd-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 649,
+   name: "@esbuild/openbsd-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 666,
+   name: "@esbuild/sunos-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 683,
+   name: "@esbuild/win32-arm64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 700,
+   name: "@esbuild/win32-ia32",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 717,
+   name: "@esbuild/win32-x64",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 734,
+   name: "@jridgewell/gen-mapping",
+   source: "frontend/package-lock.json",
+   version: "0.3.8"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 749,
+   name: "@jridgewell/resolve-uri",
+   source: "frontend/package-lock.json",
+   version: "3.1.2"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 759,
+   name: "@jridgewell/set-array",
+   source: "frontend/package-lock.json",
+   version: "1.2.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 769,
+   name: "@jridgewell/sourcemap-codec",
+   source: "frontend/package-lock.json",
+   version: "1.5.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 776,
+   name: "@jridgewell/trace-mapping",
+   source: "frontend/package-lock.json",
+   version: "0.3.25"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 787,
+   name: "@rolldown/pluginutils",
+   source: "frontend/package-lock.json",
+   version: "1.0.0-beta.9"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 794,
+   name: "@rollup/rollup-android-arm-eabi",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 808,
+   name: "@rollup/rollup-android-arm64",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 822,
+   name: "@rollup/rollup-darwin-arm64",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 836,
+   name: "@rollup/rollup-darwin-x64",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 850,
+   name: "@rollup/rollup-freebsd-arm64",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 864,
+   name: "@rollup/rollup-freebsd-x64",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 878,
+   name: "@rollup/rollup-linux-arm-gnueabihf",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 892,
+   name: "@rollup/rollup-linux-arm-musleabihf",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 906,
+   name: "@rollup/rollup-linux-arm64-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 920,
+   name: "@rollup/rollup-linux-arm64-musl",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 934,
+   name: "@rollup/rollup-linux-loongarch64-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 948,
+   name: "@rollup/rollup-linux-powerpc64le-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 962,
+   name: "@rollup/rollup-linux-riscv64-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 976,
+   name: "@rollup/rollup-linux-riscv64-musl",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 990,
+   name: "@rollup/rollup-linux-s390x-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1004,
+   name: "@rollup/rollup-linux-x64-gnu",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1018,
+   name: "@rollup/rollup-linux-x64-musl",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1032,
+   name: "@rollup/rollup-win32-arm64-msvc",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1046,
+   name: "@rollup/rollup-win32-ia32-msvc",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1060,
+   name: "@rollup/rollup-win32-x64-msvc",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1074,
+   name: "@types/babel__core",
+   source: "frontend/package-lock.json",
+   version: "7.20.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1088,
+   name: "@types/babel__generator",
+   source: "frontend/package-lock.json",
+   version: "7.27.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1098,
+   name: "@types/babel__template",
+   source: "frontend/package-lock.json",
+   version: "7.4.4"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1109,
+   name: "@types/babel__traverse",
+   source: "frontend/package-lock.json",
+   version: "7.20.7"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1119,
+   name: "@types/estree",
+   source: "frontend/package-lock.json",
+   version: "1.0.7"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1126,
+   name: "@types/react",
+   source: "frontend/package-lock.json",
+   version: "19.2.14"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1136,
+   name: "@types/react-dom",
+   source: "frontend/package-lock.json",
+   version: "19.2.3"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1146,
+   name: "@vitejs/plugin-react",
+   source: "frontend/package-lock.json",
+   version: "4.5.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1167,
+   name: "browserslist",
+   source: "frontend/package-lock.json",
+   version: "4.25.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1200,
+   name: "caniuse-lite",
+   source: "frontend/package-lock.json",
+   version: "1.0.30001721"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1221,
+   name: "convert-source-map",
+   source: "frontend/package-lock.json",
+   version: "2.0.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1228,
+   name: "csstype",
+   source: "frontend/package-lock.json",
+   version: "3.2.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1235,
+   name: "debug",
+   source: "frontend/package-lock.json",
+   version: "4.4.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1253,
+   name: "electron-to-chromium",
+   source: "frontend/package-lock.json",
+   version: "1.5.165"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1260,
+   name: "esbuild",
+   source: "frontend/package-lock.json",
+   version: "0.25.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1301,
+   name: "escalade",
+   source: "frontend/package-lock.json",
+   version: "3.2.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1311,
+   name: "fdir",
+   source: "frontend/package-lock.json",
+   version: "6.4.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1326,
+   name: "fsevents",
+   source: "frontend/package-lock.json",
+   version: "2.3.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1341,
+   name: "gensync",
+   source: "frontend/package-lock.json",
+   version: "1.0.0-beta.2"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1351,
+   name: "globals",
+   source: "frontend/package-lock.json",
+   version: "11.12.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1361,
+   name: "js-tokens",
+   source: "frontend/package-lock.json",
+   version: "4.0.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1368,
+   name: "jsesc",
+   source: "frontend/package-lock.json",
+   version: "3.1.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1381,
+   name: "json5",
+   source: "frontend/package-lock.json",
+   version: "2.2.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1394,
+   name: "lru-cache",
+   source: "frontend/package-lock.json",
+   version: "5.1.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1404,
+   name: "ms",
+   source: "frontend/package-lock.json",
+   version: "2.1.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1411,
+   name: "nanoid",
+   source: "frontend/package-lock.json",
+   version: "3.3.11"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1430,
+   name: "node-releases",
+   source: "frontend/package-lock.json",
+   version: "2.0.19"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1437,
+   name: "picocolors",
+   source: "frontend/package-lock.json",
+   version: "1.1.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1444,
+   name: "picomatch",
+   source: "frontend/package-lock.json",
+   version: "4.0.2"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1457,
+   name: "postcss",
+   source: "frontend/package-lock.json",
+   version: "8.5.4"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1486,
+   name: "react",
+   source: "frontend/package-lock.json",
+   version: "19.1.0"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1495,
+   name: "react-dom",
+   source: "frontend/package-lock.json",
+   version: "19.1.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1507,
+   name: "react-refresh",
+   source: "frontend/package-lock.json",
+   version: "0.17.0"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1517,
+   name: "rollup",
+   source: "frontend/package-lock.json",
+   version: "4.41.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1557,
+   name: "scheduler",
+   source: "frontend/package-lock.json",
+   version: "0.26.0"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1563,
+   name: "semver",
+   source: "frontend/package-lock.json",
+   version: "6.3.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1573,
+   name: "source-map-js",
+   source: "frontend/package-lock.json",
+   version: "1.2.1"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1583,
+   name: "tinyglobby",
+   source: "frontend/package-lock.json",
+   version: "0.2.14"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1600,
+   name: "typescript",
+   source: "frontend/package-lock.json",
+   version: "5.8.3"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1614,
+   name: "update-browserslist-db",
+   source: "frontend/package-lock.json",
+   version: "1.1.3"
+  },
+  {
+   direct: true,
+   eco: "node",
+   line: 1645,
+   name: "vite",
+   source: "frontend/package-lock.json",
+   version: "6.3.5"
+  },
+  {
+   direct: false,
+   eco: "node",
+   line: 1720,
+   name: "yallist",
+   source: "frontend/package-lock.json",
+   version: "3.1.1"
+  }
+ ],
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L8",
+ schema_version: 1
+}

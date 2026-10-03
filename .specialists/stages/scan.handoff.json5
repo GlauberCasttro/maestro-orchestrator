@@ -1,0 +1,30 @@
+// handoff da etapa scan (≤2000 tokens) — gerado por cs.py stage done
+{
+ commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ goal: "fatos com evidência para todas as camadas L0–L10 + lacunas respondidas",
+ notes: [
+  {id: "scan.6", note: "pytest tests/ | Ambas | Limiares de consenso, Self-improvement, Storage proof / rede | maestros: o que recomenda (recomendação: substrato paralelo, Python canônico)"}
+ ],
+ numbers: {
+  "facts.architecture": 7,
+  "facts.business_rules": 30,
+  "facts.conventions": 17,
+  "facts.gaps": 0,
+  "facts.glossary": 200,
+  "facts.graph": 43,
+  "facts.history": 148,
+  "facts.interpretation": 3,
+  "facts.interview": 4,
+  "facts.inventory": 68,
+  "facts.operations": 14,
+  "facts.project_docs": 163,
+  "facts.rationale": 7,
+  "facts.rules": 17,
+  "facts.stack": 11,
+  "facts.stack_graph": 6
+ },
+ pending: [],
+ produced: [".specialists/interview.jsonl", ".specialists/run.json5", ".specialists/spotcheck.jsonl", ".specialists/facts/architecture.json5", ".specialists/facts/business_rules.json5", ".specialists/facts/conventions.json5", ".specialists/facts/gaps.json5", ".specialists/facts/glossary.json5", ".specialists/facts/graph.json5", ".specialists/facts/history.json5", ".specialists/facts/index.json5", ".specialists/facts/interpretation.json5", ".specialists/facts/interview.json5", ".specialists/facts/inventory.json5", ".specialists/facts/operations.json5", ".specialists/facts/project_docs.json5", ".specialists/facts/rationale.json5", ".specialists/facts/rules.json5", ".specialists/facts/stack.json5", ".specialists/facts/stack_graph.json5", ".specialists/stages/init.handoff.json5", ".specialists/state/ledger.jsonl", ".specialists/tmp/in/spotcheck.a.json5", ".specialists/tmp/in/spotcheck.b.json5", ".specialists/tmp/spotcheck/a.json5", ".specialists/tmp/spotcheck/b.json5"],
+ schema_version: 1,
+ stage: "scan"
+}

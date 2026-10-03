@@ -1,0 +1,273 @@
+// deps.json5 — matriz de dependência território×território; gerado por cs.py team maps
+{
+ cycles: {
+  file: [],
+  territory: [
+   {path: ["dev-consensus", "dev-platform", "dev-consensus"], territories: ["dev-consensus", "dev-platform", "dev-self-improve", "dev-storage-network"]}
+  ]
+ },
+ edges: [
+  {count: 2, from: "dev-consensus", to: "dev-platform"},
+  {count: 1, from: "dev-consensus", to: "dev-storage-network"},
+  {count: 22, from: "dev-platform", to: "dev-consensus"},
+  {count: 4, from: "dev-platform", to: "dev-self-improve"},
+  {count: 12, from: "dev-platform", to: "dev-storage-network"},
+  {count: 16, from: "dev-self-improve", to: "dev-consensus"},
+  {count: 1, from: "dev-storage-network", to: "dev-consensus"},
+  {count: 4, from: "ops", to: "dev-platform"},
+  {count: 24, from: "qa", to: "dev-consensus"},
+  {count: 8, from: "qa", to: "dev-platform"},
+  {count: 11, from: "qa", to: "dev-self-improve"},
+  {count: 12, from: "qa", to: "dev-storage-network"}
+ ],
+ edges_cross_territory: 117,
+ edges_total: 211,
+ edges_unowned: 0,
+ matrix: {
+  architect: {
+   architect: 0,
+   "dev-consensus": 0,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  "dev-consensus": {
+   architect: 0,
+   "dev-consensus": 0,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 2,
+   "dev-self-improve": 0,
+   "dev-storage-network": 1,
+   ops: 0,
+   qa: 0
+  },
+  "dev-frontend": {
+   architect: 0,
+   "dev-consensus": 0,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  "dev-maestros": {
+   architect: 0,
+   "dev-consensus": 0,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  "dev-platform": {
+   architect: 0,
+   "dev-consensus": 22,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 4,
+   "dev-storage-network": 12,
+   ops: 0,
+   qa: 0
+  },
+  "dev-self-improve": {
+   architect: 0,
+   "dev-consensus": 16,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  "dev-storage-network": {
+   architect: 0,
+   "dev-consensus": 1,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 0,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  ops: {
+   architect: 0,
+   "dev-consensus": 0,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 4,
+   "dev-self-improve": 0,
+   "dev-storage-network": 0,
+   ops: 0,
+   qa: 0
+  },
+  qa: {
+   architect: 0,
+   "dev-consensus": 24,
+   "dev-frontend": 0,
+   "dev-maestros": 0,
+   "dev-platform": 8,
+   "dev-self-improve": 11,
+   "dev-storage-network": 12,
+   ops: 0,
+   qa: 0
+  }
+ },
+ nodes: [
+  {id: "architect"},
+  {id: "dev-consensus"},
+  {id: "dev-frontend"},
+  {id: "dev-maestros"},
+  {id: "dev-platform"},
+  {id: "dev-self-improve"},
+  {id: "dev-storage-network"},
+  {id: "ops"},
+  {id: "qa"}
+ ],
+ pairs: [
+  {
+   edges: 2,
+   examples: [
+    {file: "maestro/__init__.py", imports: "maestro/plugins/manager.py", line: 7},
+    {file: "maestro/orchestrator.py", imports: "maestro/plugins/manager.py", line: 15}
+   ],
+   from: "dev-consensus",
+   to: "dev-platform"
+  },
+  {
+   edges: 1,
+   examples: [
+    {file: "maestro/agents/__init__.py", imports: "maestro/agents/shard.py", line: 7}
+   ],
+   from: "dev-consensus",
+   to: "dev-storage-network"
+  },
+  {
+   edges: 22,
+   examples: [
+    {file: "backend/main.py", imports: "maestro/api_sessions.py", line: 10},
+    {file: "backend/orchestrator_foundry.py", imports: "maestro/agents/aria.py", line: 21},
+    {file: "backend/orchestrator_foundry.py", imports: "maestro/agents/prism.py", line: 22},
+    {file: "backend/orchestrator_foundry.py", imports: "maestro/agents/sol.py", line: 20},
+    {file: "backend/orchestrator_foundry.py", imports: "maestro/agents/tempagent.py", line: 23}
+   ],
+   from: "dev-platform",
+   to: "dev-consensus"
+  },
+  {
+   edges: 4,
+   examples: [
+    {file: "backend/main.py", imports: "maestro/api_magi.py", line: 11},
+    {file: "backend/main.py", imports: "maestro/api_self_improve.py", line: 13},
+    {file: "maestro/cli.py", imports: "maestro/self_improve.py", line: 271},
+    {file: "maestro/tui/app.py", imports: "maestro/self_improve.py", line: 2208}
+   ],
+   from: "dev-platform",
+   to: "dev-self-improve"
+  },
+  {
+   edges: 12,
+   examples: [
+    {file: "backend/main.py", imports: "maestro/api_cluster.py", line: 17},
+    {file: "backend/main.py", imports: "maestro/api_instances.py", line: 18},
+    {file: "backend/main.py", imports: "maestro/api_storage.py", line: 15},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", imports: "maestro/agents/shard.py", line: 9},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", imports: "maestro/shard_registry.py", line: 10}
+   ],
+   from: "dev-platform",
+   to: "dev-storage-network"
+  },
+  {
+   edges: 16,
+   examples: [
+    {file: "maestro/injection_guard.py", imports: "maestro/aggregator.py", line: 147},
+    {file: "maestro/injection_guard.py", imports: "maestro/dissent.py", line: 148},
+    {file: "maestro/injection_guard.py", imports: "maestro/ncg/drift.py", line: 150},
+    {file: "maestro/injection_guard.py", imports: "maestro/ncg/generator.py", line: 149},
+    {file: "maestro/injection_guard.py", imports: "maestro/r2.py", line: 151}
+   ],
+   from: "dev-self-improve",
+   to: "dev-consensus"
+  },
+  {
+   edges: 1,
+   examples: [
+    {file: "maestro/agents/shard.py", imports: "maestro/agents/base.py", line: 15}
+   ],
+   from: "dev-storage-network",
+   to: "dev-consensus"
+  },
+  {
+   edges: 4,
+   examples: [
+    {file: "setup.py", imports: "maestro/cli.py", line: 39},
+    {file: "setup.py", imports: "maestro/dependency_resolver.py", line: 640},
+    {file: "setup.py", imports: "maestro/selector.py", line: 594},
+    {file: "setup.py", imports: "maestro/tui/__main__.py", line: 609}
+   ],
+   from: "ops",
+   to: "dev-platform"
+  },
+  {
+   edges: 24,
+   examples: [
+    {file: "tests/test_code_injection.py", imports: "maestro/aggregator.py", line: 313},
+    {file: "tests/test_code_injection.py", imports: "maestro/dissent.py", line: 26},
+    {file: "tests/test_code_injection.py", imports: "maestro/ncg/drift.py", line: 27},
+    {file: "tests/test_code_injection.py", imports: "maestro/r2.py", line: 24},
+    {file: "tests/test_code_injection.py", imports: "maestro/session.py", line: 25}
+   ],
+   from: "qa",
+   to: "dev-consensus"
+  },
+  {
+   edges: 8,
+   examples: [
+    {file: "tests/test_keyring.py", imports: "maestro/keyring.py", line: 7},
+    {file: "tests/test_mod_manager.py", imports: "maestro/plugins/base.py", line: 12},
+    {file: "tests/test_mod_manager.py", imports: "maestro/plugins/manager.py", line: 19},
+    {file: "tests/test_plugin_hooks.py", imports: "maestro/plugins/manager.py", line: 10},
+    {file: "tests/test_startup.py", imports: "entrypoint.py", line: 26}
+   ],
+   from: "qa",
+   to: "dev-platform"
+  },
+  {
+   edges: 11,
+   examples: [
+    {file: "tests/test_code_injection.py", imports: "maestro/applicator.py", line: 21},
+    {file: "tests/test_code_injection.py", imports: "maestro/injection_guard.py", line: 18},
+    {file: "tests/test_code_injection.py", imports: "maestro/optimization.py", line: 22},
+    {file: "tests/test_code_injection.py", imports: "maestro/rollback.py", line: 17},
+    {file: "tests/test_code_injection.py", imports: "maestro/self_improve.py", line: 23}
+   ],
+   from: "qa",
+   to: "dev-self-improve"
+  },
+  {
+   edges: 12,
+   examples: [
+    {file: "tests/test_cluster.py", imports: "maestro/cluster.py", line: 9},
+    {file: "tests/test_cluster.py", imports: "maestro/state_bus.py", line: 125},
+    {file: "tests/test_instances.py", imports: "maestro/instances.py", line: 17},
+    {file: "tests/test_lan_discovery.py", imports: "maestro/lan_discovery.py", line: 12},
+    {file: "tests/test_shard_agent.py", imports: "maestro/agents/mock_shard_node.py", line: 11}
+   ],
+   from: "qa",
+   to: "dev-storage-network"
+  }
+ ],
+ schema_version: 1,
+ territories: ["architect", "dev-consensus", "dev-frontend", "dev-maestros", "dev-platform", "dev-self-improve", "dev-storage-network", "ops", "qa"]
+}

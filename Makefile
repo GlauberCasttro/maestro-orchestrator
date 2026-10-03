@@ -74,3 +74,7 @@ dev:
 		(cd backend && uvicorn main:app --reload --port 8000) & \
 		(cd frontend && npm install --silent && npm run dev) & \
 		wait
+
+# >>> codebase-specialists (bloco gerenciado; não editar) >>>
+include specialists.mk
+# <<< codebase-specialists <<<

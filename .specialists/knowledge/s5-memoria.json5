@@ -1,0 +1,558 @@
+// codebase-specialists:generated: S5 memória (camadas.s5_memoria dos cartões), lida por cs-mem search; não edite: altere team.json5 e rode `cs.py emit`
+{
+ items: [
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.dissent-analyzer", "gloss.dissent-report"],
+   id: "s5.dev-consensus.1",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "DissentAnalyzer / DissentReport: análise de dissenso entre os agentes, em `maestro/dissent.py`."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.r2-engine", "gloss.r2-score", "gloss.improvement-signal", "docs.docs-r2-engine.md"],
+   id: "s5.dev-consensus.2",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "R2 Engine / R2Score / ImprovementSignal: a camada reflexa que pontua cada sessão juntando dissenso, drift do NCG e quórum (`maestro/r2.py`)."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.session-logger", "gloss.session-record", "docs.docs-logging.md"],
+   id: "s5.dev-consensus.3",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "SessionLogger / SessionRecord: cada sessão de orquestração é persistida como JSON estruturado (`maestro/session.py`)."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.mock-agent", "gloss.mock-headless-generator"],
+   id: "s5.dev-consensus.4",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "MockAgent (`maestro/agents/mock.py`) e MockHeadlessGenerator (`maestro/ncg/generator.py`): substitutos sem chamada de rede, usados em testes."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.shard-agent", "gloss.mock-shard-node"],
+   id: "s5.dev-consensus.5",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "ShardAgent (`maestro/agents/shard.py`) e MockShardNode (`maestro/agents/mock_shard_node.py`, nó simulado), ambos fora do território: ShardAgent tem a mesma interface `fetch(prompt) -> str` dos agentes centralizados; testes de shard importam os dois."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["interview.ui-primary"],
+   id: "s5.dev-consensus.6",
+   kind: "fact",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "As interfaces TUI (`maestro/tui/`) e web (frontend + `backend/main.py`) são ambas mantidas e consomem o resultado da orquestração."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["docs.stale.docs-agents.md.39", "docs.stale.docs-agents.md.40", "docs.stale.readme.md.147"],
+   id: "s5.dev-consensus.7",
+   kind: "fact",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "`docs/agents.md`, `docs/architecture.md` e `readme.md` citam nomes de modelo de agentes que o scan marcou como defasados."
+  },
+  {
+   agent: "dev-consensus",
+   facts: ["gloss.injections"],
+   id: "s5.dev-consensus.8",
+   kind: "term",
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   text: "injections (fora do território, self-improvement): o glossário define o termo na rota de listagem de injeções ativas em `maestro/api_self_improve.py`; também é campo do ciclo em `maestro/self_improve.py`. Para 'onde é definido', usar o ponto do glossário em `answer`; o outro uso não entra em `answer`."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["gloss.code-introspection"],
+   id: "s5.dev-self-improve.1",
+   kind: "term",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "Code Introspection: mapeia sinais de melhoria do R2 para locais do código-fonte por análise AST."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["gloss.magi-vir"],
+   id: "s5.dev-self-improve.2",
+   kind: "term",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "MAGI_VIR (Virtual Instance Runtime): sandbox que roda prompts de benchmark na configuração base e na otimizada e compara os resultados."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["gloss.strong", "gloss.acceptable", "gloss.weak", "gloss.suspicious"],
+   id: "s5.dev-self-improve.3",
+   kind: "term",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "R2 grades: strong (quorum, baixa deriva, sem colapso/outliers/flags), acceptable (quorum com ressalvas), weak (sem quorum ou dissenso interno alto), suspicious (colapso silencioso ou concordância alta com deriva NCG alta)."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["brule.test.test_blocked_category_skipped", "brule.test.test_injectable_architecture_blocked", "brule.test.test_injectable_unknown_category_blocked", "brule.test.test_injectable_rejected_status", "brule.test.test_rate_limit_blocks", "brule.test.test_rate_limit_allows", "brule.test.test_rate_limit_blocks_injection"],
+   id: "s5.dev-self-improve.4",
+   kind: "rule",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "Regras expressas em teste do injetor: categoria bloqueada é pulada; categoria architecture e categoria desconhecida são bloqueadas; proposta não injetável tem status rejected; rate limit bloqueia injeção."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["brule.test.test_analysis_only_mode"],
+   id: "s5.dev-self-improve.5",
+   kind: "rule",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "O pipeline tem modo só de análise (sem injeção), coberto por test_analysis_only_mode em tests/test_self_improvement.py."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["gloss.confidence-trend", "gloss.grade-distribution", "gloss.recurring-signals"],
+   id: "s5.dev-self-improve.6",
+   kind: "fact",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "Sinais de tendência do R2 lidos pelo MAGI: confidence trend, grade distribution, recurring signals."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["conv.python.type-hints"],
+   id: "s5.dev-self-improve.7",
+   kind: "fact",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "Anotação de retorno em funções Python é mista no repo (57% sem); não há regra a impor."
+  },
+  {
+   agent: "dev-self-improve",
+   facts: ["gloss.magi", "docs.docs-magi.md", "gloss.verify"],
+   id: "s5.dev-self-improve.8",
+   kind: "fact",
+   scope: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/api_magi.py", "maestro/introspect.py", "maestro/optimization.py", "maestro/applicator.py", "maestro/rollback.py", "maestro/injection_guard.py", "maestro/self_improve.py", "maestro/api_self_improve.py"],
+   text: "Os limites de leitura do MAGI (quantas entradas do ledger do R2 e sessões analisar) são parâmetros de função em maestro/magi.py, não regras de negócio catalogadas; 'verify' é termo de outro território (storage/nós), não do pipeline de auto-melhoria."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.shard-descriptor"],
+   id: "s5.dev-storage-network.1",
+   kind: "term",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "ShardDescriptor (maestro/storage_proof.py): descritor de shard construído a partir dos arquivos reais em disco."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.shard-identity", "gloss.peer-shard", "gloss.shard-discovery-engine", "gloss.msg-type"],
+   id: "s5.dev-storage-network.2",
+   kind: "term",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "ShardIdentity, PeerShard e ShardDiscoveryEngine (maestro/lan_discovery.py): identidade local, peer descoberto e motor de descoberta na LAN; MsgType enumera as mensagens do protocolo."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.cluster-config", "gloss.state-bus"],
+   id: "s5.dev-storage-network.3",
+   kind: "term",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "ClusterConfig (maestro/cluster.py) e StateBus (maestro/state_bus.py)."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.activation-payload", "gloss.pipeline-construction"],
+   id: "s5.dev-storage-network.4",
+   kind: "term",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "ActivationPayload (maestro/node_server.py): payload de ativação trocado entre nós no pipeline de inferência."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.proof-of-storage", "gloss.shard-net"],
+   id: "s5.dev-storage-network.5",
+   kind: "term",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "Proof-of-storage: a confiança distribuída exige verificação criptográfica, não só heartbeats. ShardNet é o nome de produto da inferência distribuída com proof-of-storage."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["graph.central.maestro-shard_manager.py", "graph.central.maestro-shard_utils.py", "graph.central.maestro-instances.py"],
+   id: "s5.dev-storage-network.6",
+   kind: "fact",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "maestro/shard_manager.py, maestro/shard_utils.py e maestro/instances.py são centrais (PageRank #14, #12 e #13; cada um importado por 3 arquivos)."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["conv.python.future-annotations"],
+   id: "s5.dev-storage-network.7",
+   kind: "rule",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "`from __future__ import annotations` não é usado em 94% dos arquivos Python; maestro/instances.py é uma das exceções."
+  },
+  {
+   agent: "dev-storage-network",
+   facts: ["gloss.register", "gloss.topology", "gloss.pipeline", "gloss.redundancy", "gloss.reputation", "gloss.download", "gloss.verify", "gloss.disk-usage", "gloss.generate-config", "gloss.discovery", "gloss.peers", "gloss.dispatch", "gloss.routing", "gloss.challenge"],
+   id: "s5.dev-storage-network.8",
+   kind: "fact",
+   scope: ["maestro/storage_proof.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/api_storage.py", "maestro/node_server.py", "maestro/node_cli.py", "maestro/lan_discovery.py", "maestro/cluster.py", "maestro/api_cluster.py", "maestro/instances.py", "maestro/api_instances.py", "maestro/state_bus.py", "maestro/agents/shard.py", "maestro/agents/mock_shard_node.py"],
+   text: "Rotas de storage em maestro/api_storage.py: register, topology/network, pipeline, redundancy, reputation, models/shards, download, verify, disk-usage, generate-config, discovery, peers, node. Rotas de cluster em maestro/api_cluster.py: status, dispatch, challenge/proof, routing."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.auto-updater", "gloss.update-event"],
+   id: "s5.dev-platform.1",
+   kind: "term",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "AutoUpdater (`maestro/updater.py`) e UpdateEvent: motor do auto-update usado pela TUI e pela web."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.key-setup-wizard", "gloss.prompt-screen"],
+   id: "s5.dev-platform.2",
+   kind: "term",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "KeySetupWizard e PromptScreen: telas modais da TUI em `maestro/tui/app.py`."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.cluster-dashboard", "gloss.status-bar", "gloss.agent-panel", "gloss.consensus-panel", "gloss.response-viewer", "gloss.shard-network-panel"],
+   id: "s5.dev-platform.3",
+   kind: "term",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "ClusterDashboard, StatusBar, Agent Panel, Consensus Panel, Response Viewer, Shard Network Panel: widgets em `maestro/tui/widgets.py`."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.maestro-plugin", "gloss.plugin-manifest", "gloss.plugin-context"],
+   id: "s5.dev-platform.4",
+   kind: "term",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "MaestroPlugin, PluginManifest e PluginContext (acesso controlado do plugin ao sistema) em `maestro/plugins/base.py`."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.option"],
+   id: "s5.dev-platform.5",
+   kind: "term",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "Option: item do seletor interativo de modo em `maestro/selector.py`."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.discover", "gloss.enable", "gloss.disable", "gloss.reload", "gloss.config", "gloss.snapshots", "gloss.restore", "gloss.diff"],
+   id: "s5.dev-platform.6",
+   kind: "fact",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "Rotas de plugins em `maestro/api_plugins.py`: discover, enable, disable, reload, config, snapshots, restore, diff."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["gloss.check", "gloss.apply", "gloss.remote", "gloss.restart", "gloss.auto"],
+   id: "s5.dev-platform.7",
+   kind: "fact",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "Rotas de update em `maestro/api_update.py`: check, apply, remote, restart, auto."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["rat.commit.a7e9ac7fd9a7"],
+   id: "s5.dev-platform.8",
+   kind: "fact",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "O auto-updater nasceu para evitar re-clonar o repo manualmente."
+  },
+  {
+   agent: "dev-platform",
+   facts: ["hist.cochange.docs-mod-manager.md--maestro-plugins-manager.py", "hist.cochange.maestro-node_server.py--maestro-plugins-manager.py", "hist.cochange.release.md--maestro-plugins-manager.py", "hist.cochange.changelog.md--maestro-plugins-manager.py", "hist.cochange.maestro-plugins-manager.py--readme.md", "hist.cochange.docs-roadmap.md--maestro-plugins-manager.py"],
+   id: "s5.dev-platform.9",
+   kind: "fact",
+   scope: ["backend/**", "entrypoint.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/keyring.py", "maestro/api_keys.py", "maestro/selector.py", "maestro/tui/**", "maestro/plugins/**", "maestro/api_plugins.py", "maestro/updater.py", "maestro/api_update.py", "maestro/dependency_resolver.py", "data/**"],
+   text: "Mod Manager co-muda com docs/mod-manager.md, maestro/node_server.py, RELEASE.md, changelog.md, readme.md e docs/roadmap.md."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["gloss.agent-error", "gloss.dissent-data", "gloss.ncg-benchmark", "gloss.r2-data", "gloss.shard-model", "gloss.network-topology", "gloss.instance-info", "gloss.download-status"],
+   id: "s5.dev-frontend.1",
+   kind: "term",
+   scope: ["frontend/**"],
+   text: "AgentError, DissentData, NcgBenchmark, R2Data, ShardModel, NetworkTopology, InstanceInfo e download-status são interfaces definidas em frontend/src/maestroUI.tsx."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["gloss.strong", "gloss.acceptable", "gloss.weak", "gloss.suspicious"],
+   id: "s5.dev-frontend.2",
+   kind: "term",
+   scope: ["frontend/**"],
+   text: "Notas de sessão do R2: strong = quorum atingido, drift baixo, sem colapso nem outliers; acceptable = quorum com ressalvas; weak = quorum não atingido ou dissenso interno alto; suspicious = colapso silencioso ou concordância muito alta com drift NCG alto."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["gloss.web-ui", "gloss.session-history"],
+   id: "s5.dev-frontend.3",
+   kind: "term",
+   scope: ["frontend/**"],
+   text: "Web UI = dashboard completo (API + React UI); Session History = log JSON persistente de cada sessão de orquestração."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["gloss.reputation-score", "gloss.node-reputation"],
+   id: "s5.dev-frontend.4",
+   kind: "term",
+   scope: ["frontend/**"],
+   text: "Reputation score vem do motor de proof-of-storage (NodeReputation em maestro/storage_proof.py)."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["hist.owner.frontend"],
+   id: "s5.dev-frontend.5",
+   kind: "fact",
+   scope: ["frontend/**"],
+   text: "Autor principal do frontend no histórico: Claude (88% de 100 toques); outro: defcon."
+  },
+  {
+   agent: "dev-frontend",
+   facts: ["conv.naming.function.typescript"],
+   id: "s5.dev-frontend.6",
+   kind: "rule",
+   scope: ["frontend/**"],
+   text: "Nomes de função em TS: PascalCase é maioria (70%, componentes); helpers em camelCase são exceções existentes em maestroUI.tsx."
+  },
+  {
+   agent: "dev-maestros",
+   facts: ["gloss.weight-host", "gloss.weight-host-registry"],
+   id: "s5.dev-maestros.1",
+   kind: "term",
+   scope: ["maestros/**"],
+   text: "WeightHost (maestro/shard_registry.py, sinônimo storage node) e WeightHostRegistry: no roadmap, os nós que MaestrOS endereça por capacidade."
+  },
+  {
+   agent: "dev-maestros",
+   facts: ["gloss.proof-of-storage"],
+   id: "s5.dev-maestros.2",
+   kind: "term",
+   scope: ["maestros/**"],
+   text: "Proof-of-storage: verificação criptográfica de confiança distribuída, não só heartbeat (definido em ARCHITECTURE.md)."
+  },
+  {
+   agent: "dev-maestros",
+   facts: ["gloss.r2-score", "gloss.dissent-report", "gloss.magi-report"],
+   id: "s5.dev-maestros.3",
+   kind: "term",
+   scope: ["maestros/**"],
+   text: "R2Score (maestro/r2.py), DissentReport (maestro/dissent.py), MagiReport (maestro/magi.py): estruturas de saída que o port de maestros-quorum precisa reproduzir para ter paridade."
+  },
+  {
+   agent: "dev-maestros",
+   facts: ["hist.owner.maestros"],
+   id: "s5.dev-maestros.4",
+   kind: "fact",
+   scope: ["maestros/**"],
+   text: "Em 23 toques no histórico, `maestros/**` foi escrito 100% por Claude, sem outro autor humano."
+  },
+  {
+   agent: "dev-maestros",
+   facts: ["stack.languages"],
+   id: "s5.dev-maestros.5",
+   kind: "fact",
+   scope: ["maestros/**"],
+   text: "Rust é a menor linguagem do repo por LOC: python 22619, typescript 2559, rust 136."
+  },
+  {
+   agent: "qa",
+   facts: ["brule.test.test_list_sessions_limit_offset"],
+   id: "s5.qa.1",
+   kind: "rule",
+   scope: ["tests/**"],
+   text: "list_sessions respeita limit e offset (tests/test_orchestration.py)."
+  },
+  {
+   agent: "qa",
+   facts: ["brule.test.test_discover_skips_invalid_manifests", "brule.test.test_invalid_hook_point_raises"],
+   id: "s5.qa.2",
+   kind: "rule",
+   scope: ["tests/**"],
+   text: "Mod manager ignora manifests inválidos no discover e hook point inválido levanta erro (tests/test_mod_manager.py)."
+  },
+  {
+   agent: "qa",
+   facts: ["brule.test.test_restore_nonexistent_fails"],
+   id: "s5.qa.3",
+   kind: "rule",
+   scope: ["tests/**"],
+   text: "Restaurar snapshot de pesos inexistente falha (tests/test_weight_snapshots.py)."
+  },
+  {
+   agent: "qa",
+   facts: ["brule.test.test_analysis_only_mode"],
+   id: "s5.qa.4",
+   kind: "rule",
+   scope: ["tests/**"],
+   text: "Self-improvement em modo só-análise não aplica mudanças (tests/test_self_improvement.py)."
+  },
+  {
+   agent: "qa",
+   facts: ["gloss.node-reputation", "gloss.challenge-response", "gloss.shard-descriptor"],
+   id: "s5.qa.5",
+   kind: "term",
+   scope: ["tests/**"],
+   text: "StorageProofEngine/NodeReputation/ChallengeResponse/ShardDescriptor vivem em maestro/storage_proof.py."
+  },
+  {
+   agent: "qa",
+   facts: ["gloss.dissent-report", "gloss.dissent-analyzer", "gloss.drift-report", "gloss.drift-detector", "graph.central.maestro-ncg-drift.py"],
+   id: "s5.qa.6",
+   kind: "term",
+   scope: ["tests/**"],
+   text: "DissentReport/DissentAnalyzer em maestro/dissent.py; DriftReport/DriftDetector em maestro/ncg/drift.py (arquivo central, importado por 7)."
+  },
+  {
+   agent: "qa",
+   facts: ["hist.owner.tests"],
+   id: "s5.qa.7",
+   kind: "fact",
+   scope: ["tests/**"],
+   text: "Testes são escritos majoritariamente por Claude (93% de 28 toques); outro autor: defcon."
+  },
+  {
+   agent: "architect",
+   facts: ["gloss.weight-host", "gloss.weight-host-registry", "gloss.domain-affinity", "gloss.warm"],
+   id: "s5.architect.1",
+   kind: "term",
+   scope: ["docs/**"],
+   text: "WeightHost / WeightHostRegistry (`maestro/shard_registry.py`): sinônimo de storage node. Em `ARCHITECTURE.md`, domain_affinity e warm pesam no roteamento de queries para pesos persistentes."
+  },
+  {
+   agent: "architect",
+   facts: ["gloss.magi-vir", "gloss.compute-node-registry"],
+   id: "s5.architect.2",
+   kind: "term",
+   scope: ["docs/**"],
+   text: "MAGI_VIR (`maestro/magi_vir.py`): Virtual Instance Runtime, sandbox; ComputeNodeRegistry é baseado em JSON."
+  },
+  {
+   agent: "architect",
+   facts: ["gloss.rate-limiting"],
+   id: "s5.architect.3",
+   kind: "rule",
+   scope: ["docs/**"],
+   text: "Rate limiting do self-improvement: máximo de 5 injeções, conforme `docs/self-improvement-pipeline.md`."
+  },
+  {
+   agent: "architect",
+   facts: ["brule.validation.maestro-shard_manager.py.120", "brule.validation.maestro-shard_utils.py.45"],
+   id: "s5.architect.4",
+   kind: "fact",
+   scope: ["docs/**"],
+   text: "ShardManager (`maestro/shard_manager.py`) exige huggingface_hub para baixar shards (ImportError sem ele); `maestro/shard_utils.py` rejeita safetensors com menos de 8 bytes de header."
+  },
+  {
+   agent: "ops",
+   facts: ["gloss.auto-updater", "hist.fix.e6792842839d", "hist.fix.29f606cac989"],
+   id: "s5.ops.1",
+   kind: "term",
+   scope: [".github/**", "setup.py", "setup.sh", ".dockerignore", ".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "Dockerfile", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md", "ROADMAP.md", "changelog.md", "commercial_license.md", "dashboard.html", "docker-compose.yml", "readme.md", "requirements.txt", "use_policy.md"],
+   text: "AutoUpdater (maestro/updater.py): atualizador em segundo plano da TUI e WebUI; em Docker lê VERSION via git ls-remote."
+  },
+  {
+   agent: "ops",
+   facts: ["gloss.spinner"],
+   id: "s5.ops.2",
+   kind: "term",
+   scope: [".github/**", "setup.py", "setup.sh", ".dockerignore", ".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "Dockerfile", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md", "ROADMAP.md", "changelog.md", "commercial_license.md", "dashboard.html", "docker-compose.yml", "readme.md", "requirements.txt", "use_policy.md"],
+   text: "Spinner: classe de progresso definida em setup.py."
+  },
+  {
+   agent: "ops",
+   facts: ["gloss.entrypoint-py", "docs.verified.docs-architecture.md.241"],
+   id: "s5.ops.3",
+   kind: "term",
+   scope: [".github/**", "setup.py", "setup.sh", ".dockerignore", ".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "Dockerfile", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md", "ROADMAP.md", "changelog.md", "commercial_license.md", "dashboard.html", "docker-compose.yml", "readme.md", "requirements.txt", "use_policy.md"],
+   text: "entrypoint.py: wrapper de startup da imagem, com diálogo web/cli/tui e MAESTRO_MODE."
+  },
+  {
+   agent: "ops",
+   facts: ["brule.validation.maestro-instances.py.245"],
+   id: "s5.ops.4",
+   kind: "rule",
+   scope: [".github/**", "setup.py", "setup.sh", ".dockerignore", ".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "Dockerfile", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md", "ROADMAP.md", "changelog.md", "commercial_license.md", "dashboard.html", "docker-compose.yml", "readme.md", "requirements.txt", "use_policy.md"],
+   text: "Na instância compartilhada, maestro/instances.py recusa subir se a porta SHARED_REDIS_PORT estiver ocupada (RuntimeError coberto por teste)."
+  },
+  {
+   agent: "ops",
+   facts: ["hist.fix.26449d143db5", "hist.fix.e0ea7df53316"],
+   id: "s5.ops.5",
+   kind: "fact",
+   scope: [".github/**", "setup.py", "setup.sh", ".dockerignore", ".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "Dockerfile", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md", "ROADMAP.md", "changelog.md", "commercial_license.md", "dashboard.html", "docker-compose.yml", "readme.md", "requirements.txt", "use_policy.md"],
+   text: "dashboard.html já teve correção casada com frontend/src/maestroUI.tsx (página em branco no histórico de sessões)."
+  },
+  {
+   agent: "reviewer",
+   facts: ["docs.stale.docs-architecture.md.83", "docs.stale.docs-architecture.md.84", "docs.stale.docs-storage-network.md.162", "docs.stale.docs-storage-network.md.224"],
+   id: "s5.reviewer.1",
+   kind: "fact",
+   scope: [],
+   text: "Docs citam caminhos que nao existem no repo: data/runtime_config.json, data/rollbacks/log.json, data/storage_proofs/reputations.json, data/node_shards.json; nao aceitar referencia de doc a esses caminhos como prova."
+  },
+  {
+   agent: "reviewer",
+   facts: ["brule.validation.maestro-deliberation.py.139", "brule.validation.maestro-instances.py.245", "brule.validation.maestro-shard_utils.py.45"],
+   id: "s5.reviewer.2",
+   kind: "rule",
+   scope: [],
+   text: "Validacoes com teste: deliberation exige rounds >= 1 (ValueError); instances recusa porta Redis compartilhada ocupada (RuntimeError); shard_utils recusa arquivo menor que 8 bytes como safetensors."
+  },
+  {
+   agent: "reviewer",
+   facts: ["brule.limit.stale_timeout", "brule.limit.handshake_timeout", "brule.limit.health_retries"],
+   id: "s5.reviewer.3",
+   kind: "fact",
+   scope: [],
+   text: "Limites tecnicos de lan_discovery: STALE_TIMEOUT = 15.0 (testado) e HANDSHAKE_TIMEOUT = 5.0 (sem teste que o alcance); HEALTH_RETRIES = 30 em setup.py sem teste."
+  },
+  {
+   agent: "security",
+   facts: ["brule.limit.similarity_threshold"],
+   id: "s5.security.1",
+   kind: "term",
+   scope: [],
+   text: "SIMILARITY_THRESHOLD: distância par-a-par abaixo de 0.5 conta como concordância (maestro/aggregator.py); limiar protegido."
+  },
+  {
+   agent: "security",
+   facts: ["hist.fix.31c0ce037db3"],
+   id: "s5.security.2",
+   kind: "fact",
+   scope: [],
+   text: "Documentação do sistema de injeção de código foi revisada em bloco (CONTRIBUTING.md, docs/self-improvement-pipeline.md, docs/architecture.md, docs/magi.md, docs/r2-engine.md)."
+  },
+  {
+   agent: "po",
+   facts: ["gloss.proof-of-storage", "docs.docs-roadmap.md"],
+   id: "s5.po.1",
+   kind: "term",
+   scope: [],
+   text: "Proof-of-Storage: verificação challenge-response (PoRep, PoRes, PoI); reputação integrada ao R2 com expulsão automática abaixo de 0.3."
+  },
+  {
+   agent: "po",
+   facts: ["gloss.weight-locality-score", "docs.docs-roadmap.md"],
+   id: "s5.po.2",
+   kind: "term",
+   scope: [],
+   text: "Weight locality score: preferência de roteamento 0.25–1.0 baseada em warmth e domain affinity, usada na construção do pipeline."
+  },
+  {
+   agent: "po",
+   facts: ["gloss.reputation-score"],
+   id: "s5.po.3",
+   kind: "term",
+   scope: [],
+   text: "Reputation score: pontuação de WeightHost vinda de proof-of-storage."
+  },
+  {
+   agent: "po",
+   facts: ["docs.docs-roadmap.md"],
+   id: "s5.po.4",
+   kind: "rule",
+   scope: [],
+   text: "Orchestra (Fase 3): sidecar FastAPI + SQLite, leaderboard, dashboard WebSocket, feed de roteamento anonimizado, endpoints `/api/orchestra/*`; especificação completa em ORCHESTRA.md."
+  }
+ ],
+ schema_version: 1
+}

@@ -1,0 +1,147 @@
+// cards/status.json5 — estado dos cartões (redigido/revisado); gerado por cs.py team card
+{
+ architect: {
+  drafted: {
+   at: "2026-10-03T20:59:24+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7888732,
+   file: ".specialists/tmp/cards/architect.g2fix.json5",
+   file_sha256: "f1a6302af6dae780249c9492a565c8aacde80f62c4581609246b9b8f5f1937d4",
+   sha256: "a43a48942f19268aadc17e711eaf1740be709a86b6edcc117c0fd1c79be98981"
+  }
+ },
+ "dev-consensus": {
+  drafted: {
+   at: "2026-10-03T20:59:22+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7581682,
+   file: ".specialists/tmp/cards/dev-consensus.g2fix.json5",
+   file_sha256: "4c1964a73677583c089016f64567a3ee2b28e723c0acbc71de0467d0d519472a",
+   sha256: "9e11093f0c4e1c8e7ddac90b616980a597ad7ee837f243a92df6014ffee977c7"
+  }
+ },
+ "dev-frontend": {
+  drafted: {
+   at: "2026-10-03T20:59:23+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7777238,
+   file: ".specialists/tmp/cards/dev-frontend.g2fix.json5",
+   file_sha256: "abd0359b43d81c88d22fdd506a2eb585ce6df49b6dc1df33cc042aa4755d9f1e",
+   sha256: "4a4469c23a2aec0778f4c7d18adbcaeb4d480b4b381f6a2a24dfc7850bf794ce"
+  }
+ },
+ "dev-maestros": {
+  drafted: {
+   at: "2026-10-03T20:59:24+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.781486,
+   file: ".specialists/tmp/cards/dev-maestros.g2fix.json5",
+   file_sha256: "7feb737c51ddb57347f679194844328c6358dced7deccd7930b0714aa5b87aab",
+   sha256: "0ff8fd98e16d5ef30233d1fd11c80091baae2651da52c5651edb36f18e0210b3"
+  }
+ },
+ "dev-platform": {
+  drafted: {
+   at: "2026-10-03T20:59:23+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7736115,
+   file: ".specialists/tmp/cards/dev-platform.g2fix.json5",
+   file_sha256: "3733edb798b1566a3789e5b900e7562f4e684111c0c16249c2d9311b8cdd91c3",
+   sha256: "0acbe8fec63a339fd6c1437d81729e77fd9a82fd65583c313ede2c2dfa726100"
+  }
+ },
+ "dev-self-improve": {
+  drafted: {
+   at: "2026-10-03T20:59:23+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7627418,
+   file: ".specialists/tmp/cards/dev-self-improve.g2fix.json5",
+   file_sha256: "e862b7d259502f3af7650c42bb8d2bdf7a8a4eb8e1251b70c6a8e5d347b0fb6c",
+   sha256: "acb7984b4b53e7f95616de0bd76bc82fc167267e6dd07aca3dcfc7e4076d0d35"
+  }
+ },
+ "dev-storage-network": {
+  drafted: {
+   at: "2026-10-03T20:59:23+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7671082,
+   file: ".specialists/tmp/cards/dev-storage-network.g2fix.json5",
+   file_sha256: "ae8671b55189ff736b84a18e08afae7f1fbb124b9ec24e5de5995e2c355fcd2a",
+   sha256: "23f8339cc94f7d9d293ca6ef026c46420c91383749cc1bf979735bb1df673325"
+  }
+ },
+ ops: {
+  drafted: {
+   at: "2026-10-03T20:59:24+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7934177,
+   file: ".specialists/tmp/cards/ops.g2fix.json5",
+   file_sha256: "3b0fa74ac9e8028f7ebb571dc898ebf32d22e8c7d15d23d447fb1abb89069fc6",
+   sha256: "290e07caa2cb0c4b1624fcd9f57245a3456e3520ebdadf929221d4bd5a93cb38"
+  }
+ },
+ po: {
+  drafted: {
+   at: "2026-10-03T20:59:25+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.8044896,
+   file: ".specialists/tmp/cards/po.g2fix.json5",
+   file_sha256: "23b86ec54318ef5dd61827dd2afaa87d965ada3b65eafa53997570ce3e26d3a2",
+   sha256: "e7360448e0224b145e7170757afc36eb71d357f2aecd4cf579d63126975ce264"
+  }
+ },
+ qa: {
+  drafted: {
+   at: "2026-10-03T20:32:36+00:00",
+   by: "redator-qa",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791059490.6297123,
+   file: ".specialists/tmp/cards/qa.draft.json5",
+   file_sha256: "2deaaef78d2e1d03b30bc4d247857caea97055c651906d29c73eed8c3ec2b1b0",
+   sha256: "3cd308da37cf0f0d36ba31ebc615cf083d8bbe24204d75e9733def5b9341594d"
+  }
+ },
+ reviewer: {
+  drafted: {
+   at: "2026-10-03T20:59:24+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.7981453,
+   file: ".specialists/tmp/cards/reviewer.g2fix.json5",
+   file_sha256: "ddbdb29ae97fdbf0f57abe3053c090afb74bdcef679e9e9b116ecc6b5c54c7d8",
+   sha256: "1e9ca0806af18c64a1a1003a7a04723cdea54e2f2dc8967f24b84220b56a98d8"
+  }
+ },
+ security: {
+  drafted: {
+   at: "2026-10-03T20:59:25+00:00",
+   by: "subagente",
+   draft_at: null,
+   draft_id: null,
+   draft_mtime: 1791061150.8016155,
+   file: ".specialists/tmp/cards/security.g2fix.json5",
+   file_sha256: "4c9151ce091738c9b17b6a48e722ef8fd2ef1487cf6e3146eee41435d1accdcf",
+   sha256: "7fe2a1823fcb3e3fb75458a3064f2c3b6cae0d547e70e5ce3eb6e4ba648b4605"
+  }
+ }
+}

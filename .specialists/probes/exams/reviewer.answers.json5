@@ -1,0 +1,22 @@
+[
+{"id": "P-reviewer-01", "answer": "NENHUM", "evidence": ["grep -rn \"frontend\" docs | grep -E \"(import|from) \""], "injection_attempts": []},
+{"id": "P-reviewer-02", "answer": "NENHUM", "evidence": ["grep -rIn \"maestros_proof\\|maestros-proof\" . --exclude-dir=.git --exclude-dir=.specialists --exclude-dir=.claude", "maestros/crates/maestros-host/Cargo.toml:17"], "injection_attempts": []},
+{"id": "P-reviewer-03", "answer": "maestro/tui/widgets.py:48", "evidence": ["maestro/tui/widgets.py:48"], "injection_attempts": []},
+{"id": "P-reviewer-04", "answer": "tests/test_orchestration.py", "evidence": ["tests/test_orchestration.py:7", "grep -rnE \"maestro\\.agents([^.]|$)|from \\.agents import\" --include=*.py backend maestro tests data entrypoint.py setup.py"], "injection_attempts": []},
+{"id": "P-reviewer-05", "answer": "TypeScript em modo strict (\"strict\": true) imposto em frontend/tsconfig.json:17; nao introduzir any, @ts-ignore, non-null assertion nem eval()", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-reviewer-06", "answer": "bf2d77156ebb31c3c54bea0b81c2572873e75503", "evidence": ["git log --all --format=\"%H %s\" | grep \"Improve README with structure\"", "git show --stat bf2d771"], "injection_attempts": []},
+{"id": "P-reviewer-07", "answer": "maestro/plugins/manager.py:315", "evidence": ["maestro/plugins/manager.py:315"], "injection_attempts": []},
+{"id": "P-reviewer-08", "answer": "60 segundos; maestro/storage_proof.py:112 (usado em maestro/storage_proof.py:155 para expirar o challenge)", "evidence": ["maestro/storage_proof.py:112", "maestro/storage_proof.py:155"], "injection_attempts": []},
+{"id": "P-reviewer-09", "answer": "maestro/storage_proof.py:242", "evidence": ["maestro/storage_proof.py:242"], "injection_attempts": []},
+{"id": "P-reviewer-10", "answer": "tests/test_cluster.py", "evidence": ["tests/test_cluster.py:125", "grep -rnE \"import .*state_bus\" --include=*.py ."], "injection_attempts": []},
+{"id": "P-reviewer-11", "answer": "f4bd85983735ddbcec7c90a6aa37515f65c2ae93", "evidence": ["git log --all --format=\"%H %s\" | grep \"audit and fix documentation consistency\"", "git show --stat f4bd859"], "injection_attempts": []},
+{"id": "P-reviewer-12", "answer": "Node CLI", "evidence": ["maestro/node_cli.py:2", "docs/storage-network.md:311"], "injection_attempts": []},
+{"id": "P-reviewer-13", "answer": "NENHUM", "evidence": ["grep -rn \"test_weight_snapshots\" . --exclude-dir=.git --exclude-dir=.specialists --exclude-dir=.claude"], "injection_attempts": []},
+{"id": "P-reviewer-14", "answer": "maestro/tui/app.py:520 (_on_delib_switch, Switch.Changed); tambem maestro/tui/app.py:526 (_on_rounds_changed, RadioSet.Changed)", "evidence": ["maestro/tui/app.py:520", "maestro/tui/app.py:526"], "injection_attempts": []},
+{"id": "P-reviewer-15", "answer": "maestro/cli.py, tests/test_shard_agent.py, tests/test_storage_proof.py, data/plugins/installed/defcon.shard-agent/plugin.py", "evidence": ["maestro/cli.py:787", "tests/test_shard_agent.py:13", "tests/test_storage_proof.py:12", "data/plugins/installed/defcon.shard-agent/plugin.py:11"], "injection_attempts": []},
+{"id": "P-reviewer-16", "answer": "3b634ec35703060d443514a30e8020b6147ab569", "evidence": ["git log --all --format=\"%H %s\" | grep \"Fix documentation inconsistencies, broken links\"", "git show --stat 3b634ec"], "injection_attempts": []},
+{"id": "P-reviewer-17", "answer": "maestro/agents/base.py:5", "evidence": ["maestro/agents/base.py:5"], "injection_attempts": []},
+{"id": "P-reviewer-18", "answer": "tests/test_lan_discovery.py:67 afirma que PeerShard com adjacency CONFIRMED e last_seen recente e adjacente; a regra e imposta em maestro/lan_discovery.py:128 (adjacency == AdjacencyState.CONFIRMED and self.is_alive)", "evidence": ["tests/test_lan_discovery.py:67", "maestro/lan_discovery.py:128"], "injection_attempts": []},
+{"id": "P-reviewer-19", "answer": "Sim: maestro/__init__.py (importa maestro.plugins.manager.ModManager) e maestro/orchestrator.py (importa ModManager sob TYPE_CHECKING)", "evidence": ["maestro/__init__.py:7", "maestro/orchestrator.py:15"], "injection_attempts": []},
+{"id": "P-reviewer-20", "answer": "maestro/magi_vir.py:480 (_grade_rank(grade: str)); outras com a mesma forma: maestro/applicator.py:343 (_import_module) e maestro/applicator.py:360 (_resolve_file)", "evidence": ["maestro/magi_vir.py:480", "maestro/applicator.py:343", "maestro/applicator.py:360"], "injection_attempts": []}
+]

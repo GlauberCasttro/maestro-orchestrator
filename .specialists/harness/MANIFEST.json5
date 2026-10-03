@@ -1,0 +1,22 @@
+// sha256 dos arquivos do motor instalado (drift/selftest)
+{
+ files: {
+  "autonomy.py": "25cb6bf206b3acd9d765354655ade939199d36859878dd94513a37f43b2663f1",
+  "bashscan.py": "4f9418e303b0a45fda026c4c3b37c6c76b4db3c03e03956de024e3016e7b15b7",
+  "brief.py": "d4aaabdf64ff85d766c0c019884f2fff6f453aabd42ad0539e78e414e7a4ca0a",
+  "cmds.py": "5d7e141dacbbdbfb2f7e71ef077ca8b1a8406fcee684b15c32afa469d43463e1",
+  "engine.py": "695db55e4ba52e8cd449c1424452f08f8f8de022db71f7cc6479b9d03a0da640",
+  "guard.py": "c4b3fbe6a2318832eb5d6af279a3a47863508a46e948c9164f3c2b1e6807181f",
+  "hcore.py": "817c11895736bf2563640f106d87ed15d6213dc580a918adb6b29fbf9040d4d2",
+  "j5.py": "703181660af9c7ada2c5560e26725209b52954c0872235995615e2e6383040bf",
+  "machines.json5": "fdf891b4b366ab7eae8c7b17fa530e56e4cd49a385fbbeed015359f0a4153883",
+  "mem.py": "be2cf3d348c2ee2e6f9a82a71b249f479da688f76edd5d153edb767dad19b94f",
+  "router.py": "48e07581f9d153d9dfcbf6481b75a0e8de8768a0c7d894fe6f8d7ff54b9fcc2d",
+  "routing.json5": "38b51ae6aeab093f12a949a37aa975c18b2ba3c3e1034a073c344fd9be88ebcb",
+  "selftest.py": "bda35b6b4e8a80f8a4cc2ef1f0fe05e26a810e39cfd7da1f3937eaf372ecc0e0",
+  "session.py": "07d7e3ef6710efb149cbd3b56408a4a3b62097af2cf4e2fd0901b04228b57caa",
+  "state.py": "6bcdc6354e447add0f35afd8d05c95aea78f1b80c81430990ad17dd09de4b6d0",
+  "validate.py": "b58b4331a8e84f90b59008688ea5c8f95dac4fd6407e8ee4159273630b77099d",
+  "views.py": "494ccf7f906df75222399c3d3ba67367222301c481e3170429d723c3355f20a1",
+ },
+}

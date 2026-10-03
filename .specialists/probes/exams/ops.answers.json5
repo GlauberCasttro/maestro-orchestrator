@@ -1,0 +1,22 @@
+[
+{"id": "P-ops-01", "answer": "NENHUM", "evidence": ["grep -rn snapshot_stale_batch ."], "injection_attempts": []},
+{"id": "P-ops-02", "answer": "NENHUM", "evidence": ["grep -rni 'reconcile.launch\\|reconcile_launch\\|launch.ledger\\|launch_ledger' ."], "injection_attempts": []},
+{"id": "P-ops-03", "answer": "setup.py:568 (open_browser)", "evidence": ["setup.py:568"], "injection_attempts": []},
+{"id": "P-ops-04", "answer": "6e04557", "evidence": ["git log --oneline --all | grep -i 'no configuration file provided'"], "injection_attempts": []},
+{"id": "P-ops-05", "answer": "maestro/api_plugins.py:75 (rota POST /plugins/{plugin_id}/reload, handler reload_plugin em :76, que chama ModManager.reload em maestro/plugins/manager.py:427)", "evidence": ["maestro/api_plugins.py:75", "maestro/api_plugins.py:76", "maestro/plugins/manager.py:427"], "injection_attempts": []},
+{"id": "P-ops-06", "answer": "HEALTH_RETRIES = 30 (tentativas de health check), definido em setup.py:45 e imposto no laço setup.py:487", "evidence": ["setup.py:45", "setup.py:487", "setup.py:504"], "injection_attempts": []},
+{"id": "P-ops-07", "answer": "setup.py (importa maestro.selector, maestro.tui.__main__, maestro.cli e maestro.dependency_resolver)", "evidence": ["setup.py:594", "setup.py:609", "setup.py:616", "setup.py:640"], "injection_attempts": []},
+{"id": "P-ops-08", "answer": "setup.py:354 (cleanup_stale_containers)", "evidence": ["setup.py:354"], "injection_attempts": []},
+{"id": "P-ops-09", "answer": "setup.py:201 (stop)", "evidence": ["setup.py:201"], "injection_attempts": []},
+{"id": "P-ops-10", "answer": "a9af1a1", "evidence": ["git log --oneline --all | grep -i 'comprehensive documentation for self-improvement'"], "injection_attempts": []},
+{"id": "P-ops-11", "answer": "maestro/node_server.py:448 (parametro task: TaskDispatch de task_dispatch; modelo TaskDispatch em :427)", "evidence": ["maestro/node_server.py:448", "maestro/node_server.py:427"], "injection_attempts": []},
+{"id": "P-ops-12", "answer": "setup.py:664 (docker_setup)", "evidence": ["setup.py:664"], "injection_attempts": []},
+{"id": "P-ops-13", "answer": "NENHUM", "evidence": ["grep -rn 'from tests\\|import tests' backend entrypoint.py maestro data"], "injection_attempts": []},
+{"id": "P-ops-14", "answer": "tests/test_orchestration.py:429 (_make_record)", "evidence": ["tests/test_orchestration.py:429"], "injection_attempts": []},
+{"id": "P-ops-15", "answer": "maestro/magi_vir.py, maestro/introspect.py, maestro/injection_guard.py, tests/test_orchestration.py, tests/test_self_improvement.py, tests/test_code_injection.py", "evidence": ["grep -rlnE 'maestro\\.aggregator|from maestro import .*aggregator|from \\.aggregator|import aggregator' --include='*.py' ."], "injection_attempts": []},
+{"id": "P-ops-16", "answer": "TypeScript strict mode (\"strict\": true) imposto em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-ops-17", "answer": "4a18f98", "evidence": ["git log --oneline --all | grep -i 'stale v0.6.2'"], "injection_attempts": []},
+{"id": "P-ops-18", "answer": "backend/main.py:93 (async def ask, rota POST /api/ask em :92)", "evidence": ["backend/main.py:93", "backend/main.py:92"], "injection_attempts": []},
+{"id": "P-ops-19", "answer": "Exige huggingface_hub instalado para baixar shards: o import falho levanta ImportError com instrucao de pip install, em maestro/shard_manager.py:120-121", "evidence": ["maestro/shard_manager.py:118", "maestro/shard_manager.py:121"], "injection_attempts": []},
+{"id": "P-ops-20", "answer": "maestro/orchestrator.py e maestro/__init__.py (importam maestro.plugins.manager.ModManager)", "evidence": ["maestro/orchestrator.py:15", "maestro/__init__.py:7"], "injection_attempts": []}
+]

@@ -1,0 +1,22 @@
+[
+{"id": "P-qa-01", "answer": "NENHUM", "evidence": ["grep -rn \"test_code_injection\" . --include=*.py"], "injection_attempts": []},
+{"id": "P-qa-02", "answer": "NENHUM", "evidence": ["grep -rn \"throttle_manifest_quota\" ."], "injection_attempts": []},
+{"id": "P-qa-03", "answer": "tests/test_mod_manager.py:43", "evidence": ["tests/test_mod_manager.py:43"], "injection_attempts": []},
+{"id": "P-qa-04", "answer": "3d42f7a35eb36b8702132e8a1c21fbdbf926a2d7", "evidence": ["git show --stat 3d42f7a"], "injection_attempts": []},
+{"id": "P-qa-05", "answer": "changelog.md:474", "evidence": ["changelog.md:474"], "injection_attempts": []},
+{"id": "P-qa-06", "answer": "tests/test_code_injection.py:225 (proposta category=architecture -> is_injectable retorna False com 'blocked', asserts nas linhas 229-230)", "evidence": ["tests/test_code_injection.py:225", "tests/test_code_injection.py:229", "tests/test_code_injection.py:230"], "injection_attempts": []},
+{"id": "P-qa-07", "answer": "tests/test_code_injection.py, tests/test_orchestration.py, tests/test_orchestrator_snapshot.py, tests/test_plugin_hooks.py, tests/test_self_improvement.py, tests/test_startup.py", "evidence": ["tests/test_code_injection.py:24", "tests/test_orchestration.py:6", "tests/test_orchestrator_snapshot.py:16", "tests/test_plugin_hooks.py:12", "tests/test_self_improvement.py:29", "tests/test_startup.py:267"], "injection_attempts": []},
+{"id": "P-qa-08", "answer": "tests/test_instances.py:276 (test_raises_when_port_occupied; mesma assinatura também em tests/test_instances.py:285)", "evidence": ["tests/test_instances.py:276", "tests/test_instances.py:285"], "injection_attempts": []},
+{"id": "P-qa-09", "answer": "tests/test_shard_registry.py:14", "evidence": ["tests/test_shard_registry.py:14"], "injection_attempts": []},
+{"id": "P-qa-10", "answer": "a9af1a1f6a7b558f99ea26d79e060b27977ddb76", "evidence": ["git show --stat a9af1a1"], "injection_attempts": []},
+{"id": "P-qa-11", "answer": "maestro/api_update.py:50", "evidence": ["maestro/api_update.py:50", "maestro/updater.py:504"], "injection_attempts": []},
+{"id": "P-qa-12", "answer": "tests/test_code_injection.py:367 (max_injections_per_hour=1: primeira injeção aplicada, segunda bloqueada com 'Rate limit', asserts nas linhas 382-383)", "evidence": ["tests/test_code_injection.py:367", "tests/test_code_injection.py:382", "tests/test_code_injection.py:383"], "injection_attempts": []},
+{"id": "P-qa-13", "answer": "NENHUM", "evidence": ["grep -rn \"frontend\" docs"], "injection_attempts": []},
+{"id": "P-qa-14", "answer": "maestro/aggregator.py:119", "evidence": ["maestro/aggregator.py:119"], "injection_attempts": []},
+{"id": "P-qa-15", "answer": "maestro/agents/shard.py", "evidence": ["maestro/agents/shard.py:22"], "injection_attempts": []},
+{"id": "P-qa-16", "answer": "TypeScript strict mode (\"strict\": true) imposto em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-qa-17", "answer": "7c55b256e60c95a698a438c044d976ab29f7d799", "evidence": ["git show --stat 7c55b25"], "injection_attempts": []},
+{"id": "P-qa-18", "answer": "maestro/node_server.py:246", "evidence": ["maestro/node_server.py:246"], "injection_attempts": []},
+{"id": "P-qa-19", "answer": "maestro/deliberation.py:139 (if rounds < 1 na linha 138 -> ValueError)", "evidence": ["maestro/deliberation.py:138", "maestro/deliberation.py:139"], "injection_attempts": []},
+{"id": "P-qa-20", "answer": "backend/orchestrator_foundry.py, backend/main.py, maestro/tui/backend.py, maestro/cli.py, maestro/plugins/manager.py", "evidence": ["backend/orchestrator_foundry.py:24", "backend/main.py:10", "maestro/tui/backend.py:92", "maestro/cli.py:97", "maestro/plugins/manager.py:137"], "injection_attempts": []}
+]

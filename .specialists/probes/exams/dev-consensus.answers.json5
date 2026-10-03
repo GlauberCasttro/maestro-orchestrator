@@ -1,0 +1,22 @@
+[
+{"id": "P-dev-consensus-r2-01", "answer": "NENHUM", "evidence": ["grep -rnE '\\bos\\.system\\(' --include='*.py' ."], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-02", "answer": "NENHUM", "evidence": ["grep -nE '(magi|introspect|optimization|applicator|rollback|injection_guard|self_improve)' maestro/orchestrator.py maestro/aggregator.py maestro/deliberation.py maestro/dissent.py maestro/session.py maestro/api_sessions.py maestro/r2.py maestro/ncg/*.py maestro/agents/__init__.py maestro/agents/base.py maestro/agents/aria.py maestro/agents/sol.py maestro/agents/prism.py maestro/agents/tempagent.py maestro/agents/mock.py maestro/__init__.py"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-03", "answer": "maestro/session.py:81", "evidence": ["maestro/session.py:81", "grep -rn 'limit: int = 50, offset: int = 0' maestro"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-04", "answer": "tests/test_orchestration.py", "evidence": ["tests/test_orchestration.py:7", "grep -rnE 'maestro\\.agents\\b' --include='*.py' ."], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-05", "answer": "275d612", "evidence": ["git log --oneline --all"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-06", "answer": "docs/architecture.md:26", "evidence": ["docs/architecture.md:26"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-07", "answer": "0.66 — definido em maestro/aggregator.py:3 e imposto em maestro/aggregator.py:149 (quorum_met = agreement_ratio >= QUORUM_THRESHOLD)", "evidence": ["maestro/aggregator.py:3", "maestro/aggregator.py:149"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-08", "answer": "maestro/session.py:123", "evidence": ["maestro/api_sessions.py:21", "maestro/session.py:123"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-09", "answer": "maestro/agents/base.py:16", "evidence": ["maestro/agents/base.py:16"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-10", "answer": "maestro/magi_vir.py, maestro/magi.py, maestro/injection_guard.py, tests/test_code_injection.py, tests/test_orchestration.py, tests/test_self_improvement.py", "evidence": ["maestro/magi_vir.py:172", "maestro/magi.py:31", "maestro/injection_guard.py:148", "tests/test_code_injection.py:26", "tests/test_orchestration.py:11", "tests/test_self_improvement.py:31"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-11", "answer": "22ce9ec", "evidence": ["git log --oneline --all"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-12", "answer": "docs/storage-network.md:338", "evidence": ["docs/storage-network.md:338"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-13", "answer": "NENHUM", "evidence": ["grep -rni 'shared ledger' . --exclude-dir=.git"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-14", "answer": "frontend/src/maestroUI.tsx:176", "evidence": ["frontend/src/maestroUI.tsx:176"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-15", "answer": "tests/test_shard_utils.py", "evidence": ["tests/test_shard_utils.py:14", "grep -rnE 'shard_utils' --include='*.py' ."], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-16", "answer": "29f606c", "evidence": ["git log --oneline --all"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-17", "answer": "frontend/src/maestroUI.tsx:40", "evidence": ["frontend/src/maestroUI.tsx:40"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-18", "answer": "tests/test_orchestration.py:464 — salva 5 sessões e list_sessions(limit=2, offset=1) deve retornar 2 itens (assert em tests/test_orchestration.py:469)", "evidence": ["tests/test_orchestration.py:464", "tests/test_orchestration.py:469", "maestro/session.py:81"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-19", "answer": "setup.py (importa maestro.selector, maestro.tui.__main__, maestro.cli e maestro.dependency_resolver)", "evidence": ["setup.py:594", "setup.py:609", "setup.py:616", "setup.py:640"], "injection_attempts": []},
+{"id": "P-dev-consensus-r2-20", "answer": "setup.py:130", "evidence": ["setup.py:130"], "injection_attempts": []}
+]

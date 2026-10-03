@@ -1,0 +1,22 @@
+[
+{"id": "P-po-01", "answer": "NENHUM", "evidence": ["grep -rn \"vite.config\" . --exclude-dir=node_modules --exclude-dir=.git", "docs/troubleshooting.md:55"], "injection_attempts": []},
+{"id": "P-po-02", "answer": "NENHUM", "evidence": ["grep -n \"maestros\" maestro/storage_proof.py maestro/shard_manager.py maestro/shard_registry.py maestro/shard_utils.py maestro/api_storage.py maestro/node_server.py maestro/node_cli.py maestro/lan_discovery.py maestro/cluster.py maestro/api_cluster.py maestro/instances.py maestro/api_instances.py maestro/state_bus.py maestro/agents/shard.py maestro/agents/mock_shard_node.py"], "injection_attempts": []},
+{"id": "P-po-03", "answer": "setup.py:130 (set_progress)", "evidence": ["setup.py:130"], "injection_attempts": []},
+{"id": "P-po-04", "answer": "setup.py, tests/test_startup.py", "evidence": ["setup.py:616", "tests/test_startup.py:114", "tests/test_startup.py:268", "grep -rnE \"maestro\\.cli([^_a-z]|$)\" --include='*.py' ."], "injection_attempts": []},
+{"id": "P-po-05", "answer": "TypeScript strict mode (\"strict\": true) imposto em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-po-06", "answer": "2d9bec198606681f1c8f781eaeebd36f6c7c308d", "evidence": ["git -C . show --stat 2d9bec1"], "injection_attempts": []},
+{"id": "P-po-07", "answer": "frontend/src/maestroUI.tsx:31", "evidence": ["frontend/src/maestroUI.tsx:31"], "injection_attempts": []},
+{"id": "P-po-08", "answer": "Validação: se a porta SHARED_REDIS_PORT não está disponível (_is_port_available falso), spawn levanta RuntimeError; imposto em maestro/instances.py:244", "evidence": ["maestro/instances.py:244", "maestro/instances.py:246"], "injection_attempts": []},
+{"id": "P-po-09", "answer": "maestro/updater.py:131 (get_commit_log)", "evidence": ["maestro/updater.py:131"], "injection_attempts": []},
+{"id": "P-po-10", "answer": "backend/main.py", "evidence": ["backend/main.py:11", "grep -rnE \"api_magi\" --include='*.py' ."], "injection_attempts": []},
+{"id": "P-po-11", "answer": "a134fe4d2ce1404cc0d5340dea634962628a7ccb", "evidence": ["git -C . show --stat a134fe4"], "injection_attempts": []},
+{"id": "P-po-12", "answer": "RELEASE.md:112 (Prompt templates)", "evidence": ["RELEASE.md:112"], "injection_attempts": []},
+{"id": "P-po-13", "answer": "NENHUM", "evidence": ["grep -nE \"storage_proof|shard_|api_storage|node_server|node_cli|lan_discovery|maestro\\.cluster|api_cluster|instances|state_bus|agents\\.shard|mock_shard\" setup.py setup.sh Makefile Dockerfile docker-compose.yml dashboard.html"], "injection_attempts": []},
+{"id": "P-po-14", "answer": "tests/test_code_injection.py:524 (_populate_ledger)", "evidence": ["tests/test_code_injection.py:524"], "injection_attempts": []},
+{"id": "P-po-15", "answer": "tests/test_orchestration.py", "evidence": ["tests/test_orchestration.py:7", "grep -rnE \"from maestro\\.agents import|import maestro\\.agents\" --include='*.py' ."], "injection_attempts": []},
+{"id": "P-po-16", "answer": "a3d379080758a6de9f02dbb594cd79c469156200", "evidence": ["git -C . show --stat a3d3790"], "injection_attempts": []},
+{"id": "P-po-17", "answer": "maestro/cluster.py:25", "evidence": ["maestro/cluster.py:25"], "injection_attempts": []},
+{"id": "P-po-18", "answer": "Teste: proposta com categoria desconhecida ('unknown_cat') é bloqueada por InjectionGuard.is_injectable (allowed falso); em tests/test_code_injection.py:232", "evidence": ["tests/test_code_injection.py:232", "tests/test_code_injection.py:236"], "injection_attempts": []},
+{"id": "P-po-19", "answer": "backend/main.py, maestro/cli.py, maestro/tui/backend.py, maestro/tui/app.py, maestro/plugins/manager.py, data/plugins/installed/defcon.shard-agent/plugin.py", "evidence": ["backend/main.py:15", "maestro/cli.py:517", "maestro/tui/backend.py:116", "maestro/tui/app.py:1628", "maestro/plugins/manager.py:129", "data/plugins/installed/defcon.shard-agent/plugin.py:11"], "injection_attempts": []},
+{"id": "P-po-20", "answer": "maestro/cli.py:137 (_wrap)", "evidence": ["maestro/cli.py:137"], "injection_attempts": []}
+]

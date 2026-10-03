@@ -1,0 +1,451 @@
+// operations (L7) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ commands: [
+  {
+   argv: ["make", "help"],
+   cmd: "make help",
+   declared_in: ["Makefile:4"],
+   kind: "other",
+   name: "make:help",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 4},
+   status: "declared"
+  },
+  {
+   argv: ["make", "setup"],
+   cmd: "make setup",
+   declared_in: ["Makefile:23"],
+   kind: "other",
+   name: "make:setup",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 23},
+   status: "declared"
+  },
+  {
+   argv: ["make", "up"],
+   cmd: "make up",
+   declared_in: ["Makefile:27"],
+   kind: "other",
+   name: "make:up",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 27},
+   status: "declared"
+  },
+  {
+   argv: ["make", "down"],
+   cmd: "make down",
+   declared_in: ["Makefile:35"],
+   kind: "other",
+   name: "make:down",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 35},
+   status: "declared"
+  },
+  {
+   argv: ["make", "build"],
+   cmd: "make build",
+   declared_in: ["Makefile:39"],
+   duration_s: 0.65,
+   exit: 2,
+   kind: "build",
+   name: "make:build",
+   origin: "declared",
+   out_sha256: "bffb6a5dfc6f75de7052d98870ebadc3a583a6e43facda627b57115beb0770f9",
+   output_blob: ".specialists/evidence/bffb6a5dfc6f75de7052d98870ebadc3a583a6e43facda627b57115beb0770f9.txt",
+   source: {file: "Makefile", line: 39},
+   status: "failed",
+   timed_out: false
+  },
+  {
+   argv: ["make", "logs"],
+   cmd: "make logs",
+   declared_in: ["Makefile:43"],
+   kind: "other",
+   name: "make:logs",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 43},
+   status: "declared"
+  },
+  {
+   argv: ["make", "status"],
+   cmd: "make status",
+   declared_in: ["Makefile:47"],
+   kind: "other",
+   name: "make:status",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 47},
+   status: "declared"
+  },
+  {
+   argv: ["make", "clean"],
+   cmd: "make clean",
+   declared_in: ["Makefile:55"],
+   kind: "other",
+   name: "make:clean",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 55},
+   status: "declared"
+  },
+  {
+   argv: ["make", "update"],
+   cmd: "make update",
+   declared_in: ["Makefile:61"],
+   kind: "other",
+   name: "make:update",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 61},
+   status: "declared"
+  },
+  {
+   argv: ["make", "dev"],
+   cmd: "make dev",
+   declared_in: ["Makefile:71"],
+   kind: "other",
+   name: "make:dev",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   source: {file: "Makefile", line: 71},
+   status: "declared"
+  },
+  {
+   argv: ["npm", "--prefix", "frontend", "run", "dev"],
+   cmd: "npm --prefix frontend run dev",
+   declared_in: ["frontend/package.json:6"],
+   kind: "other",
+   name: "npm:dev",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   script: "vite",
+   source: {file: "frontend/package.json", line: 6},
+   status: "declared"
+  },
+  {
+   argv: ["npm", "--prefix", "frontend", "run", "build"],
+   cmd: "npm --prefix frontend run build",
+   declared_in: ["frontend/package.json:7"],
+   kind: "build",
+   missing_tool: "vite",
+   name: "npm:build",
+   origin: "declared",
+   reason: "ferramenta 'vite' ausente no ambiente do scan (node_modules/.bin ausente — dependências não instaladas); não executado",
+   script: "vite build",
+   source: {file: "frontend/package.json", line: 7},
+   status: "unavailable"
+  },
+  {
+   argv: ["npm", "--prefix", "frontend", "run", "preview"],
+   cmd: "npm --prefix frontend run preview",
+   declared_in: ["frontend/package.json:8"],
+   kind: "other",
+   name: "npm:preview",
+   origin: "declared",
+   reason: "tipo other não é executado",
+   script: "vite preview",
+   source: {file: "frontend/package.json", line: 8},
+   status: "declared"
+  }
+ ],
+ executed: true,
+ facts: [
+  {
+   claim: "`make help` (other, Makefile:4): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make help",
+    declared_in: ["Makefile:4"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:4)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 4}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-help",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make setup` (other, Makefile:23): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make setup",
+    declared_in: ["Makefile:23"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:23)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 23}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-setup",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make up` (other, Makefile:27): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make up",
+    declared_in: ["Makefile:27"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:27)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 27}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-up",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make down` (other, Makefile:35): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make down",
+    declared_in: ["Makefile:35"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:35)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 35}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-down",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make build` (build, Makefile:39): failed — exit 2 em 0.7s",
+   confidence: "high",
+   data: {
+    command: "make build",
+    declared_in: ["Makefile:39"],
+    exit: 2,
+    kind: "build",
+    origin: "declared",
+    purpose: "build (declarado em Makefile:39)",
+    status: "failed"
+   },
+   evidence: [
+    {file: "Makefile", line: 39},
+    {
+     blob: ".specialists/evidence/bffb6a5dfc6f75de7052d98870ebadc3a583a6e43facda627b57115beb0770f9.txt",
+     cmd: "make build",
+     exit: 2,
+     out_sha256: "bffb6a5dfc6f75de7052d98870ebadc3a583a6e43facda627b57115beb0770f9"
+    }
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.build.make-build",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make logs` (other, Makefile:43): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make logs",
+    declared_in: ["Makefile:43"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:43)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 43}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-logs",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make status` (other, Makefile:47): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make status",
+    declared_in: ["Makefile:47"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:47)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 47}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-status",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make clean` (other, Makefile:55): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make clean",
+    declared_in: ["Makefile:55"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:55)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 55}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-clean",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make update` (other, Makefile:61): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make update",
+    declared_in: ["Makefile:61"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:61)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 61}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-update",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`make dev` (other, Makefile:71): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "make dev",
+    declared_in: ["Makefile:71"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em Makefile:71)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "Makefile", line: 71}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "ops.other.make-dev",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`npm --prefix frontend run dev` (other, frontend/package.json:6): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "npm --prefix frontend run dev",
+    declared_in: ["frontend/package.json:6"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em frontend/package.json:6)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "frontend/package.json", line: 6}
+   ],
+   fingerprint: "3af026a256fc86d92115b684e72a3d4855f7369755ad6427fc0fc02ddf7ee7a8",
+   id: "ops.other.npm---prefix-frontend-run-dev",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`npm --prefix frontend run build` (build, frontend/package.json:7): unavailable — ferramenta 'vite' ausente no ambiente do scan (node_modules/.bin ausente — dependências não instaladas); não executado",
+   confidence: "high",
+   data: {
+    command: "npm --prefix frontend run build",
+    declared_in: ["frontend/package.json:7"],
+    kind: "build",
+    missing_tool: "vite",
+    origin: "declared",
+    purpose: "build (declarado em frontend/package.json:7)",
+    status: "unavailable"
+   },
+   evidence: [
+    {file: "frontend/package.json", line: 7}
+   ],
+   fingerprint: "3af026a256fc86d92115b684e72a3d4855f7369755ad6427fc0fc02ddf7ee7a8",
+   id: "ops.build.npm---prefix-frontend-run-build",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "`npm --prefix frontend run preview` (other, frontend/package.json:8): declared — tipo other não é executado",
+   confidence: "medium",
+   data: {
+    command: "npm --prefix frontend run preview",
+    declared_in: ["frontend/package.json:8"],
+    kind: "other",
+    origin: "declared",
+    purpose: "other (declarado em frontend/package.json:8)",
+    status: "declared"
+   },
+   evidence: [
+    {file: "frontend/package.json", line: 8}
+   ],
+   fingerprint: "3af026a256fc86d92115b684e72a3d4855f7369755ad6427fc0fc02ddf7ee7a8",
+   id: "ops.other.npm---prefix-frontend-run-preview",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Nenhum comando de teste declarado (Makefile, package.json, pyproject, tox, justfile, CI); há 18 arquivos de teste no repo — o scan não inventa comando",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L7 busca de comandos de teste declarados", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}
+   ],
+   fingerprint: "cc6f66bcc228ff1c05599198a0fc7fc193deb96a1a90131cc3b04db389a2ac18",
+   id: "ops.test.absent",
+   layer: "operations",
+   origin: "mechanical",
+   scope: ["**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "operations",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L7",
+ schema_version: 1,
+ summary: {
+  declared: 11,
+  failed: 1,
+  unavailable: 1,
+  verified: 0
+ },
+ timeout_s: 300
+}

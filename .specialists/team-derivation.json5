@@ -1,0 +1,194 @@
+// team-derivation.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ decisions: [
+  {
+   decision: "ops reivindica 3 arquivo(s)",
+   evidence: [".dockerignore", "Dockerfile", "docker-compose.yml"],
+   level: "info",
+   step: "roles",
+   why: "sinal de CI/IaC/Docker"
+  },
+  {
+   decision: "qa reivindica 18 arquivo(s)",
+   evidence: ["tests/__init__.py", "tests/test_cluster.py", "tests/test_code_injection.py", "tests/test_instances.py", "tests/test_keyring.py", "tests/test_lan_discovery.py", "tests/test_mod_manager.py", "tests/test_orchestration.py", "tests/test_orchestrator_snapshot.py", "tests/test_plugin_hooks.py"],
+   level: "info",
+   step: "roles",
+   why: "diretórios de teste de topo (teste co-localizado fica com o dono do diretório: test_ownership.colocated = owner)"
+  },
+  {
+   decision: "architect reivindica 19 arquivo(s)",
+   evidence: ["docs/agents.md", "docs/architecture.md", "docs/deliberation.md", "docs/deployment.md", "docs/env.example", "docs/index.md", "docs/logging.md", "docs/maestro-whitepaper.md", "docs/magi.md", "docs/mod-manager.md"],
+   level: "info",
+   step: "roles",
+   why: "ADRs e documentação de desenho"
+  },
+  {
+   decision: "fronteira em manifesto aninhado: backend, frontend, maestros, maestros/crates/maestros-core, maestros/crates/maestros-embed, maestros/crates/maestros-host, maestros/crates/maestros-lance, maestros/crates/maestros-mesh, maestros/crates/maestros-proof, maestros/crates/maestros-proto, maestros/crates/maestros-quorum, maestros/crates/maestrosd",
+   evidence: ["backend", "frontend", "maestros", "maestros/crates/maestros-core", "maestros/crates/maestros-embed", "maestros/crates/maestros-host", "maestros/crates/maestros-lance", "maestros/crates/maestros-mesh", "maestros/crates/maestros-proof", "maestros/crates/maestros-proto", "maestros/crates/maestros-quorum", "maestros/crates/maestrosd"],
+   level: "info",
+   step: "units",
+   why: "manifesto próprio = pacote/serviço independente"
+  },
+  {
+   decision: "contêineres de código: nenhum",
+   evidence: [],
+   level: "info",
+   step: "units",
+   why: "contêiner genérico (src/apps/services/...) desce um nível; cadeia de filho único desce"
+  },
+  {
+   decision: "consolida maestros/crates/maestros-core, maestros/crates/maestros-embed, maestros/crates/maestros-host, maestros/crates/maestros-lance, maestros/crates/maestros-mesh, maestros/crates/maestros-proof, maestros/crates/maestros-proto, maestros/crates/maestros-quorum em 'maestros'",
+   evidence: [],
+   level: "info",
+   step: "prefix",
+   why: "prefixo de nome repetido = um bounded context em várias implantações"
+  },
+  {
+   decision: "entrypoint.py → maestro",
+   evidence: [],
+   level: "info",
+   step: "pool",
+   why: "arquivo solto anexado à unidade mais acoplada"
+  },
+  {
+   decision: "setup.py → maestro",
+   evidence: [],
+   level: "info",
+   step: "pool",
+   why: "arquivo solto anexado à unidade mais acoplada"
+  },
+  {
+   decision: "(root) → maestro",
+   evidence: [],
+   level: "info",
+   step: "merge",
+   why: "unidade minúscula (1 < 3 arquivos); mais acoplada/irmã"
+  },
+  {
+   decision: ".github → maestro",
+   evidence: [],
+   level: "info",
+   step: "merge",
+   why: "unidade minúscula (1 < 3 arquivos); mais acoplada/irmã"
+  },
+  {
+   decision: "maestros/crates/maestrosd → maestros/crates/maestros*",
+   evidence: [],
+   level: "info",
+   step: "merge",
+   why: "unidade minúscula (2 < 3 arquivos); mais acoplada/irmã"
+  },
+  {
+   decision: "frontend é UI → frontend",
+   evidence: [],
+   level: "info",
+   step: "frontend",
+   why: "≥50% dos arquivos são UI (ext/diretório)"
+  },
+  {
+   decision: "17 arquivo(s) de raiz/config → ops",
+   evidence: [".env.example", ".gitignore", "ARCHITECTURE.md", "CLUSTERING.md", "CONTRIBUTING.md", "LICENSE.md", "Makefile", "ORCHESTRA.md", "PROJECT_EXPLAINED.md", "RELEASE.md"],
+   level: "info",
+   step: "leftovers",
+   why: "config/manifesto repo-wide: ops se existe sinal de operação, senão architect"
+  },
+  {
+   decision: "dev-backend (dev): 3 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de backend"
+  },
+  {
+   decision: "dev-data (dev): 10 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de data"
+  },
+  {
+   decision: "dev-maestro (dev): 65 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de maestro"
+  },
+  {
+   decision: "dev-maestros (dev): 5 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de maestros"
+  },
+  {
+   decision: "dev-maestros-2 (dev): 18 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de maestros/crates/maestros*"
+  },
+  {
+   decision: "frontend (dev): 12 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "bounded context derivado de frontend"
+  },
+  {
+   decision: "reviewer (gate): 0 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "gate de qualidade (sempre): julga tudo; qualquer FAIL vence"
+  },
+  {
+   decision: "security (gate): 0 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "gate de segurança (sempre): julga só regras de segurança"
+  },
+  {
+   decision: "qa (dev): 18 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "dono dos diretórios de teste de topo (teste co-localizado é do dono do diretório)"
+  },
+  {
+   decision: "architect (design): 19 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "desenho, ADRs e docs (sempre)"
+  },
+  {
+   decision: "po (product): 0 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "produto/requisitos (sempre)"
+  },
+  {
+   decision: "ops (ops): 20 arquivo(s) de escrita",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "sinal de CI/IaC/Docker"
+  },
+  {
+   decision: "sem dba",
+   evidence: [],
+   level: "info",
+   step: "roster",
+   why: "nenhuma migração encontrada"
+  }
+ ],
+ schema_version: 1,
+ summary: {
+  agents: ["dev-backend", "dev-data", "dev-maestro", "dev-maestros", "dev-maestros-2", "frontend", "reviewer", "security", "qa", "architect", "po", "ops"],
+  devs: 6,
+  missing_layers: [],
+  product_files: 170
+ }
+}

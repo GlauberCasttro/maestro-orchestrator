@@ -1,0 +1,247 @@
+// qa.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "qa",
+ baseline_saturated: false,
+ baseline_saturated_scopes: [],
+ baseline_score: 0.2,
+ decision: "PASS",
+ delta: 0.8,
+ excluded_non_discriminative: 4,
+ gate: "G4",
+ hallucinations: 0,
+ panel_pending: [],
+ probes: [
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-qa-01",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-qa-02",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-03",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-04",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-05",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-06",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "regra ok",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-07",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "existência ok",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-08",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-09",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-10",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-11",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-12",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "regra ok",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-qa-13",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-14",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-15",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "conjunto igual",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-16",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "imposição ok",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-17",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-18",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-qa-19",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "regra ok",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-qa-20",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "existência ok",
+   scope: "cross",
+   type: "existence"
+  }
+ ],
+ provisional: false,
+ reasons: [],
+ schema_version: 1,
+ score_all_raw: 1.0,
+ score_cross: 1.0,
+ score_territory: 1.0,
+ thresholds: {
+  cross: 0.7,
+  delta: ">0",
+  hallucinations: 0,
+  territory: 0.85
+ }
+}

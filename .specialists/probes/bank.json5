@@ -1,0 +1,3790 @@
+// bank.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agents: {
+  architect: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-consensus": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-frontend": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-maestros": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-platform": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-self-improve": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  "dev-storage-network": {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  ops: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  po: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  qa: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  reviewer: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  },
+  security: {
+   cross: 8,
+   negatives: 3,
+   territory: 12,
+   warnings: []
+  }
+ },
+ baseline: {
+  architect: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "882ead3aa22eaf2e4bf6c7ae2cd36529c560897cbd530fa5e4b4a0f49f197df0",
+   score: 0.15
+  },
+  "dev-consensus": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 5,
+   probes: 20,
+   probes_sha256: "790419f259e637ad9eb129f3358a738435a41b8ab1d8a39eb75c6935d6ab009f",
+   score: 0.25
+  },
+  "dev-frontend": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "6c41901a690db266ed92f5c8a141bb322a613fedf9f2b7767b270eef3ef97957",
+   score: 0.15
+  },
+  "dev-maestros": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "f28e24f6fbfbd75b8e3d2a0174f4a7355dc2abecc12a8795c5abe28e04c0f3a1",
+   score: 0.15
+  },
+  "dev-platform": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 6,
+   probes: 20,
+   probes_sha256: "c41c88f66a092980147ac4f538c7422145b98ecbdfb755038870b5b5130faab5",
+   score: 0.3
+  },
+  "dev-self-improve": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "04cbd2255ba9bc5ee9eddd87db2a3ea3fdaf1a2df2d43bdbb5c8411296ffb947",
+   score: 0.15
+  },
+  "dev-storage-network": {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 5,
+   probes: 20,
+   probes_sha256: "0f20f9c6bd0a9da5a41528faebd8c2270752b06bb726a506029af601425d997e",
+   score: 0.25
+  },
+  ops: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "94075913071ddf137455295ffe4fc4096c915a803b32a36cf41da66e1c03c224",
+   score: 0.15
+  },
+  po: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 6,
+   probes: 20,
+   probes_sha256: "674acd4c41a7a65aa97fa87fda1170b60ed7fca485cab56a8b539c3c85c1f96d",
+   score: 0.3
+  },
+  qa: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 4,
+   probes: 20,
+   probes_sha256: "073cef11c2f1504475e055f7a153b6243aafebc75539594c1294cfe36025f637",
+   score: 0.2
+  },
+  reviewer: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 3,
+   probes: 20,
+   probes_sha256: "61afbb80b0ed925f5d094e6958f72c86037cbfeff6881e44f253d53dcc7c5a38",
+   score: 0.15
+  },
+  security: {
+   answered: 20,
+   hallucinations: 0,
+   non_discriminative: 4,
+   probes: 20,
+   probes_sha256: "964b3c4ea8d3f3e7192cd2e5079d6cf01ab6bdf27c4aaa4785fe84ed2bf13b9d",
+   score: 0.2
+  }
+ },
+ generator: "facts-only",
+ probes: [
+  {
+   agent: "architect",
+   answer: {exists: false},
+   atomic_facts: ["absent rule quarantine_logging_window"],
+   discriminative: false,
+   id: "P-architect-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Qual o limite de \"quarantine logging window\" e onde é imposto (arquivo:linha)? Se não houver, NENHUM.",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "architect",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge architect->dev-self-improve"],
+   discriminative: false,
+   id: "P-architect-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `docs/**` importa diretamente de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "85559a1d10d84d777b4f7bdd84d4617e714450b8"},
+   atomic_facts: ["hist.fix.85559a1d10d8"],
+   discriminative: true,
+   id: "P-architect-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"docs: update for consistency and accuracy (v7.2.5)\" (tocou 10 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 53,
+    path: "maestro/dissent.py",
+    term: "DissentAnalyzer",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.dissent-analyzer"],
+   discriminative: true,
+   id: "P-architect-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `DissentAnalyzer`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "f76eec9ce21f6399658b18fefcaea765549f6d3a"},
+   atomic_facts: ["hist.fix.f76eec9ce21f"],
+   discriminative: true,
+   id: "P-architect-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Consolidate documentation: remove duplicates, merge overlapping guides\" (tocou 10 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 283,
+    path: "maestro/node_server.py",
+    term: "infer",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.infer"],
+   discriminative: true,
+   id: "P-architect-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `infer`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "2d9bec198606681f1c8f781eaeebd36f6c7c308d"},
+   atomic_facts: ["hist.fix.2d9bec198606"],
+   discriminative: true,
+   id: "P-architect-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 64,
+    path: "docs/r2-engine.md",
+    term: "Recurring signals",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.recurring-signals"],
+   discriminative: true,
+   id: "P-architect-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo de negócio que significa \"which signal types appear repeatedly?\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "a3d379080758a6de9f02dbb594cd79c469156200"},
+   atomic_facts: ["hist.fix.a3d379080758"],
+   discriminative: true,
+   id: "P-architect-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Add NCG (Novel Content Generation) module — parallel diversity benchmark track\" (tocou 7 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 67,
+    path: "maestro/api_plugins.py",
+    term: "disable",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.disable"],
+   discriminative: true,
+   id: "P-architect-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `disable`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "5dfc5765c0e01084cd4462d72187e39f2813c58c"},
+   atomic_facts: ["hist.fix.5dfc5765c0e0"],
+   discriminative: true,
+   id: "P-architect-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix documentation accuracy, consistency, and completeness across 23 files\" (tocou 12 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 141,
+    path: "ARCHITECTURE.md",
+    term: "Pipeline construction",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.pipeline-construction"],
+   discriminative: true,
+   id: "P-architect-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo de negócio que significa \"because a single WeightNode rarely holds a complete model; inference requires composing WeightNodes\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-consensus->ops"],
+   discriminative: false,
+   id: "P-architect-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 745,
+    path: "maestro/tui/app.py",
+    symbol: "_load_detail"
+   },
+   atomic_facts: ["symbol _load_detail defined at maestro/tui/app.py:745"],
+   discriminative: true,
+   id: "P-architect-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, idx: int)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, files: ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/agents/__init__.py", "tests/test_shard_agent.py"], subject: "maestro/agents/shard.py"},
+   atomic_facts: ["data/plugins/installed/defcon.shard-agent/plugin.py imports maestro/agents/shard.py", "maestro/agents/__init__.py imports maestro/agents/shard.py", "tests/test_shard_agent.py imports maestro/agents/shard.py"],
+   discriminative: true,
+   id: "P-architect-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/agents/shard.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "architect",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-architect-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, sha: "e0ea7df53316758a2a7caf8c2c32cf2423763dcc"},
+   atomic_facts: ["hist.fix.e0ea7df53316"],
+   discriminative: true,
+   id: "P-architect-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix remaining doc inconsistency and add prompt hover tooltip\" (tocou 2 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    line: 71,
+    path: "maestro/api_instances.py",
+    term: "stop",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.stop"],
+   discriminative: true,
+   id: "P-architect-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `stop`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "architect",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_weight_snapshots.py", line: 120}
+    ],
+    value: "restore nonexistent fails"
+   },
+   atomic_facts: ["brule.test.test_restore_nonexistent_fails"],
+   discriminative: true,
+   id: "P-architect-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_restore_nonexistent_fails\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "architect",
+   answer: {exists: true, files: ["maestro/injection_guard.py", "maestro/magi.py", "maestro/magi_vir.py", "maestro/self_improve.py"]},
+   atomic_facts: ["edge dev-self-improve->dev-consensus"],
+   discriminative: true,
+   id: "P-architect-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: false},
+   atomic_facts: ["rules.never.python.os-system"],
+   discriminative: false,
+   id: "P-dev-consensus-r2-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Existe alguma ocorrência de `\\bos\\.system\\(` em `backend/**`, `data/**`, `entrypoint.py` (e mais 2)? Se sim, cite; senão responda NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-consensus->dev-self-improve"],
+   discriminative: false,
+   id: "P-dev-consensus-r2-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 81,
+    path: "maestro/session.py",
+    symbol: "list_sessions"
+   },
+   atomic_facts: ["symbol list_sessions defined at maestro/session.py:81"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, limit: int = 50, offset: int = 0)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, files: ["tests/test_orchestration.py"], subject: "maestro/agents/__init__.py"},
+   atomic_facts: ["tests/test_orchestration.py imports maestro/agents/__init__.py"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/__init__.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, sha: "275d612ed61dfca055bab7a3a1c138bcf1554154"},
+   atomic_facts: ["hist.fix.275d612ed61d"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix TUI crash when pressing N (Nodes) — rename self._nodes to self._node_data\" (tocou 16 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 26,
+    path: "docs/architecture.md",
+    term: "GPT-4o",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.gpt-4o"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo de negócio que significa \"OpenAI (`___`)\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/aggregator.py", line: 3},
+     {file: "tests/test_orchestration.py", line: 184}
+    ],
+    value: "0.66"
+   },
+   atomic_facts: ["brule.limit.quorum_threshold"],
+   discriminative: false,
+   id: "P-dev-consensus-r2-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"QUORUM_THRESHOLD\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 123,
+    path: "maestro/session.py",
+    symbol: "build_session_record"
+   },
+   atomic_facts: ["symbol build_session_record defined at maestro/session.py:123"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) definido no arquivo que `maestro/api_sessions.py` importa, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 16,
+    path: "maestro/agents/base.py",
+    symbol: "build_system_prompt"
+   },
+   atomic_facts: ["symbol build_system_prompt defined at maestro/agents/base.py:16"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___()`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, files: ["maestro/injection_guard.py", "maestro/magi.py", "maestro/magi_vir.py", "tests/test_code_injection.py", "tests/test_orchestration.py", "tests/test_self_improvement.py"], subject: "maestro/dissent.py"},
+   atomic_facts: ["maestro/injection_guard.py imports maestro/dissent.py", "maestro/magi.py imports maestro/dissent.py", "maestro/magi_vir.py imports maestro/dissent.py", "tests/test_code_injection.py imports maestro/dissent.py", "tests/test_orchestration.py imports maestro/dissent.py", "tests/test_self_improvement.py imports maestro/dissent.py"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/dissent.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, sha: "22ce9ecd32b6c263be42ae8ab7d0e7ac043b3987"},
+   atomic_facts: ["hist.fix.22ce9ecd32b6"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix streaming: use asyncio.wait instead of as_completed for task lookup\" (tocou 1 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 325,
+    path: "maestro/api_storage.py",
+    term: "shards",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.shards"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `shards`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: false},
+   atomic_facts: ["absent term SharedLedger"],
+   discriminative: false,
+   id: "P-dev-consensus-r2-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Neste repo, qual é o termo canônico para \"shared ledger\"? Se não existir, NENHUM.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 176,
+    path: "frontend/src/maestroUI.tsx",
+    symbol: "AgentWarnings"
+   },
+   atomic_facts: ["symbol AgentWarnings defined at frontend/src/maestroUI.tsx:176"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___({ errors }: { errors: ___Error[] })`, em `frontend/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, files: ["tests/test_shard_utils.py"], subject: "maestro/shard_utils.py"},
+   atomic_facts: ["tests/test_shard_utils.py imports maestro/shard_utils.py"],
+   discriminative: false,
+   id: "P-dev-consensus-r2-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/shard_utils.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, sha: "29f606cac989b6ff8763f80aa485513823a5d8f9"},
+   atomic_facts: ["hist.fix.29f606cac989"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix updater for Docker: use git ls-remote + VERSION file\" (tocou 2 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 40,
+    path: "frontend/src/maestroUI.tsx",
+    term: "R2Data",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.r2-data"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `R2Data`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_orchestration.py", line: 464}
+    ],
+    value: "list sessions limit offset"
+   },
+   atomic_facts: ["brule.test.test_list_sessions_limit_offset"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_list_sessions_limit_offset\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {exists: true, files: ["setup.py"]},
+   atomic_facts: ["edge ops->dev-platform"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-consensus",
+   answer: {
+    exists: true,
+    line: 130,
+    path: "setup.py",
+    symbol: "set_progress"
+   },
+   atomic_facts: ["symbol set_progress defined at setup.py:130"],
+   discriminative: true,
+   id: "P-dev-consensus-r2-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, value: float)`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: false, files: [], subject: "frontend/vite.config.ts"},
+   atomic_facts: ["no external importer of frontend/vite.config.ts"],
+   discriminative: false,
+   id: "P-dev-frontend-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `frontend/**` importam `frontend/vite.config.ts`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: false, files: [], subject: "frontend/src/maestroUI.tsx"},
+   atomic_facts: ["no external importer of frontend/src/maestroUI.tsx"],
+   discriminative: false,
+   id: "P-dev-frontend-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `frontend/**` importam `frontend/src/maestroUI.tsx`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 201,
+    path: "frontend/src/maestroUI.tsx",
+    symbol: "AgentResponses"
+   },
+   atomic_facts: ["symbol AgentResponses defined at frontend/src/maestroUI.tsx:201"],
+   discriminative: true,
+   id: "P-dev-frontend-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___({ ___, error___s }: { ___: Record<string, string>; error___s?: Set<string> })`, em `frontend/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-dev-frontend-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "territory",
+   type: "prohibition"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, sha: "cd2bd4a162e38cbbc6773bf20176ac5e20738132"},
+   atomic_facts: ["hist.fix.cd2bd4a162e3"],
+   discriminative: true,
+   id: "P-dev-frontend-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix update panel showing 'up to date' alongside error messages\" (tocou 2 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 325,
+    path: "maestro/api_storage.py",
+    term: "models",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.models"],
+   discriminative: true,
+   id: "P-dev-frontend-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `models`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 176,
+    path: "frontend/src/maestroUI.tsx",
+    symbol: "AgentWarnings"
+   },
+   atomic_facts: ["symbol AgentWarnings defined at frontend/src/maestroUI.tsx:176"],
+   discriminative: true,
+   id: "P-dev-frontend-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___({ errors }: { errors: ___Error[] })`, em `frontend/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, sha: "dc4bdc3acb11b5b8558a76e02a901a2aa7063947"},
+   atomic_facts: ["hist.fix.dc4bdc3acb11"],
+   discriminative: true,
+   id: "P-dev-frontend-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix version inconsistencies: align all references to v0.4.3\" (tocou 4 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 1110,
+    path: "frontend/src/maestroUI.tsx",
+    symbol: "CommandSnippet"
+   },
+   atomic_facts: ["symbol CommandSnippet defined at frontend/src/maestroUI.tsx:1110"],
+   discriminative: true,
+   id: "P-dev-frontend-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___({ ___ }: { ___: string })`, em `frontend/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, sha: "d6d1b35e193e36e67bb6ba8bb0a08cd6bee8e8a4"},
+   atomic_facts: ["hist.fix.d6d1b35e193e"],
+   discriminative: true,
+   id: "P-dev-frontend-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"fix: Web UI shard visibility, TUI deprecated agent names, bump to v7.1.4\" (tocou 18 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 50,
+    path: "maestro/api_update.py",
+    term: "check",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.check"],
+   discriminative: true,
+   id: "P-dev-frontend-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 619,
+    path: "frontend/src/maestroUI.tsx",
+    symbol: "UpdateBanner"
+   },
+   atomic_facts: ["symbol UpdateBanner defined at frontend/src/maestroUI.tsx:619"],
+   discriminative: true,
+   id: "P-dev-frontend-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___({ onOpen }: { onOpen: ()`, em `frontend/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: false, files: [], subject: "tests/test_shard_agent.py"},
+   atomic_facts: ["no external importer of tests/test_shard_agent.py"],
+   discriminative: false,
+   id: "P-dev-frontend-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `tests/**` importam `tests/test_shard_agent.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 82,
+    path: "maestro/tui/widgets.py",
+    symbol: "set_agent_status"
+   },
+   atomic_facts: ["symbol set_agent_status defined at maestro/tui/widgets.py:82"],
+   discriminative: true,
+   id: "P-dev-frontend-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, ____name: str, ___: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, files: ["maestro/cli.py", "maestro/tui/app.py", "tests/test_code_injection.py", "tests/test_self_improvement.py"], subject: "maestro/self_improve.py"},
+   atomic_facts: ["maestro/cli.py imports maestro/self_improve.py", "maestro/tui/app.py imports maestro/self_improve.py", "tests/test_code_injection.py imports maestro/self_improve.py", "tests/test_self_improvement.py imports maestro/self_improve.py"],
+   discriminative: true,
+   id: "P-dev-frontend-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/self_improve.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, sha: "ca526f6a9f5803c8412ede28e04dcddd20037a2a"},
+   atomic_facts: ["hist.fix.ca526f6a9f58"],
+   discriminative: true,
+   id: "P-dev-frontend-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix remaining get_event_loop() deprecation warnings in lan_discovery and api_instances\" (tocou 2 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 60,
+    path: "maestro/plugins/base.py",
+    term: "MaestroPlugin",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.maestro-plugin"],
+   discriminative: true,
+   id: "P-dev-frontend-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `MaestroPlugin`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/storage_proof.py", line: 112},
+     {file: "tests/test_storage_proof.py", line: 23}
+    ],
+    value: "60"
+   },
+   atomic_facts: ["brule.limit.default_challenge_window_seconds"],
+   discriminative: true,
+   id: "P-dev-frontend-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"DEFAULT_CHALLENGE_WINDOW_SECONDS\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {exists: true, files: ["maestro/agents/__init__.py"]},
+   atomic_facts: ["edge dev-consensus->dev-storage-network"],
+   discriminative: true,
+   id: "P-dev-frontend-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-frontend",
+   answer: {
+    exists: true,
+    line: 171,
+    path: "maestro/lan_discovery.py",
+    symbol: "datagram_received"
+   },
+   atomic_facts: ["symbol datagram_received defined at maestro/lan_discovery.py:171"],
+   discriminative: true,
+   id: "P-dev-frontend-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, data: bytes, addr: tuple)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-maestros->qa"],
+   discriminative: false,
+   id: "P-dev-maestros-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestros/**` importa diretamente de `tests/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-maestros->ops"],
+   discriminative: false,
+   id: "P-dev-maestros-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestros/**` importa diretamente de `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 7,
+    path: "maestros/crates/maestrosd/src/main.rs",
+    symbol: "main"
+   },
+   atomic_facts: ["symbol main defined at maestros/crates/maestrosd/src/main.rs:7"],
+   discriminative: true,
+   id: "P-dev-maestros-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (symbol) com assinatura `___()`, em `maestros/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: true, sha: "53b1a772263728e95d9d955ad0ec296834f9a50e"},
+   atomic_facts: ["hist.fix.53b1a7722637"],
+   discriminative: true,
+   id: "P-dev-maestros-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"maestros: add v0.0.1 workspace skeleton, rename telOS -> MaestrOS\" (tocou 26 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 471,
+    path: "maestro/api_storage.py",
+    term: "discovery",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.discovery"],
+   discriminative: true,
+   id: "P-dev-maestros-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `discovery`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 37,
+    path: "maestro/shard_registry.py",
+    term: "WeightHost",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.weight-host"],
+   discriminative: true,
+   id: "P-dev-maestros-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `WeightHost`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 5,
+    path: "maestro/agents/base.py",
+    term: "Agent",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.agent"],
+   discriminative: true,
+   id: "P-dev-maestros-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `Agent`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 89,
+    path: "maestro/api_cluster.py",
+    term: "dispatch",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.dispatch"],
+   discriminative: true,
+   id: "P-dev-maestros-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `dispatch`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 485,
+    path: "maestro/api_storage.py",
+    term: "node",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.node"],
+   discriminative: true,
+   id: "P-dev-maestros-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `node`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 209,
+    path: "maestro/api_storage.py",
+    term: "network",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.network"],
+   discriminative: true,
+   id: "P-dev-maestros-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `network`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 50,
+    path: "maestro/api_update.py",
+    term: "check",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.check"],
+   discriminative: true,
+   id: "P-dev-maestros-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 44,
+    path: "maestro/api_plugins.py",
+    term: "discover",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.discover"],
+   discriminative: true,
+   id: "P-dev-maestros-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `discover`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: false, files: [], subject: "frontend/src/vite-env.d.ts"},
+   atomic_facts: ["no external importer of frontend/src/vite-env.d.ts"],
+   discriminative: false,
+   id: "P-dev-maestros-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `frontend/**` importam `frontend/src/vite-env.d.ts`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 21,
+    path: "maestro/agents/mock_shard_node.py",
+    symbol: "handle_infer"
+   },
+   atomic_facts: ["symbol handle_infer defined at maestro/agents/mock_shard_node.py:21"],
+   discriminative: true,
+   id: "P-dev-maestros-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, payload: dict)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: true, files: ["backend/orchestrator_foundry.py", "maestro/cli.py", "maestro/tui/backend.py"], subject: "maestro/agents/prism.py"},
+   atomic_facts: ["backend/orchestrator_foundry.py imports maestro/agents/prism.py", "maestro/cli.py imports maestro/agents/prism.py", "maestro/tui/backend.py imports maestro/agents/prism.py"],
+   discriminative: true,
+   id: "P-dev-maestros-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/prism.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-dev-maestros-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: true, sha: "caae0042e3e13528d895675885889956c1f0da9f"},
+   atomic_facts: ["hist.fix.caae0042e3e1"],
+   discriminative: true,
+   id: "P-dev-maestros-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix docker-compose.yml env_file format for legacy Compose compatibility\" (tocou 3 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    line: 246,
+    path: "maestro/node_server.py",
+    term: "ActivationPayload",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.activation-payload"],
+   discriminative: true,
+   id: "P-dev-maestros-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `ActivationPayload`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/lan_discovery.py", line: 42}
+    ],
+    value: "5.0"
+   },
+   atomic_facts: ["brule.limit.handshake_timeout"],
+   discriminative: true,
+   id: "P-dev-maestros-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"HANDSHAKE_TIMEOUT\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-maestros",
+   answer: {exists: true, files: ["maestro/agents/__init__.py"]},
+   atomic_facts: ["edge dev-consensus->dev-storage-network"],
+   discriminative: true,
+   id: "P-dev-maestros-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: false},
+   atomic_facts: ["rules.never.python.shell-true"],
+   discriminative: false,
+   id: "P-dev-platform-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Existe alguma ocorrência de `shell\\s*=\\s*True` em `backend/**`, `data/**`, `entrypoint.py` (e mais 2)? Se sim, cite; senão responda NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: false, files: [], subject: "maestro/tui/backend.py"},
+   atomic_facts: ["no external importer of maestro/tui/backend.py"],
+   discriminative: false,
+   id: "P-dev-platform-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/tui/backend.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 289,
+    path: "maestro/dependency_resolver.py",
+    symbol: "ensure_packages"
+   },
+   atomic_facts: ["symbol ensure_packages defined at maestro/dependency_resolver.py:289"],
+   discriminative: true,
+   id: "P-dev-platform-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(quiet: bool = False)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, files: ["tests/test_keyring.py"], subject: "maestro/keyring.py"},
+   atomic_facts: ["tests/test_keyring.py imports maestro/keyring.py"],
+   discriminative: true,
+   id: "P-dev-platform-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/keyring.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, sha: "30062d5eb908a29a99fba5dcb22858ac64f977d3"},
+   atomic_facts: ["hist.fix.30062d5eb908"],
+   discriminative: true,
+   id: "P-dev-platform-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix six bugs: restart sentinel, DOM race, deprecated loop API, tmp leak, TUI corruption, thread pool churn\" (tocou 3 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 107,
+    path: "maestro/api_update.py",
+    term: "restart",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.restart"],
+   discriminative: true,
+   id: "P-dev-platform-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `restart`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/plugins/base.py", line: 49},
+     {file: "tests/test_mod_manager.py", line: 158}
+    ],
+    value: ["DISCOVERED", "VALIDATED", "LOADED", "ENABLED", "DISABLED", "ERROR", "UNLOADED"]
+   },
+   atomic_facts: ["brule.states.pluginstate"],
+   discriminative: true,
+   id: "P-dev-platform-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o estado permitido de \"PluginState\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, files: ["backend/main.py", "maestro/cli.py", "maestro/tui/app.py"]},
+   atomic_facts: ["edge dev-platform->dev-self-improve"],
+   discriminative: false,
+   id: "P-dev-platform-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importa diretamente de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 348,
+    path: "maestro/plugins/manager.py",
+    symbol: "_plugin_register_hook"
+   },
+   atomic_facts: ["symbol _plugin_register_hook defined at maestro/plugins/manager.py:348"],
+   discriminative: true,
+   id: "P-dev-platform-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(____point, callback)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, files: ["setup.py", "tests/test_startup.py"], subject: "maestro/cli.py"},
+   atomic_facts: ["setup.py imports maestro/cli.py", "tests/test_startup.py imports maestro/cli.py"],
+   discriminative: true,
+   id: "P-dev-platform-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/cli.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, sha: "c415a88fc363107b20591238ffb5cfb41683d644"},
+   atomic_facts: ["hist.fix.c415a88fc363"],
+   discriminative: true,
+   id: "P-dev-platform-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix ClusterDashboard crash: rename _render to avoid Textual collision\" (tocou 1 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 203,
+    path: "maestro/api_storage.py",
+    term: "reputation",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.reputation"],
+   discriminative: true,
+   id: "P-dev-platform-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `reputation`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-frontend->dev-storage-network"],
+   discriminative: false,
+   id: "P-dev-platform-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `frontend/**` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 280,
+    path: "maestro/r2.py",
+    symbol: "analyze_ledger_trends"
+   },
+   atomic_facts: ["symbol analyze_ledger_trends defined at maestro/r2.py:280"],
+   discriminative: true,
+   id: "P-dev-platform-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, limit: int = 20)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, files: ["backend/orchestrator_foundry.py", "maestro/cli.py", "maestro/tui/backend.py"], subject: "maestro/agents/tempagent.py"},
+   atomic_facts: ["backend/orchestrator_foundry.py imports maestro/agents/tempagent.py", "maestro/cli.py imports maestro/agents/tempagent.py", "maestro/tui/backend.py imports maestro/agents/tempagent.py"],
+   discriminative: true,
+   id: "P-dev-platform-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/tempagent.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-dev-platform-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, sha: "2d9bec198606681f1c8f781eaeebd36f6c7c308d"},
+   atomic_facts: ["hist.fix.2d9bec198606"],
+   discriminative: true,
+   id: "P-dev-platform-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    line: 93,
+    path: "setup.py",
+    term: "Spinner",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.spinner"],
+   discriminative: true,
+   id: "P-dev-platform-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `Spinner`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-platform",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/aggregator.py", line: 3},
+     {file: "tests/test_orchestration.py", line: 184}
+    ],
+    value: "0.66"
+   },
+   atomic_facts: ["brule.limit.quorum_threshold"],
+   discriminative: false,
+   id: "P-dev-platform-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"QUORUM_THRESHOLD\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-platform",
+   answer: {exists: true, files: ["tests/test_cluster.py", "tests/test_instances.py", "tests/test_lan_discovery.py", "tests/test_shard_agent.py", "tests/test_shard_manager.py", "tests/test_shard_registry.py", "tests/test_shard_utils.py", "tests/test_storage_proof.py"]},
+   atomic_facts: ["edge qa->dev-storage-network"],
+   discriminative: false,
+   id: "P-dev-platform-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `tests/**` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: false},
+   atomic_facts: ["rules.never.python.eval"],
+   discriminative: false,
+   id: "P-dev-self-improve-r1-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Existe alguma ocorrência de `(?<![\\w.])eval\\(` em `backend/**`, `data/**`, `entrypoint.py` (e mais 2)? Se sim, cite; senão responda NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: false},
+   atomic_facts: ["absent term reconcile_vircomparison_batch"],
+   discriminative: false,
+   id: "P-dev-self-improve-r1-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Neste repo, qual é o termo canônico para \"reconcile vircomparison batch\"? Se não existir, NENHUM.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 549,
+    path: "maestro/magi_vir.py",
+    symbol: "select_node"
+   },
+   atomic_facts: ["symbol select_node defined at maestro/magi_vir.py:549"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, required_capabilities: list = None)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, files: ["maestro/cli.py", "maestro/tui/app.py", "tests/test_code_injection.py", "tests/test_self_improvement.py"], subject: "maestro/self_improve.py"},
+   atomic_facts: ["maestro/cli.py imports maestro/self_improve.py", "maestro/tui/app.py imports maestro/self_improve.py", "tests/test_code_injection.py imports maestro/self_improve.py", "tests/test_self_improvement.py imports maestro/self_improve.py"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/self_improve.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 97,
+    path: "maestro/plugins/base.py",
+    term: "PluginContext",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.plugin-context"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico que significa \"Controlled access to Maestro internals (registry, R2, session logger, agent registration, hooks, events)\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 350,
+    path: "maestro/applicator.py",
+    symbol: "_coerce_value"
+   },
+   atomic_facts: ["symbol _coerce_value defined at maestro/applicator.py:350"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(new_str: str, reference_str: str)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, files: ["tests/test_code_injection.py"], subject: "maestro/rollback.py"},
+   atomic_facts: ["tests/test_code_injection.py imports maestro/rollback.py"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/rollback.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 478,
+    path: "maestro/api_storage.py",
+    term: "peers",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.peers"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `peers`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 403,
+    path: "maestro/magi_vir.py",
+    symbol: "validate_batch"
+   },
+   atomic_facts: ["symbol validate_batch defined at maestro/magi_vir.py:403"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, ___: Proposal___)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, files: ["tests/test_code_injection.py"], subject: "maestro/applicator.py"},
+   atomic_facts: ["tests/test_code_injection.py imports maestro/applicator.py"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/applicator.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {canonical: "Storage Proof Engine", exists: true, variant: "canonical"},
+   atomic_facts: ["gloss.storage-proof-engine"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Neste repo, qual é o termo canônico para \"maestro storage proof py\"?",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 265,
+    path: "maestro/magi.py",
+    symbol: "_signal_recommendations"
+   },
+   atomic_facts: ["symbol _signal_recommendations defined at maestro/magi.py:265"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, recurring: dict)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: false, files: [], subject: "frontend/src/app.tsx"},
+   atomic_facts: ["no external importer of frontend/src/app.tsx"],
+   discriminative: false,
+   id: "P-dev-self-improve-r1-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `frontend/**` importam `frontend/src/app.tsx`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 23,
+    path: "backend/main.py",
+    symbol: "lifespan"
+   },
+   atomic_facts: ["symbol lifespan defined at backend/main.py:23"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(app: FastAPI)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, files: ["maestro/magi.py", "maestro/magi_vir.py", "maestro/plugins/manager.py", "maestro/self_improve.py", "maestro/tui/backend.py", "tests/test_code_injection.py", "tests/test_orchestration.py", "tests/test_self_improvement.py", "tests/test_startup.py"], subject: "maestro/session.py"},
+   atomic_facts: ["maestro/magi.py imports maestro/session.py", "maestro/magi_vir.py imports maestro/session.py", "maestro/plugins/manager.py imports maestro/session.py", "maestro/self_improve.py imports maestro/session.py", "maestro/tui/backend.py imports maestro/session.py", "tests/test_code_injection.py imports maestro/session.py", "tests/test_orchestration.py imports maestro/session.py", "tests/test_self_improvement.py imports maestro/session.py", "tests/test_startup.py imports maestro/session.py"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/session.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, sha: "7beeceabef7138de97d9ad09c656c7223917140a"},
+   atomic_facts: ["hist.fix.7beeceabef71"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix spawn visibility bug and add cluster QOL improvements\" (tocou 4 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 89,
+    path: "maestro/api_cluster.py",
+    term: "dispatch",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.dispatch"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `dispatch`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_lan_discovery.py", line: 67}
+    ],
+    value: "is adjacent requires confirmed and alive"
+   },
+   atomic_facts: ["brule.test.test_is_adjacent_requires_confirmed_and_alive"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_is_adjacent_requires_confirmed_and_alive\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {exists: true, files: ["maestro/agents/__init__.py"]},
+   atomic_facts: ["edge dev-consensus->dev-storage-network"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-self-improve",
+   answer: {
+    exists: true,
+    line: 345,
+    path: "maestro/shard_registry.py",
+    symbol: "prune_stale_nodes"
+   },
+   atomic_facts: ["symbol prune_stale_nodes defined at maestro/shard_registry.py:345"],
+   discriminative: true,
+   id: "P-dev-self-improve-r1-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, max_age_seconds: int = 600)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-storage-network->dev-platform"],
+   discriminative: false,
+   id: "P-dev-storage-network-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: false},
+   atomic_facts: ["absent rule InfoLedger"],
+   discriminative: false,
+   id: "P-dev-storage-network-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Qual o limite de \"info ledger\" e onde é imposto (arquivo:linha)? Se não houver, NENHUM.",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    line: 108,
+    path: "maestro/state_bus.py",
+    symbol: "register_shard"
+   },
+   atomic_facts: ["symbol register_shard defined at maestro/state_bus.py:108"],
+   discriminative: true,
+   id: "P-dev-storage-network-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, node_id: str, ____info: dict)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, files: ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/cli.py", "tests/test_shard_agent.py", "tests/test_storage_proof.py"], subject: "maestro/storage_proof.py"},
+   atomic_facts: ["data/plugins/installed/defcon.shard-agent/plugin.py imports maestro/storage_proof.py", "maestro/cli.py imports maestro/storage_proof.py", "tests/test_shard_agent.py imports maestro/storage_proof.py", "tests/test_storage_proof.py imports maestro/storage_proof.py"],
+   discriminative: true,
+   id: "P-dev-storage-network-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/storage_proof.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, sha: "9d8c7fd848d590f31a5f7b32a08048f2da74ad33"},
+   atomic_facts: ["hist.fix.9d8c7fd848d5"],
+   discriminative: true,
+   id: "P-dev-storage-network-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix instance spawning to create proper shard/node cluster members (v7.2.0)\" (tocou 18 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    line: 426,
+    path: "maestro/api_storage.py",
+    term: "verify",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.verify"],
+   discriminative: true,
+   id: "P-dev-storage-network-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `verify`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/shard_manager.py", line: 120},
+     {file: "tests/test_shard_manager.py", line: 52}
+    ],
+    value: null
+   },
+   atomic_facts: ["brule.validation.maestro-shard_manager.py.120"],
+   discriminative: true,
+   id: "P-dev-storage-network-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o validação de \"huggingface_hub is required for downloading shards.\\n\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, files: ["maestro/agents/shard.py"]},
+   atomic_facts: ["edge dev-storage-network->dev-consensus"],
+   discriminative: false,
+   id: "P-dev-storage-network-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    line: 532,
+    path: "maestro/instances.py",
+    symbol: "spawn"
+   },
+   atomic_facts: ["symbol spawn defined at maestro/instances.py:532"],
+   discriminative: true,
+   id: "P-dev-storage-network-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(n: int | None = None, callback=None)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, files: ["tests/test_shard_utils.py"], subject: "maestro/shard_utils.py"},
+   atomic_facts: ["tests/test_shard_utils.py imports maestro/shard_utils.py"],
+   discriminative: false,
+   id: "P-dev-storage-network-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/shard_utils.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, sha: "2d9bec198606681f1c8f781eaeebd36f6c7c308d"},
+   atomic_facts: ["hist.fix.2d9bec198606"],
+   discriminative: true,
+   id: "P-dev-storage-network-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {canonical: "Direct import", exists: true, variant: "canonical"},
+   atomic_facts: ["gloss.direct-import"],
+   discriminative: true,
+   id: "P-dev-storage-network-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Neste repo, qual é o termo canônico para \"default\"?",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-self-improve->dev-storage-network"],
+   discriminative: false,
+   id: "P-dev-storage-network-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    line: 43,
+    path: "tests/test_mod_manager.py",
+    symbol: "_make_plugin_dir"
+   },
+   atomic_facts: ["symbol _make_plugin_dir defined at tests/test_mod_manager.py:43"],
+   discriminative: true,
+   id: "P-dev-storage-network-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(base: Path, ____id: str = \"test.___\")`, em `tests/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, files: ["tests/test_orchestration.py"], subject: "maestro/agents/__init__.py"},
+   atomic_facts: ["tests/test_orchestration.py imports maestro/agents/__init__.py"],
+   discriminative: true,
+   id: "P-dev-storage-network-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/__init__.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-dev-storage-network-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, sha: "f140be7bd37f7eaec004221bcb12e2648a9d8f77"},
+   atomic_facts: ["hist.fix.f140be7bd37f"],
+   discriminative: true,
+   id: "P-dev-storage-network-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix container restart 404 caused by updater nuking frontend build\" (tocou 2 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    line: 325,
+    path: "maestro/api_storage.py",
+    term: "models",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.models"],
+   discriminative: true,
+   id: "P-dev-storage-network-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `models`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_code_injection.py", line: 274}
+    ],
+    value: "rate limit blocks"
+   },
+   atomic_facts: ["brule.test.test_rate_limit_blocks"],
+   discriminative: true,
+   id: "P-dev-storage-network-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_rate_limit_blocks\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "dev-storage-network",
+   answer: {exists: true, files: ["maestro/__init__.py", "maestro/orchestrator.py"]},
+   atomic_facts: ["edge dev-consensus->dev-platform"],
+   discriminative: true,
+   id: "P-dev-storage-network-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "ops",
+   answer: {exists: false},
+   atomic_facts: ["absent symbol snapshot_stale_batch"],
+   discriminative: false,
+   id: "P-ops-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Onde está definido o símbolo `snapshot_stale_batch` em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha ou NENHUM.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {exists: false},
+   atomic_facts: ["absent rule reconcile_launch_ledger"],
+   discriminative: false,
+   id: "P-ops-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Qual o limite de \"reconcile launch ledger\" e onde é imposto (arquivo:linha)? Se não houver, NENHUM.",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 568,
+    path: "setup.py",
+    symbol: "open_browser"
+   },
+   atomic_facts: ["symbol open_browser defined at setup.py:568"],
+   discriminative: true,
+   id: "P-ops-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(url: str)`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, sha: "6e04557b66448751fa01377d1ecfb4767e1fe24f"},
+   atomic_facts: ["hist.fix.6e04557b6644"],
+   discriminative: true,
+   id: "P-ops-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix 'no configuration file provided' when setup.py is not run from project root\" (tocou 1 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 75,
+    path: "maestro/api_plugins.py",
+    term: "reload",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.reload"],
+   discriminative: true,
+   id: "P-ops-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `reload`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "setup.py", line: 45}
+    ],
+    value: "30"
+   },
+   atomic_facts: ["brule.limit.health_retries"],
+   discriminative: true,
+   id: "P-ops-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"HEALTH_RETRIES\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, files: ["setup.py"]},
+   atomic_facts: ["edge ops->dev-platform"],
+   discriminative: true,
+   id: "P-ops-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 354,
+    path: "setup.py",
+    symbol: "cleanup_stale_containers"
+   },
+   atomic_facts: ["symbol cleanup_stale_containers defined at setup.py:354"],
+   discriminative: true,
+   id: "P-ops-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(compose: list[str], port: str = \"8000\")`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 201,
+    path: "setup.py",
+    symbol: "stop"
+   },
+   atomic_facts: ["symbol stop defined at setup.py:201"],
+   discriminative: true,
+   id: "P-ops-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, final: str = \"\")`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, sha: "a9af1a1f6a7b558f99ea26d79e060b27977ddb76"},
+   atomic_facts: ["hist.fix.a9af1a1f6a7b"],
+   discriminative: true,
+   id: "P-ops-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix code review issues and add comprehensive documentation for self-improvement pipeline\" (tocou 14 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 447,
+    path: "maestro/node_server.py",
+    term: "task",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.task"],
+   discriminative: true,
+   id: "P-ops-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `task`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 664,
+    path: "setup.py",
+    symbol: "docker_setup"
+   },
+   atomic_facts: ["symbol docker_setup defined at setup.py:664"],
+   discriminative: true,
+   id: "P-ops-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(skip_browser: bool = False, verbose: bool = False)`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-platform->qa"],
+   discriminative: false,
+   id: "P-ops-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importa diretamente de `tests/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 429,
+    path: "tests/test_orchestration.py",
+    symbol: "_make_record"
+   },
+   atomic_facts: ["symbol _make_record defined at tests/test_orchestration.py:429"],
+   discriminative: true,
+   id: "P-ops-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, prompt=\"test prompt\")`, em `tests/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, files: ["maestro/injection_guard.py", "maestro/magi_vir.py", "tests/test_code_injection.py", "tests/test_orchestration.py"], subject: "maestro/aggregator.py"},
+   atomic_facts: ["maestro/injection_guard.py imports maestro/aggregator.py", "maestro/magi_vir.py imports maestro/aggregator.py", "tests/test_code_injection.py imports maestro/aggregator.py", "tests/test_orchestration.py imports maestro/aggregator.py"],
+   discriminative: true,
+   id: "P-ops-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/aggregator.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "ops",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-ops-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, sha: "4a18f985e5dec55b88eeb3f3ae57adf86bb082bc"},
+   atomic_facts: ["hist.fix.4a18f985e5de"],
+   discriminative: true,
+   id: "P-ops-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix version inconsistencies: update stale v0.6.2 references to v0.6.3\" (tocou 4 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    line: 92,
+    path: "backend/main.py",
+    term: "ask",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.ask"],
+   discriminative: true,
+   id: "P-ops-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `ask`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "ops",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/shard_manager.py", line: 120},
+     {file: "tests/test_shard_manager.py", line: 52}
+    ],
+    value: null
+   },
+   atomic_facts: ["brule.validation.maestro-shard_manager.py.120"],
+   discriminative: true,
+   id: "P-ops-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o validação de \"huggingface_hub is required for downloading shards.\\n\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "ops",
+   answer: {exists: true, files: ["maestro/__init__.py", "maestro/orchestrator.py"]},
+   atomic_facts: ["edge dev-consensus->dev-platform"],
+   discriminative: true,
+   id: "P-ops-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "po",
+   answer: {exists: false, files: [], subject: "frontend/vite.config.ts"},
+   atomic_facts: ["no external importer of frontend/vite.config.ts"],
+   discriminative: false,
+   id: "P-po-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `frontend/**` importam `frontend/vite.config.ts`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "po",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-storage-network->dev-maestros"],
+   discriminative: false,
+   id: "P-po-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importa diretamente de `maestros/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 130,
+    path: "setup.py",
+    symbol: "set_progress"
+   },
+   atomic_facts: ["symbol set_progress defined at setup.py:130"],
+   discriminative: true,
+   id: "P-po-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, value: float)`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, files: ["setup.py", "tests/test_startup.py"], subject: "maestro/cli.py"},
+   atomic_facts: ["setup.py imports maestro/cli.py", "tests/test_startup.py imports maestro/cli.py"],
+   discriminative: true,
+   id: "P-po-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/cli.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "po",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: false,
+   id: "P-po-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "territory",
+   type: "prohibition"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, sha: "2d9bec198606681f1c8f781eaeebd36f6c7c308d"},
+   atomic_facts: ["hist.fix.2d9bec198606"],
+   discriminative: true,
+   id: "P-po-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 31,
+    path: "frontend/src/maestroUI.tsx",
+    term: "NcgBenchmark",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.ncg-benchmark"],
+   discriminative: true,
+   id: "P-po-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `NcgBenchmark`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/instances.py", line: 245},
+     {file: "maestro/instances.py", line: 244},
+     {file: "tests/test_instances.py", line: 280}
+    ],
+    value: "if not _is_port_available(SHARED_REDIS_PORT):"
+   },
+   atomic_facts: ["brule.validation.maestro-instances.py.245"],
+   discriminative: true,
+   id: "P-po-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o validação de \"Port {SHARED_REDIS_PORT} is already in use by another process. \" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 131,
+    path: "maestro/updater.py",
+    symbol: "get_commit_log"
+   },
+   atomic_facts: ["symbol get_commit_log defined at maestro/updater.py:131"],
+   discriminative: true,
+   id: "P-po-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(local: str, remote: str, branch: str | None = None)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, files: ["backend/main.py"], subject: "maestro/api_magi.py"},
+   atomic_facts: ["backend/main.py imports maestro/api_magi.py"],
+   discriminative: false,
+   id: "P-po-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/api_magi.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, sha: "a134fe4d2ce1404cc0d5340dea634962628a7ccb"},
+   atomic_facts: ["hist.fix.a134fe4d2ce1"],
+   discriminative: true,
+   id: "P-po-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix spawn visibility, network ambiguity, and API key loading\" (tocou 2 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 112,
+    path: "RELEASE.md",
+    term: "Prompt templates",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.prompt-templates"],
+   discriminative: true,
+   id: "P-po-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo de negócio que significa \"built-in ___ loadable via `F1-F5`, with `Ctrl+S` to\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "po",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge ops->dev-storage-network"],
+   discriminative: false,
+   id: "P-po-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 524,
+    path: "tests/test_code_injection.py",
+    symbol: "_populate_ledger"
+   },
+   atomic_facts: ["symbol _populate_ledger defined at tests/test_code_injection.py:524"],
+   discriminative: true,
+   id: "P-po-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, count=5, collapse=True)`, em `tests/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, files: ["tests/test_orchestration.py"], subject: "maestro/agents/__init__.py"},
+   atomic_facts: ["tests/test_orchestration.py imports maestro/agents/__init__.py"],
+   discriminative: true,
+   id: "P-po-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/__init__.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, sha: "a3d379080758a6de9f02dbb594cd79c469156200"},
+   atomic_facts: ["hist.fix.a3d379080758"],
+   discriminative: true,
+   id: "P-po-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Add NCG (Novel Content Generation) module — parallel diversity benchmark track\" (tocou 7 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 25,
+    path: "maestro/cluster.py",
+    term: "ClusterConfig",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.cluster-config"],
+   discriminative: true,
+   id: "P-po-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `ClusterConfig`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_code_injection.py", line: 232}
+    ],
+    value: "injectable unknown category blocked"
+   },
+   atomic_facts: ["brule.test.test_injectable_unknown_category_blocked"],
+   discriminative: true,
+   id: "P-po-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_injectable_unknown_category_blocked\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "po",
+   answer: {exists: true, files: ["backend/main.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/cli.py", "maestro/plugins/manager.py", "maestro/tui/app.py", "maestro/tui/backend.py"]},
+   atomic_facts: ["edge dev-platform->dev-storage-network"],
+   discriminative: false,
+   id: "P-po-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "po",
+   answer: {
+    exists: true,
+    line: 137,
+    path: "maestro/cli.py",
+    symbol: "_wrap"
+   },
+   atomic_facts: ["symbol _wrap defined at maestro/cli.py:137"],
+   discriminative: true,
+   id: "P-po-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(text: str, width: int = 72, indent: str = \"    \")`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {exists: false, files: [], subject: "tests/test_code_injection.py"},
+   atomic_facts: ["no external importer of tests/test_code_injection.py"],
+   discriminative: false,
+   id: "P-qa-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `tests/**` importam `tests/test_code_injection.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "qa",
+   answer: {exists: false},
+   atomic_facts: ["absent symbol throttle_manifest_quota"],
+   discriminative: false,
+   id: "P-qa-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Onde está definido o símbolo `throttle_manifest_quota` em `tests/**`? Responda arquivo:linha ou NENHUM.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 43,
+    path: "tests/test_mod_manager.py",
+    symbol: "_make_plugin_dir"
+   },
+   atomic_facts: ["symbol _make_plugin_dir defined at tests/test_mod_manager.py:43"],
+   discriminative: true,
+   id: "P-qa-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(base: Path, ____id: str = \"test.___\")`, em `tests/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, sha: "3d42f7a35eb36b8702132e8a1c21fbdbf926a2d7"},
+   atomic_facts: ["hist.fix.3d42f7a35eb3"],
+   discriminative: true,
+   id: "P-qa-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: add interactive mode selector, fix TUI crash, bump to v0.7.2\" (tocou 19 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 474,
+    path: "changelog.md",
+    term: "orchestrator.py",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.orchestrator-py"],
+   discriminative: true,
+   id: "P-qa-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo de negócio que significa \"`asyncio.gather` now uses `return_exceptions=True`. Unhandled agent exceptions are caught, logged, and converted to error-string responses so a single agent failure never aborts the pipeline. NCG track failures are caught and logged; the tr\"? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_code_injection.py", line: 225}
+    ],
+    value: "injectable architecture blocked"
+   },
+   atomic_facts: ["brule.test.test_injectable_architecture_blocked"],
+   discriminative: true,
+   id: "P-qa-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_injectable_architecture_blocked\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, files: ["tests/test_code_injection.py", "tests/test_orchestration.py", "tests/test_orchestrator_snapshot.py", "tests/test_plugin_hooks.py", "tests/test_self_improvement.py", "tests/test_startup.py"]},
+   atomic_facts: ["edge qa->dev-consensus"],
+   discriminative: true,
+   id: "P-qa-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `tests/**` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 285,
+    path: "tests/test_instances.py",
+    symbol: "test_raises_when_docker_run_fails"
+   },
+   atomic_facts: ["symbol test_raises_when_docker_run_fails defined at tests/test_instances.py:285"],
+   discriminative: true,
+   id: "P-qa-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, mock_port, mock____)`, em `tests/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 14,
+    path: "tests/test_shard_registry.py",
+    symbol: "_make_node"
+   },
+   atomic_facts: ["symbol _make_node defined at tests/test_shard_registry.py:14"],
+   discriminative: true,
+   id: "P-qa-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(____id, host=\"127.0.0.1\", port=8000, shards=None, **kwargs)`, em `tests/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, sha: "a9af1a1f6a7b558f99ea26d79e060b27977ddb76"},
+   atomic_facts: ["hist.fix.a9af1a1f6a7b"],
+   discriminative: true,
+   id: "P-qa-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix code review issues and add comprehensive documentation for self-improvement pipeline\" (tocou 14 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 50,
+    path: "maestro/api_update.py",
+    term: "check",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.check"],
+   discriminative: true,
+   id: "P-qa-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_code_injection.py", line: 367}
+    ],
+    value: "rate limit blocks injection"
+   },
+   atomic_facts: ["brule.test.test_rate_limit_blocks_injection"],
+   discriminative: true,
+   id: "P-qa-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_rate_limit_blocks_injection\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "qa",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge architect->dev-frontend"],
+   discriminative: false,
+   id: "P-qa-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `docs/**` importa diretamente de `frontend/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 119,
+    path: "maestro/aggregator.py",
+    symbol: "ensemble_merge"
+   },
+   atomic_facts: ["symbol ensemble_merge defined at maestro/aggregator.py:119"],
+   discriminative: true,
+   id: "P-qa-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(responses)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, files: ["maestro/agents/shard.py"], subject: "maestro/agents/base.py"},
+   atomic_facts: ["maestro/agents/shard.py imports maestro/agents/base.py"],
+   discriminative: true,
+   id: "P-qa-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/base.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "qa",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-qa-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "cross",
+   type: "prohibition"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, sha: "7c55b256e60c95a698a438c044d976ab29f7d799"},
+   atomic_facts: ["hist.fix.7c55b256e60c"],
+   discriminative: true,
+   id: "P-qa-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"fix: API keys shown as not configured despite being set\" (tocou 3 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    line: 246,
+    path: "maestro/node_server.py",
+    term: "ActivationPayload",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.activation-payload"],
+   discriminative: true,
+   id: "P-qa-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `ActivationPayload`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "qa",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/deliberation.py", line: 139},
+     {file: "maestro/deliberation.py", line: 138},
+     {file: "tests/test_orchestration.py", line: 141}
+    ],
+    value: "if rounds < 1:"
+   },
+   atomic_facts: ["brule.validation.maestro-deliberation.py.139"],
+   discriminative: true,
+   id: "P-qa-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o validação de \"rounds must be >= 1, got {rounds}\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "qa",
+   answer: {exists: true, files: ["backend/main.py", "backend/orchestrator_foundry.py", "maestro/cli.py", "maestro/plugins/manager.py", "maestro/tui/backend.py"]},
+   atomic_facts: ["edge dev-platform->dev-consensus"],
+   discriminative: false,
+   id: "P-qa-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge architect->dev-frontend"],
+   discriminative: false,
+   id: "P-reviewer-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `docs/**` importa diretamente de `frontend/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: false, files: [], subject: "maestros/crates/maestros-proof/src/lib.rs"},
+   atomic_facts: ["no external importer of maestros/crates/maestros-proof/src/lib.rs"],
+   discriminative: false,
+   id: "P-reviewer-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `maestros/**` importam `maestros/crates/maestros-proof/src/lib.rs`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 48,
+    path: "maestro/tui/widgets.py",
+    symbol: "watch_status"
+   },
+   atomic_facts: ["symbol watch_status defined at maestro/tui/widgets.py:48"],
+   discriminative: true,
+   id: "P-reviewer-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, value: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, files: ["tests/test_orchestration.py"], subject: "maestro/agents/__init__.py"},
+   atomic_facts: ["tests/test_orchestration.py imports maestro/agents/__init__.py"],
+   discriminative: true,
+   id: "P-reviewer-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/__init__.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-reviewer-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "territory",
+   type: "prohibition"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, sha: "bf2d77156ebb31c3c54bea0b81c2572873e75503"},
+   atomic_facts: ["hist.fix.bf2d77156ebb"],
+   discriminative: true,
+   id: "P-reviewer-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Improve README with structure, clarity, and missing sections\" (tocou 1 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 57,
+    path: "maestro/api_plugins.py",
+    term: "enable",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.enable"],
+   discriminative: true,
+   id: "P-reviewer-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `enable`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/storage_proof.py", line: 112},
+     {file: "tests/test_storage_proof.py", line: 23}
+    ],
+    value: "60"
+   },
+   atomic_facts: ["brule.limit.default_challenge_window_seconds"],
+   discriminative: true,
+   id: "P-reviewer-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o limite de \"DEFAULT_CHALLENGE_WINDOW_SECONDS\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 242,
+    path: "maestro/storage_proof.py",
+    symbol: "_record_success"
+   },
+   atomic_facts: ["symbol _record_success defined at maestro/storage_proof.py:242"],
+   discriminative: true,
+   id: "P-reviewer-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, node_id: str, latency_ms: float = None)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, files: ["tests/test_cluster.py"], subject: "maestro/state_bus.py"},
+   atomic_facts: ["tests/test_cluster.py imports maestro/state_bus.py"],
+   discriminative: true,
+   id: "P-reviewer-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/state_bus.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, sha: "f4bd85983735ddbcec7c90a6aa37515f65c2ae93"},
+   atomic_facts: ["hist.fix.f4bd85983735"],
+   discriminative: true,
+   id: "P-reviewer-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"docs: audit and fix documentation consistency across all modules\" (tocou 6 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "reviewer",
+   answer: {canonical: "Node CLI", exists: true, variant: "canonical"},
+   atomic_facts: ["gloss.node-cli"],
+   discriminative: true,
+   id: "P-reviewer-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Neste repo, qual é o termo canônico para \"maestro node cli py\"?",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: false, files: [], subject: "tests/test_weight_snapshots.py"},
+   atomic_facts: ["no external importer of tests/test_weight_snapshots.py"],
+   discriminative: false,
+   id: "P-reviewer-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `tests/**` importam `tests/test_weight_snapshots.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 520,
+    path: "maestro/tui/app.py",
+    symbol: "_on_delib_switch"
+   },
+   atomic_facts: ["symbol _on_delib_switch defined at maestro/tui/app.py:520"],
+   discriminative: true,
+   id: "P-reviewer-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, event: ___.Changed)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, files: ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/cli.py", "tests/test_shard_agent.py", "tests/test_storage_proof.py"], subject: "maestro/storage_proof.py"},
+   atomic_facts: ["data/plugins/installed/defcon.shard-agent/plugin.py imports maestro/storage_proof.py", "maestro/cli.py imports maestro/storage_proof.py", "tests/test_shard_agent.py imports maestro/storage_proof.py", "tests/test_storage_proof.py imports maestro/storage_proof.py"],
+   discriminative: true,
+   id: "P-reviewer-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/storage_proof.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, sha: "3b634ec35703060d443514a30e8020b6147ab569"},
+   atomic_facts: ["hist.fix.3b634ec35703"],
+   discriminative: true,
+   id: "P-reviewer-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix documentation inconsistencies, broken links, and stale references\" (tocou 9 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 5,
+    path: "maestro/agents/base.py",
+    term: "Agent",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.agent"],
+   discriminative: true,
+   id: "P-reviewer-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `Agent`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_lan_discovery.py", line: 67}
+    ],
+    value: "is adjacent requires confirmed and alive"
+   },
+   atomic_facts: ["brule.test.test_is_adjacent_requires_confirmed_and_alive"],
+   discriminative: true,
+   id: "P-reviewer-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_is_adjacent_requires_confirmed_and_alive\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "reviewer",
+   answer: {exists: true, files: ["maestro/__init__.py", "maestro/orchestrator.py"]},
+   atomic_facts: ["edge dev-consensus->dev-platform"],
+   discriminative: true,
+   id: "P-reviewer-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "reviewer",
+   answer: {
+    exists: true,
+    line: 480,
+    path: "maestro/magi_vir.py",
+    symbol: "_grade_rank"
+   },
+   atomic_facts: ["symbol _grade_rank defined at maestro/magi_vir.py:480"],
+   discriminative: true,
+   id: "P-reviewer-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(___: str)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "security",
+   answer: {exists: false, files: [], subject: "tests/test_lan_discovery.py"},
+   atomic_facts: ["no external importer of tests/test_lan_discovery.py"],
+   discriminative: false,
+   id: "P-security-01",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Quais arquivos fora de `tests/**` importam `tests/test_lan_discovery.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "security",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge dev-maestros->qa"],
+   discriminative: false,
+   id: "P-security-02",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `maestros/**` importa diretamente de `tests/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "territory",
+   type: "existence"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 48,
+    path: "maestro/tui/widgets.py",
+    symbol: "watch_status"
+   },
+   atomic_facts: ["symbol watch_status defined at maestro/tui/widgets.py:48"],
+   discriminative: true,
+   id: "P-security-03",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(self, value: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, files: ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/cli.py", "maestro/plugins/manager.py", "maestro/tui/backend.py", "tests/test_shard_agent.py", "tests/test_shard_registry.py"], subject: "maestro/shard_registry.py"},
+   atomic_facts: ["data/plugins/installed/defcon.shard-agent/plugin.py imports maestro/shard_registry.py", "maestro/cli.py imports maestro/shard_registry.py", "maestro/plugins/manager.py imports maestro/shard_registry.py", "maestro/tui/backend.py imports maestro/shard_registry.py", "tests/test_shard_agent.py imports maestro/shard_registry.py", "tests/test_shard_registry.py imports maestro/shard_registry.py"],
+   discriminative: true,
+   id: "P-security-04",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/shard_registry.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "security",
+   answer: {
+    enforced_at: [
+     {file: "frontend/tsconfig.json", line: 17}
+    ],
+    exists: true,
+    fact: "rules.cfg.tsconfig.strict",
+    file_level: false
+   },
+   atomic_facts: ["rules.cfg.tsconfig.strict"],
+   discriminative: true,
+   id: "P-security-05",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?",
+   scope: "territory",
+   type: "prohibition"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, sha: "5b01f9cd83084d6885bbaa95f2c390d6b9b3c3e5"},
+   atomic_facts: ["hist.fix.5b01f9cd8308"],
+   discriminative: true,
+   id: "P-security-06",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"Fix version inconsistencies: align all version references to v0.4.1\" (tocou 3 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 78,
+    path: "maestro/lan_discovery.py",
+    term: "AdjacencyState",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.adjacency-state"],
+   discriminative: true,
+   id: "P-security-07",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `AdjacencyState`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "maestro/deliberation.py", line: 139},
+     {file: "maestro/deliberation.py", line: 138},
+     {file: "tests/test_orchestration.py", line: 141}
+    ],
+    value: "if rounds < 1:"
+   },
+   atomic_facts: ["brule.validation.maestro-deliberation.py.139"],
+   discriminative: true,
+   id: "P-security-08",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o validação de \"rounds must be >= 1, got {rounds}\" e onde é imposto (arquivo:linha)?",
+   scope: "territory",
+   type: "business_rule"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 769,
+    path: "maestro/plugins/manager.py",
+    symbol: "_version_tuple"
+   },
+   atomic_facts: ["symbol _version_tuple defined at maestro/plugins/manager.py:769"],
+   discriminative: true,
+   id: "P-security-09",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(____str: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, files: ["backend/main.py"], subject: "maestro/api_instances.py"},
+   atomic_facts: ["backend/main.py imports maestro/api_instances.py"],
+   discriminative: true,
+   id: "P-security-10",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/api_instances.py`? Liste todos (ou NENHUM).",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, sha: "2bae235c53748de2cd2f4c01731513d09baadd97"},
+   atomic_facts: ["hist.fix.2bae235c5374"],
+   discriminative: true,
+   id: "P-security-11",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"fix: update deprecated agent names in dependency resolver diagnostics\" (tocou 1 arquivo(s))?",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 31,
+    path: "maestro/rollback.py",
+    term: "RollbackEntry",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.rollback-entry"],
+   discriminative: true,
+   id: "P-security-12",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `RollbackEntry`? Responda arquivo:linha.",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   agent: "security",
+   answer: {exists: false, files: []},
+   atomic_facts: ["edge ops->dev-frontend"],
+   discriminative: false,
+   id: "P-security-13",
+   must_cite_evidence: true,
+   negative: true,
+   question: "Algum arquivo em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md` importa diretamente de `frontend/**`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 275,
+    path: "maestro/keyring.py",
+    symbol: "_upsert_env_file"
+   },
+   atomic_facts: ["symbol _upsert_env_file defined at maestro/keyring.py:275"],
+   discriminative: true,
+   id: "P-security-14",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(path: Path, key: str, value: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, files: ["backend/orchestrator_foundry.py", "maestro/cli.py", "maestro/tui/backend.py"], subject: "maestro/agents/sol.py"},
+   atomic_facts: ["backend/orchestrator_foundry.py imports maestro/agents/sol.py", "maestro/cli.py imports maestro/agents/sol.py", "maestro/tui/backend.py imports maestro/agents/sol.py"],
+   discriminative: true,
+   id: "P-security-15",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/sol.py`? Liste todos (ou NENHUM).",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, sha: "2d9bec198606681f1c8f781eaeebd36f6c7c308d"},
+   atomic_facts: ["hist.fix.2d9bec198606"],
+   discriminative: true,
+   id: "P-security-16",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual commit (sha) corrigiu \"feat: improved PromptScreen layout + deliberation controls; bump to v7.2.8\" (tocou 12 arquivo(s))?",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 42,
+    path: "maestro/dissent.py",
+    term: "DissentReport",
+    variant: "where"
+   },
+   atomic_facts: ["gloss.dissent-report"],
+   discriminative: true,
+   id: "P-security-17",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde é definido o termo técnico `DissentReport`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    sources: [
+     {file: "tests/test_code_injection.py", line: 232}
+    ],
+    value: "injectable unknown category blocked"
+   },
+   atomic_facts: ["brule.test.test_injectable_unknown_category_blocked"],
+   discriminative: true,
+   id: "P-security-18",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Qual o test de \"test_injectable_unknown_category_blocked\" e onde é imposto (arquivo:linha)?",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   agent: "security",
+   answer: {exists: true, files: ["maestro/injection_guard.py", "maestro/magi.py", "maestro/magi_vir.py", "maestro/self_improve.py"]},
+   atomic_facts: ["edge dev-self-improve->dev-consensus"],
+   discriminative: false,
+   id: "P-security-19",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   agent: "security",
+   answer: {
+    exists: true,
+    line: 284,
+    path: "maestro/node_server.py",
+    symbol: "infer"
+   },
+   atomic_facts: ["symbol infer defined at maestro/node_server.py:284"],
+   discriminative: true,
+   id: "P-security-20",
+   must_cite_evidence: true,
+   negative: false,
+   question: "Onde está definido o símbolo (function) com assinatura `___(payload: ActivationPayload)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.",
+   scope: "cross",
+   type: "location"
+  }
+ ],
+ retired_questions: {"dev-consensus": ["Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `tests/**` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.", "Existe alguma ocorrência de `^\\s*except\\s*:` em `backend/**`, `data/**`, `entrypoint.py` (e mais 2)? Se sim, cite; senão responda NENHUM.", "Existe alguma ocorrência de `^\\s*from\\s+\\S+\\s+import\\s+\\*` em `backend/**`, `data/**`, `entrypoint.py` (e mais 2)? Se sim, cite; senão responda NENHUM.", "Neste repo, qual é o termo canônico para \"middle gateway\"? Se não existir, NENHUM.", "Neste repo, qual é o termo canônico para \"rebalance signal quota\"? Se não existir, NENHUM.", "Onde está definido o símbolo (class) definido no arquivo que `tests/test_shard_agent.py` importa, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(___, ncg_drift_report=None, dissent_report=None)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(___: str, data: dict)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, ___: dict, log: RichLog)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, limit: int = 20)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, ncg_metadata: dict)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(url: str)`, em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Responda arquivo:linha.", "Onde é definido o termo de negócio que significa \"- MAGI/R2-driven: introspection, proposal generation, MAGI_VIR sandboxed validation, promote/reject lifecycle\"? Responda arquivo:linha.", "Onde é definido o termo de negócio que significa \"Build `___` objects from actual files on disk\"? Responda arquivo:linha.", "Onde é definido o termo de negócio que significa \"fraction of uptime where `warm == True` (___s hot in memory)\"? Responda arquivo:linha.", "Onde é definido o termo de negócio que significa \"quorum met, low drift, no collapse, no outliers, no flags\"? Responda arquivo:linha.", "Onde é definido o termo técnico `MsgType`? Responda arquivo:linha.", "Onde é definido o termo técnico `injections`? Responda arquivo:linha.", "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/plugins/__init__.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/applicator.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/aria.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/mock.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/tempagent.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/deliberation.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/ncg/drift.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py` importam `maestro/api_cluster.py`? Liste todos (ou NENHUM).", "Qual commit (sha) corrigiu \"Add intelligent HTTP error handling to webUI and fix Prism model\" (tocou 5 arquivo(s))?", "Qual commit (sha) corrigiu \"Add system prompts with current date to all agents to fix outdated model behavior\" (tocou 5 arquivo(s))?", "Qual commit (sha) corrigiu \"Full-screen Prompt redesign, unified blue/green/orange theme, export, progress fix\" (tocou 8 arquivo(s))?", "Qual commit (sha) corrigiu \"Polish TUI for video demo, fix shard spawn keybinding, bump v7.2.2\" (tocou 17 arquivo(s))?", "Qual commit (sha) corrigiu \"docs: update for consistency and accuracy (v7.2.5)\" (tocou 10 arquivo(s))?", "Qual commit (sha) corrigiu \"fix: resolve circular import in deliberation engine\" (tocou 1 arquivo(s))?", "Qual o limite de \"SIMILARITY_THRESHOLD\" e onde é imposto (arquivo:linha)?", "Qual o test de \"test_discover_skips_invalid_manifests\" e onde é imposto (arquivo:linha)?", "Qual o test de \"test_invalid_hook_point_raises\" e onde é imposto (arquivo:linha)?", "Qual o validação de \"rounds must be >= 1, got {rounds}\" e onde é imposto (arquivo:linha)?", "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?"], "dev-self-improve": ["Algum arquivo em `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md` importa diretamente de `tests/**`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", "Algum arquivo em `tests/**` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", "Onde está definido o símbolo (function) com assinatura `___(self, ____health: dict, total_sessions: int)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, ____targets: list)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, cycle: ImprovementCycle, batch)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.", "Onde está definido o símbolo (function) com assinatura `___(self, node: ast.AST)`, em `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py`? Responda arquivo:linha.", "Onde está definido o símbolo (symbol) com assinatura `___()`, em `maestros/**`? Responda arquivo:linha.", "Onde é definido o termo técnico `MockAgent`? Responda arquivo:linha.", "Onde é definido o termo técnico `remote`? Responda arquivo:linha.", "Onde é definido o termo técnico `verify`? Responda arquivo:linha.", "Quais arquivos fora de `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importam `maestro/selector.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/api_magi.py`? Liste todos (ou NENHUM).", "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/api_self_improve.py`? Liste todos (ou NENHUM).", "Qual commit (sha) corrigiu \"Fix code review issues and add comprehensive documentation for self-improvement pipeline\" (tocou 14 arquivo(s))?", "Qual commit (sha) corrigiu \"Fix documentation accuracy, consistency, and completeness across 23 files\" (tocou 12 arquivo(s))?", "Qual o limite de \"SIMILARITY_THRESHOLD\" e onde é imposto (arquivo:linha)?", "Qual o limite de \"recommendations ledger\" e onde é imposto (arquivo:linha)? Se não houver, NENHUM.", "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?"]},
+ rotations: {
+  "dev-consensus": [
+   {
+    at: "2026-10-03T20:50:54+00:00",
+    n: 1,
+    new: 20,
+    retired: 20,
+    seed: "cs-probes-v1-r1"
+   },
+   {
+    at: "2026-10-03T20:54:29+00:00",
+    n: 2,
+    new: 20,
+    retired: 20,
+    seed: "cs-probes-v1-r2"
+   }
+  ],
+  "dev-self-improve": [
+   {
+    at: "2026-10-03T20:50:55+00:00",
+    n: 1,
+    new: 20,
+    retired: 20,
+    seed: "cs-probes-v1-r1"
+   }
+  ]
+ },
+ schema_version: 1,
+ seed: "cs-probes-v1"
+}

@@ -1,0 +1,6303 @@
+// project_docs (L10) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ documents: [
+  {
+   claims: [
+    {
+     detail: "módulo de ferramenta (venv)",
+     kind: "command",
+     line: 46,
+     status: "unverifiable",
+     text: "python -m venv venv"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 51,
+     status: "unverifiable",
+     text: "pip install -r requirements.txt"
+    },
+    {
+     detail: "subcomando do gerenciador de pacotes",
+     kind: "command",
+     line: 68,
+     status: "unverifiable",
+     text: "npm install"
+    },
+    {
+     detail: "script 'dev' existe em package.json",
+     kind: "command",
+     line: 72,
+     status: "verified",
+     text: "npm run dev"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 84,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 87,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "presente em Makefile:27 (declared)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "make up"
+    },
+    {
+     detail: "presente em Makefile:35 (declared)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "make down"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "docker compose up -d"
+    },
+    {
+     detail: "corresponde à receita de `make down` (Makefile:36)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "docker compose down"
+    },
+    {
+     detail: "Makefile existe (Makefile)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "make"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 98,
+     status: "unverifiable",
+     text: "eslint"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 109,
+     status: "unverifiable",
+     text: "pytest tests/"
+    },
+    {
+     detail: "existe: LICENSE.md",
+     kind: "path",
+     line: 143,
+     status: "verified",
+     text: "LICENSE.md"
+    },
+    {
+     detail: "existe: commercial_license.md",
+     kind: "path",
+     line: 144,
+     status: "verified",
+     text: "commercial_license.md"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 149,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 149,
+     status: "verified",
+     text: "./readme.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 150,
+     status: "verified",
+     text: "docs/architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 150,
+     status: "verified",
+     text: "./docs/architecture.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "docs/agents.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "./docs/agents.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 152,
+     status: "verified",
+     text: "docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 152,
+     status: "verified",
+     text: "./docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 153,
+     status: "verified",
+     text: "docs/self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 153,
+     status: "verified",
+     text: "./docs/self-improvement-pipeline.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 5, verified: 20},
+   file: "CONTRIBUTING.md",
+   kind: "contributing",
+   summary: "Maestro-Orchestrator pluralizes synthetic intelligence by enabling multiple AI agents to collaborate, dissent, and reach consensus using quorum-based logic. Contributions are welcome and appreciated.",
+   title: "Contributing to Maestro-Orchestrator"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 7,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/tui/backend.py",
+     kind: "path",
+     line: 8,
+     status: "verified",
+     text: "maestro/tui/backend.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 9,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/__init__.py",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "maestro/__init__.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "maestro/plugins/manager.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: RELEASE.md",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "RELEASE.md"
+    },
+    {
+     detail: "existe: changelog.md",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "changelog.md"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 23,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "não existe no repo: data/prompt_templates.json",
+     kind: "path",
+     line: 24,
+     status: "stale",
+     text: "data/prompt_templates.json"
+    },
+    {
+     detail: "existe: maestro/tui/backend.py",
+     kind: "path",
+     line: 25,
+     status: "verified",
+     text: "maestro/tui/backend.py"
+    },
+    {
+     detail: "existe: maestro/__init__.py",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "maestro/__init__.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "maestro/plugins/manager.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: RELEASE.md",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "RELEASE.md"
+    },
+    {
+     detail: "existe: changelog.md",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "changelog.md"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 37,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 41,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/__init__.py",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "maestro/__init__.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "maestro/plugins/manager.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: RELEASE.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "RELEASE.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "docs/agents.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "docs/mod-manager.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "docs/storage-network.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "docs/roadmap.md"
+    },
+    {
+     detail: "existe: changelog.md",
+     kind: "path",
+     line: 45,
+     status: "verified",
+     text: "changelog.md"
+    },
+    {
+     detail: "existe: maestro/instances.py",
+     kind: "path",
+     line: 53,
+     status: "verified",
+     text: "maestro/instances.py"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 53,
+     status: "unverifiable",
+     text: "docker network rm <name>"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 53,
+     status: "unverifiable",
+     text: "docker network ls --filter name=<name>"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 57,
+     status: "verified",
+     text: "docs/troubleshooting.md"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 65,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/tui/__main__.py",
+     kind: "path",
+     line: 65,
+     status: "verified",
+     text: "maestro/tui/__main__.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 66,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/updater.py",
+     kind: "path",
+     line: 67,
+     status: "verified",
+     text: "maestro/updater.py"
+    },
+    {
+     detail: "existe: maestro/lan_discovery.py",
+     kind: "path",
+     line: 67,
+     status: "verified",
+     text: "maestro/lan_discovery.py"
+    },
+    {
+     detail: "existe: maestro/api_instances.py",
+     kind: "path",
+     line: 67,
+     status: "verified",
+     text: "maestro/api_instances.py"
+    },
+    {
+     detail: "existe: maestro/updater.py",
+     kind: "path",
+     line: 68,
+     status: "verified",
+     text: "maestro/updater.py"
+    },
+    {
+     detail: "não existe no repo: try/finally",
+     kind: "path",
+     line: 68,
+     status: "stale",
+     text: "try/finally"
+    },
+    {
+     detail: "existe: maestro/updater.py",
+     kind: "path",
+     line: 69,
+     status: "verified",
+     text: "maestro/updater.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 70,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/agents.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/mod-manager.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/storage-network.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/ui-guide.md"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 74,
+     status: "verified",
+     text: "docs/deployment.md"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 83,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: maestro/cli.py",
+     kind: "path",
+     line: 83,
+     status: "verified",
+     text: "maestro/cli.py"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 83,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: maestro/cli.py",
+     kind: "path",
+     line: 83,
+     status: "verified",
+     text: "maestro/cli.py"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 88,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 89,
+     status: "verified",
+     text: "docs/ui-guide.md"
+    },
+    {
+     detail: "existe: maestro/dependency_resolver.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "maestro/dependency_resolver.py"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 110,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/tui/widgets.py",
+     kind: "path",
+     line: 124,
+     status: "verified",
+     text: "maestro/tui/widgets.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 124,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/instances.py",
+     kind: "path",
+     line: 126,
+     status: "verified",
+     text: "maestro/instances.py"
+    },
+    {
+     detail: "existe: maestro/instances.py",
+     kind: "path",
+     line: 139,
+     status: "verified",
+     text: "maestro/instances.py"
+    },
+    {
+     detail: "não existe no repo: .maestro-instances.json",
+     kind: "path",
+     line: 142,
+     status: "stale",
+     text: ".maestro-instances.json"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 144,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: tests/test_instances.py",
+     kind: "path",
+     line: 146,
+     status: "verified",
+     text: "tests/test_instances.py"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 158,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: maestro/updater.py",
+     kind: "path",
+     line: 170,
+     status: "verified",
+     text: "maestro/updater.py"
+    },
+    {
+     detail: "existe: maestro/api_update.py",
+     kind: "path",
+     line: 171,
+     status: "verified",
+     text: "maestro/api_update.py"
+    },
+    {
+     detail: "existe: maestro/api_update.py",
+     kind: "path",
+     line: 172,
+     status: "verified",
+     text: "maestro/api_update.py"
+    },
+    {
+     detail: "existe: frontend/src/maestroUI.tsx",
+     kind: "path",
+     line: 173,
+     status: "verified",
+     text: "frontend/src/maestroUI.tsx"
+    },
+    {
+     detail: "existe: frontend/src/maestroUI.tsx",
+     kind: "path",
+     line: 174,
+     status: "verified",
+     text: "frontend/src/maestroUI.tsx"
+    },
+    {
+     detail: "existe: frontend/src/style.css",
+     kind: "path",
+     line: 174,
+     status: "verified",
+     text: "frontend/src/style.css"
+    },
+    {
+     detail: "existe: maestro/tui/app.py",
+     kind: "path",
+     line: 175,
+     status: "verified",
+     text: "maestro/tui/app.py"
+    },
+    {
+     detail: "existe: backend/main.py",
+     kind: "path",
+     line: 176,
+     status: "verified",
+     text: "backend/main.py"
+    },
+    {
+     detail: "existe: maestro/tui/widgets.py",
+     kind: "path",
+     line: 181,
+     status: "verified",
+     text: "maestro/tui/widgets.py"
+    },
+    {
+     detail: "existe: frontend/src/maestroUI.tsx",
+     kind: "path",
+     line: 193,
+     status: "verified",
+     text: "frontend/src/maestroUI.tsx"
+    },
+    {
+     detail: "existe: maestro/tui/widgets.py",
+     kind: "path",
+     line: 197,
+     status: "verified",
+     text: "maestro/tui/widgets.py"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 198,
+     status: "verified",
+     text: "docs/magi.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 198,
+     status: "verified",
+     text: "docs/r2-engine.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 198,
+     status: "verified",
+     text: "docs/storage-network.md"
+    },
+    {
+     detail: "existe: maestro/selector.py",
+     kind: "path",
+     line: 210,
+     status: "verified",
+     text: "maestro/selector.py"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 211,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: maestro/tui/widgets.py",
+     kind: "path",
+     line: 215,
+     status: "verified",
+     text: "maestro/tui/widgets.py"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 219,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: maestro/selector.py",
+     kind: "path",
+     line: 219,
+     status: "verified",
+     text: "maestro/selector.py"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 220,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: maestro/deliberation.py",
+     kind: "path",
+     line: 229,
+     status: "verified",
+     text: "maestro/deliberation.py"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 233,
+     status: "verified",
+     text: "orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: maestro/orchestrator.py",
+     kind: "path",
+     line: 245,
+     status: "verified",
+     text: "maestro/orchestrator.py"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 246,
+     status: "verified",
+     text: "backend/orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: backend/main.py",
+     kind: "path",
+     line: 247,
+     status: "verified",
+     text: "backend/main.py"
+    },
+    {
+     detail: "existe: maestro/tui",
+     kind: "path",
+     line: 256,
+     status: "verified",
+     text: "maestro/tui/"
+    },
+    {
+     detail: "existe: maestro/tui/backend.py",
+     kind: "path",
+     line: 263,
+     status: "verified",
+     text: "maestro/tui/backend.py"
+    },
+    {
+     detail: "existe: maestro/tui/maestro_tui.tcss",
+     kind: "path",
+     line: 264,
+     status: "verified",
+     text: "maestro/tui/maestro_tui.tcss"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 265,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 266,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: backend/requirements.txt",
+     kind: "path",
+     line: 267,
+     status: "verified",
+     text: "backend/requirements.txt"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 271,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "docs/architecture.md"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "docs/deployment.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "docs/ui-guide.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "docs/roadmap.md"
+    },
+    {
+     detail: "existe: changelog.md",
+     kind: "path",
+     line: 272,
+     status: "verified",
+     text: "changelog.md"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 273,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 283,
+     status: "verified",
+     text: "docker compose up"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 283,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 303,
+     status: "verified",
+     text: "node_server.py"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 305,
+     status: "verified",
+     text: "deployment.md"
+    },
+    {
+     detail: "existe: maestro/shard_utils.py",
+     kind: "path",
+     line: 318,
+     status: "verified",
+     text: "maestro/shard_utils.py"
+    },
+    {
+     detail: "existe: maestro/shard_manager.py",
+     kind: "path",
+     line: 319,
+     status: "verified",
+     text: "maestro/shard_manager.py"
+    },
+    {
+     detail: "não existe no repo: node_shards.json",
+     kind: "path",
+     line: 319,
+     status: "stale",
+     text: "node_shards.json"
+    },
+    {
+     detail: "existe: maestro/node_cli.py",
+     kind: "path",
+     line: 320,
+     status: "verified",
+     text: "maestro/node_cli.py"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 320,
+     status: "verified",
+     text: "python -m maestro.node_cli"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 329,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 330,
+     status: "verified",
+     text: "manager.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 330,
+     status: "verified",
+     text: "node_server.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 354,
+     status: "verified",
+     text: "manager.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 354,
+     status: "verified",
+     text: "node_server.py"
+    },
+    {
+     detail: "existe: maestro/agents/shard.py",
+     kind: "path",
+     line: 363,
+     status: "verified",
+     text: "maestro/agents/shard.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 364,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: maestro/api_storage.py",
+     kind: "path",
+     line: 370,
+     status: "verified",
+     text: "maestro/api_storage.py"
+    },
+    {
+     detail: "existe: maestro/api_plugins.py",
+     kind: "path",
+     line: 371,
+     status: "verified",
+     text: "maestro/api_plugins.py"
+    },
+    {
+     detail: "existe: data/plugins/installed/defcon.shard-agent",
+     kind: "path",
+     line: 375,
+     status: "verified",
+     text: "data/plugins/installed/defcon.shard-agent/"
+    },
+    {
+     detail: "existe: data/plugins/installed/defcon.shard-agent/manifest.json",
+     kind: "path",
+     line: 375,
+     status: "verified",
+     text: "manifest.json"
+    },
+    {
+     detail: "existe: data/plugins/installed/defcon.shard-agent/plugin.py",
+     kind: "path",
+     line: 375,
+     status: "verified",
+     text: "plugin.py"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 377,
+     status: "verified",
+     text: "docs/storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 377,
+     status: "verified",
+     text: "docs/mod-manager.md"
+    },
+    {
+     detail: "existe: maestro/orchestrator.py",
+     kind: "path",
+     line: 382,
+     status: "verified",
+     text: "maestro/orchestrator.py"
+    },
+    {
+     detail: "existe: maestro/injection_guard.py",
+     kind: "path",
+     line: 383,
+     status: "verified",
+     text: "maestro/injection_guard.py"
+    },
+    {
+     detail: "existe: maestro/agents/__init__.py",
+     kind: "path",
+     line: 384,
+     status: "verified",
+     text: "maestro/agents/__init__.py"
+    },
+    {
+     detail: "existe: maestro/__init__.py",
+     kind: "path",
+     line: 385,
+     status: "verified",
+     text: "maestro/__init__.py"
+    },
+    {
+     detail: "existe: maestro/cli.py",
+     kind: "path",
+     line: 386,
+     status: "verified",
+     text: "maestro/cli.py"
+    },
+    {
+     detail: "existe: backend/main.py",
+     kind: "path",
+     line: 387,
+     status: "verified",
+     text: "backend/main.py"
+    },
+    {
+     detail: "presente em Makefile:61 (declared)",
+     kind: "command",
+     line: 405,
+     status: "verified",
+     text: "make update"
+    },
+    {
+     detail: "não existe no repo: models/gemini-2.0-flash",
+     kind: "path",
+     line: 434,
+     status: "stale",
+     text: "models/gemini-2.0-flash"
+    },
+    {
+     detail: "não existe no repo: models/gemini-2.5-flash",
+     kind: "path",
+     line: 434,
+     status: "stale",
+     text: "models/gemini-2.5-flash"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 444,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "presente em Makefile:27 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make up"
+    },
+    {
+     detail: "presente em Makefile:35 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make down"
+    },
+    {
+     detail: "presente em Makefile:43 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make logs"
+    },
+    {
+     detail: "presente em Makefile:47 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make status"
+    },
+    {
+     detail: "presente em Makefile:39 (failed, exit 2)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make build"
+    },
+    {
+     detail: "presente em Makefile:55 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make clean"
+    },
+    {
+     detail: "presente em Makefile:71 (declared)",
+     kind: "command",
+     line: 445,
+     status: "verified",
+     text: "make dev"
+    },
+    {
+     detail: "existe: setup.sh",
+     kind: "path",
+     line: 446,
+     status: "verified",
+     text: "setup.sh"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 448,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 449,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 453,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 454,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "presente em Makefile:71 (declared)",
+     kind: "command",
+     line: 455,
+     status: "verified",
+     text: "make dev"
+    },
+    {
+     detail: "não existe no repo: models/gemini-1.5-pro-latest",
+     kind: "path",
+     line: 466,
+     status: "stale",
+     text: "models/gemini-1.5-pro-latest"
+    },
+    {
+     detail: "não existe no repo: models/gemini-2.0-flash",
+     kind: "path",
+     line: 466,
+     status: "stale",
+     text: "models/gemini-2.0-flash"
+    },
+    {
+     detail: "não existe no repo: mistralai/mistral-7b-instruct",
+     kind: "path",
+     line: 467,
+     status: "stale",
+     text: "mistralai/mistral-7b-instruct"
+    },
+    {
+     detail: "não existe no repo: meta-llama/llama-3.3-70b-instruct",
+     kind: "path",
+     line: 467,
+     status: "stale",
+     text: "meta-llama/llama-3.3-70b-instruct"
+    },
+    {
+     detail: "existe: maestro/agents/sol.py",
+     kind: "path",
+     line: 473,
+     status: "verified",
+     text: "sol.py"
+    },
+    {
+     detail: "existe: maestro/agents/aria.py",
+     kind: "path",
+     line: 473,
+     status: "verified",
+     text: "aria.py"
+    },
+    {
+     detail: "existe: maestro/agents/prism.py",
+     kind: "path",
+     line: 473,
+     status: "verified",
+     text: "prism.py"
+    },
+    {
+     detail: "existe: maestro/agents/tempagent.py",
+     kind: "path",
+     line: 473,
+     status: "verified",
+     text: "tempagent.py"
+    },
+    {
+     detail: "não existe no repo: try/except",
+     kind: "path",
+     line: 475,
+     status: "stale",
+     text: "try/except"
+    },
+    {
+     detail: "não existe no repo: try/except",
+     kind: "path",
+     line: 476,
+     status: "stale",
+     text: "try/except"
+    },
+    {
+     detail: "não existe no repo: try/except",
+     kind: "path",
+     line: 477,
+     status: "stale",
+     text: "try/except"
+    },
+    {
+     detail: "não existe no repo: try/except",
+     kind: "path",
+     line: 478,
+     status: "stale",
+     text: "try/except"
+    },
+    {
+     detail: "existe: readme.md",
+     kind: "path",
+     line: 485,
+     status: "verified",
+     text: "readme.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 486,
+     status: "verified",
+     text: "docs/agents.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 487,
+     status: "verified",
+     text: "docs/architecture.md"
+    },
+    {
+     detail: "existe: maestro/magi.py",
+     kind: "path",
+     line: 495,
+     status: "verified",
+     text: "maestro/magi.py"
+    },
+    {
+     detail: "existe: maestro/keyring.py",
+     kind: "path",
+     line: 496,
+     status: "verified",
+     text: "maestro/keyring.py"
+    },
+    {
+     detail: "existe: maestro/api_keys.py",
+     kind: "path",
+     line: 496,
+     status: "verified",
+     text: "maestro/api_keys.py"
+    },
+    {
+     detail: "existe: maestro/cli_keys.py",
+     kind: "path",
+     line: 496,
+     status: "verified",
+     text: "maestro/cli_keys.py"
+    },
+    {
+     detail: "existe: tests/test_keyring.py",
+     kind: "path",
+     line: 498,
+     status: "verified",
+     text: "tests/test_keyring.py"
+    },
+    {
+     detail: "existe: maestro/session.py",
+     kind: "path",
+     line: 501,
+     status: "verified",
+     text: "maestro/session.py"
+    },
+    {
+     detail: "existe: data/sessions",
+     kind: "path",
+     line: 501,
+     status: "verified",
+     text: "data/sessions/"
+    },
+    {
+     detail: "existe: maestro/api_sessions.py",
+     kind: "path",
+     line: 502,
+     status: "verified",
+     text: "maestro/api_sessions.py"
+    },
+    {
+     detail: "existe: maestro/dissent.py",
+     kind: "path",
+     line: 503,
+     status: "verified",
+     text: "maestro/dissent.py"
+    },
+    {
+     detail: "existe: maestro/r2.py",
+     kind: "path",
+     line: 504,
+     status: "verified",
+     text: "maestro/r2.py"
+    },
+    {
+     detail: "existe: maestro/applicator.py",
+     kind: "path",
+     line: 506,
+     status: "verified",
+     text: "maestro/applicator.py"
+    },
+    {
+     detail: "existe: maestro/rollback.py",
+     kind: "path",
+     line: 507,
+     status: "verified",
+     text: "maestro/rollback.py"
+    },
+    {
+     detail: "existe: maestro/injection_guard.py",
+     kind: "path",
+     line: 508,
+     status: "verified",
+     text: "maestro/injection_guard.py"
+    },
+    {
+     detail: "existe: tests/test_code_injection.py",
+     kind: "path",
+     line: 514,
+     status: "verified",
+     text: "tests/test_code_injection.py"
+    },
+    {
+     detail: "existe: maestro/agents",
+     kind: "path",
+     line: 518,
+     status: "verified",
+     text: "maestro/agents/"
+    },
+    {
+     detail: "não existe no repo: backend/orchestration_livefire.py",
+     kind: "path",
+     line: 520,
+     status: "stale",
+     text: "backend/orchestration_livefire.py"
+    },
+    {
+     detail: "não existe no repo: backend/orchestration_livefire_rotating.py",
+     kind: "path",
+     line: 520,
+     status: "stale",
+     text: "backend/orchestration_livefire_rotating.py"
+    },
+    {
+     detail: "não existe no repo: backend/maestro_cli.py",
+     kind: "path",
+     line: 520,
+     status: "stale",
+     text: "backend/maestro_cli.py"
+    },
+    {
+     detail: "não existe no repo: backend/env_debug.py",
+     kind: "path",
+     line: 521,
+     status: "stale",
+     text: "backend/env_debug.py"
+    },
+    {
+     detail: "não existe no repo: backend/manual_verification.py",
+     kind: "path",
+     line: 521,
+     status: "stale",
+     text: "backend/manual_verification.py"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 522,
+     status: "verified",
+     text: "orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 522,
+     status: "verified",
+     text: "backend/orchestrator_foundry.py"
+    },
+    {
+     detail: "não existe no repo: scripts/combosync.ps1",
+     kind: "path",
+     line: 523,
+     status: "stale",
+     text: "scripts/combosync.ps1"
+    },
+    {
+     detail: "não existe no repo: backend/Dockerfile",
+     kind: "path",
+     line: 524,
+     status: "stale",
+     text: "backend/Dockerfile"
+    },
+    {
+     detail: "não existe no repo: frontend/Dockerfile",
+     kind: "path",
+     line: 524,
+     status: "stale",
+     text: "frontend/Dockerfile"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 525,
+     status: "verified",
+     text: "agents.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 525,
+     status: "verified",
+     text: "ui-guide.md"
+    },
+    {
+     detail: "não existe no repo: desktop.ini",
+     kind: "path",
+     line: 526,
+     status: "stale",
+     text: "desktop.ini"
+    },
+    {
+     detail: "não existe no repo: scripts/desktop.ini",
+     kind: "path",
+     line: 526,
+     status: "stale",
+     text: "scripts/desktop.ini"
+    },
+    {
+     detail: "não existe no repo: frontend/src/counter.ts",
+     kind: "path",
+     line: 527,
+     status: "stale",
+     text: "frontend/src/counter.ts"
+    },
+    {
+     detail: "não existe no repo: frontend/src/typescript.svg",
+     kind: "path",
+     line: 527,
+     status: "stale",
+     text: "frontend/src/typescript.svg"
+    },
+    {
+     detail: "existe: backend/main.py",
+     kind: "path",
+     line: 531,
+     status: "verified",
+     text: "backend/main.py"
+    },
+    {
+     detail: "existe: requirements.txt",
+     kind: "path",
+     line: 532,
+     status: "verified",
+     text: "requirements.txt"
+    },
+    {
+     detail: "existe: backend/requirements.txt",
+     kind: "path",
+     line: 532,
+     status: "verified",
+     text: "backend/requirements.txt"
+    },
+    {
+     detail: "existe: frontend/index.html",
+     kind: "path",
+     line: 534,
+     status: "verified",
+     text: "frontend/index.html"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 547,
+     status: "verified",
+     text: "orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: maestros/README.md",
+     kind: "path",
+     line: 561,
+     status: "verified",
+     text: "README.md"
+    }
+   ],
+   counts: {stale: 26, unverifiable: 2, verified: 182},
+   file: "changelog.md",
+   kind: "changelog",
+   summary: "- **Session History Browser** (`maestro/tui/app.py`) — New `SessionBrowserScreen` modal (`H` key) with session list, full detail viewer (agent responses, consensus, dissent, R2, NCG, deliberation rounds), and re-run support (`R` key). - **Backend session detail API** (`maestro/tui/backend.py`) — `ge",
+   title: "Changelog"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/agents/base.py",
+     kind: "path",
+     line: 13,
+     status: "verified",
+     text: "maestro/agents/base.py"
+    },
+    {
+     detail: "não existe no repo: models/gemini-2.5-flash",
+     kind: "path",
+     line: 39,
+     status: "stale",
+     text: "models/gemini-2.5-flash"
+    },
+    {
+     detail: "não existe no repo: meta-llama/llama-3.3-70b-instruct",
+     kind: "path",
+     line: 40,
+     status: "stale",
+     text: "meta-llama/llama-3.3-70b-instruct"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 49,
+     status: "verified",
+     text: "backend/orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: maestro/orchestrator.py",
+     kind: "path",
+     line: 84,
+     status: "verified",
+     text: "orchestrator.py"
+    },
+    {
+     detail: "existe: maestro/agents",
+     kind: "path",
+     line: 90,
+     status: "verified",
+     text: "maestro/agents/"
+    },
+    {
+     detail: "existe: maestro/agents/__init__.py",
+     kind: "path",
+     line: 94,
+     status: "verified",
+     text: "maestro/agents/__init__.py"
+    },
+    {
+     detail: "existe: backend/orchestrator_foundry.py",
+     kind: "path",
+     line: 95,
+     status: "verified",
+     text: "backend/orchestrator_foundry.py"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 113,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 113,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 121,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 121,
+     status: "verified",
+     text: "./mod-manager.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 127,
+     status: "verified",
+     text: "roadmap.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 127,
+     status: "verified",
+     text: "./roadmap.md"
+    }
+   ],
+   counts: {stale: 2, unverifiable: 0, verified: 12},
+   file: "docs/agents.md",
+   kind: "doc",
+   summary: "**Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon",
+   title: "Agent Layer -- Maestro-Orchestrator"
+  },
+  {
+   claims: [
+    {
+     detail: "não existe no repo: models/gemini-2.5-flash",
+     kind: "path",
+     line: 28,
+     status: "stale",
+     text: "models/gemini-2.5-flash"
+    },
+    {
+     detail: "não existe no repo: meta-llama/llama-3.3-70b-instruct",
+     kind: "path",
+     line: 29,
+     status: "stale",
+     text: "meta-llama/llama-3.3-70b-instruct"
+    },
+    {
+     detail: "existe: maestro/deliberation.py",
+     kind: "path",
+     line: 35,
+     status: "verified",
+     text: "maestro/deliberation.py"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 42,
+     status: "verified",
+     text: "deliberation.md"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 42,
+     status: "verified",
+     text: "./deliberation.md"
+    },
+    {
+     detail: "existe: maestro/introspect.py",
+     kind: "path",
+     line: 79,
+     status: "verified",
+     text: "maestro/introspect.py"
+    },
+    {
+     detail: "existe: maestro/optimization.py",
+     kind: "path",
+     line: 80,
+     status: "verified",
+     text: "maestro/optimization.py"
+    },
+    {
+     detail: "existe: maestro/magi_vir.py",
+     kind: "path",
+     line: 81,
+     status: "verified",
+     text: "maestro/magi_vir.py"
+    },
+    {
+     detail: "existe: maestro/self_improve.py",
+     kind: "path",
+     line: 82,
+     status: "verified",
+     text: "maestro/self_improve.py"
+    },
+    {
+     detail: "existe: maestro/applicator.py",
+     kind: "path",
+     line: 83,
+     status: "verified",
+     text: "maestro/applicator.py"
+    },
+    {
+     detail: "não existe no repo: data/runtime_config.json",
+     kind: "path",
+     line: 83,
+     status: "stale",
+     text: "data/runtime_config.json"
+    },
+    {
+     detail: "existe: maestro/rollback.py",
+     kind: "path",
+     line: 84,
+     status: "verified",
+     text: "maestro/rollback.py"
+    },
+    {
+     detail: "não existe no repo: data/rollbacks/log.json",
+     kind: "path",
+     line: 84,
+     status: "stale",
+     text: "data/rollbacks/log.json"
+    },
+    {
+     detail: "existe: maestro/injection_guard.py",
+     kind: "path",
+     line: 85,
+     status: "verified",
+     text: "maestro/injection_guard.py"
+    },
+    {
+     detail: "existe: maestro/shard_registry.py",
+     kind: "path",
+     line: 90,
+     status: "verified",
+     text: "maestro/shard_registry.py"
+    },
+    {
+     detail: "existe: maestro/storage_proof.py",
+     kind: "path",
+     line: 91,
+     status: "verified",
+     text: "maestro/storage_proof.py"
+    },
+    {
+     detail: "existe: maestro/agents/shard.py",
+     kind: "path",
+     line: 92,
+     status: "verified",
+     text: "maestro/agents/shard.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 93,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 94,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 94,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: maestro/plugins/base.py",
+     kind: "path",
+     line: 97,
+     status: "verified",
+     text: "maestro/plugins/base.py"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 98,
+     status: "verified",
+     text: "maestro/plugins/manager.py"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 101,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 101,
+     status: "verified",
+     text: "./mod-manager.md"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 103,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: maestro/cli.py",
+     kind: "path",
+     line: 110,
+     status: "verified",
+     text: "maestro/cli.py"
+    },
+    {
+     detail: "módulo maestro.cli existe",
+     kind: "command",
+     line: 115,
+     status: "verified",
+     text: "python -m maestro.cli"
+    },
+    {
+     detail: "existe: maestro/tui",
+     kind: "path",
+     line: 117,
+     status: "verified",
+     text: "maestro/tui/"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 130,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 131,
+     status: "verified",
+     text: "ui-guide.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 131,
+     status: "verified",
+     text: "./ui-guide.md"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 149,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 150,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 154,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "arquivo entrypoint.py existe",
+     kind: "command",
+     line: 241,
+     status: "verified",
+     text: "entrypoint.py (startup dialog)"
+    },
+    {
+     detail: "existe: maestro/agents/mock.py",
+     kind: "path",
+     line: 399,
+     status: "verified",
+     text: "maestro/agents/mock.py"
+    },
+    {
+     detail: "existe: tests/test_orchestration.py",
+     kind: "path",
+     line: 399,
+     status: "verified",
+     text: "tests/test_orchestration.py"
+    },
+    {
+     detail: "existe: maestro/agents/mock_shard_node.py",
+     kind: "path",
+     line: 399,
+     status: "verified",
+     text: "maestro/agents/mock_shard_node.py"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 413,
+     status: "verified",
+     text: "roadmap.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 413,
+     status: "verified",
+     text: "./roadmap.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 417,
+     status: "verified",
+     text: "quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 417,
+     status: "verified",
+     text: "./quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 418,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 418,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 419,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 419,
+     status: "verified",
+     text: "./mod-manager.md"
+    }
+   ],
+   counts: {stale: 4, unverifiable: 0, verified: 42},
+   file: "docs/architecture.md",
+   kind: "doc",
+   summary: "Maestro-Orchestrator is a modular, lightweight orchestration framework designed to coordinate synthetic agents (AI models) via quorum-based consensus. It separates backend logic, agent control, and UI rendering for flexibility and clarity.",
+   title: "System Architecture - Maestro-Orchestrator"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/deliberation.py",
+     kind: "path",
+     line: 240,
+     status: "verified",
+     text: "maestro/deliberation.py"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 1},
+   file: "docs/deliberation.md",
+   kind: "doc",
+   summary: "The Deliberation Engine upgrades the default parallel-collect pattern into an actual multi-round debate. After all agents return their initial answers, each agent receives a structured prompt that includes the original question, its own previous reply, and every peer agent's previous reply — then pr",
+   title: "Deliberation Engine — Maestro-Orchestrator v7.4.0"
+  },
+  {
+   claims: [
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 15,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 18,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 24,
+     status: "verified",
+     text: "docker compose up -d"
+    },
+    {
+     detail: "corresponde à receita de `make down` (Makefile:36)",
+     kind: "command",
+     line: 24,
+     status: "verified",
+     text: "docker compose down"
+    },
+    {
+     detail: "presente em Makefile:27 (declared)",
+     kind: "command",
+     line: 24,
+     status: "verified",
+     text: "make up"
+    },
+    {
+     detail: "presente em Makefile:35 (declared)",
+     kind: "command",
+     line: 24,
+     status: "verified",
+     text: "make down"
+    },
+    {
+     detail: "Makefile existe (Makefile)",
+     kind: "command",
+     line: 32,
+     status: "verified",
+     text: "make"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 34,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 34,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "presente em Makefile:27 (declared)",
+     kind: "command",
+     line: 35,
+     status: "verified",
+     text: "make up"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 35,
+     status: "verified",
+     text: "docker compose up -d --build"
+    },
+    {
+     detail: "presente em Makefile:35 (declared)",
+     kind: "command",
+     line: 36,
+     status: "verified",
+     text: "make down"
+    },
+    {
+     detail: "corresponde à receita de `make down` (Makefile:36)",
+     kind: "command",
+     line: 36,
+     status: "verified",
+     text: "docker compose down"
+    },
+    {
+     detail: "presente em Makefile:43 (declared)",
+     kind: "command",
+     line: 37,
+     status: "verified",
+     text: "make logs"
+    },
+    {
+     detail: "corresponde à receita de `make logs` (Makefile:44)",
+     kind: "command",
+     line: 37,
+     status: "verified",
+     text: "docker compose logs -f"
+    },
+    {
+     detail: "presente em Makefile:47 (declared)",
+     kind: "command",
+     line: 38,
+     status: "verified",
+     text: "make status"
+    },
+    {
+     detail: "corresponde à receita de `make status` (Makefile:48)",
+     kind: "command",
+     line: 38,
+     status: "verified",
+     text: "docker compose ps"
+    },
+    {
+     detail: "presente em Makefile:39 (failed, exit 2)",
+     kind: "command",
+     line: 39,
+     status: "verified",
+     text: "make build"
+    },
+    {
+     detail: "corresponde à receita de `make build` (Makefile:40)",
+     kind: "command",
+     line: 39,
+     status: "verified",
+     text: "docker compose build --no-cache"
+    },
+    {
+     detail: "presente em Makefile:55 (declared)",
+     kind: "command",
+     line: 40,
+     status: "verified",
+     text: "make clean"
+    },
+    {
+     detail: "corresponde à receita de `make clean` (Makefile:58)",
+     kind: "command",
+     line: 40,
+     status: "verified",
+     text: "docker compose down -v"
+    },
+    {
+     detail: "presente em Makefile:61 (declared)",
+     kind: "command",
+     line: 41,
+     status: "verified",
+     text: "make update"
+    },
+    {
+     detail: "presente em Makefile:71 (declared)",
+     kind: "command",
+     line: 42,
+     status: "verified",
+     text: "make dev"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 42,
+     status: "verified",
+     text: "python setup.py --dev"
+    },
+    {
+     detail: "corresponde à receita de `make status` (Makefile:48)",
+     kind: "command",
+     line: 49,
+     status: "verified",
+     text: "docker compose ps"
+    },
+    {
+     detail: "módulo de ferramenta (venv)",
+     kind: "command",
+     line: 62,
+     status: "unverifiable",
+     text: "python -m venv venv"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 65,
+     status: "unverifiable",
+     text: "pip install -r requirements.txt"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 67,
+     status: "verified",
+     text: "python setup.py --dev"
+    },
+    {
+     detail: "módulo maestro.cli existe",
+     kind: "command",
+     line: 83,
+     status: "verified",
+     text: "python -m maestro.cli"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 92,
+     status: "verified",
+     text: "python -m maestro.tui --mode http"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 93,
+     status: "verified",
+     text: "python -m maestro.tui --mode http --url URL"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 96,
+     status: "verified",
+     text: "ui-guide.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 96,
+     status: "verified",
+     text: "./ui-guide.md"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 103,
+     status: "unverifiable",
+     text: "pip install pytest"
+    },
+    {
+     detail: "módulo de ferramenta (pytest)",
+     kind: "command",
+     line: 104,
+     status: "unverifiable",
+     text: "python -m pytest tests/ -v"
+    },
+    {
+     detail: "existe: maestro/agents",
+     kind: "path",
+     line: 111,
+     status: "verified",
+     text: "maestro/agents/"
+    },
+    {
+     detail: "existe: maestro/agents/base.py",
+     kind: "path",
+     line: 111,
+     status: "verified",
+     text: "maestro/agents/base.py"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 111,
+     status: "verified",
+     text: "agents.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 111,
+     status: "verified",
+     text: "./agents.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 163,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 163,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 178,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "existe: docker-compose.yml",
+     kind: "path",
+     line: 180,
+     status: "verified",
+     text: "docker-compose.yml"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 186,
+     status: "unverifiable",
+     text: "docker compose up --build"
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 190,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 200,
+     status: "unverifiable",
+     text: "docker-compose"
+    },
+    {
+     detail: "não existe no repo: 80/443",
+     kind: "path",
+     line: 203,
+     status: "stale",
+     text: "80/443"
+    },
+    {
+     detail: "presente em Makefile:39 (failed, exit 2)",
+     kind: "command",
+     line: 212,
+     status: "verified",
+     text: "make build"
+    },
+    {
+     detail: "corresponde à receita de `make build` (Makefile:40)",
+     kind: "command",
+     line: 212,
+     status: "verified",
+     text: "docker compose build --no-cache"
+    },
+    {
+     detail: "presente em Makefile:61 (declared)",
+     kind: "command",
+     line: 239,
+     status: "verified",
+     text: "make update"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 251,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 251,
+     status: "verified",
+     text: "./architecture.md"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 252,
+     status: "verified",
+     text: "troubleshooting.md"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 252,
+     status: "verified",
+     text: "./troubleshooting.md"
+    }
+   ],
+   counts: {stale: 1, unverifiable: 6, verified: 48},
+   file: "docs/deployment.md",
+   kind: "doc",
+   summary: "This guide covers everything from first-run quickstart to production deployment.",
+   title: "Setup & Deployment Guide - Maestro-Orchestrator"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 11,
+     status: "verified",
+     text: "agents.md"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 14,
+     status: "verified",
+     text: "deliberation.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 17,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 20,
+     status: "verified",
+     text: "ncg.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 23,
+     status: "verified",
+     text: "r2-engine.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 26,
+     status: "verified",
+     text: "magi.md"
+    },
+    {
+     detail: "existe: docs/logging.md",
+     kind: "path",
+     line: 29,
+     status: "verified",
+     text: "logging.md"
+    },
+    {
+     detail: "existe: data/sessions",
+     kind: "path",
+     line: 30,
+     status: "verified",
+     text: "data/sessions/"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 32,
+     status: "verified",
+     text: "quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 35,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 38,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 41,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 110,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 111,
+     status: "verified",
+     text: "deliberation.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 112,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 113,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 114,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 115,
+     status: "verified",
+     text: "deployment.md"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 116,
+     status: "verified",
+     text: "troubleshooting.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 117,
+     status: "verified",
+     text: "ui-guide.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 118,
+     status: "verified",
+     text: "roadmap.md"
+    },
+    {
+     detail: "existe: docs/vision.md",
+     kind: "path",
+     line: 119,
+     status: "verified",
+     text: "vision.md"
+    },
+    {
+     detail: "existe: CONTRIBUTING.md",
+     kind: "path",
+     line: 127,
+     status: "verified",
+     text: "../CONTRIBUTING.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 23},
+   file: "docs/index.md",
+   kind: "doc",
+   summary: "Welcome to the official documentation hub for **Maestro-Orchestrator**, an ensemble AI framework that coordinates multiple language models, facilitates structured dissent, and iteratively refines truth through consensus mechanisms.",
+   title: "Maestro-Orchestrator Documentation"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: data/sessions",
+     kind: "path",
+     line: 9,
+     status: "verified",
+     text: "data/sessions/"
+    },
+    {
+     detail: "existe: data/r2",
+     kind: "path",
+     line: 61,
+     status: "verified",
+     text: "data/r2/"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 2},
+   file: "docs/logging.md",
+   kind: "doc",
+   summary: "Maestro-Orchestrator persists every orchestration session as structured JSON. This supports auditing, analysis, replay, and future integration with meta-agents like MAGI.",
+   title: "Logging & Session Persistence"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestros",
+     kind: "path",
+     line: 68,
+     status: "verified",
+     text: "../maestros/"
+    },
+    {
+     detail: "existe: maestros",
+     kind: "path",
+     line: 68,
+     status: "verified",
+     text: "../maestros/"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 2},
+   file: "docs/maestro-whitepaper.md",
+   kind: "doc",
+   summary: "When I found out that nobody really considered my method for unifying and grounding AI models in reality, I felt like I had no choice but to act. I am not a CEO, nor a tenured researcher, nor someone whose opinion would traditionally be invited into elite rooms. I am a network and systems engineer w",
+   title: "Author’s Note"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: data/r2",
+     kind: "path",
+     line: 35,
+     status: "verified",
+     text: "data/r2/"
+    },
+    {
+     detail: "existe: data/sessions",
+     kind: "path",
+     line: 36,
+     status: "verified",
+     text: "data/sessions/"
+    },
+    {
+     detail: "existe: maestro/applicator.py",
+     kind: "path",
+     line: 118,
+     status: "verified",
+     text: "maestro/applicator.py"
+    },
+    {
+     detail: "existe: maestro/injection_guard.py",
+     kind: "path",
+     line: 118,
+     status: "verified",
+     text: "maestro/injection_guard.py"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 118,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 118,
+     status: "verified",
+     text: "./self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 134,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 134,
+     status: "verified",
+     text: "./self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 135,
+     status: "verified",
+     text: "r2-engine.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 135,
+     status: "verified",
+     text: "./r2-engine.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 136,
+     status: "verified",
+     text: "ncg.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 136,
+     status: "verified",
+     text: "./ncg.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 137,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 137,
+     status: "verified",
+     text: "./architecture.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 14},
+   file: "docs/magi.md",
+   kind: "doc",
+   summary: "**MAGI** (Meta-Agent Governance and Insight) is Maestro-Orchestrator's long-term memory. It reads the R2 ledger and session history to detect patterns that span many sessions, producing structured Recommendations for system-level changes.",
+   title: "MAGI: Meta-Agent Governance and Insight"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/plugins/base.py",
+     kind: "path",
+     line: 26,
+     status: "verified",
+     text: "maestro/plugins/base.py"
+    },
+    {
+     detail: "existe: data/plugins/installed/defcon.shard-agent/manifest.json",
+     kind: "path",
+     line: 56,
+     status: "verified",
+     text: "manifest.json"
+    },
+    {
+     detail: "existe: maestro/plugins/manager.py",
+     kind: "path",
+     line: 123,
+     status: "verified",
+     text: "maestro/plugins/manager.py"
+    },
+    {
+     detail: "existe: data/plugins/installed",
+     kind: "path",
+     line: 131,
+     status: "verified",
+     text: "data/plugins/installed/"
+    },
+    {
+     detail: "existe: data/plugins/installed/defcon.shard-agent/manifest.json",
+     kind: "path",
+     line: 131,
+     status: "verified",
+     text: "manifest.json"
+    },
+    {
+     detail: "não existe no repo: config.json",
+     kind: "path",
+     line: 160,
+     status: "stale",
+     text: "config.json"
+    },
+    {
+     detail: "não existe no repo: data/runtime_config.json",
+     kind: "path",
+     line: 239,
+     status: "stale",
+     text: "data/runtime_config.json"
+    },
+    {
+     detail: "existe: data/plugins/snapshots",
+     kind: "path",
+     line: 269,
+     status: "verified",
+     text: "data/plugins/snapshots/"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 409,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 409,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 410,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 410,
+     status: "verified",
+     text: "./architecture.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 411,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 411,
+     status: "verified",
+     text: "./self-improvement-pipeline.md"
+    }
+   ],
+   counts: {stale: 2, unverifiable: 0, verified: 12},
+   file: "docs/mod-manager.md",
+   kind: "doc",
+   summary: "**Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon",
+   title: "Mod Manager — Modular Plugin Architecture"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 113,
+     status: "verified",
+     text: "roadmap.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 113,
+     status: "verified",
+     text: "./roadmap.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 2},
+   file: "docs/ncg.md",
+   kind: "doc",
+   summary: "**NCG** is the parallel diversity benchmark track in Maestro-Orchestrator. Where MAGI detects drift across sessions and R2 detects dissent in the moment, NCG **prevents model collapse** by maintaining a headless baseline against which all conversational outputs are measured.",
+   title: "NCG: Novel Content Generation"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 88,
+     status: "verified",
+     text: "ncg.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 88,
+     status: "verified",
+     text: "./ncg.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 94,
+     status: "verified",
+     text: "roadmap.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 94,
+     status: "verified",
+     text: "./roadmap.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 4},
+   file: "docs/quorum_logic.md",
+   kind: "doc",
+   summary: "**Version:** v7.3.0 **Last Updated:** 2026-03-18 **Author:** defcon",
+   title: "Quorum Logic – Maestro-Orchestrator"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: data/r2",
+     kind: "path",
+     line: 25,
+     status: "verified",
+     text: "data/r2/"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 96,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 96,
+     status: "verified",
+     text: "./self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 171,
+     status: "verified",
+     text: "ncg.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 171,
+     status: "verified",
+     text: "./ncg.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 172,
+     status: "verified",
+     text: "magi.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 172,
+     status: "verified",
+     text: "./magi.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 173,
+     status: "verified",
+     text: "self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 173,
+     status: "verified",
+     text: "./self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 174,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 174,
+     status: "verified",
+     text: "./architecture.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 11},
+   file: "docs/r2-engine.md",
+   kind: "doc",
+   summary: "The **R2 Engine** is Maestro-Orchestrator's reflex layer. After every orchestration session it synthesizes signals from dissent analysis, NCG drift detection, and quorum logic into a single session quality score, indexes the result into a persistent ledger, and identifies improvement signals that MA",
+   title: "R2 Engine: Rapid Recursion & Reinforcement"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: ARCHITECTURE.md",
+     kind: "path",
+     line: 19,
+     status: "verified",
+     text: "ARCHITECTURE.md"
+    },
+    {
+     detail: "existe: ARCHITECTURE.md",
+     kind: "path",
+     line: 19,
+     status: "verified",
+     text: "../ARCHITECTURE.md"
+    },
+    {
+     detail: "existe: ORCHESTRA.md",
+     kind: "path",
+     line: 78,
+     status: "verified",
+     text: "ORCHESTRA.md"
+    },
+    {
+     detail: "existe: ORCHESTRA.md",
+     kind: "path",
+     line: 78,
+     status: "verified",
+     text: "../ORCHESTRA.md"
+    },
+    {
+     detail: "existe: CONTRIBUTING.md",
+     kind: "path",
+     line: 104,
+     status: "verified",
+     text: "CONTRIBUTING.md"
+    },
+    {
+     detail: "existe: CONTRIBUTING.md",
+     kind: "path",
+     line: 120,
+     status: "verified",
+     text: "CONTRIBUTING.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 0, verified: 6},
+   file: "docs/roadmap.md",
+   kind: "doc",
+   summary: "**Current Version:** v7.4.0 **Last Updated:** 2026-03-19 **Maintainer:** defcon",
+   title: "Maestro-Orchestrator Roadmap"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/introspect.py",
+     kind: "path",
+     line: 31,
+     status: "verified",
+     text: "maestro/introspect.py"
+    },
+    {
+     detail: "existe: maestro/optimization.py",
+     kind: "path",
+     line: 60,
+     status: "verified",
+     text: "maestro/optimization.py"
+    },
+    {
+     detail: "existe: maestro/magi_vir.py",
+     kind: "path",
+     line: 93,
+     status: "verified",
+     text: "maestro/magi_vir.py"
+    },
+    {
+     detail: "existe: maestro/self_improve.py",
+     kind: "path",
+     line: 116,
+     status: "verified",
+     text: "maestro/self_improve.py"
+    },
+    {
+     detail: "existe: maestro/applicator.py",
+     kind: "path",
+     line: 157,
+     status: "verified",
+     text: "maestro/applicator.py"
+    },
+    {
+     detail: "não existe no repo: data/runtime_config.json",
+     kind: "path",
+     line: 163,
+     status: "stale",
+     text: "data/runtime_config.json"
+    },
+    {
+     detail: "existe: maestro/rollback.py",
+     kind: "path",
+     line: 186,
+     status: "verified",
+     text: "maestro/rollback.py"
+    },
+    {
+     detail: "não existe no repo: data/rollbacks/log.json",
+     kind: "path",
+     line: 188,
+     status: "stale",
+     text: "data/rollbacks/log.json"
+    },
+    {
+     detail: "existe: maestro/injection_guard.py",
+     kind: "path",
+     line: 210,
+     status: "verified",
+     text: "maestro/injection_guard.py"
+    },
+    {
+     detail: "não existe no repo: data/rollbacks/log.json",
+     kind: "path",
+     line: 285,
+     status: "stale",
+     text: "data/rollbacks/log.json"
+    },
+    {
+     detail: "não existe no repo: data/runtime_config.json",
+     kind: "path",
+     line: 287,
+     status: "stale",
+     text: "data/runtime_config.json"
+    },
+    {
+     detail: "existe: tests/test_self_improvement.py",
+     kind: "path",
+     line: 312,
+     status: "verified",
+     text: "tests/test_self_improvement.py"
+    },
+    {
+     detail: "existe: tests/test_code_injection.py",
+     kind: "path",
+     line: 322,
+     status: "verified",
+     text: "tests/test_code_injection.py"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 344,
+     status: "verified",
+     text: "magi.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 344,
+     status: "verified",
+     text: "./magi.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 345,
+     status: "verified",
+     text: "r2-engine.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 345,
+     status: "verified",
+     text: "./r2-engine.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 346,
+     status: "verified",
+     text: "storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 346,
+     status: "verified",
+     text: "./storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 347,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 347,
+     status: "verified",
+     text: "./mod-manager.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 348,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 348,
+     status: "verified",
+     text: "./architecture.md"
+    }
+   ],
+   counts: {stale: 4, unverifiable: 0, verified: 19},
+   file: "docs/self-improvement-pipeline.md",
+   kind: "doc",
+   summary: "The self-improvement pipeline is Maestro-Orchestrator's mechanism for identifying and validating optimizations to its own code. It bridges the gap between MAGI's cross-session pattern detection and concrete, testable code changes.",
+   title: "Self-Improvement Pipeline"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestro/shard_registry.py",
+     kind: "path",
+     line: 52,
+     status: "verified",
+     text: "maestro/shard_registry.py"
+    },
+    {
+     detail: "existe: data/storage_nodes",
+     kind: "path",
+     line: 101,
+     status: "verified",
+     text: "data/storage_nodes/"
+    },
+    {
+     detail: "existe: maestro/storage_proof.py",
+     kind: "path",
+     line: 105,
+     status: "verified",
+     text: "maestro/storage_proof.py"
+    },
+    {
+     detail: "não existe no repo: data/storage_proofs/reputations.json",
+     kind: "path",
+     line: 162,
+     status: "stale",
+     text: "data/storage_proofs/reputations.json"
+    },
+    {
+     detail: "existe: maestro/agents/shard.py",
+     kind: "path",
+     line: 166,
+     status: "verified",
+     text: "maestro/agents/shard.py"
+    },
+    {
+     detail: "existe: maestro/node_server.py",
+     kind: "path",
+     line: 201,
+     status: "verified",
+     text: "maestro/node_server.py"
+    },
+    {
+     detail: "não existe no repo: data/node_shards.json",
+     kind: "path",
+     line: 224,
+     status: "stale",
+     text: "data/node_shards.json"
+    },
+    {
+     detail: "existe: maestro/shard_utils.py",
+     kind: "path",
+     line: 236,
+     status: "verified",
+     text: "maestro/shard_utils.py"
+    },
+    {
+     detail: "existe: maestro/shard_manager.py",
+     kind: "path",
+     line: 267,
+     status: "verified",
+     text: "maestro/shard_manager.py"
+    },
+    {
+     detail: "não existe no repo: node_shards.json",
+     kind: "path",
+     line: 273,
+     status: "stale",
+     text: "node_shards.json"
+    },
+    {
+     detail: "existe: maestro/node_cli.py",
+     kind: "path",
+     line: 311,
+     status: "verified",
+     text: "maestro/node_cli.py"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 317,
+     status: "verified",
+     text: "python -m maestro.node_cli setup --model meta-llama/Llama-3.3-70B-Instruct --layers 0-15"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 320,
+     status: "verified",
+     text: "python -m maestro.node_cli start --port 8001 --orchestrator http://maestro-host:8080"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 323,
+     status: "verified",
+     text: "python -m maestro.node_cli status"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 326,
+     status: "verified",
+     text: "python -m maestro.node_cli verify --model meta-llama/Llama-3.3-70B-Instruct"
+    },
+    {
+     detail: "módulo maestro.node_cli existe",
+     kind: "command",
+     line: 329,
+     status: "verified",
+     text: "python -m maestro.node_cli shards"
+    },
+    {
+     detail: "existe: maestro/lan_discovery.py",
+     kind: "path",
+     line: 424,
+     status: "verified",
+     text: "maestro/lan_discovery.py"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 453,
+     status: "verified",
+     text: "agents.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 453,
+     status: "verified",
+     text: "./agents.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 454,
+     status: "verified",
+     text: "mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 454,
+     status: "verified",
+     text: "./mod-manager.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 455,
+     status: "verified",
+     text: "r2-engine.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 455,
+     status: "verified",
+     text: "./r2-engine.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 456,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 456,
+     status: "verified",
+     text: "./architecture.md"
+    }
+   ],
+   counts: {stale: 3, unverifiable: 0, verified: 22},
+   file: "docs/storage-network.md",
+   kind: "doc",
+   summary: "**Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon",
+   title: "Storage Network — Proof-of-Storage Distributed Inference"
+  },
+  {
+   claims: [
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 9,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "módulo maestro.cli_keys existe",
+     kind: "command",
+     line: 18,
+     status: "verified",
+     text: "python -m maestro.cli_keys set openai sk-..."
+    },
+    {
+     detail: "existe: setup.py",
+     kind: "path",
+     line: 34,
+     status: "verified",
+     text: "setup.py"
+    },
+    {
+     detail: "existe: entrypoint.py",
+     kind: "path",
+     line: 34,
+     status: "verified",
+     text: "entrypoint.py"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 37,
+     status: "unverifiable",
+     text: "pip install -r requirements.txt"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 43,
+     status: "unverifiable",
+     text: "python -c \"from maestro.dependency_resolver import resolve_all; r = resolve_all(); print(f'{len(r.errors)} errors, {r.ok_count} ok'); [print(f'  - {c.name}: {c.hint}') for c in r.errors]\""
+    },
+    {
+     detail: "existe: frontend/vite.config.ts",
+     kind: "path",
+     line: 55,
+     status: "verified",
+     text: "frontend/vite.config.ts"
+    },
+    {
+     detail: "presente em Makefile:39 (failed, exit 2)",
+     kind: "command",
+     line: 60,
+     status: "verified",
+     text: "make build"
+    },
+    {
+     detail: "corresponde à receita de `make build` (Makefile:40)",
+     kind: "command",
+     line: 60,
+     status: "verified",
+     text: "docker compose build --no-cache"
+    },
+    {
+     detail: "presente em Makefile:43 (declared)",
+     kind: "command",
+     line: 65,
+     status: "verified",
+     text: "make logs"
+    },
+    {
+     detail: "presente em Makefile:47 (declared)",
+     kind: "command",
+     line: 66,
+     status: "verified",
+     text: "make status"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 79,
+     status: "unverifiable",
+     text: "pip install textual"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 90,
+     status: "unverifiable",
+     text: "docker rm -f maestro-shared-redis"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 102,
+     status: "verified",
+     text: "docker compose up"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 126,
+     status: "unverifiable",
+     text: "docker network ls"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 132,
+     status: "unverifiable",
+     text: "docker network ls --filter name=maestro-4_maestro-net"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 135,
+     status: "unverifiable",
+     text: "docker network rm <network-id>"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 150,
+     status: "verified",
+     text: "architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 150,
+     status: "verified",
+     text: "./architecture.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "./quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 152,
+     status: "verified",
+     text: "ui-guide.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 152,
+     status: "verified",
+     text: "./ui-guide.md"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 7, verified: 16},
+   file: "docs/troubleshooting.md",
+   kind: "doc",
+   summary: "You need at least one provider key. There are several ways to configure them:",
+   title: "Troubleshooting"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: frontend/src/style.css",
+     kind: "path",
+     line: 12,
+     status: "verified",
+     text: "frontend/src/style.css"
+    },
+    {
+     detail: "existe: frontend/src/maestroUI.tsx",
+     kind: "path",
+     line: 14,
+     status: "verified",
+     text: "frontend/src/maestroUI.tsx"
+    },
+    {
+     detail: "subcomando do gerenciador de pacotes",
+     kind: "command",
+     line: 108,
+     status: "unverifiable",
+     text: "npm install"
+    },
+    {
+     detail: "script 'dev' existe em package.json",
+     kind: "command",
+     line: 109,
+     status: "verified",
+     text: "npm run dev"
+    },
+    {
+     detail: "existe: backend/main.py",
+     kind: "path",
+     line: 114,
+     status: "verified",
+     text: "backend/main.py"
+    },
+    {
+     detail: "existe: maestro/tui",
+     kind: "path",
+     line: 128,
+     status: "verified",
+     text: "maestro/tui/"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 133,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 134,
+     status: "verified",
+     text: "python -m maestro.tui --mode http"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 135,
+     status: "verified",
+     text: "python -m maestro.tui --mode http --url URL"
+    }
+   ],
+   counts: {stale: 0, unverifiable: 1, verified: 8},
+   file: "docs/ui-guide.md",
+   kind: "doc",
+   summary: "This guide outlines the structure and behavior of the Maestro-Orchestrator frontend, built with React and Vite.",
+   title: "UI Guide: Maestro-Orchestrator"
+  },
+  {
+   claims: [],
+   counts: {stale: 0, unverifiable: 0, verified: 0},
+   file: "docs/vision.md",
+   kind: "doc",
+   summary: "Maestro is not an AI.",
+   title: "VISION"
+  },
+  {
+   claims: [
+    {
+     detail: "existe: maestros/DESIGN.md",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "DESIGN.md"
+    },
+    {
+     detail: "existe: maestros/DESIGN.md",
+     kind: "path",
+     line: 15,
+     status: "verified",
+     text: "./DESIGN.md"
+    },
+    {
+     detail: "existe: maestros/DESIGN.md",
+     kind: "path",
+     line: 41,
+     status: "verified",
+     text: "DESIGN.md"
+    },
+    {
+     detail: "existe: maestros/DESIGN.md",
+     kind: "path",
+     line: 41,
+     status: "verified",
+     text: "./DESIGN.md"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 47,
+     status: "unverifiable",
+     text: "cargo check --workspace"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 50,
+     status: "unverifiable",
+     text: "cargo check"
+    },
+    {
+     detail: "não existe no repo: claude/telos-kernel-exploration-xSEfp",
+     kind: "path",
+     line: 56,
+     status: "stale",
+     text: "claude/telos-kernel-exploration-xSEfp"
+    }
+   ],
+   counts: {stale: 1, unverifiable: 2, verified: 4},
+   file: "maestros/README.md",
+   kind: "readme",
+   summary: "**Status:** v0.0.1 skeleton. Workspace seams are in place; crate bodies are stubs. Phase 8 (Rust port of Maestro core) and Phase 9 (MaestrOS substrate) work lands here incrementally.",
+   title: "MaestrOS"
+  },
+  {
+   claims: [
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 86,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 91,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "Makefile existe (Makefile)",
+     kind: "command",
+     line: 100,
+     status: "verified",
+     text: "make"
+    },
+    {
+     detail: "presente em Makefile:23 (declared)",
+     kind: "command",
+     line: 102,
+     status: "verified",
+     text: "make setup"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 102,
+     status: "verified",
+     text: "python setup.py"
+    },
+    {
+     detail: "presente em Makefile:27 (declared)",
+     kind: "command",
+     line: 103,
+     status: "verified",
+     text: "make up"
+    },
+    {
+     detail: "corresponde à receita de `make up` (Makefile:28)",
+     kind: "command",
+     line: 103,
+     status: "verified",
+     text: "docker compose up -d --build"
+    },
+    {
+     detail: "presente em Makefile:35 (declared)",
+     kind: "command",
+     line: 104,
+     status: "verified",
+     text: "make down"
+    },
+    {
+     detail: "corresponde à receita de `make down` (Makefile:36)",
+     kind: "command",
+     line: 104,
+     status: "verified",
+     text: "docker compose down"
+    },
+    {
+     detail: "presente em Makefile:43 (declared)",
+     kind: "command",
+     line: 105,
+     status: "verified",
+     text: "make logs"
+    },
+    {
+     detail: "corresponde à receita de `make logs` (Makefile:44)",
+     kind: "command",
+     line: 105,
+     status: "verified",
+     text: "docker compose logs -f"
+    },
+    {
+     detail: "presente em Makefile:47 (declared)",
+     kind: "command",
+     line: 106,
+     status: "verified",
+     text: "make status"
+    },
+    {
+     detail: "corresponde à receita de `make status` (Makefile:48)",
+     kind: "command",
+     line: 106,
+     status: "verified",
+     text: "docker compose ps"
+    },
+    {
+     detail: "presente em Makefile:55 (declared)",
+     kind: "command",
+     line: 107,
+     status: "verified",
+     text: "make clean"
+    },
+    {
+     detail: "corresponde à receita de `make clean` (Makefile:58)",
+     kind: "command",
+     line: 107,
+     status: "verified",
+     text: "docker compose down -v"
+    },
+    {
+     detail: "presente em Makefile:71 (declared)",
+     kind: "command",
+     line: 108,
+     status: "verified",
+     text: "make dev"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 108,
+     status: "verified",
+     text: "python setup.py --dev"
+    },
+    {
+     detail: "módulo de ferramenta (venv)",
+     kind: "command",
+     line: 118,
+     status: "unverifiable",
+     text: "python -m venv venv"
+    },
+    {
+     detail: "ferramenta externa; nenhum artefato do repo citado",
+     kind: "command",
+     line: 121,
+     status: "unverifiable",
+     text: "pip install -r requirements.txt"
+    },
+    {
+     detail: "arquivo setup.py existe",
+     kind: "command",
+     line: 123,
+     status: "verified",
+     text: "python setup.py --dev"
+    },
+    {
+     detail: "módulo maestro.cli existe",
+     kind: "command",
+     line: 131,
+     status: "verified",
+     text: "python -m maestro.cli"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 132,
+     status: "verified",
+     text: "python -m maestro.tui"
+    },
+    {
+     detail: "módulo maestro.tui existe",
+     kind: "command",
+     line: 133,
+     status: "verified",
+     text: "python -m maestro.tui --mode http --url URL"
+    },
+    {
+     detail: "não existe no repo: models/gemini-2.5-flash",
+     kind: "path",
+     line: 147,
+     status: "stale",
+     text: "models/gemini-2.5-flash"
+    },
+    {
+     detail: "não existe no repo: meta-llama/llama-3.3-70b-instruct",
+     kind: "path",
+     line: 148,
+     status: "stale",
+     text: "meta-llama/llama-3.3-70b-instruct"
+    },
+    {
+     detail: "existe: maestro/agents",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "maestro/agents/"
+    },
+    {
+     detail: "existe: maestro/agents/base.py",
+     kind: "path",
+     line: 151,
+     status: "verified",
+     text: "maestro/agents/base.py"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 195,
+     status: "verified",
+     text: "docs/ncg.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 195,
+     status: "verified",
+     text: "./docs/ncg.md"
+    },
+    {
+     detail: "não existe no repo: node_shards.json",
+     kind: "path",
+     line: 304,
+     status: "stale",
+     text: "node_shards.json"
+    },
+    {
+     detail: "existe: ARCHITECTURE.md",
+     kind: "path",
+     line: 347,
+     status: "verified",
+     text: "ARCHITECTURE.md"
+    },
+    {
+     detail: "existe: ARCHITECTURE.md",
+     kind: "path",
+     line: 347,
+     status: "verified",
+     text: "./ARCHITECTURE.md"
+    },
+    {
+     detail: "existe: PROJECT_EXPLAINED.md",
+     kind: "path",
+     line: 348,
+     status: "verified",
+     text: "PROJECT_EXPLAINED.md"
+    },
+    {
+     detail: "existe: PROJECT_EXPLAINED.md",
+     kind: "path",
+     line: 348,
+     status: "verified",
+     text: "./PROJECT_EXPLAINED.md"
+    },
+    {
+     detail: "existe: CLUSTERING.md",
+     kind: "path",
+     line: 349,
+     status: "verified",
+     text: "CLUSTERING.md"
+    },
+    {
+     detail: "existe: CLUSTERING.md",
+     kind: "path",
+     line: 349,
+     status: "verified",
+     text: "./CLUSTERING.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 350,
+     status: "verified",
+     text: "docs/architecture.md"
+    },
+    {
+     detail: "existe: docs/architecture.md",
+     kind: "path",
+     line: 350,
+     status: "verified",
+     text: "./docs/architecture.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 351,
+     status: "verified",
+     text: "docs/agents.md"
+    },
+    {
+     detail: "existe: docs/agents.md",
+     kind: "path",
+     line: 351,
+     status: "verified",
+     text: "./docs/agents.md"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 352,
+     status: "verified",
+     text: "docs/deliberation.md"
+    },
+    {
+     detail: "existe: docs/deliberation.md",
+     kind: "path",
+     line: 352,
+     status: "verified",
+     text: "./docs/deliberation.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 353,
+     status: "verified",
+     text: "docs/ncg.md"
+    },
+    {
+     detail: "existe: docs/ncg.md",
+     kind: "path",
+     line: 353,
+     status: "verified",
+     text: "./docs/ncg.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 354,
+     status: "verified",
+     text: "docs/r2-engine.md"
+    },
+    {
+     detail: "existe: docs/r2-engine.md",
+     kind: "path",
+     line: 354,
+     status: "verified",
+     text: "./docs/r2-engine.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 355,
+     status: "verified",
+     text: "docs/magi.md"
+    },
+    {
+     detail: "existe: docs/magi.md",
+     kind: "path",
+     line: 355,
+     status: "verified",
+     text: "./docs/magi.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 356,
+     status: "verified",
+     text: "docs/self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/self-improvement-pipeline.md",
+     kind: "path",
+     line: 356,
+     status: "verified",
+     text: "./docs/self-improvement-pipeline.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 357,
+     status: "verified",
+     text: "docs/storage-network.md"
+    },
+    {
+     detail: "existe: docs/storage-network.md",
+     kind: "path",
+     line: 357,
+     status: "verified",
+     text: "./docs/storage-network.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 358,
+     status: "verified",
+     text: "docs/mod-manager.md"
+    },
+    {
+     detail: "existe: docs/mod-manager.md",
+     kind: "path",
+     line: 358,
+     status: "verified",
+     text: "./docs/mod-manager.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 359,
+     status: "verified",
+     text: "docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/quorum_logic.md",
+     kind: "path",
+     line: 359,
+     status: "verified",
+     text: "./docs/quorum_logic.md"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 360,
+     status: "verified",
+     text: "docs/deployment.md"
+    },
+    {
+     detail: "existe: docs/deployment.md",
+     kind: "path",
+     line: 360,
+     status: "verified",
+     text: "./docs/deployment.md"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 361,
+     status: "verified",
+     text: "docs/troubleshooting.md"
+    },
+    {
+     detail: "existe: docs/troubleshooting.md",
+     kind: "path",
+     line: 361,
+     status: "verified",
+     text: "./docs/troubleshooting.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 362,
+     status: "verified",
+     text: "docs/ui-guide.md"
+    },
+    {
+     detail: "existe: docs/ui-guide.md",
+     kind: "path",
+     line: 362,
+     status: "verified",
+     text: "./docs/ui-guide.md"
+    },
+    {
+     detail: "existe: docs/logging.md",
+     kind: "path",
+     line: 363,
+     status: "verified",
+     text: "docs/logging.md"
+    },
+    {
+     detail: "existe: docs/logging.md",
+     kind: "path",
+     line: 363,
+     status: "verified",
+     text: "./docs/logging.md"
+    },
+    {
+     detail: "existe: docs/vision.md",
+     kind: "path",
+     line: 364,
+     status: "verified",
+     text: "docs/vision.md"
+    },
+    {
+     detail: "existe: docs/vision.md",
+     kind: "path",
+     line: 364,
+     status: "verified",
+     text: "./docs/vision.md"
+    },
+    {
+     detail: "existe: docs/maestro-whitepaper.md",
+     kind: "path",
+     line: 365,
+     status: "verified",
+     text: "docs/maestro-whitepaper.md"
+    },
+    {
+     detail: "existe: docs/maestro-whitepaper.md",
+     kind: "path",
+     line: 365,
+     status: "verified",
+     text: "./docs/maestro-whitepaper.md"
+    },
+    {
+     detail: "existe: CONTRIBUTING.md",
+     kind: "path",
+     line: 371,
+     status: "verified",
+     text: "./CONTRIBUTING.md"
+    },
+    {
+     detail: "existe: LICENSE.md",
+     kind: "path",
+     line: 379,
+     status: "verified",
+     text: "LICENSE.md"
+    },
+    {
+     detail: "existe: LICENSE.md",
+     kind: "path",
+     line: 379,
+     status: "verified",
+     text: "./LICENSE.md"
+    },
+    {
+     detail: "existe: commercial_license.md",
+     kind: "path",
+     line: 380,
+     status: "verified",
+     text: "commercial_license.md"
+    },
+    {
+     detail: "existe: commercial_license.md",
+     kind: "path",
+     line: 380,
+     status: "verified",
+     text: "./commercial_license.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 395,
+     status: "verified",
+     text: "docs/roadmap.md"
+    },
+    {
+     detail: "existe: docs/roadmap.md",
+     kind: "path",
+     line: 395,
+     status: "verified",
+     text: "./docs/roadmap.md"
+    }
+   ],
+   counts: {stale: 3, unverifiable: 2, verified: 70},
+   file: "readme.md",
+   kind: "readme",
+   summary: "![Version](https://img.shields.io/badge/version-v7.4.0-blue) ![License](https://img.shields.io/badge/license-Custom%20Open%20Use-orange) ![Python](https://img.shields.io/badge/python-3.10%2B-green) ![Docker](https://img.shields.io/badge/docker-supported-blue)",
+   title: "Maestro: Orchestrating Persistent AI Infrastructure"
+  }
+ ],
+ facts: [
+  {
+   claim: "Doc (readme) maestros/README.md — 'MaestrOS': **Status:** v0.0.1 skeleton. Workspace seams are in place; crate bodies are stubs. Phase 8 (Rust port of Maestro core) and Phase 9 (MaestrOS substrate) work lands here incrementally.; afirmações verificáveis: 4 verified, 1 stale, 2 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "maestros/README.md", line: 1}
+   ],
+   fingerprint: "e2164b723abf05b30b4019974a53d473e483ffa4608f7728104547d3b3a72ac0",
+   id: "docs.maestros-readme.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (readme) readme.md — 'Maestro: Orchestrating Persistent AI Infrastructure': ![Version](https://img.shields.io/badge/version-v7.4.0-blue) ![License](https://img.shields.io/badge/license-Custom%20Open%20Use-orange) ![Python](https://img.shields.io/badge/python-3.10%2B-green) ![; afirmações verificáveis: 70 verified, 3 stale, 2 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "readme.md", line: 1}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.readme.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (contributing) CONTRIBUTING.md — 'Contributing to Maestro-Orchestrator': Maestro-Orchestrator pluralizes synthetic intelligence by enabling multiple AI agents to collaborate, dissent, and reach consensus using quorum-based logic. Contributions are welcome and appreciated.; afirmações verificáveis: 20 verified, 0 stale, 5 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 1}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.contributing.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (changelog) changelog.md — 'Changelog': - **Session History Browser** (`maestro/tui/app.py`) — New `SessionBrowserScreen` modal (`H` key) with session list, full detail viewer (agent responses, consensus, dissent, R2, NCG, deliberation roun; afirmações verificáveis: 182 verified, 26 stale, 2 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "changelog.md", line: 1}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.changelog.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/agents.md — 'Agent Layer -- Maestro-Orchestrator': **Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon; afirmações verificáveis: 12 verified, 2 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/agents.md", line: 1}
+   ],
+   fingerprint: "60b1b4ce098611152a6246d718141a2a56e6e61b01c2c244fee8cb6e329e4191",
+   id: "docs.docs-agents.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/architecture.md — 'System Architecture - Maestro-Orchestrator': Maestro-Orchestrator is a modular, lightweight orchestration framework designed to coordinate synthetic agents (AI models) via quorum-based consensus. It separates backend logic, agent control, and UI; afirmações verificáveis: 42 verified, 4 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/architecture.md", line: 1}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.docs-architecture.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/deliberation.md — 'Deliberation Engine — Maestro-Orchestrator v7.4.0': The Deliberation Engine upgrades the default parallel-collect pattern into an actual multi-round debate. After all agents return their initial answers, each agent receives a structured prompt that inc; afirmações verificáveis: 1 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/deliberation.md", line: 1}
+   ],
+   fingerprint: "fb31e315b51e1828919cac6cd017235d1b995c8c4914952ddd77dee7078ca7a2",
+   id: "docs.docs-deliberation.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/deployment.md — 'Setup & Deployment Guide - Maestro-Orchestrator': This guide covers everything from first-run quickstart to production deployment.; afirmações verificáveis: 48 verified, 1 stale, 6 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/deployment.md", line: 1}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.docs-deployment.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/index.md — 'Maestro-Orchestrator Documentation': Welcome to the official documentation hub for **Maestro-Orchestrator**, an ensemble AI framework that coordinates multiple language models, facilitates structured dissent, and iteratively refines trut; afirmações verificáveis: 23 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/index.md", line: 1}
+   ],
+   fingerprint: "4aaad2f0dbc4e60d3dfeb54f0aa3935381d609bb6337f527e60ccb28ea293c81",
+   id: "docs.docs-index.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/logging.md — 'Logging & Session Persistence': Maestro-Orchestrator persists every orchestration session as structured JSON. This supports auditing, analysis, replay, and future integration with meta-agents like MAGI.; afirmações verificáveis: 2 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/logging.md", line: 1}
+   ],
+   fingerprint: "c8d8b9d0f9b5583070eb0609de0570c4ec3b125f5c8c055aac4cfe3e5911f3b5",
+   id: "docs.docs-logging.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/maestro-whitepaper.md — 'Author’s Note': When I found out that nobody really considered my method for unifying and grounding AI models in reality, I felt like I had no choice but to act. I am not a CEO, nor a tenured researcher, nor someone ; afirmações verificáveis: 2 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/maestro-whitepaper.md", line: 1}
+   ],
+   fingerprint: "b001aea04be8b383c54726e1d1203a05af806f2f365bae56181cb09afa9faa6c",
+   id: "docs.docs-maestro-whitepaper.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/magi.md — 'MAGI: Meta-Agent Governance and Insight': **MAGI** (Meta-Agent Governance and Insight) is Maestro-Orchestrator's long-term memory. It reads the R2 ledger and session history to detect patterns that span many sessions, producing structured Rec; afirmações verificáveis: 14 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/magi.md", line: 1}
+   ],
+   fingerprint: "efb2348fab7ac4e3d47920639eae912d67dcf28c4fc9f5541760d8b0c4b1ffa7",
+   id: "docs.docs-magi.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/mod-manager.md — 'Mod Manager — Modular Plugin Architecture': **Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon; afirmações verificáveis: 12 verified, 2 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/mod-manager.md", line: 1}
+   ],
+   fingerprint: "922664fc7c65ae86321f5af7a71df7d05fe99e811f8f6c73ce2e25976925e464",
+   id: "docs.docs-mod-manager.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/ncg.md — 'NCG: Novel Content Generation': **NCG** is the parallel diversity benchmark track in Maestro-Orchestrator. Where MAGI detects drift across sessions and R2 detects dissent in the moment, NCG **prevents model collapse** by maintaining; afirmações verificáveis: 2 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/ncg.md", line: 1}
+   ],
+   fingerprint: "c8a9deb58f3ab11c99d28ddcfb07a3b854195dee9e03edc2d99b75f0bce00fe1",
+   id: "docs.docs-ncg.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/quorum_logic.md — 'Quorum Logic – Maestro-Orchestrator': **Version:** v7.3.0 **Last Updated:** 2026-03-18 **Author:** defcon; afirmações verificáveis: 4 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/quorum_logic.md", line: 1}
+   ],
+   fingerprint: "a480fb72cf0df0c22f0d69cb815868b0311340c26981d81edac552651b186949",
+   id: "docs.docs-quorum_logic.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/r2-engine.md — 'R2 Engine: Rapid Recursion & Reinforcement': The **R2 Engine** is Maestro-Orchestrator's reflex layer. After every orchestration session it synthesizes signals from dissent analysis, NCG drift detection, and quorum logic into a single session qu; afirmações verificáveis: 11 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/r2-engine.md", line: 1}
+   ],
+   fingerprint: "833460dd40acfa994c6bef6204659f63343471511c75e167757f0baa4843339c",
+   id: "docs.docs-r2-engine.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/roadmap.md — 'Maestro-Orchestrator Roadmap': **Current Version:** v7.4.0 **Last Updated:** 2026-03-19 **Maintainer:** defcon; afirmações verificáveis: 6 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/roadmap.md", line: 1}
+   ],
+   fingerprint: "8a77c7bfc6a3df124f166ae9de5c5130ec1b731c90acf77bb50abce91ba0d5fa",
+   id: "docs.docs-roadmap.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/self-improvement-pipeline.md — 'Self-Improvement Pipeline': The self-improvement pipeline is Maestro-Orchestrator's mechanism for identifying and validating optimizations to its own code. It bridges the gap between MAGI's cross-session pattern detection and co; afirmações verificáveis: 19 verified, 4 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/self-improvement-pipeline.md", line: 1}
+   ],
+   fingerprint: "82a35aa8c8da49dddb8f91b8a3d48b4126544cdb14c4002dd97f38f5f0e1ce78",
+   id: "docs.docs-self-improvement-pipeline.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/storage-network.md — 'Storage Network — Proof-of-Storage Distributed Inference': **Version:** v7.3.0 **Last Updated:** 2026-03-18 **Maintainer:** defcon; afirmações verificáveis: 22 verified, 3 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/storage-network.md", line: 1}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.docs-storage-network.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/troubleshooting.md — 'Troubleshooting': You need at least one provider key. There are several ways to configure them:; afirmações verificáveis: 16 verified, 0 stale, 7 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 1}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.docs-troubleshooting.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/ui-guide.md — 'UI Guide: Maestro-Orchestrator': This guide outlines the structure and behavior of the Maestro-Orchestrator frontend, built with React and Vite.; afirmações verificáveis: 8 verified, 0 stale, 1 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/ui-guide.md", line: 1}
+   ],
+   fingerprint: "270c6f3c00c77a21018f33b3a0ddcd47c3296c0b859a8b502ce3ce0f9f5e4ea7",
+   id: "docs.docs-ui-guide.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Doc (doc) docs/vision.md — 'VISION': Maestro is not an AI.; afirmações verificáveis: 0 verified, 0 stale, 0 não verificáveis",
+   confidence: "medium",
+   evidence: [
+    {file: "docs/vision.md", line: 1}
+   ],
+   fingerprint: "4d1f09d4d5fbef4447b2c21bbc9823d6a97ac3194ae9974d2da9c726c3465b81",
+   id: "docs.docs-vision.md",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:72 — `npm run dev` (command): script 'dev' existe em package.json",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 72}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.72",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:84 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 84}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.84",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:87 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 87}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.87",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:91 — `make up` (command): presente em Makefile:27 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 91}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.91",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:91 — `make down` (command): presente em Makefile:35 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 91}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.91-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:91 — `docker compose up -d` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 91}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.91-3",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:91 — `docker compose down` (command): corresponde à receita de `make down` (Makefile:36)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 91}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.91-4",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em CONTRIBUTING.md:91 — `make` (command): Makefile existe (Makefile)",
+   confidence: "high",
+   evidence: [
+    {file: "CONTRIBUTING.md", line: 91}
+   ],
+   fingerprint: "c6c47251868fc69043a9fa86176a1cca2c7283f03413b149a0314fc1c916cc12",
+   id: "docs.verified.contributing.md.91-5",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:24 — doc diz `data/prompt_templates.json` (path); repo: não existe no repo: data/prompt_templates.json",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 24}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.24",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:68 — doc diz `try/finally` (path); repo: não existe no repo: try/finally",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 68}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.68",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:142 — doc diz `.maestro-instances.json` (path); repo: não existe no repo: .maestro-instances.json",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 142}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.142",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:265 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 265}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.265",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:283 — `docker compose up` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 283}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.283",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:283 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 283}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.283-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:319 — doc diz `node_shards.json` (path); repo: não existe no repo: node_shards.json",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 319}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.319",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:320 — `python -m maestro.node_cli` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 320}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.320",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:405 — `make update` (command): presente em Makefile:61 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 405}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.405",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:434 — doc diz `models/gemini-2.0-flash` (path); repo: não existe no repo: models/gemini-2.0-flash",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 434}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.434",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:434 — doc diz `models/gemini-2.5-flash` (path); repo: não existe no repo: models/gemini-2.5-flash",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 434}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.434-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:444 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 444}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.444",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make up` (command): presente em Makefile:27 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make down` (command): presente em Makefile:35 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make logs` (command): presente em Makefile:43 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-3",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make status` (command): presente em Makefile:47 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-4",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make build` (command): presente em Makefile:39 (failed, exit 2)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-5",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make clean` (command): presente em Makefile:55 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-6",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:445 — `make dev` (command): presente em Makefile:71 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 445}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.445-7",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em changelog.md:455 — `make dev` (command): presente em Makefile:71 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 455}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.verified.changelog.md.455",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:466 — doc diz `models/gemini-1.5-pro-latest` (path); repo: não existe no repo: models/gemini-1.5-pro-latest",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 466}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.466",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:466 — doc diz `models/gemini-2.0-flash` (path); repo: não existe no repo: models/gemini-2.0-flash",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 466}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.466-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:467 — doc diz `mistralai/mistral-7b-instruct` (path); repo: não existe no repo: mistralai/mistral-7b-instruct",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 467}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.467",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:467 — doc diz `meta-llama/llama-3.3-70b-instruct` (path); repo: não existe no repo: meta-llama/llama-3.3-70b-instruct",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 467}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.467-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:475 — doc diz `try/except` (path); repo: não existe no repo: try/except",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 475}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.475",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:476 — doc diz `try/except` (path); repo: não existe no repo: try/except",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 476}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.476",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:477 — doc diz `try/except` (path); repo: não existe no repo: try/except",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 477}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.477",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:478 — doc diz `try/except` (path); repo: não existe no repo: try/except",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 478}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.478",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:520 — doc diz `backend/orchestration_livefire.py` (path); repo: não existe no repo: backend/orchestration_livefire.py",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 520}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.520",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:520 — doc diz `backend/orchestration_livefire_rotating.py` (path); repo: não existe no repo: backend/orchestration_livefire_rotating.py",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 520}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.520-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:520 — doc diz `backend/maestro_cli.py` (path); repo: não existe no repo: backend/maestro_cli.py",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 520}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.520-3",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:521 — doc diz `backend/env_debug.py` (path); repo: não existe no repo: backend/env_debug.py",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 521}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.521",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:521 — doc diz `backend/manual_verification.py` (path); repo: não existe no repo: backend/manual_verification.py",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 521}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.521-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:523 — doc diz `scripts/combosync.ps1` (path); repo: não existe no repo: scripts/combosync.ps1",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 523}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.523",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:524 — doc diz `backend/Dockerfile` (path); repo: não existe no repo: backend/Dockerfile",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 524}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.524",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:524 — doc diz `frontend/Dockerfile` (path); repo: não existe no repo: frontend/Dockerfile",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 524}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.524-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:526 — doc diz `desktop.ini` (path); repo: não existe no repo: desktop.ini",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 526}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.526",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:526 — doc diz `scripts/desktop.ini` (path); repo: não existe no repo: scripts/desktop.ini",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 526}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.526-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:527 — doc diz `frontend/src/counter.ts` (path); repo: não existe no repo: frontend/src/counter.ts",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 527}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.527",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em changelog.md:527 — doc diz `frontend/src/typescript.svg` (path); repo: não existe no repo: frontend/src/typescript.svg",
+   confidence: "high",
+   evidence: [
+    {file: "changelog.md", line: 527}
+   ],
+   fingerprint: "ff269f8da350c74bb1fe6e2121818064e34d15e9c504dc30f6a111fc8839c05d",
+   id: "docs.stale.changelog.md.527-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/agents.md:39 — doc diz `models/gemini-2.5-flash` (path); repo: não existe no repo: models/gemini-2.5-flash",
+   confidence: "high",
+   evidence: [
+    {file: "docs/agents.md", line: 39}
+   ],
+   fingerprint: "60b1b4ce098611152a6246d718141a2a56e6e61b01c2c244fee8cb6e329e4191",
+   id: "docs.stale.docs-agents.md.39",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/agents.md:40 — doc diz `meta-llama/llama-3.3-70b-instruct` (path); repo: não existe no repo: meta-llama/llama-3.3-70b-instruct",
+   confidence: "high",
+   evidence: [
+    {file: "docs/agents.md", line: 40}
+   ],
+   fingerprint: "60b1b4ce098611152a6246d718141a2a56e6e61b01c2c244fee8cb6e329e4191",
+   id: "docs.stale.docs-agents.md.40",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/architecture.md:28 — doc diz `models/gemini-2.5-flash` (path); repo: não existe no repo: models/gemini-2.5-flash",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 28}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.stale.docs-architecture.md.28",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/architecture.md:29 — doc diz `meta-llama/llama-3.3-70b-instruct` (path); repo: não existe no repo: meta-llama/llama-3.3-70b-instruct",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 29}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.stale.docs-architecture.md.29",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/architecture.md:83 — doc diz `data/runtime_config.json` (path); repo: não existe no repo: data/runtime_config.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 83}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.stale.docs-architecture.md.83",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/architecture.md:84 — doc diz `data/rollbacks/log.json` (path); repo: não existe no repo: data/rollbacks/log.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 84}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.stale.docs-architecture.md.84",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/architecture.md:115 — `python -m maestro.cli` (command): módulo maestro.cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 115}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.verified.docs-architecture.md.115",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/architecture.md:130 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 130}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.verified.docs-architecture.md.130",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/architecture.md:241 — `entrypoint.py (startup dialog)` (command): arquivo entrypoint.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md", line: 241}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "docs.verified.docs-architecture.md.241",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:15 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 15}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.15",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:18 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 18}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.18",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:24 — `docker compose up -d` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 24}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.24",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:24 — `docker compose down` (command): corresponde à receita de `make down` (Makefile:36)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 24}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.24-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:24 — `make up` (command): presente em Makefile:27 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 24}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.24-3",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:24 — `make down` (command): presente em Makefile:35 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 24}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.24-4",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:32 — `make` (command): Makefile existe (Makefile)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 32}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.32",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:34 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 34}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.34",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:34 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 34}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.34-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:35 — `make up` (command): presente em Makefile:27 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 35}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.35",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:35 — `docker compose up -d --build` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 35}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.35-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:36 — `make down` (command): presente em Makefile:35 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 36}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.36",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:36 — `docker compose down` (command): corresponde à receita de `make down` (Makefile:36)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 36}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.36-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:37 — `make logs` (command): presente em Makefile:43 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 37}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.37",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:37 — `docker compose logs -f` (command): corresponde à receita de `make logs` (Makefile:44)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 37}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.37-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:38 — `make status` (command): presente em Makefile:47 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 38}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.38",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:38 — `docker compose ps` (command): corresponde à receita de `make status` (Makefile:48)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 38}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.38-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:39 — `make build` (command): presente em Makefile:39 (failed, exit 2)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 39}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.39",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:39 — `docker compose build --no-cache` (command): corresponde à receita de `make build` (Makefile:40)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 39}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.39-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:40 — `make clean` (command): presente em Makefile:55 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 40}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.40",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:40 — `docker compose down -v` (command): corresponde à receita de `make clean` (Makefile:58)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 40}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.40-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:41 — `make update` (command): presente em Makefile:61 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 41}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.41",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:42 — `make dev` (command): presente em Makefile:71 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 42}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.42",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:42 — `python setup.py --dev` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 42}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.42-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:49 — `docker compose ps` (command): corresponde à receita de `make status` (Makefile:48)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 49}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.49",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:67 — `python setup.py --dev` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 67}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.67",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:83 — `python -m maestro.cli` (command): módulo maestro.cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 83}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.83",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:91 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 91}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.91",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:92 — `python -m maestro.tui --mode http` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 92}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.92",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:93 — `python -m maestro.tui --mode http --url URL` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 93}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.93",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/deployment.md:203 — doc diz `80/443` (path); repo: não existe no repo: 80/443",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 203}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.stale.docs-deployment.md.203",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:212 — `make build` (command): presente em Makefile:39 (failed, exit 2)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 212}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.212",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:212 — `docker compose build --no-cache` (command): corresponde à receita de `make build` (Makefile:40)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 212}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.212-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/deployment.md:239 — `make update` (command): presente em Makefile:61 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/deployment.md", line: 239}
+   ],
+   fingerprint: "e56bb0f9ce8c23369cb262ab17bec17daf807cb9fe6d28f13e2e4024e9ceea7a",
+   id: "docs.verified.docs-deployment.md.239",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/mod-manager.md:160 — doc diz `config.json` (path); repo: não existe no repo: config.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/mod-manager.md", line: 160}
+   ],
+   fingerprint: "922664fc7c65ae86321f5af7a71df7d05fe99e811f8f6c73ce2e25976925e464",
+   id: "docs.stale.docs-mod-manager.md.160",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/mod-manager.md:239 — doc diz `data/runtime_config.json` (path); repo: não existe no repo: data/runtime_config.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/mod-manager.md", line: 239}
+   ],
+   fingerprint: "922664fc7c65ae86321f5af7a71df7d05fe99e811f8f6c73ce2e25976925e464",
+   id: "docs.stale.docs-mod-manager.md.239",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/self-improvement-pipeline.md:163 — doc diz `data/runtime_config.json` (path); repo: não existe no repo: data/runtime_config.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/self-improvement-pipeline.md", line: 163}
+   ],
+   fingerprint: "82a35aa8c8da49dddb8f91b8a3d48b4126544cdb14c4002dd97f38f5f0e1ce78",
+   id: "docs.stale.docs-self-improvement-pipeline.md.163",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/self-improvement-pipeline.md:188 — doc diz `data/rollbacks/log.json` (path); repo: não existe no repo: data/rollbacks/log.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/self-improvement-pipeline.md", line: 188}
+   ],
+   fingerprint: "82a35aa8c8da49dddb8f91b8a3d48b4126544cdb14c4002dd97f38f5f0e1ce78",
+   id: "docs.stale.docs-self-improvement-pipeline.md.188",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/self-improvement-pipeline.md:285 — doc diz `data/rollbacks/log.json` (path); repo: não existe no repo: data/rollbacks/log.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/self-improvement-pipeline.md", line: 285}
+   ],
+   fingerprint: "82a35aa8c8da49dddb8f91b8a3d48b4126544cdb14c4002dd97f38f5f0e1ce78",
+   id: "docs.stale.docs-self-improvement-pipeline.md.285",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/self-improvement-pipeline.md:287 — doc diz `data/runtime_config.json` (path); repo: não existe no repo: data/runtime_config.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/self-improvement-pipeline.md", line: 287}
+   ],
+   fingerprint: "82a35aa8c8da49dddb8f91b8a3d48b4126544cdb14c4002dd97f38f5f0e1ce78",
+   id: "docs.stale.docs-self-improvement-pipeline.md.287",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/storage-network.md:162 — doc diz `data/storage_proofs/reputations.json` (path); repo: não existe no repo: data/storage_proofs/reputations.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 162}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.stale.docs-storage-network.md.162",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/storage-network.md:224 — doc diz `data/node_shards.json` (path); repo: não existe no repo: data/node_shards.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 224}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.stale.docs-storage-network.md.224",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em docs/storage-network.md:273 — doc diz `node_shards.json` (path); repo: não existe no repo: node_shards.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 273}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.stale.docs-storage-network.md.273",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/storage-network.md:317 — `python -m maestro.node_cli setup --model meta-llama/Llama-3.3-70B-Instruct --layers 0-15` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 317}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.verified.docs-storage-network.md.317",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/storage-network.md:320 — `python -m maestro.node_cli start --port 8001 --orchestrator http://maestro-host:8080` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 320}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.verified.docs-storage-network.md.320",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/storage-network.md:323 — `python -m maestro.node_cli status` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 323}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.verified.docs-storage-network.md.323",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/storage-network.md:326 — `python -m maestro.node_cli verify --model meta-llama/Llama-3.3-70B-Instruct` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 326}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.verified.docs-storage-network.md.326",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/storage-network.md:329 — `python -m maestro.node_cli shards` (command): módulo maestro.node_cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/storage-network.md", line: 329}
+   ],
+   fingerprint: "a9d34814823a8cbe05da7d54dde73a1bd9d8fb230e7b77d4be4aa5e388d341a6",
+   id: "docs.verified.docs-storage-network.md.329",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:9 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 9}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.9",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:18 — `python -m maestro.cli_keys set openai sk-...` (command): módulo maestro.cli_keys existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 18}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.18",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:60 — `make build` (command): presente em Makefile:39 (failed, exit 2)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 60}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.60",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:60 — `docker compose build --no-cache` (command): corresponde à receita de `make build` (Makefile:40)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 60}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.60-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:65 — `make logs` (command): presente em Makefile:43 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 65}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.65",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:66 — `make status` (command): presente em Makefile:47 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 66}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.66",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/troubleshooting.md:102 — `docker compose up` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/troubleshooting.md", line: 102}
+   ],
+   fingerprint: "f2296aa3cc713dfb36b640029146bf37116e0c615e2cb9707044ab85c06f2d07",
+   id: "docs.verified.docs-troubleshooting.md.102",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/ui-guide.md:109 — `npm run dev` (command): script 'dev' existe em package.json",
+   confidence: "high",
+   evidence: [
+    {file: "docs/ui-guide.md", line: 109}
+   ],
+   fingerprint: "270c6f3c00c77a21018f33b3a0ddcd47c3296c0b859a8b502ce3ce0f9f5e4ea7",
+   id: "docs.verified.docs-ui-guide.md.109",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/ui-guide.md:133 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/ui-guide.md", line: 133}
+   ],
+   fingerprint: "270c6f3c00c77a21018f33b3a0ddcd47c3296c0b859a8b502ce3ce0f9f5e4ea7",
+   id: "docs.verified.docs-ui-guide.md.133",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/ui-guide.md:134 — `python -m maestro.tui --mode http` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/ui-guide.md", line: 134}
+   ],
+   fingerprint: "270c6f3c00c77a21018f33b3a0ddcd47c3296c0b859a8b502ce3ce0f9f5e4ea7",
+   id: "docs.verified.docs-ui-guide.md.134",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em docs/ui-guide.md:135 — `python -m maestro.tui --mode http --url URL` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "docs/ui-guide.md", line: 135}
+   ],
+   fingerprint: "270c6f3c00c77a21018f33b3a0ddcd47c3296c0b859a8b502ce3ce0f9f5e4ea7",
+   id: "docs.verified.docs-ui-guide.md.135",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em maestros/README.md:56 — doc diz `claude/telos-kernel-exploration-xSEfp` (path); repo: não existe no repo: claude/telos-kernel-exploration-xSEfp",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/README.md", line: 56}
+   ],
+   fingerprint: "e2164b723abf05b30b4019974a53d473e483ffa4608f7728104547d3b3a72ac0",
+   id: "docs.stale.maestros-readme.md.56",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:86 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 86}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.86",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:91 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 91}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.91",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:100 — `make` (command): Makefile existe (Makefile)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 100}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.100",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:102 — `make setup` (command): presente em Makefile:23 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 102}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.102",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:102 — `python setup.py` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 102}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.102-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:103 — `make up` (command): presente em Makefile:27 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 103}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.103",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:103 — `docker compose up -d --build` (command): corresponde à receita de `make up` (Makefile:28)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 103}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.103-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:104 — `make down` (command): presente em Makefile:35 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 104}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.104",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:104 — `docker compose down` (command): corresponde à receita de `make down` (Makefile:36)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 104}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.104-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:105 — `make logs` (command): presente em Makefile:43 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 105}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.105",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:105 — `docker compose logs -f` (command): corresponde à receita de `make logs` (Makefile:44)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 105}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.105-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:106 — `make status` (command): presente em Makefile:47 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 106}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.106",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:106 — `docker compose ps` (command): corresponde à receita de `make status` (Makefile:48)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 106}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.106-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:107 — `make clean` (command): presente em Makefile:55 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 107}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.107",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:107 — `docker compose down -v` (command): corresponde à receita de `make clean` (Makefile:58)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 107}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.107-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:108 — `make dev` (command): presente em Makefile:71 (declared)",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 108}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.108",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:108 — `python setup.py --dev` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 108}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.108-2",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:123 — `python setup.py --dev` (command): arquivo setup.py existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 123}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.123",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:131 — `python -m maestro.cli` (command): módulo maestro.cli existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 131}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.131",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:132 — `python -m maestro.tui` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 132}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.132",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Conferido em readme.md:133 — `python -m maestro.tui --mode http --url URL` (command): módulo maestro.tui existe",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 133}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.verified.readme.md.133",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em readme.md:147 — doc diz `models/gemini-2.5-flash` (path); repo: não existe no repo: models/gemini-2.5-flash",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 147}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.stale.readme.md.147",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em readme.md:148 — doc diz `meta-llama/llama-3.3-70b-instruct` (path); repo: não existe no repo: meta-llama/llama-3.3-70b-instruct",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 148}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.stale.readme.md.148",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "STALE em readme.md:304 — doc diz `node_shards.json` (path); repo: não existe no repo: node_shards.json",
+   confidence: "high",
+   evidence: [
+    {file: "readme.md", line: 304}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "docs.stale.readme.md.304",
+   layer: "project_docs",
+   origin: "mechanical",
+   scope: ["**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "project_docs",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L10",
+ schema_version: 1,
+ totals: {stale: 46, unverifiable: 25, verified: 520}
+}

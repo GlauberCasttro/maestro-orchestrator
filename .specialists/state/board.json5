@@ -1,0 +1,62 @@
+// board.json5 — estado do harness; escrito SÓ por cs-state (cadeia em events.jsonl)
+{
+ epics: [
+  {
+   created_at: "2026-10-03T21:08:27.409362Z",
+   id: "EPIC-1",
+   metric: null,
+   objective: "Dono entende o projeto e o time de agentes",
+   state: "PROPOSED",
+   title: "Onboarding do dono",
+  },
+ ],
+ event_count: 6,
+ features: [
+  {
+   acceptance: [],
+   acceptance_files: [],
+   created_at: "2026-10-03T21:08:34.884128Z",
+   epic: "EPIC-1",
+   id: "FEAT-1",
+   spec: null,
+   state: "BACKLOG",
+   title: "Explicação do projeto",
+  },
+ ],
+ last_event_hash: "67adaec7e53ce159a96633180ff38816989faa39030e221578eb03bfb9465fbb",
+ schema_version: 2,
+ sessions: [
+  {
+   assumptions: [],
+   class: "pergunta",
+   confirmation: null,
+   created_at: "2026-10-03T21:07:46.934551Z",
+   id: "S-1",
+   mode: "assistido",
+   request: "Acione o arch para me explicar o projeto",
+   reviews: [],
+   state: "TRIAGE",
+   updated_at: "2026-10-03T21:07:50.449879Z",
+   why: "pedido de explicação do projeto, sem mudança de código",
+  },
+ ],
+ sprints: [],
+ stories: [
+  {
+   as_a: "dono do repositório",
+   created_at: "2026-10-03T21:08:43.408861Z",
+   criteria: [
+    {gherkin: "Dado o repositório atual Quando o architect lê código e docs Então devolve explicação com propósito, componentes, fluxo e divergências", id: "AC-1", test: "reviewer"},
+   ],
+   feature: "FEAT-1",
+   findings: [],
+   i_want: "uma explicação verificada da arquitetura",
+   id: "US-1",
+   so_that: "eu entenda o projeto antes de evoluí-lo",
+   state: "BACKLOG",
+   title: "Explicação do projeto para o dono",
+   type: "us",
+  },
+ ],
+ tasks: [],
+}

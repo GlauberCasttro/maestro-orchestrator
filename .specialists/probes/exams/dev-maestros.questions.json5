@@ -1,0 +1,33 @@
+// dev-maestros.questions.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "dev-maestros",
+ answer_file: ".specialists/probes/exams/dev-maestros.answers.json5",
+ answer_format: [
+  {answer: "texto (arquivo:linha, comando, sha ou NENHUM)", evidence: ["arquivo:linha", "comando"], id: "P-..."}
+ ],
+ instructions: "Responda cada pergunta com o que você sabe deste repositório. Para cada id, devolva {id, answer, evidence[]}; evidence = 'arquivo:linha' ou comando que prova. Se o que foi perguntado não existe, responda NENHUM. Não invente: afirmar algo inexistente veta o exame.",
+ probes_sha256: "f28e24f6fbfbd75b8e3d2a0174f4a7355dc2abecc12a8795c5abe28e04c0f3a1",
+ questions: [
+  {id: "P-dev-maestros-01", question: "Algum arquivo em `maestros/**` importa diretamente de `tests/**`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-dev-maestros-02", question: "Algum arquivo em `maestros/**` importa diretamente de `.github/**`, `setup.py`, `setup.sh`, `.dockerignore`, `.env.example`, `.gitignore`, `ARCHITECTURE.md`, `CLUSTERING.md`, `CONTRIBUTING.md`, `Dockerfile`, `LICENSE.md`, `Makefile`, `ORCHESTRA.md`, `PROJECT_EXPLAINED.md`, `RELEASE.md`, `ROADMAP.md`, `changelog.md`, `commercial_license.md`, `dashboard.html`, `docker-compose.yml`, `readme.md`, `requirements.txt`, `use_policy.md`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-dev-maestros-03", question: "Onde está definido o símbolo (symbol) com assinatura `___()`, em `maestros/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-maestros-04", question: "Qual commit (sha) corrigiu \"maestros: add v0.0.1 workspace skeleton, rename telOS -> MaestrOS\" (tocou 26 arquivo(s))?", type: "history"},
+  {id: "P-dev-maestros-05", question: "Onde é definido o termo técnico `discovery`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-06", question: "Onde é definido o termo técnico `WeightHost`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-07", question: "Onde é definido o termo técnico `Agent`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-08", question: "Onde é definido o termo técnico `dispatch`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-09", question: "Onde é definido o termo técnico `node`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-10", question: "Onde é definido o termo técnico `network`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-11", question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-12", question: "Onde é definido o termo técnico `discover`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-13", question: "Quais arquivos fora de `frontend/**` importam `frontend/src/vite-env.d.ts`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-maestros-14", question: "Onde está definido o símbolo (function) com assinatura `___(self, payload: dict)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-maestros-15", question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/prism.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-maestros-16", question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?", type: "prohibition"},
+  {id: "P-dev-maestros-17", question: "Qual commit (sha) corrigiu \"Fix docker-compose.yml env_file format for legacy Compose compatibility\" (tocou 3 arquivo(s))?", type: "history"},
+  {id: "P-dev-maestros-18", question: "Onde é definido o termo técnico `ActivationPayload`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-maestros-19", question: "Qual o limite de \"HANDSHAKE_TIMEOUT\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-dev-maestros-20", question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"}
+ ],
+ schema_version: 1
+}

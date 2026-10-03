@@ -1,0 +1,235 @@
+// stack_graph (L8) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ edges: [
+  {from: "framework:node:react", to: "lib:node:react-dom"},
+  {from: "framework:node:vite", to: "lib:node:@vitejs/plugin-react"},
+  {from: "lang:python", to: "runtime:python"},
+  {from: "lang:rust", to: "runtime:rust"},
+  {from: "lang:typescript", to: "runtime:node"},
+  {from: "runtime:node", to: "framework:node:react"},
+  {from: "runtime:node", to: "framework:node:vite"},
+  {from: "runtime:node", to: "lib:node:@types/react"},
+  {from: "runtime:node", to: "lib:node:@types/react-dom"},
+  {from: "runtime:node", to: "lib:node:@vitejs/plugin-react"},
+  {from: "runtime:node", to: "lib:node:react-dom"},
+  {from: "runtime:node", to: "lib:node:rollup"},
+  {from: "runtime:node", to: "lib:node:typescript"},
+  {from: "runtime:python", to: "lib:python:stdlib"}
+ ],
+ facts: [
+  {
+   claim: "Framework react 19.1.0 (frontend/package-lock.json:1486) usado em: frontend/src",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1486}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stackg.framework.react",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["frontend/src/**"]
+  },
+  {
+   claim: "Framework vite 6.3.5 (frontend/package-lock.json:1645) usado em: frontend",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json", line: 1645}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "stackg.framework.vite",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Runtime node: versão não declarada",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:stack_graph", exit: 0, out_sha256: "749d2f9d294b422f7b8e6bc67f2ef4941bee6758a4f0ec24c26ccea7a3491d6e"}
+   ],
+   fingerprint: "ec4ef4715e25bc0b42519b4ea7d7fde77979ba345a1ad279aa7a31aaebccde6c",
+   id: "stackg.runtime.node",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Runtime cpython: versão não declarada",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:stack_graph", exit: 0, out_sha256: "749d2f9d294b422f7b8e6bc67f2ef4941bee6758a4f0ec24c26ccea7a3491d6e"}
+   ],
+   fingerprint: "ec4ef4715e25bc0b42519b4ea7d7fde77979ba345a1ad279aa7a31aaebccde6c",
+   id: "stackg.runtime.python",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Runtime rustc: stable (maestros/rust-toolchain.toml:1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/rust-toolchain.toml", line: 1}
+   ],
+   fingerprint: "061d1e8e97a98338d62251948f898c8d778b9be7dd7b294a266966f7df9de625",
+   id: "stackg.runtime.rust",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Stack: 3 linguagens, 3 runtimes, 2 frameworks, 7 libs",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:stack_graph", exit: 0, out_sha256: "749d2f9d294b422f7b8e6bc67f2ef4941bee6758a4f0ec24c26ccea7a3491d6e"}
+   ],
+   fingerprint: "ec4ef4715e25bc0b42519b4ea7d7fde77979ba345a1ad279aa7a31aaebccde6c",
+   id: "stackg.summary",
+   layer: "stack_graph",
+   origin: "mechanical",
+   scope: ["**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "stack_graph",
+ nodes: [
+  {
+   dirs: ["frontend/src"],
+   eco: "node",
+   id: "framework:node:react",
+   kind: "framework",
+   line: 1486,
+   lock: "frontend/package-lock.json",
+   name: "react",
+   version: "19.1.0"
+  },
+  {
+   dirs: ["frontend"],
+   eco: "node",
+   id: "framework:node:vite",
+   kind: "framework",
+   line: 1645,
+   lock: "frontend/package-lock.json",
+   name: "vite",
+   version: "6.3.5"
+  },
+  {
+   files: 83,
+   id: "lang:python",
+   kind: "language",
+   loc: 22619,
+   name: "python"
+  },
+  {
+   files: 9,
+   id: "lang:rust",
+   kind: "language",
+   loc: 136,
+   name: "rust"
+  },
+  {
+   files: 5,
+   id: "lang:typescript",
+   kind: "language",
+   loc: 2559,
+   name: "typescript"
+  },
+  {
+   dirs: [],
+   eco: "node",
+   id: "lib:node:@types/react",
+   kind: "lib",
+   line: 1126,
+   lock: "frontend/package-lock.json",
+   name: "@types/react",
+   version: "19.2.14"
+  },
+  {
+   dirs: [],
+   eco: "node",
+   id: "lib:node:@types/react-dom",
+   kind: "lib",
+   line: 1136,
+   lock: "frontend/package-lock.json",
+   name: "@types/react-dom",
+   version: "19.2.3"
+  },
+  {
+   dirs: ["frontend"],
+   eco: "node",
+   id: "lib:node:@vitejs/plugin-react",
+   kind: "lib",
+   line: 1146,
+   lock: "frontend/package-lock.json",
+   name: "@vitejs/plugin-react",
+   version: "4.5.1"
+  },
+  {
+   dirs: ["frontend/src"],
+   eco: "node",
+   id: "lib:node:react-dom",
+   kind: "lib",
+   line: 1495,
+   lock: "frontend/package-lock.json",
+   name: "react-dom",
+   version: "19.1.0"
+  },
+  {
+   dirs: [],
+   eco: "node",
+   id: "lib:node:rollup",
+   kind: "lib",
+   line: 1517,
+   lock: "frontend/package-lock.json",
+   name: "rollup",
+   version: "4.41.1"
+  },
+  {
+   dirs: [],
+   eco: "node",
+   id: "lib:node:typescript",
+   kind: "lib",
+   line: 1600,
+   lock: "frontend/package-lock.json",
+   name: "typescript",
+   version: "5.8.3"
+  },
+  {
+   dirs: [".", "backend", "data/plugins/installed/defcon.shard-agent", "maestro", "maestro/agents", "maestro/ncg", "maestro/plugins", "maestro/tui", "tests"],
+   eco: "python",
+   id: "lib:python:stdlib",
+   kind: "lib",
+   modules: ["__future__", "abc", "argparse", "ast", "asyncio", "base64", "collections", "contextlib", "dataclasses", "datetime", "enum", "functools", "hashlib", "importlib", "io", "itertools", "json", "logging", "math", "os", "pathlib", "platform", "random", "re", "shutil", "signal", "socket", "struct", "subprocess", "sys", "tempfile", "termios", "textwrap", "threading", "time", "tty", "typing", "unittest", "urllib", "uuid", "webbrowser"],
+   name: "stdlib",
+   version: "runtime"
+  },
+  {
+   id: "runtime:node",
+   kind: "runtime",
+   name: "node",
+   versions: []
+  },
+  {
+   id: "runtime:python",
+   kind: "runtime",
+   name: "cpython",
+   versions: []
+  },
+  {
+   id: "runtime:rust",
+   kind: "runtime",
+   name: "rustc",
+   versions: [
+    {
+     file: "maestros/rust-toolchain.toml",
+     line: 1,
+     source: "rust-toolchain.toml",
+     version: "stable"
+    }
+   ]
+  }
+ ],
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L8",
+ schema_version: 1
+}

@@ -1,0 +1,29 @@
+// handoff da etapa validate (≤2000 tokens) — gerado por cs.py stage done
+{
+ commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ goal: "time provado por sonda, harness instalado e gates G1–G16 verdes",
+ notes: [],
+ numbers: {
+  "facts.architecture": 7,
+  "facts.business_rules": 30,
+  "facts.conventions": 17,
+  "facts.gaps": 0,
+  "facts.glossary": 200,
+  "facts.graph": 43,
+  "facts.history": 148,
+  "facts.interpretation": 3,
+  "facts.interview": 4,
+  "facts.inventory": 68,
+  "facts.operations": 14,
+  "facts.project_docs": 163,
+  "facts.rationale": 7,
+  "facts.rules": 17,
+  "facts.stack": 11,
+  "facts.stack_graph": 6
+ },
+ pending: [],
+ produced: [".specialists/acceptance.json5", ".specialists/interview.jsonl", ".specialists/run.json5", ".specialists/spotcheck.jsonl", ".specialists/team-approvals.jsonl", ".specialists/team-derivation.json5", ".specialists/team-validation.json5", ".specialists/team.json5", ".specialists/bin/cs-mem", ".specialists/bin/cs-precommit", ".specialists/bin/cs-route", ".specialists/bin/cs-session", ".specialists/bin/cs-state", ".specialists/cards/status.json5", ".specialists/emit/manifest.json5", ".specialists/facts/architecture.json5", ".specialists/facts/business_rules.json5", ".specialists/facts/conventions.json5", ".specialists/facts/gaps.json5", ".specialists/facts/glossary.json5", ".specialists/facts/graph.json5", ".specialists/facts/history.json5", ".specialists/facts/index.json5", ".specialists/facts/interpretation.json5", ".specialists/facts/interview.json5", ".specialists/facts/inventory.json5", ".specialists/facts/operations.json5", ".specialists/facts/project_docs.json5", ".specialists/facts/rationale.json5", ".specialists/facts/rules.json5", ".specialists/facts/stack.json5", ".specialists/facts/stack_graph.json5", ".specialists/harness/MANIFEST.json5", ".specialists/harness/autonomy.py", ".specialists/harness/bashscan.py", ".specialists/harness/brief.py", ".specialists/harness/cmds.py", ".specialists/harness/config.json5", ".specialists/harness/engine.py", ".specialists/harness/guard.py", ".specialists/harness/hcore.py", ".specialists/harness/j5.py", ".specialists/harness/machines.json5", ".specialists/harness/mem.py", ".specialists/harness/router.py", ".specialists/harness/routing.json5", ".specialists/harness/selftest.py", ".specialists/harness/session.py", ".specialists/harness/state.py", ".specialists/harness/validate.py", ".specialists/harness/views.py", ".specialists/harness/__pycache__/autonomy.cpython-313.pyc", ".specialists/harness/__pycache__/bashscan.cpython-313.pyc", ".specialists/harness/__pycache__/cmds.cpython-313.pyc", ".specialists/harness/__pycache__/engine.cpython-313.pyc", ".specialists/harness/__pycache__/hcore.cpython-313.pyc", ".specialists/harness/__pycache__/j5.cpython-313.pyc", ".specialists/harness/__pycache__/router.cpython-313.pyc", ".specialists/knowledge/collision.json5", ".specialists/knowledge/deps.json5", ".specialists/knowledge/s5-memoria.json5", ".specialists/knowledge/stack.json5", ".specialists/knowledge/tree.json5", ".specialists/knowledge/invariants/dev-consensus.json5", ".specialists/knowledge/invariants/dev-frontend.json5", ".specialists/knowledge/invariants/dev-maestros.json5", ".specialists/knowledge/invariants/dev-platform.json5", ".specialists/knowledge/invariants/dev-self-improve.json5", ".specialists/knowledge/invariants/dev-storage-network.json5", ".specialists/knowledge/invariants/ops.json5", ".specialists/knowledge/invariants/qa.json5", ".specialists/knowledge/invariants/reviewer.json5", ".specialists/knowledge/invariants/security.json5", ".specialists/memory/.lock", ".specialists/memory/index/docs.jsonl", ".specialists/memory/index/manifest.json", ".specialists/memory/index/meta.json", ".specialists/memory/index/postings.json", ".specialists/panel/core-promotion.json5", ".specialists/probes/anticola.json5", ".specialists/probes/antitemplate.json5", ".specialists/probes/bank.json5", ".specialists/probes/cycles.json5", ".specialists/probes/existence.json5", ".specialists/probes/issued.json5", ".specialists/probes/memory-recall.json5", ".specialists/probes/report.json5", ".specialists/probes/exams/architect.answers.json5", ".specialists/probes/exams/architect.questions.json5", ".specialists/probes/exams/dev-consensus.answers.json5", ".specialists/probes/exams/dev-consensus.questions.json5", ".specialists/probes/exams/dev-frontend.answers.json5", ".specialists/probes/exams/dev-frontend.questions.json5", ".specialists/probes/exams/dev-maestros.answers.json5", ".specialists/probes/exams/dev-maestros.questions.json5", ".specialists/probes/exams/dev-platform.answers.json5", ".specialists/probes/exams/dev-platform.questions.json5", ".specialists/probes/exams/dev-self-improve.answers.json5", ".specialists/probes/exams/dev-self-improve.questions.json5", ".specialists/probes/exams/dev-storage-network.answers.json5", ".specialists/probes/exams/dev-storage-network.questions.json5", ".specialists/probes/exams/ops.answers.json5", ".specialists/probes/exams/ops.questions.json5", ".specialists/probes/exams/po.answers.json5", ".specialists/probes/exams/po.questions.json5", ".specialists/probes/exams/qa.answers.json5", ".specialists/probes/exams/qa.questions.json5", ".specialists/probes/exams/reviewer.answers.json5", ".specialists/probes/exams/reviewer.questions.json5", ".specialists/probes/exams/security.answers.json5", ".specialists/probes/exams/security.questions.json5", ".specialists/probes/reports/architect.json5", ".specialists/probes/reports/dev-consensus.json5", ".specialists/probes/reports/dev-frontend.json5", ".specialists/probes/reports/dev-maestros.json5", ".specialists/probes/reports/dev-platform.json5", ".specialists/probes/reports/dev-self-improve.json5", ".specialists/probes/reports/dev-storage-network.json5", ".specialists/probes/reports/ops.json5", ".specialists/probes/reports/po.json5"],
+ schema_version: 1,
+ stage: "validate",
+ truncated: ["produced"]
+}

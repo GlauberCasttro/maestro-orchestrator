@@ -1,0 +1,33 @@
+// dev-frontend.questions.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "dev-frontend",
+ answer_file: ".specialists/probes/exams/dev-frontend.answers.json5",
+ answer_format: [
+  {answer: "texto (arquivo:linha, comando, sha ou NENHUM)", evidence: ["arquivo:linha", "comando"], id: "P-..."}
+ ],
+ instructions: "Responda cada pergunta com o que você sabe deste repositório. Para cada id, devolva {id, answer, evidence[]}; evidence = 'arquivo:linha' ou comando que prova. Se o que foi perguntado não existe, responda NENHUM. Não invente: afirmar algo inexistente veta o exame.",
+ probes_sha256: "6c41901a690db266ed92f5c8a141bb322a613fedf9f2b7767b270eef3ef97957",
+ questions: [
+  {id: "P-dev-frontend-01", question: "Quais arquivos fora de `frontend/**` importam `frontend/vite.config.ts`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-frontend-02", question: "Quais arquivos fora de `frontend/**` importam `frontend/src/maestroUI.tsx`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-frontend-03", question: "Onde está definido o símbolo (function) com assinatura `___({ ___, error___s }: { ___: Record<string, string>; error___s?: Set<string> })`, em `frontend/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-frontend-04", question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?", type: "prohibition"},
+  {id: "P-dev-frontend-05", question: "Qual commit (sha) corrigiu \"Fix update panel showing 'up to date' alongside error messages\" (tocou 2 arquivo(s))?", type: "history"},
+  {id: "P-dev-frontend-06", question: "Onde é definido o termo técnico `models`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-frontend-07", question: "Onde está definido o símbolo (function) com assinatura `___({ errors }: { errors: ___Error[] })`, em `frontend/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-frontend-08", question: "Qual commit (sha) corrigiu \"Fix version inconsistencies: align all references to v0.4.3\" (tocou 4 arquivo(s))?", type: "history"},
+  {id: "P-dev-frontend-09", question: "Onde está definido o símbolo (function) com assinatura `___({ ___ }: { ___: string })`, em `frontend/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-frontend-10", question: "Qual commit (sha) corrigiu \"fix: Web UI shard visibility, TUI deprecated agent names, bump to v7.1.4\" (tocou 18 arquivo(s))?", type: "history"},
+  {id: "P-dev-frontend-11", question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-frontend-12", question: "Onde está definido o símbolo (function) com assinatura `___({ onOpen }: { onOpen: ()`, em `frontend/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-frontend-13", question: "Quais arquivos fora de `tests/**` importam `tests/test_shard_agent.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-frontend-14", question: "Onde está definido o símbolo (function) com assinatura `___(self, ____name: str, ___: str)`, em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-dev-frontend-15", question: "Quais arquivos fora de `maestro/magi.py`, `maestro/magi_vir.py`, `maestro/api_magi.py`, `maestro/introspect.py`, `maestro/optimization.py`, `maestro/applicator.py`, `maestro/rollback.py`, `maestro/injection_guard.py`, `maestro/self_improve.py`, `maestro/api_self_improve.py` importam `maestro/self_improve.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-dev-frontend-16", question: "Qual commit (sha) corrigiu \"Fix remaining get_event_loop() deprecation warnings in lan_discovery and api_instances\" (tocou 2 arquivo(s))?", type: "history"},
+  {id: "P-dev-frontend-17", question: "Onde é definido o termo técnico `MaestroPlugin`? Responda arquivo:linha.", type: "term"},
+  {id: "P-dev-frontend-18", question: "Qual o limite de \"DEFAULT_CHALLENGE_WINDOW_SECONDS\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-dev-frontend-19", question: "Algum arquivo em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importa diretamente de `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-dev-frontend-20", question: "Onde está definido o símbolo (function) com assinatura `___(self, data: bytes, addr: tuple)`, em `maestro/storage_proof.py`, `maestro/shard_manager.py`, `maestro/shard_registry.py`, `maestro/shard_utils.py`, `maestro/api_storage.py`, `maestro/node_server.py`, `maestro/node_cli.py`, `maestro/lan_discovery.py`, `maestro/cluster.py`, `maestro/api_cluster.py`, `maestro/instances.py`, `maestro/api_instances.py`, `maestro/state_bus.py`, `maestro/agents/shard.py`, `maestro/agents/mock_shard_node.py`? Responda arquivo:linha.", type: "location"}
+ ],
+ schema_version: 1
+}

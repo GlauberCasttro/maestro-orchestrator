@@ -1,0 +1,13 @@
+// handoff da etapa init (≤2000 tokens) — gerado por cs.py stage done
+{
+ commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ goal: "alvo confirmado, plataformas escolhidas, estado de execução criado",
+ notes: [
+  {id: "init.2", note: "Só Claude Code — modo --fast (padrão)"}
+ ],
+ numbers: {},
+ pending: [],
+ produced: [".specialists/interview.jsonl", ".specialists/run.json5", ".specialists/state/ledger.jsonl"],
+ schema_version: 1,
+ stage: "init"
+}

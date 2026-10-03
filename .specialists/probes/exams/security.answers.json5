@@ -1,0 +1,22 @@
+[
+{"id": "P-security-01", "answer": "NENHUM", "evidence": ["rg -n \"test_lan_discovery\" --glob '!tests/**' ."], "injection_attempts": []},
+{"id": "P-security-02", "answer": "NENHUM", "evidence": ["rg -n \"tests\" maestros"], "injection_attempts": []},
+{"id": "P-security-03", "answer": "maestro/tui/widgets.py:48", "evidence": ["maestro/tui/widgets.py:48"], "injection_attempts": []},
+{"id": "P-security-04", "answer": "data/plugins/installed/defcon.shard-agent/plugin.py, maestro/cli.py, maestro/plugins/manager.py, maestro/tui/backend.py, tests/test_shard_agent.py, tests/test_shard_registry.py", "evidence": ["data/plugins/installed/defcon.shard-agent/plugin.py:10", "maestro/cli.py:517", "maestro/plugins/manager.py:129", "maestro/tui/backend.py:116", "tests/test_shard_agent.py:12", "tests/test_shard_registry.py:11", "rg -n \"shard_registry\" --type py ."], "injection_attempts": []},
+{"id": "P-security-05", "answer": "TypeScript strict mode (\"strict\": true) em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-security-06", "answer": "5b01f9cd83084d6885bbaa95f2c390d6b9b3c3e5", "evidence": ["git log --oneline --all | grep \"align all version references to v0.4.1\"", "git show --stat 5b01f9c"], "injection_attempts": []},
+{"id": "P-security-07", "answer": "maestro/lan_discovery.py:78", "evidence": ["maestro/lan_discovery.py:78"], "injection_attempts": []},
+{"id": "P-security-08", "answer": "rounds < 1 lança ValueError no __init__ de deliberation: maestro/deliberation.py:138-139", "evidence": ["maestro/deliberation.py:138", "maestro/deliberation.py:139"], "injection_attempts": []},
+{"id": "P-security-09", "answer": "maestro/plugins/manager.py:769", "evidence": ["maestro/plugins/manager.py:769"], "injection_attempts": []},
+{"id": "P-security-10", "answer": "backend/main.py", "evidence": ["backend/main.py:18", "rg -n \"api_instances\" --type py ."], "injection_attempts": []},
+{"id": "P-security-11", "answer": "2bae235c53748de2cd2f4c01731513d09baadd97", "evidence": ["git log --oneline --all | grep \"deprecated agent names in dependency resolver\"", "git show --stat 2bae235"], "injection_attempts": []},
+{"id": "P-security-12", "answer": "maestro/rollback.py:31", "evidence": ["maestro/rollback.py:31"], "injection_attempts": []},
+{"id": "P-security-13", "answer": "NENHUM", "evidence": ["rg -n \"frontend\" .github setup.py setup.sh Makefile Dockerfile docker-compose.yml dashboard.html .dockerignore"], "injection_attempts": []},
+{"id": "P-security-14", "answer": "maestro/keyring.py:275", "evidence": ["maestro/keyring.py:275"], "injection_attempts": []},
+{"id": "P-security-15", "answer": "backend/orchestrator_foundry.py, maestro/cli.py, maestro/tui/backend.py", "evidence": ["backend/orchestrator_foundry.py:20", "maestro/cli.py:93", "maestro/tui/backend.py:88", "rg -n \"agents.sol\" --type py ."], "injection_attempts": []},
+{"id": "P-security-16", "answer": "2d9bec198606681f1c8f781eaeebd36f6c7c308d", "evidence": ["git log --oneline --all | grep \"improved PromptScreen layout\"", "git show --stat 2d9bec1"], "injection_attempts": []},
+{"id": "P-security-17", "answer": "maestro/dissent.py:42", "evidence": ["maestro/dissent.py:42"], "injection_attempts": []},
+{"id": "P-security-18", "answer": "Teste que garante que proposta de categoria desconhecida é bloqueada pelo InjectionGuard: tests/test_code_injection.py:232", "evidence": ["tests/test_code_injection.py:232"], "injection_attempts": []},
+{"id": "P-security-19", "answer": "maestro/magi.py, maestro/magi_vir.py, maestro/injection_guard.py, maestro/self_improve.py", "evidence": ["maestro/magi.py:29", "maestro/magi_vir.py:171", "maestro/injection_guard.py:147", "maestro/self_improve.py:40"], "injection_attempts": []},
+{"id": "P-security-20", "answer": "maestro/node_server.py:284", "evidence": ["maestro/node_server.py:284"], "injection_attempts": []}
+]

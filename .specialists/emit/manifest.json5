@@ -1,0 +1,378 @@
+// manifesto do que `cs.py emit` gerou (caminho, plataforma, sha256); gerado, não edite
+{
+ files: [
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/architect.md",
+   platform: "claude-code",
+   sha256: "b3aea31215b3a622b54006a5731ec936fe2ec7352953cfac083f7d55e278bc94"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-consensus.md",
+   platform: "claude-code",
+   sha256: "4043baadcb664e2a95830f670ae0fe887b4038cdd503d19e3180ac94b8b6176c"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-frontend.md",
+   platform: "claude-code",
+   sha256: "43c218273b39edd618760b06b7f7ec6449af3f114161c91ef6524fef4e1871dd"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-maestros.md",
+   platform: "claude-code",
+   sha256: "396af51b518074eeca48d4e069a493c799d6e00675bff4303be73826cab14be7"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-platform.md",
+   platform: "claude-code",
+   sha256: "bf34156050c7690a8c93a5320ee5425d1944b304637b5a52e1b66fb711bb4414"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-self-improve.md",
+   platform: "claude-code",
+   sha256: "9a7552e486c0726be0f95462deb2cb1761f5866a239ec17176ceeb93bdf8e23b"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/dev-storage-network.md",
+   platform: "claude-code",
+   sha256: "b453deca5fcac40df309a192fd3e7a59fc5fbb68febb9707c46684059d181aa4"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/ops.md",
+   platform: "claude-code",
+   sha256: "5c2f78c7c4851dfad1c0403c2a7c677b47bde02e75a5d80b89b063fa502f0550"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/po.md",
+   platform: "claude-code",
+   sha256: "4cfffab75a2da0222e042c2a328ace5b2f83d5116843ef15636719477f3a31e9"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/qa.md",
+   platform: "claude-code",
+   sha256: "b41aad89f84c9b0ea239bbaed8fdf9ed4cc79d2bdd5b0b3359520a022408a764"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/reviewer.md",
+   platform: "claude-code",
+   sha256: "5d0244a5d500a29392cc44dd543bef0d404c6e3426bb4fc078c2b3ee8735dd4c"
+  },
+  {
+   kind: "claude.agent",
+   mode: "owned",
+   path: ".claude/agents/security.md",
+   platform: "claude-code",
+   sha256: "9e843834fabed791a59b63b162f1d81dd36b531ccafec45294be1fb0322e15eb"
+  },
+  {
+   kind: "claude.orchestrator",
+   mode: "owned",
+   path: ".claude/orchestrator.md",
+   platform: "claude-code",
+   sha256: "4ec8ce265d289527d595451579ffa1df272274abf6fd53c205dcee5dc172a4c2"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-architect.md",
+   platform: "claude-code",
+   sha256: "7bb803bc3a6ad2030472fa3598d8fb32f96a814af3b5be4968594713c35a0bb0"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-consensus.md",
+   platform: "claude-code",
+   sha256: "f7007cc6affd332df7aa0e1dbc42921c253a4dc3ee5d60ef7b6a45691b5f0718"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-frontend.md",
+   platform: "claude-code",
+   sha256: "97582871c01bde3553d6f0d063b7ed17f895ba54c7c596f4403dd82136847441"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-maestros.md",
+   platform: "claude-code",
+   sha256: "adbe87add824b78c5a611aeed28d979dd7ac67c0001fb1010ddb6d454a08dc63"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-platform.md",
+   platform: "claude-code",
+   sha256: "b1178c00d98550788cb42c5676b96ecce095fcfd2a7c565703ac56efb5e40b4b"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-self-improve.md",
+   platform: "claude-code",
+   sha256: "d09814a51191ec905b8c53cb6fb6cfb1538f873bda4526e554cc142c5acf1816"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-dev-storage-network.md",
+   platform: "claude-code",
+   sha256: "c08225b3e682233430f526ff7897a3c97426178bedff0718d92c918c68d9d1db"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-ops.md",
+   platform: "claude-code",
+   sha256: "910ac84b794ce22d1c423096ff8e74cba13ad16c68a6840d6b4b0f31a2131df0"
+  },
+  {
+   kind: "claude.rule",
+   mode: "owned",
+   path: ".claude/rules/cs-qa.md",
+   platform: "claude-code",
+   sha256: "6e56b4adec7e6becfcfa39ccf21131900c3dc8c391a75caf7ff95287c0c1404b"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/architect-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "ef57886c3113f4505246274f97ceb587f098ebec727f81490e0cce6852c257cf"
+  },
+  {
+   kind: "claude.session",
+   mode: "owned",
+   path: ".claude/skills/carregar-sessao/SKILL.md",
+   platform: "claude-code",
+   sha256: "ad9476dd783700dab4468958dbbf682cf951be070f277e5b3a21e53bdba4ab28"
+  },
+  {
+   kind: "claude.session",
+   mode: "owned",
+   path: ".claude/skills/corrigir/SKILL.md",
+   platform: "claude-code",
+   sha256: "5d5180b159bdfdf151cf9bfbad1e696124704529e1b819de0b63a33f423202b0"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-consensus-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "1fc6675cf921141b67ebc833e289556f5243b1e000ac44561dd150d979fe5ad0"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-frontend-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "53b8eceead0d2425baf5ed7cd46a613dde62d624c8f75e68ffbfbd40acb34a3c"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-maestros-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "047e704f180ff776abb050f2710a6de0b1bd7dc09d027afcd16ba7a5ba3698f2"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-platform-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "80daffb78eff6677534fc8cecc4ea148e5c0ad722d211172d0570e37426c4552"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-self-improve-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "3007b17f91df9451ab3e1b576f77768118c9cb7f08eb9d2533c8ea47baad679a"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/dev-storage-network-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "9238672e44e063459a9060fec1b715589135c70a3f03d6666cd0938bd4dfd6aa"
+  },
+  {
+   kind: "claude.command",
+   mode: "owned",
+   path: ".claude/skills/feature-autonoma/SKILL.md",
+   platform: "claude-code",
+   sha256: "90e6504b7b3efb4a15e017b13e9557a9b34c4afba288ac87fce8663df82dccfc"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/ops-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "4e6518bd71b1c56c86dfe6d0dc544e187e70fe0aa4746a8754afd5295481223f"
+  },
+  {
+   kind: "claude.command",
+   mode: "owned",
+   path: ".claude/skills/planejar-sprint/SKILL.md",
+   platform: "claude-code",
+   sha256: "4d81cbddf684d09b5a5fef8a1be347d17b9f15ee8c5973056a313510bd4d8e2c"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/po-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "78f132fbf081e68ae5b5301e961587c34e12434965e4be3175d1888950062652"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/qa-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "67799fb662900c88d31987935f23639808fb21426957cf6a33cb8dd1d2811e67"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/reviewer-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "8a5739d9debfd1a4b1dd51c28259221c0be26763cdfc7a7f6b104a9dda88307f"
+  },
+  {
+   kind: "claude.session",
+   mode: "owned",
+   path: ".claude/skills/salvar-sessao/SKILL.md",
+   platform: "claude-code",
+   sha256: "693bb310bbdba1c5e1cd4064d675a934a30100c4edeb6b34cc9335033fe9462e"
+  },
+  {
+   kind: "claude.skill",
+   mode: "owned",
+   path: ".claude/skills/security-playbooks/SKILL.md",
+   platform: "claude-code",
+   sha256: "a60dcab52956b82f5e972248d0c3627b9a7aa09b1f1fda2931329ee972666703"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-consensus.json5",
+   platform: "maps",
+   sha256: "1b71b08a42686fb36cc0dc177b20965a45f6c42429b189283ab4c70ffda38461"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-frontend.json5",
+   platform: "maps",
+   sha256: "518ae98028e273df1cc731f386601d750f5a86a2b0c0bb76a280fbf65f154ebb"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-maestros.json5",
+   platform: "maps",
+   sha256: "427767d078650b7895bd8cbd3d7b92a7541216f52ac1c1cfe141f5ce2d6bef01"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-platform.json5",
+   platform: "maps",
+   sha256: "40dbc1bd857eec63479106d79149d66f7109ad6655f4e2ee4a998678dc5e8ef6"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-self-improve.json5",
+   platform: "maps",
+   sha256: "4619e5fde544a3ccbeb3f5840ddedcea4ac6fd77934f7416bf1fe19e7b29780e"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/dev-storage-network.json5",
+   platform: "maps",
+   sha256: "bbc8ac3d3f7d810ae0a759e85a9c320c8f1403efec7601a02f605fcd45f7dc06"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/ops.json5",
+   platform: "maps",
+   sha256: "dd4de68290928c422c90ab37caafdda38267552983242a4e3e99fa08537a9a9f"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/qa.json5",
+   platform: "maps",
+   sha256: "f02171a17898faa113668c7afbbb5af02d03f55c98b28051626e6fb5669f42dd"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/reviewer.json5",
+   platform: "maps",
+   sha256: "6897d12d37e042c1c3530a84a21e1940dbe74416879d2caefd2fa1d7470ad9f4"
+  },
+  {
+   kind: "maps.invariants",
+   mode: "owned",
+   path: ".specialists/knowledge/invariants/security.json5",
+   platform: "maps",
+   sha256: "d9f59ac57e2ce3ee600a8a8d70271a8257f3815c1d6c8c4ba83b09e2aba3606b"
+  },
+  {
+   kind: "maps.s5-memoria",
+   mode: "owned",
+   path: ".specialists/knowledge/s5-memoria.json5",
+   platform: "maps",
+   sha256: "2bb2d455251c7ecd49647b10a406fd834fe80534be8921d7718c4e932746b4fe"
+  },
+  {
+   kind: "maps.stack",
+   mode: "owned",
+   path: ".specialists/knowledge/stack.json5",
+   platform: "maps",
+   sha256: "a4c32b4796a1e9194167f8d8c40f76dade48ee58a3e01709dfcd40f771f566b3"
+  },
+  {
+   kind: "maps.tree",
+   mode: "owned",
+   path: ".specialists/knowledge/tree.json5",
+   platform: "maps",
+   sha256: "6330739d014825b27cf392e894dc882edcb0eb085ecb9c4632c34cd0cc146e29"
+  },
+  {
+   kind: "claude.memory",
+   mode: "block",
+   path: "CLAUDE.md",
+   platform: "claude-code",
+   sha256: "7a6a19c307bca12e7b94715b378f11008d0227351681b99e801a1896ee7a4c02"
+  }
+ ],
+ generator: "codebase-specialists/emit",
+ schema_version: 1
+}

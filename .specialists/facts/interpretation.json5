@@ -1,0 +1,50 @@
+// interpretation — correções llm_interpretation (conferidas no código); gerado por cs.py facts interpret
+{
+ facts: [
+  {
+   claim: "O termo TUI (technical) designa o dashboard de terminal baseado em Textual, implementado em maestro/tui/ e descrito em readme.md:62; docs/storage-network.md:434 só descreve o painel LAN Discovery dentro dela.",
+   confidence: "medium",
+   data: {corrects: "gloss.tui", source: "spotcheck"},
+   evidence: [
+    {file: "readme.md", line: 62}
+   ],
+   fingerprint: "b0c0da1bc3f828e1b2e742a8a1fd99635e2ffcb83c0e8fca7bfe69f824be7da3",
+   id: "interp.gloss.tui.technical",
+   layer: "interpretation",
+   origin: "llm_interpretation",
+   scope: [],
+   supports: ["gloss.tui"]
+  },
+  {
+   claim: "O commit 53b1a7722637 adiciona o workspace Rust maestros v0.0.1 (maestros/Cargo.toml e 9 crates) e renomeia telOS para MaestrOS; é feature/docs, não correção de bug, e altera 27 arquivos, entre eles maestros/Cargo.lock.",
+   confidence: "medium",
+   data: {corrects: "hist.fix.53b1a7722637", source: "spotcheck"},
+   evidence: [
+    {file: "maestros/Cargo.toml", line: 1}
+   ],
+   fingerprint: "056245c55435090fd202b8c2ca6986a0eae1260498df3de353f629fefa19c32f",
+   id: "interp.hist.feat.53b1a7722637",
+   layer: "interpretation",
+   origin: "llm_interpretation",
+   scope: [],
+   supports: ["hist.fix.53b1a7722637"]
+  },
+  {
+   claim: "O alvo make build (Makefile:39) executa docker compose build --no-cache e falhou no scan porque o daemon do Docker não estava acessível (docker.sock ausente): falha de ambiente, não do repositório.",
+   confidence: "medium",
+   data: {corrects: "ops.build.make-build", source: "spotcheck"},
+   evidence: [
+    {file: "Makefile", line: 39}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "interp.ops.build.make-build-docker-env",
+   layer: "interpretation",
+   origin: "llm_interpretation",
+   scope: [],
+   supports: ["ops.build.make-build"]
+  }
+ ],
+ generator: "cs.py facts interpret",
+ layer: "interpretation",
+ schema_version: 1
+}

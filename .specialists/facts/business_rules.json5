@@ -1,0 +1,1152 @@
+// business_rules (L9) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ coverage: {
+  asserted: 4,
+  exercised: 2,
+  message: 2,
+  none: 2,
+  reference: 5
+ },
+ facts: [
+  {
+   claim: "Limite QUORUM_THRESHOLD = 0.66 (business) em maestro/aggregator.py:3; citado em teste tests/test_orchestration.py:184 (`QUORUM_THRESHOLD`)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "reference",
+    expr: "0.66",
+    kind: "limit",
+    source: "code",
+    subject: "QUORUM_THRESHOLD",
+    test: "tests/test_orchestration.py:184",
+    value: "0.66"
+   },
+   evidence: [
+    {file: "maestro/aggregator.py", line: 3},
+    {file: "tests/test_orchestration.py", line: 184}
+   ],
+   fingerprint: "c972ff5ef61413e6189b4aa7734decef927c05738766190fdbd67b0fecfcd9cb",
+   id: "brule.limit.quorum_threshold",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/aggregator.py", "tests/test_orchestration.py"]
+  },
+  {
+   claim: "Limite SIMILARITY_THRESHOLD = 0.5 (business) em maestro/aggregator.py:4; citado em teste tests/test_code_injection.py:408 (`SIMILARITY_THRESHOLD`)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "reference",
+    expr: "0.5",
+    kind: "limit",
+    source: "code",
+    subject: "SIMILARITY_THRESHOLD",
+    test: "tests/test_code_injection.py:408",
+    value: "0.5"
+   },
+   evidence: [
+    {file: "maestro/aggregator.py", line: 4},
+    {file: "tests/test_code_injection.py", line: 408}
+   ],
+   fingerprint: "1abb072f850647300417d4ee9597fb6f8ce47d7edfcfe2c6a257556bc7e70b78",
+   id: "brule.limit.similarity_threshold",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/aggregator.py", "tests/test_code_injection.py"]
+  },
+  {
+   claim: "Limite STALE_TIMEOUT = 15.0 (technical) em maestro/lan_discovery.py:41; coberto por tests/test_lan_discovery.py:65 (o teste chama `is_alive` e confere o resultado — valor ou exceção esperados, derivados da regra)",
+   confidence: "medium",
+   data: {
+    class: "technical",
+    coverage: "asserted",
+    expr: "15.0",
+    kind: "limit",
+    source: "code",
+    subject: "STALE_TIMEOUT",
+    test: "tests/test_lan_discovery.py:65",
+    value: "15.0"
+   },
+   evidence: [
+    {file: "maestro/lan_discovery.py", line: 41},
+    {file: "tests/test_lan_discovery.py", line: 65}
+   ],
+   fingerprint: "90f05369ba812a2bdaf7d6619a9f120e6e430c2306a4540fa693f468e67cc24a",
+   id: "brule.limit.stale_timeout",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/lan_discovery.py", "tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "Limite HANDSHAKE_TIMEOUT = 5.0 (technical) em maestro/lan_discovery.py:42; nenhum caso de teste alcança esta regra mecanicamente (o módulo é importado por tests/test_lan_discovery.py, mas nenhum caso confere a mensagem nem chama o símbolo no corpo do teste; chamadas via setUp/helpers não são rastreadas)",
+   confidence: "medium",
+   data: {
+    class: "technical",
+    coverage: "none",
+    expr: "5.0",
+    kind: "limit",
+    source: "code",
+    subject: "HANDSHAKE_TIMEOUT",
+    test: null,
+    value: "5.0"
+   },
+   evidence: [
+    {file: "maestro/lan_discovery.py", line: 42}
+   ],
+   fingerprint: "c727632eb078a07927b2737ea0a01a84c8a3efbd716c148934a78d01c6a20f1a",
+   id: "brule.limit.handshake_timeout",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/lan_discovery.py"]
+  },
+  {
+   claim: "Limite PROBATION_THRESHOLD = 0.7 (business) em maestro/storage_proof.py:110; coberto por tests/test_storage_proof.py:23 (o teste chama `StorageProofEngine` e confere o resultado — valor ou exceção esperados, derivados da regra)",
+   confidence: "medium",
+   data: {
+    class: "business",
+    coverage: "asserted",
+    expr: "0.7",
+    kind: "limit",
+    source: "code",
+    subject: "PROBATION_THRESHOLD",
+    test: "tests/test_storage_proof.py:23",
+    value: "0.7"
+   },
+   evidence: [
+    {file: "maestro/storage_proof.py", line: 110},
+    {file: "tests/test_storage_proof.py", line: 23}
+   ],
+   fingerprint: "fc48642400d81a2cb1e9d174688f53c9f23ba1dbdf751708d1fe2d523580066b",
+   id: "brule.limit.probation_threshold",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/storage_proof.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Limite EVICTION_THRESHOLD = 0.3 (business) em maestro/storage_proof.py:111; coberto por tests/test_storage_proof.py:153 (o teste chama `StorageProofEngine` e confere o resultado — valor ou exceção esperados, derivados da regra)",
+   confidence: "medium",
+   data: {
+    class: "business",
+    coverage: "asserted",
+    expr: "0.3",
+    kind: "limit",
+    source: "code",
+    subject: "EVICTION_THRESHOLD",
+    test: "tests/test_storage_proof.py:153",
+    value: "0.3"
+   },
+   evidence: [
+    {file: "maestro/storage_proof.py", line: 111},
+    {file: "tests/test_storage_proof.py", line: 153}
+   ],
+   fingerprint: "fc48642400d81a2cb1e9d174688f53c9f23ba1dbdf751708d1fe2d523580066b",
+   id: "brule.limit.eviction_threshold",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/storage_proof.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Limite DEFAULT_CHALLENGE_WINDOW_SECONDS = 60 (business) em maestro/storage_proof.py:112; coberto por tests/test_storage_proof.py:23 (o teste chama `StorageProofEngine` e confere o resultado — valor ou exceção esperados, derivados da regra)",
+   confidence: "medium",
+   data: {
+    class: "business",
+    coverage: "asserted",
+    expr: "60",
+    kind: "limit",
+    source: "code",
+    subject: "DEFAULT_CHALLENGE_WINDOW_SECONDS",
+    test: "tests/test_storage_proof.py:23",
+    value: "60"
+   },
+   evidence: [
+    {file: "maestro/storage_proof.py", line: 112},
+    {file: "tests/test_storage_proof.py", line: 23}
+   ],
+   fingerprint: "fc48642400d81a2cb1e9d174688f53c9f23ba1dbdf751708d1fe2d523580066b",
+   id: "brule.limit.default_challenge_window_seconds",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/storage_proof.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Limite DEFAULT_MAX_LATENCY_MS = 5000 (business) em maestro/storage_proof.py:113; citado em teste tests/test_storage_proof.py:35 (`DEFAULT_MAX_LATENCY_MS`)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "reference",
+    expr: "5000",
+    kind: "limit",
+    source: "code",
+    subject: "DEFAULT_MAX_LATENCY_MS",
+    test: "tests/test_storage_proof.py:35",
+    value: "5000"
+   },
+   evidence: [
+    {file: "maestro/storage_proof.py", line: 113},
+    {file: "tests/test_storage_proof.py", line: 35}
+   ],
+   fingerprint: "fc48642400d81a2cb1e9d174688f53c9f23ba1dbdf751708d1fe2d523580066b",
+   id: "brule.limit.default_max_latency_ms",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/storage_proof.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Limite HEALTH_RETRIES = 30 (technical) em setup.py:45; nenhum teste importa este módulo nem cita a mensagem (cobertura indireta — CLI/HTTP/subprocess — não verificada)",
+   confidence: "low",
+   data: {
+    class: "technical",
+    coverage: "none",
+    expr: "30",
+    kind: "limit",
+    source: "code",
+    subject: "HEALTH_RETRIES",
+    test: null,
+    value: "30"
+   },
+   evidence: [
+    {file: "setup.py", line: 45}
+   ],
+   fingerprint: "a7ed8f872390a22ab7003534812c1f6fc152eee4edb314a0e1498c2c230b28a2",
+   id: "brule.limit.health_retries",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["setup.py"]
+  },
+  {
+   claim: "Estados de AdjacencyState (maestro/lan_discovery.py:78): DISCOVERED, HANDSHAKE_SENT, HANDSHAKE_ACKED, CONFIRMED, STALE; citado em teste tests/test_lan_discovery.py:214 (`AdjacencyState`)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "reference",
+    kind: "state",
+    source: "code",
+    subject: "AdjacencyState",
+    test: "tests/test_lan_discovery.py:214",
+    value: ["DISCOVERED", "HANDSHAKE_SENT", "HANDSHAKE_ACKED", "CONFIRMED", "STALE"]
+   },
+   evidence: [
+    {file: "maestro/lan_discovery.py", line: 78},
+    {file: "tests/test_lan_discovery.py", line: 214}
+   ],
+   fingerprint: "90f05369ba812a2bdaf7d6619a9f120e6e430c2306a4540fa693f468e67cc24a",
+   id: "brule.states.adjacencystate",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/lan_discovery.py", "tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "Estados de PluginState (maestro/plugins/base.py:49): DISCOVERED, VALIDATED, LOADED, ENABLED, DISABLED, ERROR, UNLOADED; citado em teste tests/test_mod_manager.py:158 (`PluginState`)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "reference",
+    kind: "state",
+    source: "code",
+    subject: "PluginState",
+    test: "tests/test_mod_manager.py:158",
+    value: ["DISCOVERED", "VALIDATED", "LOADED", "ENABLED", "DISABLED", "ERROR", "UNLOADED"]
+   },
+   evidence: [
+    {file: "maestro/plugins/base.py", line: 49},
+    {file: "tests/test_mod_manager.py", line: 158}
+   ],
+   fingerprint: "358011d56c8d764ade209b6661e5ad8ed4c95f0f399d38615f83af1ec5ed6d46",
+   id: "brule.states.pluginstate",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/plugins/base.py", "tests/test_mod_manager.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_injectable_architecture_blocked (tests/test_code_injection.py:225): injectable architecture blocked",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_injectable_architecture_blocked",
+    test: "tests/test_code_injection.py:225",
+    value: "injectable architecture blocked"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 225}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_injectable_architecture_blocked",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_injectable_unknown_category_blocked (tests/test_code_injection.py:232): injectable unknown category blocked",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_injectable_unknown_category_blocked",
+    test: "tests/test_code_injection.py:232",
+    value: "injectable unknown category blocked"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 232}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_injectable_unknown_category_blocked",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_injectable_rejected_status (tests/test_code_injection.py:238): injectable rejected status",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_injectable_rejected_status",
+    test: "tests/test_code_injection.py:238",
+    value: "injectable rejected status"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 238}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_injectable_rejected_status",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_rate_limit_allows (tests/test_code_injection.py:270): rate limit allows",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_rate_limit_allows",
+    test: "tests/test_code_injection.py:270",
+    value: "rate limit allows"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 270}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_rate_limit_allows",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_rate_limit_blocks (tests/test_code_injection.py:274): rate limit blocks",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_rate_limit_blocks",
+    test: "tests/test_code_injection.py:274",
+    value: "rate limit blocks"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 274}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_rate_limit_blocks",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_blocked_category_skipped (tests/test_code_injection.py:360): blocked category skipped",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_blocked_category_skipped",
+    test: "tests/test_code_injection.py:360",
+    value: "blocked category skipped"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 360}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_blocked_category_skipped",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_rate_limit_blocks_injection (tests/test_code_injection.py:367): rate limit blocks injection",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_rate_limit_blocks_injection",
+    test: "tests/test_code_injection.py:367",
+    value: "rate limit blocks injection"
+   },
+   evidence: [
+    {file: "tests/test_code_injection.py", line: 367}
+   ],
+   fingerprint: "c49ed52287fb645632d08d2af2d297dfdaa097299aeb33623f1ae65051a95b2c",
+   id: "brule.test.test_rate_limit_blocks_injection",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_code_injection.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_raises_when_docker_run_fails (tests/test_instances.py:285): raises when docker run fails",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_raises_when_docker_run_fails",
+    test: "tests/test_instances.py:285",
+    value: "raises when docker run fails"
+   },
+   evidence: [
+    {file: "tests/test_instances.py", line: 285}
+   ],
+   fingerprint: "33913a56c1839adaeea5d3759b24524e72d20dd32098a530a1b46e9008d95552",
+   id: "brule.test.test_raises_when_docker_run_fails",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_instances.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_is_adjacent_requires_confirmed_and_alive (tests/test_lan_discovery.py:67): is adjacent requires confirmed and alive",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_is_adjacent_requires_confirmed_and_alive",
+    test: "tests/test_lan_discovery.py:67",
+    value: "is adjacent requires confirmed and alive"
+   },
+   evidence: [
+    {file: "tests/test_lan_discovery.py", line: 67}
+   ],
+   fingerprint: "d5e76d4bf27c16c6d4db05c1937025a3ec3069664fdc0415578a44dc30d5df3b",
+   id: "brule.test.test_is_adjacent_requires_confirmed_and_alive",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_discover_skips_invalid_manifests (tests/test_mod_manager.py:103): discover skips invalid manifests",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_discover_skips_invalid_manifests",
+    test: "tests/test_mod_manager.py:103",
+    value: "discover skips invalid manifests"
+   },
+   evidence: [
+    {file: "tests/test_mod_manager.py", line: 103}
+   ],
+   fingerprint: "9d77269a0e0b0dd1f4df551563315c6d685b3a46bb29da483dc470857acae745",
+   id: "brule.test.test_discover_skips_invalid_manifests",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_mod_manager.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_invalid_hook_point_raises (tests/test_mod_manager.py:270): invalid hook point raises",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_invalid_hook_point_raises",
+    test: "tests/test_mod_manager.py:270",
+    value: "invalid hook point raises"
+   },
+   evidence: [
+    {file: "tests/test_mod_manager.py", line: 270}
+   ],
+   fingerprint: "9d77269a0e0b0dd1f4df551563315c6d685b3a46bb29da483dc470857acae745",
+   id: "brule.test.test_invalid_hook_point_raises",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_mod_manager.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_list_sessions_limit_offset (tests/test_orchestration.py:464): list sessions limit offset",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_list_sessions_limit_offset",
+    test: "tests/test_orchestration.py:464",
+    value: "list sessions limit offset"
+   },
+   evidence: [
+    {file: "tests/test_orchestration.py", line: 464}
+   ],
+   fingerprint: "532be6501bc683e5e2846103c020f17e8f69418e3b8059088b520ad693c2fa83",
+   id: "brule.test.test_list_sessions_limit_offset",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_orchestration.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_analysis_only_mode (tests/test_self_improvement.py:699): analysis only mode",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_analysis_only_mode",
+    test: "tests/test_self_improvement.py:699",
+    value: "analysis only mode"
+   },
+   evidence: [
+    {file: "tests/test_self_improvement.py", line: 699}
+   ],
+   fingerprint: "85140d8bd2f034e7279732d675118db5b3ced347bf1d1738eccd96d6f2884425",
+   id: "brule.test.test_analysis_only_mode",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_self_improvement.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_validate_wrong_hash_fails (tests/test_storage_proof.py:56): validate wrong hash fails",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_validate_wrong_hash_fails",
+    test: "tests/test_storage_proof.py:56",
+    value: "validate wrong hash fails"
+   },
+   evidence: [
+    {file: "tests/test_storage_proof.py", line: 56}
+   ],
+   fingerprint: "a6bba0fb9c06036a19144174598cbadcbd088a3bc9b003fbaba6bb211c84b348",
+   id: "brule.test.test_validate_wrong_hash_fails",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Regra expressa em teste test_restore_nonexistent_fails (tests/test_weight_snapshots.py:120): restore nonexistent fails",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "self",
+    kind: "test",
+    source: "code",
+    subject: "test_restore_nonexistent_fails",
+    test: "tests/test_weight_snapshots.py:120",
+    value: "restore nonexistent fails"
+   },
+   evidence: [
+    {file: "tests/test_weight_snapshots.py", line: 120}
+   ],
+   fingerprint: "ac6f3efa164a5102f111753190d58b597a6ed4667d7ccdd3716b844f482af219",
+   id: "brule.test.test_restore_nonexistent_fails",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["tests/test_weight_snapshots.py"]
+  },
+  {
+   claim: "Regra (validação) em maestro/deliberation.py:138-139: quando `if rounds < 1:` (linha 138) → ValueError(\"rounds must be >= 1, got {rounds}\") (linha 139); alcançável por teste: tests/test_orchestration.py:141 chama `run_orchestration_async` (se o teste isola esta regra não é determinável mecanicamente — confira antes de afirmar)",
+   confidence: "medium",
+   data: {
+    class: "business",
+    coverage: "exercised",
+    exception: "ValueError",
+    exercised_by: "tests/test_orchestration.py:141",
+    kind: "validation",
+    source: "code",
+    subject: "rounds must be >= 1, got {rounds}",
+    test: null,
+    value: "if rounds < 1:"
+   },
+   evidence: [
+    {file: "maestro/deliberation.py", line: 139},
+    {file: "maestro/deliberation.py", line: 138},
+    {file: "tests/test_orchestration.py", line: 141}
+   ],
+   fingerprint: "a30262abbd3173b4d212efea54a94f01f50beba7a6732772c0e027e90651f630",
+   id: "brule.validation.maestro-deliberation.py.139",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/deliberation.py", "tests/test_orchestration.py"]
+  },
+  {
+   claim: "Regra (validação) em maestro/instances.py:244-245: quando `if not _is_port_available(SHARED_REDIS_PORT):` (linha 244) → RuntimeError(\"Port {SHARED_REDIS_PORT} is already in use by another process. \") (linha 245); coberto por tests/test_instances.py:280 (o teste confere a mensagem)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "message",
+    exception: "RuntimeError",
+    kind: "validation",
+    source: "code",
+    subject: "Port {SHARED_REDIS_PORT} is already in use by another process. ",
+    test: "tests/test_instances.py:280",
+    value: "if not _is_port_available(SHARED_REDIS_PORT):"
+   },
+   evidence: [
+    {file: "maestro/instances.py", line: 245},
+    {file: "maestro/instances.py", line: 244},
+    {file: "tests/test_instances.py", line: 280}
+   ],
+   fingerprint: "fc9f5fcc1289205903705fd9e66a553279c87fca1e62a7b637b9892fdd8249cb",
+   id: "brule.validation.maestro-instances.py.245",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/instances.py", "tests/test_instances.py"]
+  },
+  {
+   claim: "Regra (validação) em maestro/shard_manager.py:120: → ImportError(\"huggingface_hub is required for downloading shards.\\n\"); alcançável por teste: tests/test_shard_manager.py:52 chama `ShardManager` (se o teste isola esta regra não é determinável mecanicamente — confira antes de afirmar)",
+   confidence: "medium",
+   data: {
+    class: "business",
+    coverage: "exercised",
+    exception: "ImportError",
+    exercised_by: "tests/test_shard_manager.py:52",
+    kind: "validation",
+    source: "code",
+    subject: "huggingface_hub is required for downloading shards.\\n",
+    test: null,
+    value: null
+   },
+   evidence: [
+    {file: "maestro/shard_manager.py", line: 120},
+    {file: "tests/test_shard_manager.py", line: 52}
+   ],
+   fingerprint: "852f2dc85e89d30ecb2a034550c29e88be7d2b854e93a27476f3cad604d7edd3",
+   id: "brule.validation.maestro-shard_manager.py.120",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/shard_manager.py", "tests/test_shard_manager.py"]
+  },
+  {
+   claim: "Regra (validação) em maestro/shard_utils.py:44-45: quando `if len(header_size_bytes) < 8:` (linha 44) → ValueError(\"File too small to be safetensors: {filepath}\") (linha 45); coberto por tests/test_shard_utils.py:109 (o teste confere a mensagem)",
+   confidence: "high",
+   data: {
+    class: "business",
+    coverage: "message",
+    exception: "ValueError",
+    kind: "validation",
+    source: "code",
+    subject: "File too small to be safetensors: {filepath}",
+    test: "tests/test_shard_utils.py:109",
+    value: "if len(header_size_bytes) < 8:"
+   },
+   evidence: [
+    {file: "maestro/shard_utils.py", line: 45},
+    {file: "maestro/shard_utils.py", line: 44},
+    {file: "tests/test_shard_utils.py", line: 109}
+   ],
+   fingerprint: "afaac581d41990db186c1f90d9fe44741249eac09a89db7d830d1a4a1980e399",
+   id: "brule.validation.maestro-shard_utils.py.45",
+   layer: "business_rules",
+   origin: "mechanical",
+   scope: ["maestro/shard_utils.py", "tests/test_shard_utils.py"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "business_rules",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ rules: [
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_orchestration.py",
+    level: "reference",
+    line: 184,
+    match: "QUORUM_THRESHOLD",
+    test_name: "test_similar_responses_reach_quorum",
+    via: "analyze_agreement"
+   },
+   expr: "0.66",
+   file: "maestro/aggregator.py",
+   kind: "limit",
+   lang: "python",
+   line: 3,
+   name: "QUORUM_THRESHOLD",
+   value: "0.66"
+  },
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "reference",
+    line: 408,
+    match: "SIMILARITY_THRESHOLD",
+    test_name: "test_rollback_cycle",
+    via: null
+   },
+   expr: "0.5",
+   file: "maestro/aggregator.py",
+   kind: "limit",
+   lang: "python",
+   line: 4,
+   name: "SIMILARITY_THRESHOLD",
+   value: "0.5"
+  },
+  {
+   class: "technical",
+   covered_by: {
+    file: "tests/test_lan_discovery.py",
+    level: "asserted",
+    line: 65,
+    match: "is_alive",
+    test_name: "test_is_alive_stale",
+    via: "is_alive"
+   },
+   expr: "15.0",
+   file: "maestro/lan_discovery.py",
+   kind: "limit",
+   lang: "python",
+   line: 41,
+   name: "STALE_TIMEOUT",
+   value: "15.0"
+  },
+  {
+   class: "technical",
+   covered_by: {level: "none", module_imported_by: ["tests/test_lan_discovery.py"]},
+   expr: "5.0",
+   file: "maestro/lan_discovery.py",
+   kind: "limit",
+   lang: "python",
+   line: 42,
+   name: "HANDSHAKE_TIMEOUT",
+   value: "5.0"
+  },
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_storage_proof.py",
+    level: "asserted",
+    line: 23,
+    match: "StorageProofEngine",
+    test_name: "test_issue_byte_range_challenge",
+    via: "StorageProofEngine"
+   },
+   expr: "0.7",
+   file: "maestro/storage_proof.py",
+   kind: "limit",
+   lang: "python",
+   line: 110,
+   name: "PROBATION_THRESHOLD",
+   value: "0.7"
+  },
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_storage_proof.py",
+    level: "asserted",
+    line: 153,
+    match: "StorageProofEngine",
+    test_name: "test_eviction_on_low_reputation",
+    via: "StorageProofEngine"
+   },
+   expr: "0.3",
+   file: "maestro/storage_proof.py",
+   kind: "limit",
+   lang: "python",
+   line: 111,
+   name: "EVICTION_THRESHOLD",
+   value: "0.3"
+  },
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_storage_proof.py",
+    level: "asserted",
+    line: 23,
+    match: "StorageProofEngine",
+    test_name: "test_issue_byte_range_challenge",
+    via: "StorageProofEngine"
+   },
+   expr: "60",
+   file: "maestro/storage_proof.py",
+   kind: "limit",
+   lang: "python",
+   line: 112,
+   name: "DEFAULT_CHALLENGE_WINDOW_SECONDS",
+   value: "60"
+  },
+  {
+   class: "business",
+   covered_by: {
+    file: "tests/test_storage_proof.py",
+    level: "reference",
+    line: 35,
+    match: "DEFAULT_MAX_LATENCY_MS",
+    test_name: "test_issue_latency_probe",
+    via: "StorageProofEngine"
+   },
+   expr: "5000",
+   file: "maestro/storage_proof.py",
+   kind: "limit",
+   lang: "python",
+   line: 113,
+   name: "DEFAULT_MAX_LATENCY_MS",
+   value: "5000"
+  },
+  {
+   class: "technical",
+   covered_by: {level: "none", module_imported_by: []},
+   expr: "30",
+   file: "setup.py",
+   kind: "limit",
+   lang: "python",
+   line: 45,
+   name: "HEALTH_RETRIES",
+   value: "30"
+  },
+  {
+   covered_by: {
+    file: "tests/test_lan_discovery.py",
+    level: "reference",
+    line: 214,
+    match: "AdjacencyState",
+    test_name: "test_handshake_ack_confirms_adjacency",
+    via: "PeerShard"
+   },
+   file: "maestro/lan_discovery.py",
+   kind: "state",
+   lang: "python",
+   line: 78,
+   name: "AdjacencyState",
+   states: ["DISCOVERED", "HANDSHAKE_SENT", "HANDSHAKE_ACKED", "CONFIRMED", "STALE"]
+  },
+  {
+   covered_by: {
+    file: "tests/test_mod_manager.py",
+    level: "reference",
+    line: 158,
+    match: "PluginState",
+    test_name: "test_load_plugin",
+    via: "discover"
+   },
+   file: "maestro/plugins/base.py",
+   kind: "state",
+   lang: "python",
+   line: 49,
+   name: "PluginState",
+   states: ["DISCOVERED", "VALIDATED", "LOADED", "ENABLED", "DISABLED", "ERROR", "UNLOADED"]
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 225,
+    match: "test_injectable_architecture_blocked"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 225,
+   name: "test_injectable_architecture_blocked",
+   rule: "injectable architecture blocked"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 232,
+    match: "test_injectable_unknown_category_blocked"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 232,
+   name: "test_injectable_unknown_category_blocked",
+   rule: "injectable unknown category blocked"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 238,
+    match: "test_injectable_rejected_status"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 238,
+   name: "test_injectable_rejected_status",
+   rule: "injectable rejected status"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 270,
+    match: "test_rate_limit_allows"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 270,
+   name: "test_rate_limit_allows",
+   rule: "rate limit allows"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 274,
+    match: "test_rate_limit_blocks"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 274,
+   name: "test_rate_limit_blocks",
+   rule: "rate limit blocks"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 360,
+    match: "test_blocked_category_skipped"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 360,
+   name: "test_blocked_category_skipped",
+   rule: "blocked category skipped"
+  },
+  {
+   covered_by: {
+    file: "tests/test_code_injection.py",
+    level: "self",
+    line: 367,
+    match: "test_rate_limit_blocks_injection"
+   },
+   file: "tests/test_code_injection.py",
+   kind: "test",
+   lang: "python",
+   line: 367,
+   name: "test_rate_limit_blocks_injection",
+   rule: "rate limit blocks injection"
+  },
+  {
+   covered_by: {
+    file: "tests/test_instances.py",
+    level: "self",
+    line: 285,
+    match: "test_raises_when_docker_run_fails"
+   },
+   file: "tests/test_instances.py",
+   kind: "test",
+   lang: "python",
+   line: 285,
+   name: "test_raises_when_docker_run_fails",
+   rule: "raises when docker run fails"
+  },
+  {
+   covered_by: {
+    file: "tests/test_lan_discovery.py",
+    level: "self",
+    line: 67,
+    match: "test_is_adjacent_requires_confirmed_and_alive"
+   },
+   file: "tests/test_lan_discovery.py",
+   kind: "test",
+   lang: "python",
+   line: 67,
+   name: "test_is_adjacent_requires_confirmed_and_alive",
+   rule: "is adjacent requires confirmed and alive"
+  },
+  {
+   covered_by: {
+    file: "tests/test_mod_manager.py",
+    level: "self",
+    line: 103,
+    match: "test_discover_skips_invalid_manifests"
+   },
+   file: "tests/test_mod_manager.py",
+   kind: "test",
+   lang: "python",
+   line: 103,
+   name: "test_discover_skips_invalid_manifests",
+   rule: "discover skips invalid manifests"
+  },
+  {
+   covered_by: {
+    file: "tests/test_mod_manager.py",
+    level: "self",
+    line: 270,
+    match: "test_invalid_hook_point_raises"
+   },
+   file: "tests/test_mod_manager.py",
+   kind: "test",
+   lang: "python",
+   line: 270,
+   name: "test_invalid_hook_point_raises",
+   rule: "invalid hook point raises"
+  },
+  {
+   covered_by: {
+    file: "tests/test_orchestration.py",
+    level: "self",
+    line: 464,
+    match: "test_list_sessions_limit_offset"
+   },
+   file: "tests/test_orchestration.py",
+   kind: "test",
+   lang: "python",
+   line: 464,
+   name: "test_list_sessions_limit_offset",
+   rule: "list sessions limit offset"
+  },
+  {
+   covered_by: {
+    file: "tests/test_self_improvement.py",
+    level: "self",
+    line: 699,
+    match: "test_analysis_only_mode"
+   },
+   file: "tests/test_self_improvement.py",
+   kind: "test",
+   lang: "python",
+   line: 699,
+   name: "test_analysis_only_mode",
+   rule: "analysis only mode"
+  },
+  {
+   covered_by: {
+    file: "tests/test_storage_proof.py",
+    level: "self",
+    line: 56,
+    match: "test_validate_wrong_hash_fails"
+   },
+   file: "tests/test_storage_proof.py",
+   kind: "test",
+   lang: "python",
+   line: 56,
+   name: "test_validate_wrong_hash_fails",
+   rule: "validate wrong hash fails"
+  },
+  {
+   covered_by: {
+    file: "tests/test_weight_snapshots.py",
+    level: "self",
+    line: 120,
+    match: "test_restore_nonexistent_fails"
+   },
+   file: "tests/test_weight_snapshots.py",
+   kind: "test",
+   lang: "python",
+   line: 120,
+   name: "test_restore_nonexistent_fails",
+   rule: "restore nonexistent fails"
+  },
+  {
+   covered_by: {
+    file: "tests/test_orchestration.py",
+    level: "exercised",
+    line: 141,
+    match: "run_orchestration_async",
+    test_name: "test_custom_headless_generator",
+    via: "run_orchestration_async"
+   },
+   exc: "ValueError",
+   file: "maestro/deliberation.py",
+   guard: "if rounds < 1:",
+   guard_line: 138,
+   kind: "validation",
+   lang: "python",
+   line: 139,
+   message: "rounds must be >= 1, got {rounds}",
+   raises: "ValueError"
+  },
+  {
+   covered_by: {
+    file: "tests/test_instances.py",
+    level: "message",
+    line: 280,
+    match: "already in use",
+    test_name: "test_raises_when_port_occupied",
+    via: "_ensure_shared_redis"
+   },
+   exc: "RuntimeError",
+   file: "maestro/instances.py",
+   guard: "if not _is_port_available(SHARED_REDIS_PORT):",
+   guard_line: 244,
+   kind: "validation",
+   lang: "python",
+   line: 245,
+   message: "Port {SHARED_REDIS_PORT} is already in use by another process. ",
+   raises: "RuntimeError"
+  },
+  {
+   covered_by: {
+    file: "tests/test_shard_manager.py",
+    level: "exercised",
+    line: 52,
+    match: "ShardManager",
+    test_name: "test_index_single_file",
+    via: "ShardManager"
+   },
+   exc: "ImportError",
+   file: "maestro/shard_manager.py",
+   guard: null,
+   guard_line: null,
+   kind: "validation",
+   lang: "python",
+   line: 120,
+   message: "huggingface_hub is required for downloading shards.\\n",
+   raises: "ImportError"
+  },
+  {
+   covered_by: {
+    file: "tests/test_shard_utils.py",
+    level: "message",
+    line: 109,
+    match: "too small",
+    test_name: "test_read_truncated_file",
+    via: "read_safetensors_header"
+   },
+   exc: "ValueError",
+   file: "maestro/shard_utils.py",
+   guard: "if len(header_size_bytes) < 8:",
+   guard_line: 44,
+   kind: "validation",
+   lang: "python",
+   line: 45,
+   message: "File too small to be safetensors: {filepath}",
+   raises: "ValueError"
+  }
+ ],
+ scan_key: "L9",
+ schema_version: 1,
+ summary: {
+  limit: 9,
+  state: 2,
+  test: 15,
+  validation: 4
+ }
+}

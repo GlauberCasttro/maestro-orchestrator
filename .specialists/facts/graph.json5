@@ -1,0 +1,1849 @@
+// graph (L1) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ communities: [
+  {
+   id: "c000",
+   members: ["backend/main.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/agents/mock_shard_node.py", "maestro/agents/shard.py", "maestro/api_cluster.py", "maestro/api_keys.py", "maestro/api_magi.py", "maestro/api_plugins.py", "maestro/api_sessions.py", "maestro/api_storage.py", "maestro/api_update.py", "maestro/cluster.py", "maestro/lan_discovery.py", "maestro/node_server.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/state_bus.py", "maestro/storage_proof.py", "maestro/updater.py", "tests/test_cluster.py", "tests/test_lan_discovery.py", "tests/test_shard_agent.py", "tests/test_shard_registry.py", "tests/test_shard_utils.py", "tests/test_storage_proof.py"],
+   prefix: "maestro",
+   size: 25
+  },
+  {
+   id: "c001",
+   members: ["maestro/aggregator.py", "maestro/api_self_improve.py", "maestro/applicator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/injection_guard.py", "maestro/introspect.py", "maestro/magi.py", "maestro/magi_vir.py", "maestro/ncg/__init__.py", "maestro/ncg/drift.py", "maestro/ncg/generator.py", "maestro/optimization.py", "maestro/orchestrator.py", "maestro/r2.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/session.py", "tests/test_code_injection.py", "tests/test_orchestration.py", "tests/test_self_improvement.py"],
+   prefix: "maestro",
+   size: 21
+  },
+  {
+   id: "c002",
+   members: ["maestro/api_instances.py", "maestro/cli_keys.py", "maestro/dependency_resolver.py", "maestro/instances.py", "maestro/keyring.py", "maestro/selector.py", "maestro/tui/__main__.py", "maestro/tui/app.py", "maestro/tui/backend.py", "maestro/tui/widgets.py", "setup.py", "tests/test_instances.py", "tests/test_keyring.py"],
+   prefix: "maestro",
+   size: 13
+  },
+  {
+   id: "c003",
+   members: ["backend/orchestrator_foundry.py", "maestro/agents/__init__.py", "maestro/agents/aria.py", "maestro/agents/base.py", "maestro/agents/mock.py", "maestro/agents/prism.py", "maestro/agents/sol.py", "maestro/agents/tempagent.py", "tests/test_orchestrator_snapshot.py", "tests/test_plugin_hooks.py"],
+   prefix: "maestro",
+   size: 10
+  },
+  {
+   id: "c004",
+   members: ["maestro/__init__.py", "maestro/plugins/__init__.py", "maestro/plugins/base.py", "maestro/plugins/manager.py", "tests/test_mod_manager.py", "tests/test_weight_snapshots.py"],
+   prefix: "maestro",
+   size: 6
+  },
+  {
+   id: "c005",
+   members: ["entrypoint.py", "maestro/cli.py", "tests/test_startup.py"],
+   prefix: ".",
+   size: 3
+  },
+  {
+   id: "c006",
+   members: ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx", "frontend/src/main.tsx"],
+   prefix: "frontend/src",
+   size: 3
+  },
+  {
+   id: "c007",
+   members: ["maestro/node_cli.py", "maestro/shard_manager.py", "tests/test_shard_manager.py"],
+   prefix: "maestro",
+   size: 3
+  }
+ ],
+ edge_fields: ["from", "to", "weight", "line"],
+ edges: [
+  ["backend/main.py", "backend/orchestrator_foundry.py", 1, 9],
+  ["backend/main.py", "maestro/api_cluster.py", 1, 17],
+  ["backend/main.py", "maestro/api_instances.py", 1, 18],
+  ["backend/main.py", "maestro/api_keys.py", 1, 12],
+  ["backend/main.py", "maestro/api_magi.py", 1, 11],
+  ["backend/main.py", "maestro/api_plugins.py", 1, 16],
+  ["backend/main.py", "maestro/api_self_improve.py", 1, 13],
+  ["backend/main.py", "maestro/api_sessions.py", 1, 10],
+  ["backend/main.py", "maestro/api_storage.py", 1, 15],
+  ["backend/main.py", "maestro/api_update.py", 1, 14],
+  ["backend/main.py", "maestro/dependency_resolver.py", 1, 66],
+  ["backend/main.py", "maestro/updater.py", 1, 19],
+  ["backend/orchestrator_foundry.py", "maestro/agents/aria.py", 1, 21],
+  ["backend/orchestrator_foundry.py", "maestro/agents/prism.py", 1, 22],
+  ["backend/orchestrator_foundry.py", "maestro/agents/sol.py", 1, 20],
+  ["backend/orchestrator_foundry.py", "maestro/agents/tempagent.py", 1, 23],
+  ["backend/orchestrator_foundry.py", "maestro/ncg/generator.py", 1, 25],
+  ["backend/orchestrator_foundry.py", "maestro/orchestrator.py", 1, 24],
+  ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/agents/shard.py", 1, 9],
+  ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/plugins/base.py", 1, 8],
+  ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/shard_registry.py", 1, 10],
+  ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/storage_proof.py", 1, 11],
+  ["entrypoint.py", "maestro/cli.py", 1, 137],
+  ["entrypoint.py", "maestro/dependency_resolver.py", 1, 290],
+  ["entrypoint.py", "maestro/selector.py", 1, 254],
+  ["entrypoint.py", "maestro/tui/__main__.py", 1, 146],
+  ["entrypoint.py", "maestro/updater.py", 1, 295],
+  ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx", 1, 2],
+  ["frontend/src/main.tsx", "frontend/src/app.tsx", 1, 7],
+  ["maestro/__init__.py", "maestro/plugins/manager.py", 1, 7],
+  ["maestro/agents/__init__.py", "maestro/agents/aria.py", 1, 4],
+  ["maestro/agents/__init__.py", "maestro/agents/base.py", 1, 1],
+  ["maestro/agents/__init__.py", "maestro/agents/mock.py", 1, 2],
+  ["maestro/agents/__init__.py", "maestro/agents/prism.py", 1, 5],
+  ["maestro/agents/__init__.py", "maestro/agents/shard.py", 1, 7],
+  ["maestro/agents/__init__.py", "maestro/agents/sol.py", 1, 3],
+  ["maestro/agents/__init__.py", "maestro/agents/tempagent.py", 1, 6],
+  ["maestro/agents/aria.py", "maestro/agents/base.py", 1, 3],
+  ["maestro/agents/mock.py", "maestro/agents/base.py", 1, 1],
+  ["maestro/agents/prism.py", "maestro/agents/base.py", 1, 3],
+  ["maestro/agents/shard.py", "maestro/agents/base.py", 1, 15],
+  ["maestro/agents/shard.py", "maestro/shard_registry.py", 1, 23],
+  ["maestro/agents/shard.py", "maestro/storage_proof.py", 1, 24],
+  ["maestro/agents/sol.py", "maestro/agents/base.py", 1, 3],
+  ["maestro/agents/tempagent.py", "maestro/agents/base.py", 1, 3],
+  ["maestro/api_cluster.py", "maestro/cluster.py", 1, 20],
+  ["maestro/api_cluster.py", "maestro/state_bus.py", 1, 26],
+  ["maestro/api_instances.py", "maestro/instances.py", 4, 27],
+  ["maestro/api_keys.py", "maestro/keyring.py", 1, 12],
+  ["maestro/api_magi.py", "maestro/magi.py", 1, 17],
+  ["maestro/api_plugins.py", "maestro/plugins/manager.py", 1, 2],
+  ["maestro/api_self_improve.py", "maestro/applicator.py", 1, 26],
+  ["maestro/api_self_improve.py", "maestro/injection_guard.py", 1, 28],
+  ["maestro/api_self_improve.py", "maestro/magi.py", 1, 24],
+  ["maestro/api_self_improve.py", "maestro/magi_vir.py", 1, 25],
+  ["maestro/api_self_improve.py", "maestro/rollback.py", 1, 27],
+  ["maestro/api_self_improve.py", "maestro/self_improve.py", 1, 23],
+  ["maestro/api_sessions.py", "maestro/session.py", 1, 21],
+  ["maestro/api_storage.py", "maestro/lan_discovery.py", 1, 18],
+  ["maestro/api_storage.py", "maestro/shard_manager.py", 1, 17],
+  ["maestro/api_storage.py", "maestro/shard_registry.py", 1, 15],
+  ["maestro/api_storage.py", "maestro/storage_proof.py", 1, 16],
+  ["maestro/api_update.py", "maestro/keyring.py", 1, 30],
+  ["maestro/api_update.py", "maestro/updater.py", 1, 24],
+  ["maestro/applicator.py", "maestro/injection_guard.py", 1, 30],
+  ["maestro/applicator.py", "maestro/optimization.py", 1, 28],
+  ["maestro/applicator.py", "maestro/rollback.py", 1, 29],
+  ["maestro/cli.py", "maestro/agents/aria.py", 1, 94],
+  ["maestro/cli.py", "maestro/agents/prism.py", 1, 95],
+  ["maestro/cli.py", "maestro/agents/sol.py", 1, 93],
+  ["maestro/cli.py", "maestro/agents/tempagent.py", 1, 96],
+  ["maestro/cli.py", "maestro/keyring.py", 1, 252],
+  ["maestro/cli.py", "maestro/ncg/generator.py", 1, 98],
+  ["maestro/cli.py", "maestro/orchestrator.py", 1, 88],
+  ["maestro/cli.py", "maestro/plugins/manager.py", 2, 587],
+  ["maestro/cli.py", "maestro/self_improve.py", 3, 271],
+  ["maestro/cli.py", "maestro/shard_registry.py", 1, 517],
+  ["maestro/cli.py", "maestro/storage_proof.py", 1, 787],
+  ["maestro/cli.py", "maestro/updater.py", 1, 443],
+  ["maestro/cli_keys.py", "maestro/keyring.py", 1, 25],
+  ["maestro/dependency_resolver.py", "maestro/keyring.py", 1, 159],
+  ["maestro/injection_guard.py", "maestro/aggregator.py", 1, 147],
+  ["maestro/injection_guard.py", "maestro/dissent.py", 1, 148],
+  ["maestro/injection_guard.py", "maestro/ncg/drift.py", 1, 150],
+  ["maestro/injection_guard.py", "maestro/ncg/generator.py", 1, 149],
+  ["maestro/injection_guard.py", "maestro/optimization.py", 2, 19],
+  ["maestro/injection_guard.py", "maestro/r2.py", 1, 151],
+  ["maestro/magi.py", "maestro/dissent.py", 1, 31],
+  ["maestro/magi.py", "maestro/introspect.py", 2, 74],
+  ["maestro/magi.py", "maestro/optimization.py", 2, 75],
+  ["maestro/magi.py", "maestro/r2.py", 1, 29],
+  ["maestro/magi.py", "maestro/session.py", 1, 30],
+  ["maestro/magi_vir.py", "maestro/aggregator.py", 3, 171],
+  ["maestro/magi_vir.py", "maestro/dissent.py", 1, 172],
+  ["maestro/magi_vir.py", "maestro/ncg/drift.py", 1, 174],
+  ["maestro/magi_vir.py", "maestro/ncg/generator.py", 1, 173],
+  ["maestro/magi_vir.py", "maestro/optimization.py", 1, 36],
+  ["maestro/magi_vir.py", "maestro/r2.py", 2, 170],
+  ["maestro/magi_vir.py", "maestro/session.py", 2, 86],
+  ["maestro/ncg/__init__.py", "maestro/ncg/drift.py", 1, 5],
+  ["maestro/ncg/__init__.py", "maestro/ncg/generator.py", 1, 4],
+  ["maestro/node_cli.py", "maestro/shard_manager.py", 3, 25],
+  ["maestro/node_server.py", "maestro/cluster.py", 1, 39],
+  ["maestro/node_server.py", "maestro/shard_utils.py", 1, 352],
+  ["maestro/node_server.py", "maestro/state_bus.py", 1, 44],
+  ["maestro/optimization.py", "maestro/introspect.py", 1, 28],
+  ["maestro/orchestrator.py", "maestro/agents/mock.py", 1, 6],
+  ["maestro/orchestrator.py", "maestro/aggregator.py", 1, 7],
+  ["maestro/orchestrator.py", "maestro/deliberation.py", 1, 8],
+  ["maestro/orchestrator.py", "maestro/dissent.py", 1, 9],
+  ["maestro/orchestrator.py", "maestro/ncg/__init__.py", 1, 10],
+  ["maestro/orchestrator.py", "maestro/plugins/manager.py", 1, 15],
+  ["maestro/orchestrator.py", "maestro/r2.py", 1, 11],
+  ["maestro/orchestrator.py", "maestro/session.py", 1, 12],
+  ["maestro/plugins/__init__.py", "maestro/plugins/base.py", 1, 3],
+  ["maestro/plugins/__init__.py", "maestro/plugins/manager.py", 1, 10],
+  ["maestro/plugins/manager.py", "maestro/plugins/base.py", 1, 36],
+  ["maestro/plugins/manager.py", "maestro/r2.py", 1, 137],
+  ["maestro/plugins/manager.py", "maestro/session.py", 1, 145],
+  ["maestro/plugins/manager.py", "maestro/shard_registry.py", 1, 129],
+  ["maestro/r2.py", "maestro/dissent.py", 1, 5],
+  ["maestro/r2.py", "maestro/ncg/drift.py", 1, 5],
+  ["maestro/self_improve.py", "maestro/applicator.py", 2, 215],
+  ["maestro/self_improve.py", "maestro/injection_guard.py", 2, 216],
+  ["maestro/self_improve.py", "maestro/magi.py", 1, 39],
+  ["maestro/self_improve.py", "maestro/magi_vir.py", 1, 42],
+  ["maestro/self_improve.py", "maestro/optimization.py", 1, 272],
+  ["maestro/self_improve.py", "maestro/r2.py", 1, 40],
+  ["maestro/self_improve.py", "maestro/session.py", 1, 41],
+  ["maestro/shard_manager.py", "maestro/shard_utils.py", 1, 32],
+  ["maestro/shard_manager.py", "maestro/storage_proof.py", 1, 40],
+  ["maestro/shard_registry.py", "maestro/storage_proof.py", 1, 26],
+  ["maestro/shard_utils.py", "maestro/storage_proof.py", 1, 22],
+  ["maestro/tui/__main__.py", "maestro/tui/app.py", 1, 34],
+  ["maestro/tui/__main__.py", "maestro/tui/backend.py", 1, 33],
+  ["maestro/tui/app.py", "maestro/dependency_resolver.py", 1, 42],
+  ["maestro/tui/app.py", "maestro/instances.py", 7, 1628],
+  ["maestro/tui/app.py", "maestro/keyring.py", 6, 1003],
+  ["maestro/tui/app.py", "maestro/lan_discovery.py", 1, 2563],
+  ["maestro/tui/app.py", "maestro/self_improve.py", 1, 2208],
+  ["maestro/tui/app.py", "maestro/tui/backend.py", 2, 32],
+  ["maestro/tui/app.py", "maestro/tui/widgets.py", 1, 30],
+  ["maestro/tui/app.py", "maestro/updater.py", 1, 43],
+  ["maestro/tui/backend.py", "maestro/agents/aria.py", 1, 89],
+  ["maestro/tui/backend.py", "maestro/agents/prism.py", 1, 90],
+  ["maestro/tui/backend.py", "maestro/agents/sol.py", 1, 88],
+  ["maestro/tui/backend.py", "maestro/agents/tempagent.py", 1, 91],
+  ["maestro/tui/backend.py", "maestro/keyring.py", 2, 122],
+  ["maestro/tui/backend.py", "maestro/ncg/generator.py", 2, 93],
+  ["maestro/tui/backend.py", "maestro/orchestrator.py", 1, 5],
+  ["maestro/tui/backend.py", "maestro/session.py", 2, 129],
+  ["maestro/tui/backend.py", "maestro/shard_registry.py", 1, 116],
+  ["setup.py", "maestro/cli.py", 1, 39],
+  ["setup.py", "maestro/dependency_resolver.py", 1, 640],
+  ["setup.py", "maestro/selector.py", 1, 594],
+  ["setup.py", "maestro/tui/__main__.py", 1, 609],
+  ["tests/test_cluster.py", "maestro/cluster.py", 1, 9],
+  ["tests/test_cluster.py", "maestro/state_bus.py", 1, 125],
+  ["tests/test_code_injection.py", "maestro/aggregator.py", 8, 313],
+  ["tests/test_code_injection.py", "maestro/applicator.py", 2, 21],
+  ["tests/test_code_injection.py", "maestro/dissent.py", 1, 26],
+  ["tests/test_code_injection.py", "maestro/injection_guard.py", 1, 18],
+  ["tests/test_code_injection.py", "maestro/ncg/drift.py", 1, 27],
+  ["tests/test_code_injection.py", "maestro/optimization.py", 1, 22],
+  ["tests/test_code_injection.py", "maestro/r2.py", 3, 24],
+  ["tests/test_code_injection.py", "maestro/rollback.py", 1, 17],
+  ["tests/test_code_injection.py", "maestro/self_improve.py", 1, 23],
+  ["tests/test_code_injection.py", "maestro/session.py", 3, 25],
+  ["tests/test_instances.py", "maestro/instances.py", 6, 17],
+  ["tests/test_keyring.py", "maestro/keyring.py", 1, 7],
+  ["tests/test_lan_discovery.py", "maestro/lan_discovery.py", 1, 12],
+  ["tests/test_mod_manager.py", "maestro/plugins/base.py", 2, 12],
+  ["tests/test_mod_manager.py", "maestro/plugins/manager.py", 1, 19],
+  ["tests/test_orchestration.py", "maestro/agents/__init__.py", 1, 7],
+  ["tests/test_orchestration.py", "maestro/aggregator.py", 1, 8],
+  ["tests/test_orchestration.py", "maestro/dissent.py", 1, 11],
+  ["tests/test_orchestration.py", "maestro/magi.py", 5, 904],
+  ["tests/test_orchestration.py", "maestro/ncg/drift.py", 1, 10],
+  ["tests/test_orchestration.py", "maestro/ncg/generator.py", 1, 9],
+  ["tests/test_orchestration.py", "maestro/orchestrator.py", 1, 6],
+  ["tests/test_orchestration.py", "maestro/r2.py", 3, 13],
+  ["tests/test_orchestration.py", "maestro/session.py", 6, 12],
+  ["tests/test_orchestrator_snapshot.py", "maestro/agents/mock.py", 1, 13],
+  ["tests/test_orchestrator_snapshot.py", "maestro/orchestrator.py", 1, 16],
+  ["tests/test_plugin_hooks.py", "maestro/agents/mock.py", 1, 11],
+  ["tests/test_plugin_hooks.py", "maestro/orchestrator.py", 1, 12],
+  ["tests/test_plugin_hooks.py", "maestro/plugins/manager.py", 1, 10],
+  ["tests/test_self_improvement.py", "maestro/dissent.py", 1, 31],
+  ["tests/test_self_improvement.py", "maestro/introspect.py", 1, 16],
+  ["tests/test_self_improvement.py", "maestro/magi.py", 1, 22],
+  ["tests/test_self_improvement.py", "maestro/magi_vir.py", 1, 22],
+  ["tests/test_self_improvement.py", "maestro/ncg/drift.py", 1, 32],
+  ["tests/test_self_improvement.py", "maestro/optimization.py", 1, 19],
+  ["tests/test_self_improvement.py", "maestro/r2.py", 7, 29],
+  ["tests/test_self_improvement.py", "maestro/self_improve.py", 1, 26],
+  ["tests/test_self_improvement.py", "maestro/session.py", 8, 30],
+  ["tests/test_shard_agent.py", "maestro/agents/mock_shard_node.py", 1, 11],
+  ["tests/test_shard_agent.py", "maestro/agents/shard.py", 1, 10],
+  ["tests/test_shard_agent.py", "maestro/shard_registry.py", 1, 12],
+  ["tests/test_shard_agent.py", "maestro/storage_proof.py", 1, 13],
+  ["tests/test_shard_manager.py", "maestro/shard_manager.py", 1, 13],
+  ["tests/test_shard_registry.py", "maestro/shard_registry.py", 1, 11],
+  ["tests/test_shard_utils.py", "maestro/shard_utils.py", 1, 14],
+  ["tests/test_startup.py", "entrypoint.py", 11, 26],
+  ["tests/test_startup.py", "maestro/agents/mock.py", 1, 13],
+  ["tests/test_startup.py", "maestro/cli.py", 11, 114],
+  ["tests/test_startup.py", "maestro/r2.py", 2, 248],
+  ["tests/test_startup.py", "maestro/session.py", 2, 247],
+  ["tests/test_storage_proof.py", "maestro/storage_proof.py", 1, 12],
+  ["tests/test_weight_snapshots.py", "maestro/plugins/base.py", 1, 88],
+  ["tests/test_weight_snapshots.py", "maestro/plugins/manager.py", 1, 10]
+ ],
+ external: {
+  python: {
+   __future__: 5,
+   abc: 4,
+   argparse: 3,
+   ast: 2,
+   asyncio: 26,
+   base64: 3,
+   collections: 1,
+   contextlib: 2,
+   dataclasses: 32,
+   datetime: 18,
+   dotenv: 4,
+   enum: 3,
+   fastapi: 11,
+   functools: 1,
+   hashlib: 6,
+   httpx: 9,
+   huggingface_hub: 1,
+   importlib: 3,
+   io: 1,
+   itertools: 5,
+   json: 35,
+   logging: 4,
+   math: 1,
+   openai: 1,
+   os: 37,
+   pathlib: 30,
+   platform: 1,
+   pydantic: 7,
+   pytest: 12,
+   random: 3,
+   re: 7,
+   redis: 1,
+   requests: 1,
+   rich: 1,
+   sentence_transformers: 2,
+   shutil: 14,
+   signal: 1,
+   socket: 3,
+   struct: 3,
+   subprocess: 6,
+   sys: 14,
+   tempfile: 10,
+   termios: 1,
+   textual: 3,
+   textwrap: 1,
+   threading: 3,
+   time: 13,
+   tty: 1,
+   typing: 27,
+   unittest: 7,
+   urllib: 2,
+   uuid: 14,
+   uvicorn: 1,
+   webbrowser: 2
+  },
+  typescript: {
+   "@vitejs/plugin-react": 1,
+   react: 3,
+   "react-dom": 1,
+   vite: 1
+  }
+ },
+ facts: [
+  {
+   claim: "Grafo de imports: 98 arquivos de código, 211 arestas internas, 8 comunidades (≥2 arquivos), 58 imports externos distintos",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L1 imports regex sobre 98 arquivos", exit: 0, out_sha256: "a09a39328c0a8d6245b3aa56c19b7115517341b06664a4bf4b0f47f92cd26116"}
+   ],
+   fingerprint: "72aa85941e7518d4f899e5770be441786c62874bb7fbc873e2facc0bfd3c33e2",
+   id: "graph.stats",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "maestro/storage_proof.py é central (#1 por PageRank 0.0605; importado por 9 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/storage_proof.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_storage.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/shard_manager.py"}
+   ],
+   fingerprint: "3ecc12b4657d489d194600c4414f7d3e8adec665befbd7f6ae24c3d0ea65f7d3",
+   id: "graph.central.maestro-storage_proof.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/storage_proof.py"]
+  },
+  {
+   claim: "maestro/agents/base.py é central (#2 por PageRank 0.0479; importado por 7 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/base.py"},
+    {file: "maestro/agents/__init__.py"},
+    {file: "maestro/agents/aria.py"},
+    {file: "maestro/agents/mock.py"},
+    {file: "maestro/agents/prism.py"},
+    {file: "maestro/agents/shard.py"}
+   ],
+   fingerprint: "3a387588103075a1345550594734b5d9e291d3530aa40cf585be0f7a4449ba76",
+   id: "graph.central.maestro-agents-base.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/agents/base.py"]
+  },
+  {
+   claim: "maestro/keyring.py é central (#3 por PageRank 0.0349; importado por 8 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/keyring.py"},
+    {file: "maestro/api_keys.py"},
+    {file: "maestro/api_update.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/cli_keys.py"},
+    {file: "maestro/dependency_resolver.py"}
+   ],
+   fingerprint: "7202477171a71028bc0f14521f338c93803e9a6c9fff24c84dac4af26799e019",
+   id: "graph.central.maestro-keyring.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/keyring.py"]
+  },
+  {
+   claim: "maestro/session.py é central (#4 por PageRank 0.0270; importado por 11 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/session.py"},
+    {file: "maestro/api_sessions.py"},
+    {file: "maestro/magi.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/orchestrator.py"},
+    {file: "maestro/plugins/manager.py"}
+   ],
+   fingerprint: "0c97e561d2edcedc5eff3faac5eda81f546e100d93bdfeaaf434f816bea43bd4",
+   id: "graph.central.maestro-session.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/session.py"]
+  },
+  {
+   claim: "maestro/plugins/manager.py é central (#5 por PageRank 0.0261; importado por 8 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/plugins/manager.py"},
+    {file: "maestro/__init__.py"},
+    {file: "maestro/api_plugins.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/orchestrator.py"},
+    {file: "maestro/plugins/__init__.py"}
+   ],
+   fingerprint: "2cb94e76f38b599fb15fbe5e2db043e012b686f10861dcb8eb0d6b62c54409e1",
+   id: "graph.central.maestro-plugins-manager.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/plugins/manager.py"]
+  },
+  {
+   claim: "maestro/shard_registry.py é central (#6 por PageRank 0.0235; importado por 8 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/shard_registry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_storage.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/plugins/manager.py"}
+   ],
+   fingerprint: "ae8dfd4a1e595a7664e32ccb081dc1b97d7d65b5cf512960c7882523bc4eb7e4",
+   id: "graph.central.maestro-shard_registry.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/shard_registry.py"]
+  },
+  {
+   claim: "maestro/introspect.py é central (#7 por PageRank 0.0229; importado por 3 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/introspect.py"},
+    {file: "maestro/magi.py"},
+    {file: "maestro/optimization.py"},
+    {file: "tests/test_self_improvement.py"}
+   ],
+   fingerprint: "45a58d61483624de4e94f3e07039ecc2732a5807a48a0ba0ac6690a88df56f04",
+   id: "graph.central.maestro-introspect.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/introspect.py"]
+  },
+  {
+   claim: "maestro/r2.py é central (#8 por PageRank 0.0208; importado por 10 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/r2.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/magi.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/orchestrator.py"},
+    {file: "maestro/plugins/manager.py"}
+   ],
+   fingerprint: "ca597b383b65f5e17507614555cec5784c1fe80479877bc15011f7b6e604b69f",
+   id: "graph.central.maestro-r2.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/r2.py"]
+  },
+  {
+   claim: "maestro/plugins/base.py é central (#9 por PageRank 0.0204; importado por 5 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/plugins/base.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/plugins/__init__.py"},
+    {file: "maestro/plugins/manager.py"},
+    {file: "tests/test_mod_manager.py"},
+    {file: "tests/test_weight_snapshots.py"}
+   ],
+   fingerprint: "fa98c55baf7530318e0d4e415dd6d048af16e5471bcdc086ab174b80128b10df",
+   id: "graph.central.maestro-plugins-base.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/plugins/base.py"]
+  },
+  {
+   claim: "maestro/dissent.py é central (#10 por PageRank 0.0201; importado por 8 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/dissent.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/magi.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/orchestrator.py"},
+    {file: "maestro/r2.py"}
+   ],
+   fingerprint: "956779fec72bade8aaab59a919be15fbd8906a79d27e7b0ca866afc82a8a94ff",
+   id: "graph.central.maestro-dissent.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/dissent.py"]
+  },
+  {
+   claim: "maestro/ncg/drift.py é central (#11 por PageRank 0.0200; importado por 7 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/ncg/drift.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/ncg/__init__.py"},
+    {file: "maestro/r2.py"},
+    {file: "tests/test_code_injection.py"}
+   ],
+   fingerprint: "254813944da502c6c6004706e692f86b1e86b7e21b85add3978f7609649d589d",
+   id: "graph.central.maestro-ncg-drift.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/ncg/drift.py"]
+  },
+  {
+   claim: "maestro/shard_utils.py é central (#12 por PageRank 0.0191; importado por 3 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/shard_utils.py"},
+    {file: "maestro/node_server.py"},
+    {file: "maestro/shard_manager.py"},
+    {file: "tests/test_shard_utils.py"}
+   ],
+   fingerprint: "1b16359b5313986f814e3041f49814ac329db84bd7cc2dade5dae8d226695afb",
+   id: "graph.central.maestro-shard_utils.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/shard_utils.py"]
+  },
+  {
+   claim: "maestro/instances.py é central (#13 por PageRank 0.0183; importado por 3 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/instances.py"},
+    {file: "maestro/api_instances.py"},
+    {file: "maestro/tui/app.py"},
+    {file: "tests/test_instances.py"}
+   ],
+   fingerprint: "6b93e1d02708c83befaeab2b4dc2e526277f49e6f8c9d733bfb7118172ed3fa4",
+   id: "graph.central.maestro-instances.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/instances.py"]
+  },
+  {
+   claim: "maestro/shard_manager.py é central (#14 por PageRank 0.0166; importado por 3 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/shard_manager.py"},
+    {file: "maestro/api_storage.py"},
+    {file: "maestro/node_cli.py"},
+    {file: "tests/test_shard_manager.py"}
+   ],
+   fingerprint: "4cfbb537ec30211d295fd8f6f3be9c357ec80ebb688994d3260011bba4acffeb",
+   id: "graph.central.maestro-shard_manager.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/shard_manager.py"]
+  },
+  {
+   claim: "maestro/optimization.py é central (#15 por PageRank 0.0160; importado por 7 arquivos)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/optimization.py"},
+    {file: "maestro/applicator.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/magi.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/self_improve.py"}
+   ],
+   fingerprint: "98339d261e7265650e21ca35c205559eab0bf0ebcd37ff401cf1d4075aff6363",
+   id: "graph.central.maestro-optimization.py",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/optimization.py"]
+  },
+  {
+   claim: "Comunidade c000: 25 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (17/25 arquivos; demais em backend, data, tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/agents/mock_shard_node.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_cluster.py"},
+    {file: "maestro/api_keys.py"}
+   ],
+   fingerprint: "2af787425d1e0bef369187213ce4545bdf59bcf8faa7568830908dc4b2af5617",
+   id: "graph.community.c000",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/main.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/**", "tests/test_cluster.py", "tests/test_lan_discovery.py", "tests/test_shard_agent.py", "tests/test_shard_registry.py", "tests/test_shard_utils.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "Comunidade c001: 21 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (18/21 arquivos; demais em tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "maestro/aggregator.py"},
+    {file: "maestro/api_self_improve.py"},
+    {file: "maestro/applicator.py"},
+    {file: "maestro/deliberation.py"},
+    {file: "maestro/dissent.py"},
+    {file: "maestro/injection_guard.py"}
+   ],
+   fingerprint: "3b5a76fcfe74edf6961fc02947aa2617955fd3e7455edf2c6776af2c990c6db0",
+   id: "graph.community.c001",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/**", "tests/test_code_injection.py", "tests/test_orchestration.py", "tests/test_self_improvement.py"]
+  },
+  {
+   claim: "Comunidade c002: 13 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (10/13 arquivos; demais em ., tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "maestro/api_instances.py"},
+    {file: "maestro/cli_keys.py"},
+    {file: "maestro/dependency_resolver.py"},
+    {file: "maestro/instances.py"},
+    {file: "maestro/keyring.py"},
+    {file: "maestro/selector.py"}
+   ],
+   fingerprint: "6b6d2baf45aef856d23a7c2ea6aa6bc90c76d50bbde6ac67d7fa5249c437b35b",
+   id: "graph.community.c002",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/**", "setup.py", "tests/test_instances.py", "tests/test_keyring.py"]
+  },
+  {
+   claim: "Comunidade c003: 10 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (7/10 arquivos; demais em backend, tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "maestro/agents/__init__.py"},
+    {file: "maestro/agents/aria.py"},
+    {file: "maestro/agents/base.py"},
+    {file: "maestro/agents/mock.py"},
+    {file: "maestro/agents/prism.py"}
+   ],
+   fingerprint: "512c07d6770c30a7783e52e48e999c727bbfe0bf8ed8beeddc4f2eb4e5bc6696",
+   id: "graph.community.c003",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/orchestrator_foundry.py", "maestro/**", "tests/test_orchestrator_snapshot.py", "tests/test_plugin_hooks.py"]
+  },
+  {
+   claim: "Comunidade c004: 6 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (4/6 arquivos; demais em tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "maestro/__init__.py"},
+    {file: "maestro/plugins/__init__.py"},
+    {file: "maestro/plugins/base.py"},
+    {file: "maestro/plugins/manager.py"},
+    {file: "tests/test_mod_manager.py"},
+    {file: "tests/test_weight_snapshots.py"}
+   ],
+   fingerprint: "cf49708dc9530980cb229acb221495376ff591db0ab959d3015b6a236b72d23e",
+   id: "graph.community.c004",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/**", "tests/test_mod_manager.py", "tests/test_weight_snapshots.py"]
+  },
+  {
+   claim: "Comunidade c005: 3 arquivos acoplados por imports, sem prefixo comum; maior grupo '.' (0/3 arquivos; demais em ., maestro, tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "entrypoint.py"},
+    {file: "maestro/cli.py"},
+    {file: "tests/test_startup.py"}
+   ],
+   fingerprint: "7cab355f3e4cfec3c8761c8feb4dfc9e6eab4f4c6310920a823ae6d8975eb4a4",
+   id: "graph.community.c005",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["entrypoint.py", "maestro/cli.py", "tests/test_startup.py"]
+  },
+  {
+   claim: "Comunidade c006: 3 arquivos acoplados por imports, prefixo comum 'frontend/src'",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/main.tsx"}
+   ],
+   fingerprint: "823a7c3d66116abce942dc20ad439ee14714cb58c211ce40741bbc3f66247dfa",
+   id: "graph.community.c006",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["frontend/src/**"]
+  },
+  {
+   claim: "Comunidade c007: 3 arquivos acoplados por imports, sem prefixo comum; maior grupo 'maestro' (2/3 arquivos; demais em tests)",
+   confidence: "medium",
+   evidence: [
+    {file: "maestro/node_cli.py"},
+    {file: "maestro/shard_manager.py"},
+    {file: "tests/test_shard_manager.py"}
+   ],
+   fingerprint: "aad6c8c75162d46effeaef2204318e7c0246a5449bfe28b7e317dab453675271",
+   id: "graph.community.c007",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/**", "tests/test_shard_manager.py"]
+  },
+  {
+   claim: "python importa 'os' em 37 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "entrypoint.py"},
+    {file: "maestro/agents/aria.py"},
+    {file: "maestro/agents/prism.py"},
+    {file: "maestro/agents/sol.py"}
+   ],
+   fingerprint: "9558a3d9cffe46bdc192425779cde028da280623213f4640481e0cf0346e1fbe",
+   id: "graph.external.python.os",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/orchestrator_foundry.py", "entrypoint.py", "maestro/agents/aria.py", "maestro/agents/prism.py", "maestro/agents/sol.py", "maestro/agents/tempagent.py", "maestro/api_update.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/cluster.py", "maestro/dependency_resolver.py", "maestro/injection_guard.py", "maestro/instances.py", "maestro/keyring.py", "maestro/magi_vir.py", "maestro/ncg/generator.py", "maestro/node_cli.py", "maestro/node_server.py", "maestro/r2.py", "maestro/selector.py"]
+  },
+  {
+   claim: "python importa 'json' em 35 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_sessions.py"},
+    {file: "maestro/api_update.py"},
+    {file: "maestro/applicator.py"}
+   ],
+   fingerprint: "22ee3a651b52e7735e67e93b3fdd1c33e5566a00416b59f2443278552d7944e3",
+   id: "graph.external.python.json",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/agents/shard.py", "maestro/api_sessions.py", "maestro/api_update.py", "maestro/applicator.py", "maestro/instances.py", "maestro/lan_discovery.py", "maestro/magi_vir.py", "maestro/node_cli.py", "maestro/node_server.py", "maestro/orchestrator.py", "maestro/plugins/manager.py", "maestro/r2.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/session.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/state_bus.py"]
+  },
+  {
+   claim: "python importa 'dataclasses' em 32 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/api_magi.py"},
+    {file: "maestro/api_self_improve.py"},
+    {file: "maestro/api_sessions.py"},
+    {file: "maestro/api_storage.py"},
+    {file: "maestro/applicator.py"}
+   ],
+   fingerprint: "c39705c0d44050ed9faa8adc2d6cac7ddaa8eca8388df0577104016114bf51c2",
+   id: "graph.external.python.dataclasses",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/api_magi.py", "maestro/api_self_improve.py", "maestro/api_sessions.py", "maestro/api_storage.py", "maestro/applicator.py", "maestro/cluster.py", "maestro/deliberation.py", "maestro/dependency_resolver.py", "maestro/dissent.py", "maestro/injection_guard.py", "maestro/instances.py", "maestro/introspect.py", "maestro/keyring.py", "maestro/lan_discovery.py", "maestro/magi.py", "maestro/magi_vir.py", "maestro/ncg/drift.py", "maestro/optimization.py", "maestro/plugins/base.py", "maestro/plugins/manager.py"]
+  },
+  {
+   claim: "python importa 'pathlib' em 30 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/applicator.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/instances.py"}
+   ],
+   fingerprint: "4f2c819dd93929a34a0d437a762e20f92d45889d0706cddc7b7afa0e591d33a1",
+   id: "graph.external.python.pathlib",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/main.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "maestro/applicator.py", "maestro/injection_guard.py", "maestro/instances.py", "maestro/introspect.py", "maestro/keyring.py", "maestro/magi_vir.py", "maestro/node_cli.py", "maestro/node_server.py", "maestro/plugins/manager.py", "maestro/r2.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/session.py", "maestro/shard_manager.py", "maestro/shard_registry.py", "maestro/shard_utils.py", "maestro/storage_proof.py", "maestro/tui/app.py"]
+  },
+  {
+   claim: "python importa 'typing' em 27 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_cluster.py"},
+    {file: "maestro/api_plugins.py"},
+    {file: "maestro/api_storage.py"},
+    {file: "maestro/applicator.py"}
+   ],
+   fingerprint: "3b3cda7659e361ab20faa51fac41442e41bbf15b6178b884080c131f8263082a",
+   id: "graph.external.python.typing",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/agents/shard.py", "maestro/api_cluster.py", "maestro/api_plugins.py", "maestro/api_storage.py", "maestro/applicator.py", "maestro/cluster.py", "maestro/dependency_resolver.py", "maestro/injection_guard.py", "maestro/instances.py", "maestro/introspect.py", "maestro/lan_discovery.py", "maestro/magi_vir.py", "maestro/node_server.py", "maestro/optimization.py", "maestro/orchestrator.py", "maestro/plugins/base.py", "maestro/plugins/manager.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/shard_manager.py"]
+  },
+  {
+   claim: "python importa 'asyncio' em 26 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_instances.py"},
+    {file: "maestro/api_self_improve.py"},
+    {file: "maestro/api_storage.py"}
+   ],
+   fingerprint: "5e9ab9e701b2d002574eb0140d418ad86e9f759ba848d57e818ac82b6381736f",
+   id: "graph.external.python.asyncio",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/orchestrator_foundry.py", "maestro/agents/shard.py", "maestro/api_instances.py", "maestro/api_self_improve.py", "maestro/api_storage.py", "maestro/api_update.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/deliberation.py", "maestro/keyring.py", "maestro/lan_discovery.py", "maestro/node_server.py", "maestro/orchestrator.py", "maestro/plugins/manager.py", "maestro/tui/app.py", "maestro/tui/backend.py", "maestro/tui/widgets.py", "maestro/updater.py", "tests/test_keyring.py", "tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "python importa 'datetime' em 18 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/base.py"},
+    {file: "maestro/agents/mock_shard_node.py"},
+    {file: "maestro/api_cluster.py"},
+    {file: "maestro/applicator.py"},
+    {file: "maestro/lan_discovery.py"}
+   ],
+   fingerprint: "fd5a5e66efa8b4bf6e44c887c3a0951698f17a8e492ac83951b8d116cec8c8c8",
+   id: "graph.external.python.datetime",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/agents/base.py", "maestro/agents/mock_shard_node.py", "maestro/api_cluster.py", "maestro/applicator.py", "maestro/lan_discovery.py", "maestro/magi_vir.py", "maestro/node_server.py", "maestro/optimization.py", "maestro/plugins/manager.py", "maestro/r2.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/session.py", "maestro/shard_registry.py", "maestro/state_bus.py", "maestro/storage_proof.py", "tests/test_shard_registry.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "python importa 'shutil' em 14 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/api_update.py"},
+    {file: "maestro/dependency_resolver.py"},
+    {file: "maestro/instances.py"},
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/rollback.py"}
+   ],
+   fingerprint: "1835e80cd24c4d17383901a997e5c4dc9a4bd3abcf09bb55806e3a4faa5b4e0d",
+   id: "graph.external.python.shutil",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/api_update.py", "maestro/dependency_resolver.py", "maestro/instances.py", "maestro/magi_vir.py", "maestro/rollback.py", "maestro/shard_manager.py", "maestro/tui/app.py", "maestro/updater.py", "setup.py", "tests/test_code_injection.py", "tests/test_keyring.py", "tests/test_orchestration.py", "tests/test_self_improvement.py", "tests/test_startup.py"]
+  },
+  {
+   claim: "python importa 'sys' em 14 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "entrypoint.py"},
+    {file: "maestro/applicator.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/cli_keys.py"}
+   ],
+   fingerprint: "dabb99d9f2ef36e5220f9d13357a53b36c9f6e13acda79fd65e150d0a150a6a3",
+   id: "graph.external.python.sys",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/orchestrator_foundry.py", "entrypoint.py", "maestro/applicator.py", "maestro/cli.py", "maestro/cli_keys.py", "maestro/dependency_resolver.py", "maestro/node_cli.py", "maestro/plugins/manager.py", "maestro/selector.py", "maestro/tui/__main__.py", "maestro/tui/backend.py", "maestro/updater.py", "setup.py", "tests/test_startup.py"]
+  },
+  {
+   claim: "python importa 'uuid' em 14 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/api_cluster.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/lan_discovery.py"},
+    {file: "maestro/magi_vir.py"}
+   ],
+   fingerprint: "4a9fbd880586fc0126e1ab5243c7388e54492cfd0952c42d3eceec323a80ae13",
+   id: "graph.external.python.uuid",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/agents/shard.py", "maestro/api_cluster.py", "maestro/cli.py", "maestro/lan_discovery.py", "maestro/magi_vir.py", "maestro/node_cli.py", "maestro/optimization.py", "maestro/plugins/manager.py", "maestro/r2.py", "maestro/rollback.py", "maestro/self_improve.py", "maestro/session.py", "maestro/storage_proof.py", "tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "python importa 'time' em 13 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "entrypoint.py"},
+    {file: "maestro/api_update.py"},
+    {file: "maestro/cli.py"},
+    {file: "maestro/injection_guard.py"},
+    {file: "maestro/instances.py"}
+   ],
+   fingerprint: "ba59933ebf80e1be1bbddb7313b0727639b2741f7e5fd6400a4b74a811381429",
+   id: "graph.external.python.time",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["entrypoint.py", "maestro/api_update.py", "maestro/cli.py", "maestro/injection_guard.py", "maestro/instances.py", "maestro/lan_discovery.py", "maestro/node_server.py", "maestro/self_improve.py", "maestro/tui/app.py", "maestro/tui/widgets.py", "maestro/updater.py", "setup.py", "tests/test_lan_discovery.py"]
+  },
+  {
+   claim: "python importa 'pytest' em 12 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "tests/test_cluster.py"},
+    {file: "tests/test_instances.py"},
+    {file: "tests/test_lan_discovery.py"},
+    {file: "tests/test_mod_manager.py"},
+    {file: "tests/test_orchestrator_snapshot.py"}
+   ],
+   fingerprint: "3e0490c50858f30ae195db0c625a259d115ad31afd27a97c81e1aa4d2dc11e86",
+   id: "graph.external.python.pytest",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["tests/test_cluster.py", "tests/test_instances.py", "tests/test_lan_discovery.py", "tests/test_mod_manager.py", "tests/test_orchestrator_snapshot.py", "tests/test_plugin_hooks.py", "tests/test_shard_agent.py", "tests/test_shard_manager.py", "tests/test_shard_registry.py", "tests/test_shard_utils.py", "tests/test_storage_proof.py", "tests/test_weight_snapshots.py"]
+  },
+  {
+   claim: "python importa 'fastapi' em 11 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "maestro/api_cluster.py"},
+    {file: "maestro/api_instances.py"},
+    {file: "maestro/api_keys.py"},
+    {file: "maestro/api_magi.py"}
+   ],
+   fingerprint: "7221fe3c7cc4083dbeed4497c0c8d52df77c2f7d5e0f5e223d447754cca8234a",
+   id: "graph.external.python.fastapi",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["backend/main.py", "maestro/api_cluster.py", "maestro/api_instances.py", "maestro/api_keys.py", "maestro/api_magi.py", "maestro/api_plugins.py", "maestro/api_self_improve.py", "maestro/api_sessions.py", "maestro/api_storage.py", "maestro/api_update.py", "maestro/node_server.py"]
+  },
+  {
+   claim: "python importa 'tempfile' em 10 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/magi_vir.py"},
+    {file: "maestro/updater.py"},
+    {file: "tests/test_code_injection.py"},
+    {file: "tests/test_keyring.py"},
+    {file: "tests/test_mod_manager.py"}
+   ],
+   fingerprint: "460db2e78969b2218f66c0fd4249fb1e34edf72eed0e87dfce7808536b66386b",
+   id: "graph.external.python.tempfile",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/magi_vir.py", "maestro/updater.py", "tests/test_code_injection.py", "tests/test_keyring.py", "tests/test_mod_manager.py", "tests/test_orchestration.py", "tests/test_orchestrator_snapshot.py", "tests/test_self_improvement.py", "tests/test_startup.py", "tests/test_storage_proof.py"]
+  },
+  {
+   claim: "python importa 'httpx' em 9 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/aria.py"},
+    {file: "maestro/agents/prism.py"},
+    {file: "maestro/agents/shard.py"},
+    {file: "maestro/agents/sol.py"},
+    {file: "maestro/agents/tempagent.py"}
+   ],
+   fingerprint: "17286b840cbc4561f88d3850ff15d2c59c63a0dfca4b06e891b6d644d8302bfc",
+   id: "graph.external.python.httpx",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["maestro/agents/aria.py", "maestro/agents/prism.py", "maestro/agents/shard.py", "maestro/agents/sol.py", "maestro/agents/tempagent.py", "maestro/api_cluster.py", "maestro/keyring.py", "maestro/node_server.py", "maestro/tui/backend.py"]
+  },
+  {
+   claim: "typescript importa 'react' em 3 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/main.tsx"}
+   ],
+   fingerprint: "823a7c3d66116abce942dc20ad439ee14714cb58c211ce40741bbc3f66247dfa",
+   id: "graph.external.typescript.react",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx", "frontend/src/main.tsx"]
+  },
+  {
+   claim: "typescript importa '@vitejs/plugin-react' em 1 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/vite.config.ts"}
+   ],
+   fingerprint: "155d726afe10151211bdf071ce5a67d0f4974b32c01184ad9e3a8870c990742b",
+   id: "graph.external.typescript.vitejs-plugin-react",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["frontend/vite.config.ts"]
+  },
+  {
+   claim: "typescript importa 'react-dom' em 1 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/src/main.tsx"}
+   ],
+   fingerprint: "7ad02de4803ae1065f3a77a78f462752f1820fb83e8b50b21baf012a425cfdea",
+   id: "graph.external.typescript.react-dom",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["frontend/src/main.tsx"]
+  },
+  {
+   claim: "typescript importa 'vite' em 1 arquivos",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/vite.config.ts"}
+   ],
+   fingerprint: "155d726afe10151211bdf071ce5a67d0f4974b32c01184ad9e3a8870c990742b",
+   id: "graph.external.typescript.vite",
+   layer: "graph",
+   origin: "mechanical",
+   scope: ["frontend/vite.config.ts"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ go_module: null,
+ layer: "graph",
+ nodes: [
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 12,
+   pagerank: 0.0056601,
+   path: "backend/main.py"
+  },
+  {
+   community: "c003",
+   in: 1,
+   lang: "python",
+   out: 6,
+   pagerank: 0.00606102,
+   path: "backend/orchestrator_foundry.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 4,
+   pagerank: 0.0056601,
+   path: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   community: "c005",
+   in: 1,
+   lang: "python",
+   out: 5,
+   pagerank: 0.00762017,
+   path: "entrypoint.py"
+  },
+  {
+   community: "c006",
+   in: 1,
+   lang: "typescript",
+   out: 1,
+   pagerank: 0.01047118,
+   path: "frontend/src/app.tsx"
+  },
+  {
+   community: "c006",
+   in: 1,
+   lang: "typescript",
+   out: 0,
+   pagerank: 0.01456061,
+   path: "frontend/src/maestroUI.tsx"
+  },
+  {
+   community: "c006",
+   in: 0,
+   lang: "typescript",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "frontend/src/main.tsx"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "typescript",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "frontend/src/vite-env.d.ts"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "typescript",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "frontend/vite.config.ts"
+  },
+  {
+   community: "c004",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "maestro/__init__.py"
+  },
+  {
+   community: "c003",
+   in: 1,
+   lang: "python",
+   out: 7,
+   pagerank: 0.00590065,
+   path: "maestro/agents/__init__.py"
+  },
+  {
+   community: "c003",
+   in: 4,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0085101,
+   path: "maestro/agents/aria.py"
+  },
+  {
+   community: "c003",
+   in: 7,
+   lang: "python",
+   out: 0,
+   pagerank: 0.04786633,
+   path: "maestro/agents/base.py"
+  },
+  {
+   community: "c003",
+   in: 5,
+   lang: "python",
+   out: 1,
+   pagerank: 0.01184364,
+   path: "maestro/agents/mock.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 0,
+   pagerank: 0.00686287,
+   path: "maestro/agents/mock_shard_node.py"
+  },
+  {
+   community: "c003",
+   in: 4,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0085101,
+   path: "maestro/agents/prism.py"
+  },
+  {
+   community: "c000",
+   in: 3,
+   lang: "python",
+   out: 3,
+   pagerank: 0.00878215,
+   path: "maestro/agents/shard.py"
+  },
+  {
+   community: "c003",
+   in: 4,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0085101,
+   path: "maestro/agents/sol.py"
+  },
+  {
+   community: "c003",
+   in: 4,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0085101,
+   path: "maestro/agents/tempagent.py"
+  },
+  {
+   community: "c001",
+   in: 5,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0120143,
+   path: "maestro/aggregator.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 2,
+   pagerank: 0.00606102,
+   path: "maestro/api_cluster.py"
+  },
+  {
+   community: "c002",
+   in: 1,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00606102,
+   path: "maestro/api_instances.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00606102,
+   path: "maestro/api_keys.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00606102,
+   path: "maestro/api_magi.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00606102,
+   path: "maestro/api_plugins.py"
+  },
+  {
+   community: "c001",
+   in: 1,
+   lang: "python",
+   out: 6,
+   pagerank: 0.00606102,
+   path: "maestro/api_self_improve.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00606102,
+   path: "maestro/api_sessions.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 4,
+   pagerank: 0.00606102,
+   path: "maestro/api_storage.py"
+  },
+  {
+   community: "c000",
+   in: 1,
+   lang: "python",
+   out: 2,
+   pagerank: 0.00606102,
+   path: "maestro/api_update.py"
+  },
+  {
+   community: "c001",
+   in: 3,
+   lang: "python",
+   out: 3,
+   pagerank: 0.00866823,
+   path: "maestro/applicator.py"
+  },
+  {
+   community: "c005",
+   in: 3,
+   lang: "python",
+   out: 12,
+   pagerank: 0.01011837,
+   path: "maestro/cli.py"
+  },
+  {
+   community: "c002",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "maestro/cli_keys.py"
+  },
+  {
+   community: "c000",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01224527,
+   path: "maestro/cluster.py"
+  },
+  {
+   community: "c001",
+   in: 1,
+   lang: "python",
+   out: 0,
+   pagerank: 0.00693971,
+   path: "maestro/deliberation.py"
+  },
+  {
+   community: "c002",
+   in: 4,
+   lang: "python",
+   out: 1,
+   pagerank: 0.00894714,
+   path: "maestro/dependency_resolver.py"
+  },
+  {
+   community: "c001",
+   in: 8,
+   lang: "python",
+   out: 0,
+   pagerank: 0.02005877,
+   path: "maestro/dissent.py"
+  },
+  {
+   community: "c001",
+   in: 4,
+   lang: "python",
+   out: 6,
+   pagerank: 0.01090555,
+   path: "maestro/injection_guard.py"
+  },
+  {
+   community: "c002",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01833845,
+   path: "maestro/instances.py"
+  },
+  {
+   community: "c001",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.02289355,
+   path: "maestro/introspect.py"
+  },
+  {
+   community: "c002",
+   in: 8,
+   lang: "python",
+   out: 0,
+   pagerank: 0.03491895,
+   path: "maestro/keyring.py"
+  },
+  {
+   community: "c000",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01214706,
+   path: "maestro/lan_discovery.py"
+  },
+  {
+   community: "c001",
+   in: 5,
+   lang: "python",
+   out: 5,
+   pagerank: 0.01394813,
+   path: "maestro/magi.py"
+  },
+  {
+   community: "c001",
+   in: 3,
+   lang: "python",
+   out: 7,
+   pagerank: 0.00759349,
+   path: "maestro/magi_vir.py"
+  },
+  {
+   community: "c001",
+   in: 1,
+   lang: "python",
+   out: 2,
+   pagerank: 0.00693971,
+   path: "maestro/ncg/__init__.py"
+  },
+  {
+   community: "c001",
+   in: 7,
+   lang: "python",
+   out: 0,
+   pagerank: 0.02003484,
+   path: "maestro/ncg/drift.py"
+  },
+  {
+   community: "c001",
+   in: 7,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01359602,
+   path: "maestro/ncg/generator.py"
+  },
+  {
+   community: "c007",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "maestro/node_cli.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 3,
+   pagerank: 0.0056601,
+   path: "maestro/node_server.py"
+  },
+  {
+   community: "c001",
+   in: 7,
+   lang: "python",
+   out: 1,
+   pagerank: 0.01603219,
+   path: "maestro/optimization.py"
+  },
+  {
+   community: "c001",
+   in: 6,
+   lang: "python",
+   out: 8,
+   pagerank: 0.01204339,
+   path: "maestro/orchestrator.py"
+  },
+  {
+   community: "c004",
+   in: 0,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0056601,
+   path: "maestro/plugins/__init__.py"
+  },
+  {
+   community: "c004",
+   in: 5,
+   lang: "python",
+   out: 0,
+   pagerank: 0.02042077,
+   path: "maestro/plugins/base.py"
+  },
+  {
+   community: "c004",
+   in: 8,
+   lang: "python",
+   out: 4,
+   pagerank: 0.02606789,
+   path: "maestro/plugins/manager.py"
+  },
+  {
+   community: "c001",
+   in: 10,
+   lang: "python",
+   out: 2,
+   pagerank: 0.02079158,
+   path: "maestro/r2.py"
+  },
+  {
+   community: "c001",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.00919343,
+   path: "maestro/rollback.py"
+  },
+  {
+   community: "c002",
+   in: 2,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0081583,
+   path: "maestro/selector.py"
+  },
+  {
+   community: "c001",
+   in: 5,
+   lang: "python",
+   out: 7,
+   pagerank: 0.00906415,
+   path: "maestro/self_improve.py"
+  },
+  {
+   community: "c001",
+   in: 11,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0269625,
+   path: "maestro/session.py"
+  },
+  {
+   community: "c007",
+   in: 3,
+   lang: "python",
+   out: 2,
+   pagerank: 0.01657024,
+   path: "maestro/shard_manager.py"
+  },
+  {
+   community: "c000",
+   in: 8,
+   lang: "python",
+   out: 1,
+   pagerank: 0.02346725,
+   path: "maestro/shard_registry.py"
+  },
+  {
+   community: "c000",
+   in: 3,
+   lang: "python",
+   out: 1,
+   pagerank: 0.01911723,
+   path: "maestro/shard_utils.py"
+  },
+  {
+   community: "c000",
+   in: 3,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01224527,
+   path: "maestro/state_bus.py"
+  },
+  {
+   community: "c000",
+   in: 9,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0604655,
+   path: "maestro/storage_proof.py"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestro/tui/__init__.py"
+  },
+  {
+   community: "c002",
+   in: 2,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0081583,
+   path: "maestro/tui/__main__.py"
+  },
+  {
+   community: "c002",
+   in: 1,
+   lang: "python",
+   out: 8,
+   pagerank: 0.00912738,
+   path: "maestro/tui/app.py"
+  },
+  {
+   community: "c002",
+   in: 2,
+   lang: "python",
+   out: 9,
+   pagerank: 0.0099032,
+   path: "maestro/tui/backend.py"
+  },
+  {
+   community: "c002",
+   in: 1,
+   lang: "python",
+   out: 0,
+   pagerank: 0.00604801,
+   path: "maestro/tui/widgets.py"
+  },
+  {
+   community: "c000",
+   in: 5,
+   lang: "python",
+   out: 0,
+   pagerank: 0.01089367,
+   path: "maestro/updater.py"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-embed/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-host/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-lance/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-mesh/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-proof/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-proto/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestros-quorum/src/lib.rs"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "rust",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "maestros/crates/maestrosd/src/main.rs"
+  },
+  {
+   community: "c002",
+   in: 0,
+   lang: "python",
+   out: 4,
+   pagerank: 0.0056601,
+   path: "setup.py"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "shell",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "setup.sh"
+  },
+  {
+   community: null,
+   in: 0,
+   lang: "python",
+   out: 0,
+   pagerank: 0.0056601,
+   path: "tests/__init__.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0056601,
+   path: "tests/test_cluster.py"
+  },
+  {
+   community: "c001",
+   in: 0,
+   lang: "python",
+   out: 10,
+   pagerank: 0.0056601,
+   path: "tests/test_code_injection.py"
+  },
+  {
+   community: "c002",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_instances.py"
+  },
+  {
+   community: "c002",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_keyring.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_lan_discovery.py"
+  },
+  {
+   community: "c004",
+   in: 0,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0056601,
+   path: "tests/test_mod_manager.py"
+  },
+  {
+   community: "c001",
+   in: 0,
+   lang: "python",
+   out: 9,
+   pagerank: 0.0056601,
+   path: "tests/test_orchestration.py"
+  },
+  {
+   community: "c003",
+   in: 0,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0056601,
+   path: "tests/test_orchestrator_snapshot.py"
+  },
+  {
+   community: "c003",
+   in: 0,
+   lang: "python",
+   out: 3,
+   pagerank: 0.0056601,
+   path: "tests/test_plugin_hooks.py"
+  },
+  {
+   community: "c001",
+   in: 0,
+   lang: "python",
+   out: 9,
+   pagerank: 0.0056601,
+   path: "tests/test_self_improvement.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 4,
+   pagerank: 0.0056601,
+   path: "tests/test_shard_agent.py"
+  },
+  {
+   community: "c007",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_shard_manager.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_shard_registry.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_shard_utils.py"
+  },
+  {
+   community: "c005",
+   in: 0,
+   lang: "python",
+   out: 5,
+   pagerank: 0.0056601,
+   path: "tests/test_startup.py"
+  },
+  {
+   community: "c000",
+   in: 0,
+   lang: "python",
+   out: 1,
+   pagerank: 0.0056601,
+   path: "tests/test_storage_proof.py"
+  },
+  {
+   community: "c004",
+   in: 0,
+   lang: "python",
+   out: 2,
+   pagerank: 0.0056601,
+   path: "tests/test_weight_snapshots.py"
+  }
+ ],
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ representatives: {
+  ".": "entrypoint.py",
+  ".github": ".github/ISSUE_TEMPLATE/config.yml",
+  ".github/ISSUE_TEMPLATE": ".github/ISSUE_TEMPLATE/config.yml",
+  backend: "backend/orchestrator_foundry.py",
+  data: "data/example_prompts.txt",
+  "data/plugins": "data/plugins/installed/defcon.shard-agent/plugin.py",
+  "data/plugins/disabled": "data/plugins/disabled/.gitkeep",
+  "data/plugins/installed": "data/plugins/installed/.gitkeep",
+  "data/plugins/installed/defcon.shard-agent": "data/plugins/installed/defcon.shard-agent/plugin.py",
+  "data/plugins/snapshots": "data/plugins/snapshots/.gitkeep",
+  "data/r2": "data/r2/.gitkeep",
+  "data/sessions": "data/sessions/.gitkeep",
+  "data/storage_nodes": "data/storage_nodes/.gitkeep",
+  "data/storage_proofs": "data/storage_proofs/.gitkeep",
+  docs: "docs/architecture.md",
+  frontend: "frontend/vite.config.ts",
+  "frontend/public": "frontend/public/vite.svg",
+  "frontend/src": "frontend/src/maestroUI.tsx",
+  maestro: "maestro/storage_proof.py",
+  "maestro/agents": "maestro/agents/base.py",
+  "maestro/ncg": "maestro/ncg/drift.py",
+  "maestro/plugins": "maestro/plugins/manager.py",
+  "maestro/tui": "maestro/tui/backend.py",
+  maestros: "maestros/DESIGN.md",
+  "maestros/crates": "maestros/crates/maestros-core/src/lib.rs",
+  "maestros/crates/maestros-core": "maestros/crates/maestros-core/Cargo.toml",
+  "maestros/crates/maestros-core/src": "maestros/crates/maestros-core/src/lib.rs",
+  "maestros/crates/maestros-embed": "maestros/crates/maestros-embed/Cargo.toml",
+  "maestros/crates/maestros-embed/src": "maestros/crates/maestros-embed/src/lib.rs",
+  "maestros/crates/maestros-host": "maestros/crates/maestros-host/Cargo.toml",
+  "maestros/crates/maestros-host/src": "maestros/crates/maestros-host/src/lib.rs",
+  "maestros/crates/maestros-lance": "maestros/crates/maestros-lance/Cargo.toml",
+  "maestros/crates/maestros-lance/src": "maestros/crates/maestros-lance/src/lib.rs",
+  "maestros/crates/maestros-mesh": "maestros/crates/maestros-mesh/Cargo.toml",
+  "maestros/crates/maestros-mesh/src": "maestros/crates/maestros-mesh/src/lib.rs",
+  "maestros/crates/maestros-proof": "maestros/crates/maestros-proof/Cargo.toml",
+  "maestros/crates/maestros-proof/src": "maestros/crates/maestros-proof/src/lib.rs",
+  "maestros/crates/maestros-proto": "maestros/crates/maestros-proto/Cargo.toml",
+  "maestros/crates/maestros-proto/src": "maestros/crates/maestros-proto/src/lib.rs",
+  "maestros/crates/maestros-quorum": "maestros/crates/maestros-quorum/Cargo.toml",
+  "maestros/crates/maestros-quorum/src": "maestros/crates/maestros-quorum/src/lib.rs",
+  "maestros/crates/maestrosd": "maestros/crates/maestrosd/Cargo.toml",
+  "maestros/crates/maestrosd/src": "maestros/crates/maestrosd/src/main.rs",
+  tests: "tests/__init__.py"
+ },
+ scan_key: "L1",
+ schema_version: 1,
+ unresolved_imports: 1,
+ workspaces: {"maestro-frontend": {dir: "frontend", entries: ["frontend/src/main.tsx"]}}
+}

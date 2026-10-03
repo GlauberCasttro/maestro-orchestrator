@@ -1,0 +1,360 @@
+// codebase-specialists:generated: árvore territorial (pasta → dono + arquivo representativo); não edite, rode `cs.py emit`
+{
+ edges: [
+  [".", ".github"],
+  [".github", ".github/ISSUE_TEMPLATE"],
+  [".", "backend"],
+  [".", "data"],
+  ["data", "data/plugins"],
+  ["data/plugins", "data/plugins/disabled"],
+  ["data/plugins", "data/plugins/installed"],
+  ["data/plugins/installed", "data/plugins/installed/defcon.shard-agent"],
+  ["data/plugins", "data/plugins/snapshots"],
+  ["data", "data/r2"],
+  ["data", "data/sessions"],
+  ["data", "data/storage_nodes"],
+  ["data", "data/storage_proofs"],
+  [".", "docs"],
+  [".", "frontend"],
+  ["frontend", "frontend/public"],
+  ["frontend", "frontend/src"],
+  [".", "maestro"],
+  ["maestro", "maestro/agents"],
+  ["maestro", "maestro/ncg"],
+  ["maestro", "maestro/plugins"],
+  ["maestro", "maestro/tui"],
+  [".", "maestros"],
+  ["maestros", "maestros/crates"],
+  ["maestros/crates", "maestros/crates/maestros-core"],
+  ["maestros/crates/maestros-core", "maestros/crates/maestros-core/src"],
+  ["maestros/crates", "maestros/crates/maestros-embed"],
+  ["maestros/crates/maestros-embed", "maestros/crates/maestros-embed/src"],
+  ["maestros/crates", "maestros/crates/maestros-host"],
+  ["maestros/crates/maestros-host", "maestros/crates/maestros-host/src"],
+  ["maestros/crates", "maestros/crates/maestros-lance"],
+  ["maestros/crates/maestros-lance", "maestros/crates/maestros-lance/src"],
+  ["maestros/crates", "maestros/crates/maestros-mesh"],
+  ["maestros/crates/maestros-mesh", "maestros/crates/maestros-mesh/src"],
+  ["maestros/crates", "maestros/crates/maestros-proof"],
+  ["maestros/crates/maestros-proof", "maestros/crates/maestros-proof/src"],
+  ["maestros/crates", "maestros/crates/maestros-proto"],
+  ["maestros/crates/maestros-proto", "maestros/crates/maestros-proto/src"],
+  ["maestros/crates", "maestros/crates/maestros-quorum"],
+  ["maestros/crates/maestros-quorum", "maestros/crates/maestros-quorum/src"],
+  ["maestros/crates", "maestros/crates/maestrosd"],
+  ["maestros/crates/maestrosd", "maestros/crates/maestrosd/src"],
+  [".", "tests"]
+ ],
+ nodes: [
+  {
+   files: 170,
+   id: ".",
+   kind: "dir",
+   owner: ["architect", "dev-consensus", "dev-frontend", "dev-maestros", "dev-platform", "dev-self-improve", "dev-storage-network", "ops", "qa"],
+   representative: "entrypoint.py"
+  },
+  {
+   files: 1,
+   id: ".github",
+   kind: "dir",
+   owner: "ops",
+   representative: ".github/ISSUE_TEMPLATE/config.yml"
+  },
+  {
+   files: 1,
+   id: ".github/ISSUE_TEMPLATE",
+   kind: "dir",
+   owner: "ops",
+   representative: ".github/ISSUE_TEMPLATE/config.yml"
+  },
+  {
+   files: 3,
+   id: "backend",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "backend/main.py"
+  },
+  {
+   files: 10,
+   id: "data",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/example_prompts.txt"
+  },
+  {
+   files: 5,
+   id: "data/plugins",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   files: 1,
+   id: "data/plugins/disabled",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/plugins/disabled/.gitkeep"
+  },
+  {
+   files: 3,
+   id: "data/plugins/installed",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/plugins/installed/.gitkeep"
+  },
+  {
+   files: 2,
+   id: "data/plugins/installed/defcon.shard-agent",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   files: 1,
+   id: "data/plugins/snapshots",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/plugins/snapshots/.gitkeep"
+  },
+  {
+   files: 1,
+   id: "data/r2",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/r2/.gitkeep"
+  },
+  {
+   files: 1,
+   id: "data/sessions",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/sessions/.gitkeep"
+  },
+  {
+   files: 1,
+   id: "data/storage_nodes",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/storage_nodes/.gitkeep"
+  },
+  {
+   files: 1,
+   id: "data/storage_proofs",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "data/storage_proofs/.gitkeep"
+  },
+  {
+   files: 19,
+   id: "docs",
+   kind: "dir",
+   owner: "architect",
+   representative: "docs/architecture.md"
+  },
+  {
+   files: 12,
+   id: "frontend",
+   kind: "dir",
+   owner: "dev-frontend",
+   representative: "frontend/vite.config.ts"
+  },
+  {
+   files: 1,
+   id: "frontend/public",
+   kind: "dir",
+   owner: "dev-frontend",
+   representative: "frontend/public/vite.svg"
+  },
+  {
+   files: 5,
+   id: "frontend/src",
+   kind: "dir",
+   owner: "dev-frontend",
+   representative: "frontend/src/maestroUI.tsx"
+  },
+  {
+   files: 61,
+   id: "maestro",
+   kind: "dir",
+   owner: ["dev-consensus", "dev-platform", "dev-self-improve", "dev-storage-network"],
+   representative: "maestro/storage_proof.py"
+  },
+  {
+   files: 9,
+   id: "maestro/agents",
+   kind: "dir",
+   owner: ["dev-consensus", "dev-storage-network"],
+   representative: "maestro/agents/base.py"
+  },
+  {
+   files: 3,
+   id: "maestro/ncg",
+   kind: "dir",
+   owner: "dev-consensus",
+   representative: "maestro/ncg/drift.py"
+  },
+  {
+   files: 3,
+   id: "maestro/plugins",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "maestro/plugins/manager.py"
+  },
+  {
+   files: 6,
+   id: "maestro/tui",
+   kind: "dir",
+   owner: "dev-platform",
+   representative: "maestro/tui/app.py"
+  },
+  {
+   files: 23,
+   id: "maestros",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/DESIGN.md"
+  },
+  {
+   files: 18,
+   id: "maestros/crates",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-core",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-core/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-core/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-embed",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-embed/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-embed/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-embed/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-host",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-host/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-host/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-host/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-lance",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-lance/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-lance/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-lance/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-mesh",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-mesh/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-mesh/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-mesh/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-proof",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-proof/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-proof/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-proof/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-proto",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-proto/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-proto/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-proto/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestros-quorum",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-quorum/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestros-quorum/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestros-quorum/src/lib.rs"
+  },
+  {
+   files: 2,
+   id: "maestros/crates/maestrosd",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestrosd/Cargo.toml"
+  },
+  {
+   files: 1,
+   id: "maestros/crates/maestrosd/src",
+   kind: "dir",
+   owner: "dev-maestros",
+   representative: "maestros/crates/maestrosd/src/main.rs"
+  },
+  {
+   files: 18,
+   id: "tests",
+   kind: "dir",
+   owner: "qa",
+   representative: "tests/test_self_improvement.py"
+  },
+  {files: 1, id: "maestros/Cargo.lock", kind: "generated"}
+ ],
+ source: "facts/inventory + facts/graph + team"
+}

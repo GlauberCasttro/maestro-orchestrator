@@ -1,0 +1,132 @@
+// cycles.json5 — ciclos de exame por agente (regra de 2 refinos); gerado por cs.py probes check
+{
+ architect: [
+  {
+   answers_sha256: "9e6744c1940a85b6be9c7d86a5c603598b1008395a74f8488004773b0edc355b",
+   at: "2026-10-03T21:02:06+00:00",
+   decision: "PASS",
+   probes_sha256: "882ead3aa22eaf2e4bf6c7ae2cd36529c560897cbd530fa5e4b4a0f49f197df0",
+   retakes: 0
+  }
+ ],
+ "dev-consensus": [
+  {
+   answers_sha256: "3eb9497e1d9593063087720098049bdfec15ef90cdcdeb45979533c534a4e827",
+   at: "2026-10-03T20:48:29+00:00",
+   decision: "FAIL",
+   probes_sha256: "29625d98214a207c6a49bafc0675bfaf060f5b66feac381bc8945840accb7133",
+   retakes: 0
+  },
+  {
+   answers_sha256: "fce3520e1a994db0dcdd767237724ba6481ed819af7554487cea9e39b1874728",
+   at: "2026-10-03T20:53:14+00:00",
+   decision: "FAIL",
+   probes_sha256: "2aeae453ba5603b56218a3f2c158960e0ed68dcb484844abc5469405e7fb24b5",
+   retakes: 0
+  },
+  {
+   answers_sha256: "20e14373439ca8467f84adab0f034676a7cb89b3e5a3713483ee132972f4a67b",
+   at: "2026-10-03T21:02:07+00:00",
+   decision: "PASS",
+   probes_sha256: "790419f259e637ad9eb129f3358a738435a41b8ab1d8a39eb75c6935d6ab009f",
+   retakes: 0
+  }
+ ],
+ "dev-frontend": [
+  {
+   answers_sha256: "b7d650a7b5723198c0875d5a519045ed94f20eeed6bc19211c4011ad70168fdf",
+   at: "2026-10-03T21:02:07+00:00",
+   decision: "PASS",
+   probes_sha256: "6c41901a690db266ed92f5c8a141bb322a613fedf9f2b7767b270eef3ef97957",
+   retakes: 0
+  }
+ ],
+ "dev-maestros": [
+  {
+   answers_sha256: "4e6a0a5c5cbec0297eb1becc79d9717afab11bcdc4e11b37d62e48823d33ed92",
+   at: "2026-10-03T21:02:07+00:00",
+   decision: "PASS",
+   probes_sha256: "f28e24f6fbfbd75b8e3d2a0174f4a7355dc2abecc12a8795c5abe28e04c0f3a1",
+   retakes: 0
+  }
+ ],
+ "dev-platform": [
+  {
+   answers_sha256: "88eb4df8c85b58902305ff32037729bfd7a347d1327f6aad8c4923276b945a09",
+   at: "2026-10-03T21:02:07+00:00",
+   decision: "PASS",
+   probes_sha256: "c41c88f66a092980147ac4f538c7422145b98ecbdfb755038870b5b5130faab5",
+   retakes: 0
+  }
+ ],
+ "dev-self-improve": [
+  {
+   answers_sha256: "49d28af80c04160caab62ec7e40bdabec136ad7c1250a10380df08a33d378f6e",
+   at: "2026-10-03T20:48:30+00:00",
+   decision: "FAIL",
+   probes_sha256: "6569faf5d18e76342bd978c84420cbb311f703300831fd5fd1195f39f2a6922d",
+   retakes: 0
+  },
+  {
+   answers_sha256: "55bf9d4b1383d31604e135095aebc8c524652d6c07472367400dbfb7b59c9fd7",
+   at: "2026-10-03T21:02:07+00:00",
+   decision: "PASS",
+   probes_sha256: "04cbd2255ba9bc5ee9eddd87db2a3ea3fdaf1a2df2d43bdbb5c8411296ffb947",
+   retakes: 0
+  }
+ ],
+ "dev-storage-network": [
+  {
+   answers_sha256: "eadaf0ae0c6027954c53ef87d9ebeab55cd01132410f7f10d22139663cac7022",
+   at: "2026-10-03T21:02:08+00:00",
+   decision: "PASS",
+   probes_sha256: "0f20f9c6bd0a9da5a41528faebd8c2270752b06bb726a506029af601425d997e",
+   retakes: 0
+  }
+ ],
+ ops: [
+  {
+   answers_sha256: "f61126fe1b7393d61cf382e5b538f13c3c25181111b8ef77cf4caa9c6bbb7159",
+   at: "2026-10-03T21:02:08+00:00",
+   decision: "PASS",
+   probes_sha256: "94075913071ddf137455295ffe4fc4096c915a803b32a36cf41da66e1c03c224",
+   retakes: 0
+  }
+ ],
+ po: [
+  {
+   answers_sha256: "971c1f3f0f4bc7a3939e595e837884c06cada25f8ddceb3197a5f2dce8778d64",
+   at: "2026-10-03T21:02:08+00:00",
+   decision: "PASS",
+   probes_sha256: "674acd4c41a7a65aa97fa87fda1170b60ed7fca485cab56a8b539c3c85c1f96d",
+   retakes: 0
+  }
+ ],
+ qa: [
+  {
+   answers_sha256: "911f196cba054c6e8f09f389385d665a555b004b75c637f1da0b249d258be419",
+   at: "2026-10-03T21:02:08+00:00",
+   decision: "PASS",
+   probes_sha256: "073cef11c2f1504475e055f7a153b6243aafebc75539594c1294cfe36025f637",
+   retakes: 0
+  }
+ ],
+ reviewer: [
+  {
+   answers_sha256: "8b8d765baf92654c8581e44ac2f7d37e4274c38e9b25c22a8b14bcd765f01737",
+   at: "2026-10-03T21:02:08+00:00",
+   decision: "PASS",
+   probes_sha256: "61afbb80b0ed925f5d094e6958f72c86037cbfeff6881e44f253d53dcc7c5a38",
+   retakes: 0
+  }
+ ],
+ security: [
+  {
+   answers_sha256: "df7f0b33a376ad45d73cbeccd2ab627e1f6c4ee904df0c9edc833021eb5f04f4",
+   at: "2026-10-03T21:02:09+00:00",
+   decision: "PASS",
+   probes_sha256: "964b3c4ea8d3f3e7192cd2e5079d6cf01ab6bdf27c4aaa4785fe84ed2bf13b9d",
+   retakes: 0
+  }
+ ]
+}

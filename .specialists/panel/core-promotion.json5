@@ -1,0 +1,17 @@
+// core-promotion.json5 — core gravado por `team core set`
+{
+ at: "2026-10-03T20:35:51+00:00",
+ candidates_sha256: null,
+ file: "/Users/glaubercastro/Repositorios/maestro-orchestrator/.specialists/tmp/core.json5",
+ promoted: [
+  {facts: ["interview.protected-areas"], origin: "set", text: "Exigem aprovação humana antes de mudar: limiares de consenso, self-improvement e storage proof / rede."},
+  {facts: ["interview.test-gate", "ops.test.absent"], origin: "set", text: "Gate oficial antes de merge, declarado pelo dono na entrevista: pytest sobre o diretório tests. Não há CI nem comando de teste em Makefile, pyproject ou package.json; não invente outro nem presuma suíte verde sem rodar."},
+  {facts: ["arch.base.maestro", "arch.components", "arch.declared.none"], origin: "set", text: "`maestro/**` é a base: backend, data e a raiz importam maestro, nunca o contrário; 0 ciclos entre componentes, mas nenhuma ferramenta impõe as camadas."},
+  {facts: ["rules.never.python.bare-except", "rules.never.python.eval", "rules.never.python.exec", "rules.never.python.os-system", "rules.never.python.pickle-loads", "rules.never.python.shell-true", "rules.never.python.star-import", "rules.never.python.yaml-load"], origin: "set", text: "Python de produto (backend/**, data/**, maestro/**, entrypoint.py, setup.py) tem zero ocorrências de eval(), exec(), os.system(), shell=True, pickle.load(s), yaml.load sem Loader, import * e except sem tipo — não introduzir."},
+  {facts: ["conv.indent.python", "conv.naming.class.python", "conv.naming.files.python", "conv.naming.function.python", "conv.python.future-annotations"], origin: "set", text: "Python: 4 espaços, arquivos e funções em snake_case, classes em PascalCase; `from __future__ import annotations` é exceção, não padrão."},
+  {facts: ["conv.files.eol", "conv.files.final-newline"], origin: "set", text: "Todo arquivo de texto usa fim de linha LF e termina com newline."}
+ ],
+ refused: [],
+ schema_version: 1,
+ source: "set"
+}

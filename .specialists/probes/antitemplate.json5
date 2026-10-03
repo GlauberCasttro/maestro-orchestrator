@@ -1,0 +1,93 @@
+// antitemplate.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agents: {
+  architect: {
+   control_agent: "tech-lead",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-consensus": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-frontend": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-maestros": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-platform": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-self-improve": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  "dev-storage-network": {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  ops: {
+   control_agent: "devops-engineer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  po: {
+   control_agent: null,
+   pass: true,
+   similarity: 0.0,
+   why: "sem papel equivalente no controle"
+  },
+  qa: {
+   control_agent: "backend-developer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  reviewer: {
+   control_agent: "code-reviewer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  },
+  security: {
+   control_agent: "code-reviewer",
+   line_jaccard: 0.0,
+   pass: true,
+   shingle_jaccard: 0.0,
+   similarity: 0.0
+  }
+ },
+ control: "/Users/glaubercastro/.claude/skills/codebase-specialists/evals/reference/generic-cards",
+ gate: "G3",
+ pass: true,
+ schema_version: 1,
+ threshold: 0.35
+}

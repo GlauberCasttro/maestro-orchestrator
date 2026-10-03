@@ -1,0 +1,18 @@
+// codebase-specialists:generated: invariantes de ops (lista completa, priorizada); não edite: altere team.json5 e rode `cs.py emit`
+{
+ agent: "ops",
+ invariants: [
+  {class: "proibição", rank: 1, text: "Invariante: except: sem tipo tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 2, text: "Invariante: eval() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 3, text: "Invariante: exec() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 4, text: "Invariante: os.system() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 5, text: "Invariante: pickle.load(s) tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 6, text: "Invariante: subprocess com shell=True tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 7, text: "Invariante: import * tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "proibição", rank: 8, text: "Invariante: yaml.load sem Loader tem 0 ocorrências em 65 arquivos python de produto (não introduzir)"},
+  {class: "regra de negócio", rank: 9, text: "Limite HEALTH_RETRIES = 30 (technical) em setup.py; nenhum teste importa este módulo nem cita a mensagem (cobertura indireta — CLI/HTTP/subprocess — não verificada)"}
+ ],
+ order: "decisão registrada > entrevista > proibição > regra de negócio > configuração",
+ schema_version: 1,
+ total: 9
+}

@@ -1,0 +1,7 @@
+// gaps — lacunas declaradas (--answer-unknown); citáveis em cartão, nunca conhecimento nem sonda
+{
+ facts: [],
+ generator: "cs.py interview",
+ layer: "gap",
+ schema_version: 1
+}

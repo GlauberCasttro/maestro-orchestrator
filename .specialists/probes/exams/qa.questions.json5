@@ -1,0 +1,33 @@
+// qa.questions.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "qa",
+ answer_file: ".specialists/probes/exams/qa.answers.json5",
+ answer_format: [
+  {answer: "texto (arquivo:linha, comando, sha ou NENHUM)", evidence: ["arquivo:linha", "comando"], id: "P-..."}
+ ],
+ instructions: "Responda cada pergunta com o que você sabe deste repositório. Para cada id, devolva {id, answer, evidence[]}; evidence = 'arquivo:linha' ou comando que prova. Se o que foi perguntado não existe, responda NENHUM. Não invente: afirmar algo inexistente veta o exame.",
+ probes_sha256: "073cef11c2f1504475e055f7a153b6243aafebc75539594c1294cfe36025f637",
+ questions: [
+  {id: "P-qa-01", question: "Quais arquivos fora de `tests/**` importam `tests/test_code_injection.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-qa-02", question: "Onde está definido o símbolo `throttle_manifest_quota` em `tests/**`? Responda arquivo:linha ou NENHUM.", type: "location"},
+  {id: "P-qa-03", question: "Onde está definido o símbolo (function) com assinatura `___(base: Path, ____id: str = \"test.___\")`, em `tests/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-qa-04", question: "Qual commit (sha) corrigiu \"feat: add interactive mode selector, fix TUI crash, bump to v0.7.2\" (tocou 19 arquivo(s))?", type: "history"},
+  {id: "P-qa-05", question: "Onde é definido o termo de negócio que significa \"`asyncio.gather` now uses `return_exceptions=True`. Unhandled agent exceptions are caught, logged, and converted to error-string responses so a single agent failure never aborts the pipeline. NCG track failures are caught and logged; the tr\"? Responda arquivo:linha.", type: "term"},
+  {id: "P-qa-06", question: "Qual o test de \"test_injectable_architecture_blocked\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-qa-07", question: "Algum arquivo em `tests/**` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-qa-08", question: "Onde está definido o símbolo (function) com assinatura `___(self, mock_port, mock____)`, em `tests/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-qa-09", question: "Onde está definido o símbolo (function) com assinatura `___(____id, host=\"127.0.0.1\", port=8000, shards=None, **kwargs)`, em `tests/**`? Responda arquivo:linha.", type: "location"},
+  {id: "P-qa-10", question: "Qual commit (sha) corrigiu \"Fix code review issues and add comprehensive documentation for self-improvement pipeline\" (tocou 14 arquivo(s))?", type: "history"},
+  {id: "P-qa-11", question: "Onde é definido o termo técnico `check`? Responda arquivo:linha.", type: "term"},
+  {id: "P-qa-12", question: "Qual o test de \"test_rate_limit_blocks_injection\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-qa-13", question: "Algum arquivo em `docs/**` importa diretamente de `frontend/**`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"},
+  {id: "P-qa-14", question: "Onde está definido o símbolo (function) com assinatura `___(responses)`, em `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Responda arquivo:linha.", type: "location"},
+  {id: "P-qa-15", question: "Quais arquivos fora de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py` importam `maestro/agents/base.py`? Liste todos (ou NENHUM).", type: "dependency"},
+  {id: "P-qa-16", question: "Que regra mecânica (ferramenta: tsconfig.strict) vale para `frontend/**` e em que arquivo:linha ela é imposta?", type: "prohibition"},
+  {id: "P-qa-17", question: "Qual commit (sha) corrigiu \"fix: API keys shown as not configured despite being set\" (tocou 3 arquivo(s))?", type: "history"},
+  {id: "P-qa-18", question: "Onde é definido o termo técnico `ActivationPayload`? Responda arquivo:linha.", type: "term"},
+  {id: "P-qa-19", question: "Qual o validação de \"rounds must be >= 1, got {rounds}\" e onde é imposto (arquivo:linha)?", type: "business_rule"},
+  {id: "P-qa-20", question: "Algum arquivo em `backend/**`, `entrypoint.py`, `maestro/cli.py`, `maestro/cli_keys.py`, `maestro/keyring.py`, `maestro/api_keys.py`, `maestro/selector.py`, `maestro/tui/**`, `maestro/plugins/**`, `maestro/api_plugins.py`, `maestro/updater.py`, `maestro/api_update.py`, `maestro/dependency_resolver.py`, `data/**` importa diretamente de `maestro/orchestrator.py`, `maestro/aggregator.py`, `maestro/deliberation.py`, `maestro/dissent.py`, `maestro/session.py`, `maestro/api_sessions.py`, `maestro/r2.py`, `maestro/ncg/**`, `maestro/agents/__init__.py`, `maestro/agents/base.py`, `maestro/agents/aria.py`, `maestro/agents/sol.py`, `maestro/agents/prism.py`, `maestro/agents/tempagent.py`, `maestro/agents/mock.py`, `maestro/__init__.py`? Se sim, cite os arquivos; senão NENHUM.", type: "existence"}
+ ],
+ schema_version: 1
+}

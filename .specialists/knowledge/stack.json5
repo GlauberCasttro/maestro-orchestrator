@@ -1,0 +1,97 @@
+// codebase-specialists:generated: stack (linguagem → ecossistema → pacote@versão do lockfile); não edite, rode `cs.py emit`
+{
+ edges: [
+  ["lang:typescript", "eco:node"],
+  ["lang:python", "eco:python"],
+  ["eco:node", "pkg:node:@types/react"],
+  ["eco:node", "pkg:node:@types/react-dom"],
+  ["eco:node", "pkg:node:@vitejs/plugin-react"],
+  ["eco:node", "pkg:node:react"],
+  ["eco:node", "pkg:node:react-dom"],
+  ["eco:node", "pkg:node:rollup"],
+  ["eco:node", "pkg:node:typescript"],
+  ["eco:node", "pkg:node:vite"],
+  ["eco:python", "pkg:python:stdlib"]
+ ],
+ nodes: [
+  {id: "lang:python", kind: "language"},
+  {id: "lang:rust", kind: "language"},
+  {id: "lang:shell", kind: "language"},
+  {id: "lang:typescript", kind: "language"},
+  {id: "eco:node", kind: "ecosystem"},
+  {id: "eco:python", kind: "ecosystem"},
+  {
+   id: "pkg:node:@types/react",
+   kind: "package",
+   name: "@types/react",
+   source: "",
+   territories: [],
+   version: "19.2.14"
+  },
+  {
+   id: "pkg:node:@types/react-dom",
+   kind: "package",
+   name: "@types/react-dom",
+   source: "",
+   territories: [],
+   version: "19.2.3"
+  },
+  {
+   id: "pkg:node:@vitejs/plugin-react",
+   kind: "package",
+   name: "@vitejs/plugin-react",
+   source: "",
+   territories: [],
+   version: "4.5.1"
+  },
+  {
+   id: "pkg:node:react",
+   kind: "package",
+   name: "react",
+   source: "",
+   territories: [],
+   version: "19.1.0"
+  },
+  {
+   id: "pkg:node:react-dom",
+   kind: "package",
+   name: "react-dom",
+   source: "",
+   territories: [],
+   version: "19.1.0"
+  },
+  {
+   id: "pkg:node:rollup",
+   kind: "package",
+   name: "rollup",
+   source: "",
+   territories: [],
+   version: "4.41.1"
+  },
+  {
+   id: "pkg:node:typescript",
+   kind: "package",
+   name: "typescript",
+   source: "",
+   territories: [],
+   version: "5.8.3"
+  },
+  {
+   id: "pkg:node:vite",
+   kind: "package",
+   name: "vite",
+   source: "",
+   territories: [],
+   version: "6.3.5"
+  },
+  {
+   id: "pkg:python:stdlib",
+   kind: "package",
+   name: "stdlib",
+   source: "",
+   territories: [],
+   version: "runtime"
+  }
+ ],
+ source: "facts/stack_graph"
+}

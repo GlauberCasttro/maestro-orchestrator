@@ -1,0 +1,9 @@
+docker compose build --no-cache
+time="2026-10-03T17:15:16-03:00" level=warning msg="/Users/glaubercastro/Repositorios/maestro-orchestrator/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Image maestro-orchestrator-orchestrator Building 
+ Image maestro-orchestrator-shard-1 Building 
+ Image maestro-orchestrator-shard-2 Building 
+ Image maestro-orchestrator-shard-3 Building 
+failed to connect to the docker API at unix:///Users/glaubercastro/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/glaubercastro/.docker/run/docker.sock: connect: no such file or directory
+
+make: *** [build] Error 1

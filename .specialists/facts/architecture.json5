@@ -1,0 +1,105 @@
+// architecture (L2) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ component_edges: [
+  [".", "maestro", 9],
+  ["backend", "maestro", 17],
+  ["data", "maestro", 4],
+  ["tests", ".", 11],
+  ["tests", "maestro", 108]
+ ],
+ components: [".", "backend", "data", "frontend", "maestro", "maestros", "tests"],
+ cycles: [],
+ declared: [],
+ facts: [
+  {
+   claim: "7 componentes de topo com código; 5 dependências entre componentes; 0 ciclos entre componentes",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.components",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "Componente . depende de: maestro",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.deps.x",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["*"]
+  },
+  {
+   claim: "Componente backend depende de: maestro",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.deps.backend",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["backend/**"]
+  },
+  {
+   claim: "Componente data depende de: maestro",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.deps.data",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["data/**"]
+  },
+  {
+   claim: "Componente tests depende de: ., maestro",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.deps.tests",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["tests/**"]
+  },
+  {
+   claim: "Componente maestro é base: importado por ., backend, data, tests e não importa outros componentes",
+   confidence: "medium",
+   evidence: [
+    {cmd: "scan:L2 agregação de arestas L1 por componente", exit: 0, out_sha256: "bf8f9286216884a86e7c4010aee4a8eb39748e71216aff69b2e16e6d6112d892"}
+   ],
+   fingerprint: "5e042b60473be9e081b97d5e97a186920250ffdac65d23bef39f637268a520be",
+   id: "arch.base.maestro",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["maestro/**"]
+  },
+  {
+   claim: "Nenhuma arquitetura declarada por ferramenta (import-linter, dependency-cruiser, ArchUnit, eslint boundaries/no-restricted-imports, golangci depguard, ruff banned-api) — camadas só implícitas",
+   confidence: "high",
+   evidence: [
+    {cmd: "scan:L2 busca de configs de arquitetura", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}
+   ],
+   fingerprint: "e9c8c287fb42444750e6f1fa801aab8b79206d423bdb77f662f44e3e3499868f",
+   id: "arch.declared.none",
+   layer: "architecture",
+   origin: "mechanical",
+   scope: ["**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "architecture",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L2",
+ schema_version: 1,
+ violations: []
+}

@@ -1,0 +1,585 @@
+// conventions (L3) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ conventions: [
+  {
+   conform: 75,
+   counts: {lowercase: 39, snake_case: 36},
+   desc: "nomes de arquivo python",
+   dominant: "snake_case",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "naming.files.python",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/agents/aria.py", "maestro/agents/base.py"],
+   total: 75
+  },
+  {
+   conform: 1205,
+   counts: {
+    camelCase: 36,
+    lowercase: 128,
+    other: 51,
+    snake_case: 1077
+   },
+   desc: "nomes de funções em python",
+   dominant: "snake_case",
+   exceptions: [
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 17, value: "other"},
+    {file: "entrypoint.py", line: 83, value: "other"},
+    {file: "maestro/agents/aria.py", line: 12, value: "other"},
+    {file: "maestro/agents/mock.py", line: 7, value: "other"},
+    {file: "maestro/agents/mock_shard_node.py", line: 16, value: "other"},
+    {file: "maestro/agents/prism.py", line: 19, value: "other"},
+    {file: "maestro/agents/shard.py", line: 47, value: "other"},
+    {file: "maestro/agents/sol.py", line: 12, value: "other"},
+    {file: "maestro/agents/tempagent.py", line: 12, value: "other"},
+    {file: "maestro/applicator.py", line: 61, value: "other"},
+    {file: "maestro/deliberation.py", line: 137, value: "other"},
+    {file: "maestro/dissent.py", line: 63, value: "other"},
+    {file: "maestro/injection_guard.py", line: 57, value: "other"},
+    {file: "maestro/introspect.py", line: 124, value: "other"},
+    {file: "maestro/lan_discovery.py", line: 164, value: "other"}
+   ],
+   exceptions_total: 87,
+   key: "naming.function.python",
+   level: "lei",
+   ratio: 0.9327,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/agents/aria.py"],
+   total: 1292
+  },
+  {
+   conform: 224,
+   counts: {PascalCase: 224, other: 15},
+   desc: "nomes de classes/tipos em python",
+   dominant: "PascalCase",
+   exceptions: [
+    {file: "maestro/magi_vir.py", line: 57, value: "other"},
+    {file: "maestro/magi_vir.py", line: 69, value: "other"},
+    {file: "maestro/magi_vir.py", line: 97, value: "other"},
+    {file: "maestro/ncg/generator.py", line: 78, value: "other"},
+    {file: "maestro/tui/app.py", line: 1786, value: "other"},
+    {file: "maestro/tui/backend.py", line: 29, value: "other"},
+    {file: "maestro/tui/backend.py", line: 141, value: "other"},
+    {file: "tests/test_lan_discovery.py", line: 369, value: "other"},
+    {file: "tests/test_orchestration.py", line: 230, value: "other"},
+    {file: "tests/test_self_improvement.py", line: 365, value: "other"},
+    {file: "tests/test_startup.py", line: 92, value: "other"},
+    {file: "tests/test_startup.py", line: 110, value: "other"},
+    {file: "tests/test_startup.py", line: 125, value: "other"},
+    {file: "tests/test_startup.py", line: 193, value: "other"},
+    {file: "tests/test_startup.py", line: 241, value: "other"}
+   ],
+   exceptions_total: 15,
+   key: "naming.class.python",
+   level: "lei",
+   ratio: 0.9372,
+   sample: ["backend/main.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/agents/aria.py", "maestro/agents/base.py"],
+   total: 239
+  },
+  {
+   conform: 78,
+   counts: {"4 espaços": 78},
+   desc: "indentação em python",
+   dominant: "4 espaços",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "indent.python",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/agents/aria.py"],
+   total: 78
+  },
+  {
+   conform: 4,
+   counts: {lowercase: 1, snake_case: 3},
+   desc: "nomes de funções em shell",
+   dominant: "snake_case",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "naming.function.shell",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["setup.sh"],
+   total: 4
+  },
+  {
+   conform: 3,
+   counts: {camelCase: 1, "kebab-case": 1, lowercase: 2},
+   desc: "nomes de arquivo typescript",
+   dominant: "kebab-case",
+   exceptions: [
+    {file: "frontend/src/maestroUI.tsx", line: 1, value: "camelCase"}
+   ],
+   exceptions_total: 1,
+   key: "naming.files.typescript",
+   level: "maioria",
+   ratio: 0.75,
+   sample: ["frontend/src/app.tsx", "frontend/src/vite-env.d.ts", "frontend/vite.config.ts"],
+   total: 4
+  },
+  {
+   conform: 16,
+   counts: {
+    PascalCase: 16,
+    camelCase: 5,
+    lowercase: 1,
+    other: 1
+   },
+   desc: "nomes de funções em typescript",
+   dominant: "PascalCase",
+   exceptions: [
+    {file: "frontend/src/maestroUI.tsx", line: 99, value: "camelCase"},
+    {file: "frontend/src/maestroUI.tsx", line: 109, value: "lowercase"},
+    {file: "frontend/src/maestroUI.tsx", line: 115, value: "camelCase"},
+    {file: "frontend/src/maestroUI.tsx", line: 1099, value: "camelCase"},
+    {file: "frontend/src/maestroUI.tsx", line: 2051, value: "camelCase"},
+    {file: "frontend/src/maestroUI.tsx", line: 2060, value: "camelCase"},
+    {file: "frontend/src/maestroUI.tsx", line: 2434, value: "other"}
+   ],
+   exceptions_total: 7,
+   key: "naming.function.typescript",
+   level: "maioria",
+   ratio: 0.6957,
+   sample: ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx"],
+   total: 23
+  },
+  {
+   conform: 25,
+   counts: {PascalCase: 25},
+   desc: "nomes de interfaces em typescript",
+   dominant: "PascalCase",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "naming.interface.typescript",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["frontend/src/maestroUI.tsx"],
+   total: 25
+  },
+  {
+   conform: 4,
+   counts: {"2 espaços": 4},
+   desc: "indentação em typescript",
+   dominant: "2 espaços",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "indent.typescript",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx", "frontend/src/main.tsx", "frontend/vite.config.ts"],
+   total: 4
+  },
+  {
+   conform: 17,
+   counts: {"prefixo test_": 17, "sem marcador no nome": 1},
+   desc: "nome de arquivo de teste python",
+   dominant: "prefixo test_",
+   exceptions: [
+    {file: "tests/__init__.py", line: 1, value: "sem marcador no nome"}
+   ],
+   exceptions_total: 1,
+   key: "tests.naming.python",
+   level: "lei",
+   ratio: 0.9444,
+   sample: ["tests/test_cluster.py", "tests/test_code_injection.py", "tests/test_instances.py", "tests/test_keyring.py", "tests/test_lan_discovery.py"],
+   total: 18
+  },
+  {
+   conform: 18,
+   counts: {"diretório de testes": 18},
+   desc: "local dos testes python",
+   dominant: "diretório de testes",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "tests.location.python",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["tests/__init__.py", "tests/test_cluster.py", "tests/test_code_injection.py", "tests/test_instances.py", "tests/test_keyring.py"],
+   total: 18
+  },
+  {
+   conform: 97,
+   counts: {LF: 97},
+   desc: "fim de linha",
+   dominant: "LF",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "files.eol",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "frontend/src/app.tsx"],
+   total: 97
+  },
+  {
+   conform: 96,
+   counts: {"não": 1, sim: 96},
+   desc: "newline no fim do arquivo",
+   dominant: "sim",
+   exceptions: [
+    {file: "frontend/src/main.tsx", line: 1, value: "não"}
+   ],
+   exceptions_total: 1,
+   key: "files.final-newline",
+   level: "lei",
+   ratio: 0.9897,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "frontend/src/app.tsx"],
+   total: 97
+  },
+  {
+   conform: 738,
+   counts: {anotado: 555, "sem anotação": 738},
+   desc: "funções Python com anotação de retorno",
+   dominant: "sem anotação",
+   exceptions: [
+    {file: "backend/orchestrator_foundry.py", line: 52, value: "anotado"},
+    {file: "backend/orchestrator_foundry.py", line: 106, value: "anotado"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 20, value: "anotado"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 58, value: "anotado"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 65, value: "anotado"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 83, value: "anotado"},
+    {file: "entrypoint.py", line: 90, value: "anotado"},
+    {file: "entrypoint.py", line: 95, value: "anotado"},
+    {file: "entrypoint.py", line: 102, value: "anotado"},
+    {file: "entrypoint.py", line: 183, value: "anotado"},
+    {file: "entrypoint.py", line: 196, value: "anotado"},
+    {file: "entrypoint.py", line: 209, value: "anotado"},
+    {file: "entrypoint.py", line: 219, value: "anotado"},
+    {file: "entrypoint.py", line: 246, value: "anotado"},
+    {file: "maestro/agents/aria.py", line: 18, value: "anotado"}
+   ],
+   exceptions_total: 555,
+   key: "python.type-hints",
+   level: "misto",
+   ratio: 0.5708,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/agents/aria.py"],
+   total: 1293
+  },
+  {
+   conform: 78,
+   counts: {"não": 78, sim: 5},
+   desc: "`from __future__ import annotations`",
+   dominant: "não",
+   exceptions: [
+    {file: "maestro/dependency_resolver.py", line: 1, value: "sim"},
+    {file: "maestro/instances.py", line: 1, value: "sim"},
+    {file: "maestro/tui/app.py", line: 1, value: "sim"},
+    {file: "maestro/tui/backend.py", line: 1, value: "sim"},
+    {file: "maestro/tui/widgets.py", line: 1, value: "sim"}
+   ],
+   exceptions_total: 5,
+   key: "python.future-annotations",
+   level: "lei",
+   ratio: 0.9398,
+   sample: ["backend/main.py", "backend/orchestrator_foundry.py", "data/plugins/installed/defcon.shard-agent/plugin.py", "entrypoint.py", "maestro/__init__.py"],
+   total: 83
+  },
+  {
+   conform: 6,
+   counts: {duplas: 3, simples: 6},
+   desc: "aspas em imports JS/TS",
+   dominant: "simples",
+   exceptions: [
+    {file: "frontend/src/app.tsx", line: 1, value: "duplas"},
+    {file: "frontend/src/app.tsx", line: 2, value: "duplas"},
+    {file: "frontend/src/maestroUI.tsx", line: 1, value: "duplas"}
+   ],
+   exceptions_total: 3,
+   key: "js.quotes",
+   level: "maioria",
+   ratio: 0.6667,
+   sample: ["frontend/src/main.tsx", "frontend/vite.config.ts"],
+   total: 9
+  },
+  {
+   conform: 9,
+   counts: {"com ;": 9},
+   desc: "ponto-e-vírgula em imports JS/TS",
+   dominant: "com ;",
+   exceptions: [],
+   exceptions_total: 0,
+   key: "js.semicolons",
+   level: "lei",
+   ratio: 1.0,
+   sample: ["frontend/src/app.tsx", "frontend/src/maestroUI.tsx", "frontend/src/main.tsx", "frontend/vite.config.ts"],
+   total: 9
+  }
+ ],
+ facts: [
+  {
+   claim: "Nomes de arquivo python: «snake_case» é lei (75/75 = 100%)",
+   confidence: "high",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "entrypoint.py"},
+    {cmd: "scan:L3 contagem naming.files.python", exit: 0, out_sha256: "f6835f83448ac8afba62a9d3251ae886d61c82bdc73c9b752bcc569b216c447c"}
+   ],
+   fingerprint: "ab5363fdd474599cda83101467b43fd29a5dd1853d0ecaac04f34c07ce5652b4",
+   id: "conv.naming.files.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "Nomes de funções em python: «snake_case» é lei (1205/1292 = 93%); exceções: data/plugins/installed/defcon.shard-agent/plugin.py:17 (other), entrypoint.py:83 (other), maestro/agents/aria.py:12 (other) e mais 84",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 17},
+    {file: "entrypoint.py", line: 83},
+    {file: "maestro/agents/aria.py", line: 12},
+    {cmd: "scan:L3 contagem naming.function.python", exit: 0, out_sha256: "60ac63338ce7c45b710402e0e69dcf1ad70ba062dfdfd39218472dc915b4df1c"}
+   ],
+   fingerprint: "f8d9f7184adec5bfee73273e96e03e08ecf36441099910b87f53dbeb5713a281",
+   id: "conv.naming.function.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "Nomes de classes/tipos em python: «PascalCase» é lei (224/239 = 94%); exceções: maestro/magi_vir.py:57 (other), maestro/magi_vir.py:69 (other), maestro/magi_vir.py:97 (other) e mais 12",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "entrypoint.py"},
+    {file: "maestro/magi_vir.py", line: 57},
+    {file: "maestro/magi_vir.py", line: 69},
+    {file: "maestro/magi_vir.py", line: 97},
+    {cmd: "scan:L3 contagem naming.class.python", exit: 0, out_sha256: "0eff1398e549816027ef12db25a18226b7be84e0a60e4e20565c3319ea8351c3"}
+   ],
+   fingerprint: "5c9859d391be751770975360a4afd88a54bcc9e84681f360f6c91342d72d6480",
+   id: "conv.naming.class.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "Indentação em python: «4 espaços» é lei (78/78 = 100%)",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {cmd: "scan:L3 contagem indent.python", exit: 0, out_sha256: "0db61cba5b98b75dca7ada3c71382e5248779b48fee43e2c1148e5cc32513978"}
+   ],
+   fingerprint: "32f0e2e02b84eae747a28807f84d8817933d546629eba53f6c6f7cec26a4afdd",
+   id: "conv.indent.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "Nomes de funções em shell: «snake_case» é lei (4/4 = 100%)",
+   confidence: "medium",
+   evidence: [
+    {file: "setup.sh"},
+    {cmd: "scan:L3 contagem naming.function.shell", exit: 0, out_sha256: "9ce21bbd03656a63896817a4e81d0c742bc3975bdf398d5ced803266f1b9b578"}
+   ],
+   fingerprint: "e0b5bdf544c1eae5585ab08f7db7b0fc7e94b23e57048579b00485dd60536108",
+   id: "conv.naming.function.shell",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*"]
+  },
+  {
+   claim: "Nomes de arquivo typescript: «kebab-case» é maioria (3/4 = 75%); exceções: frontend/src/maestroUI.tsx:1 (camelCase)",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/vite-env.d.ts"},
+    {file: "frontend/vite.config.ts"},
+    {file: "frontend/src/maestroUI.tsx", line: 1},
+    {cmd: "scan:L3 contagem naming.files.typescript", exit: 0, out_sha256: "b599b08b17673cd7ace4b27235e5615060835378558c84b5cc19055525388085"}
+   ],
+   fingerprint: "66a6672dce3099c069c6203903c4733548e18dfe557fc01742513cb957ccae94",
+   id: "conv.naming.files.typescript",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Nomes de funções em typescript: «PascalCase» é maioria (16/23 = 70%); exceções: frontend/src/maestroUI.tsx:99 (camelCase), frontend/src/maestroUI.tsx:109 (lowercase), frontend/src/maestroUI.tsx:115 (camelCase) e mais 4",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/maestroUI.tsx", line: 99},
+    {file: "frontend/src/maestroUI.tsx", line: 109},
+    {file: "frontend/src/maestroUI.tsx", line: 115},
+    {cmd: "scan:L3 contagem naming.function.typescript", exit: 0, out_sha256: "d4b1f9a96a0bdd67315d4dd88aa65d68c69a0152adb3998931378f47a5a24016"}
+   ],
+   fingerprint: "b0870e97a5528f067688518ef4cdd78764d11eb1134d10fd5f53e7ca2efee1ef",
+   id: "conv.naming.function.typescript",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Nomes de interfaces em typescript: «PascalCase» é lei (25/25 = 100%)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/src/maestroUI.tsx"},
+    {cmd: "scan:L3 contagem naming.interface.typescript", exit: 0, out_sha256: "d67b751a4023557d04144971237af5518e9229fd45809ea51df08eba72699048"}
+   ],
+   fingerprint: "f2d04a5fe5f590e3913abea7b3770e69ee1a5708bdb3abbf40891ddfea9912c1",
+   id: "conv.naming.interface.typescript",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Indentação em typescript: «2 espaços» é lei (4/4 = 100%)",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/main.tsx"},
+    {cmd: "scan:L3 contagem indent.typescript", exit: 0, out_sha256: "4d1951e6671ac29ea933d108a7c39ea1b401fc0d081075fc2e8b3bdc174657a5"}
+   ],
+   fingerprint: "823a7c3d66116abce942dc20ad439ee14714cb58c211ce40741bbc3f66247dfa",
+   id: "conv.indent.typescript",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Nome de arquivo de teste python: «prefixo test_» é lei (17/18 = 94%); exceções: tests/__init__.py:1 (sem marcador no nome)",
+   confidence: "high",
+   evidence: [
+    {file: "tests/test_cluster.py"},
+    {file: "tests/test_code_injection.py"},
+    {file: "tests/test_instances.py"},
+    {file: "tests/__init__.py", line: 1},
+    {cmd: "scan:L3 contagem tests.naming.python", exit: 0, out_sha256: "a312fd65b67cfcaf382c65fab410aa1b02e27b7eaa3908601acf19d3153f30af"}
+   ],
+   fingerprint: "23398711a89289708f3122c20bec87196587d4f885fb63c95b9d77baf3e0287e",
+   id: "conv.tests.naming.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["tests/**"]
+  },
+  {
+   claim: "Local dos testes python: «diretório de testes» é lei (18/18 = 100%)",
+   confidence: "high",
+   evidence: [
+    {file: "tests/__init__.py"},
+    {file: "tests/test_cluster.py"},
+    {file: "tests/test_code_injection.py"},
+    {cmd: "scan:L3 contagem tests.location.python", exit: 0, out_sha256: "3e7389596617a50e10362eabd260de16c9eb8c44e7540463b649f7fb40e02e09"}
+   ],
+   fingerprint: "19a496830b12c4efe16685aa7c04aa488c1dc796f72714aebc9bebc94f603451",
+   id: "conv.tests.location.python",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["tests/**"]
+  },
+  {
+   claim: "Fim de linha: «LF» é lei (97/97 = 100%)",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {cmd: "scan:L3 contagem files.eol", exit: 0, out_sha256: "c8187b117e6aeb2af466aac8dae9ab34547cd2cd144a3cf9f3e972bbd8f383d2"}
+   ],
+   fingerprint: "32f0e2e02b84eae747a28807f84d8817933d546629eba53f6c6f7cec26a4afdd",
+   id: "conv.files.eol",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "frontend/**", "maestro/**", "maestros/**", "tests/**"]
+  },
+  {
+   claim: "Newline no fim do arquivo: «sim» é lei (96/97 = 99%); exceções: frontend/src/main.tsx:1 (não)",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "frontend/src/main.tsx", line: 1},
+    {cmd: "scan:L3 contagem files.final-newline", exit: 0, out_sha256: "3f059e137a0de70296b5cdfafe91fd38f6043b6634a8463e954a50ff3de44a1c"}
+   ],
+   fingerprint: "c19c1484ca4e1949abaec017991412e8e86ac612d7fee87df47c1b1488d05794",
+   id: "conv.files.final-newline",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "frontend/**", "maestro/**", "maestros/**", "tests/**"]
+  },
+  {
+   claim: "Funções Python com anotação de retorno: «sem anotação» é misto (738/1293 = 57%); exceções: backend/orchestrator_foundry.py:52 (anotado), backend/orchestrator_foundry.py:106 (anotado), data/plugins/installed/defcon.shard-agent/plugin.py:20 (anotado) e mais 552",
+   confidence: "low",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "backend/orchestrator_foundry.py", line: 52},
+    {file: "backend/orchestrator_foundry.py", line: 106},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py", line: 20},
+    {cmd: "scan:L3 contagem python.type-hints", exit: 0, out_sha256: "f9013fa3d467b1aac37371776ecee8342a1e33551f43b2aa50369712a3a67f6c"}
+   ],
+   fingerprint: "32f0e2e02b84eae747a28807f84d8817933d546629eba53f6c6f7cec26a4afdd",
+   id: "conv.python.type-hints",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "`from __future__ import annotations`: «não» é lei (78/83 = 94%); exceções: maestro/dependency_resolver.py:1 (sim), maestro/instances.py:1 (sim), maestro/tui/app.py:1 (sim) e mais 2",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "maestro/dependency_resolver.py", line: 1},
+    {file: "maestro/instances.py", line: 1},
+    {file: "maestro/tui/app.py", line: 1},
+    {cmd: "scan:L3 contagem python.future-annotations", exit: 0, out_sha256: "771b12c35bfb6264983b2db874f3d2923122fe782f9c1222af69bb07dd60270d"}
+   ],
+   fingerprint: "73635be8540f31769f7db90c9a75a8f3ce0864f8737ce61e3c5d47aea413b896",
+   id: "conv.python.future-annotations",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "Aspas em imports JS/TS: «simples» é maioria (6/9 = 67%); exceções: frontend/src/app.tsx:1 (duplas), frontend/src/app.tsx:2 (duplas), frontend/src/maestroUI.tsx:1 (duplas)",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/main.tsx"},
+    {file: "frontend/vite.config.ts"},
+    {file: "frontend/src/app.tsx", line: 1},
+    {file: "frontend/src/app.tsx", line: 2},
+    {file: "frontend/src/maestroUI.tsx", line: 1},
+    {cmd: "scan:L3 contagem js.quotes", exit: 0, out_sha256: "09546601d2cb0b9f90aa1ab7ab7bfca4fe80eca492c2b7d5d3e5c45e66e082e3"}
+   ],
+   fingerprint: "de970bbbb3102991812d9c5036a346492d9539981db3b54595c52a2b02dbb5f6",
+   id: "conv.js.quotes",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Ponto-e-vírgula em imports JS/TS: «com ;» é lei (9/9 = 100%)",
+   confidence: "medium",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/main.tsx"},
+    {cmd: "scan:L3 contagem js.semicolons", exit: 0, out_sha256: "d4bfb931968dde5337f98247fe0648bdda627d701e1c4fb3936ef0005ecc7fba"}
+   ],
+   fingerprint: "823a7c3d66116abce942dc20ad439ee14714cb58c211ce40741bbc3f66247dfa",
+   id: "conv.js.semicolons",
+   layer: "conventions",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "conventions",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L3",
+ schema_version: 1
+}

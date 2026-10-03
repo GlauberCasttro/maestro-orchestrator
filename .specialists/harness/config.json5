@@ -1,0 +1,28 @@
+// config.json5 do harness (protegido: só reinstalação ou edição humana fora do agente)
+{
+ context_budget_chars: 10000,
+ frozen_paths: [],
+ lead_write_allow: [".specialists/", "docs/state/"],
+ post_edit_checks: [],
+ protected: [
+  ".specialists/state/",
+  ".specialists/harness/",
+  ".specialists/bin/",
+  ".specialists/memory/",
+  ".claude/hooks/",
+  ".claude/settings.json",
+  ".claude/settings.local.json",
+  ".git/",
+ ],
+ protected_branches: ["main", "master"],
+ readonly_agents: ["Explore", "Plan", "claude-code-guide", "statusline-setup"],
+ regression_command: null,
+ require_git_diff_check: true,
+ schema_version: 1,
+ test_runners: [
+  {argv: ["python3", "-m", "pytest", "-q", "{test}"], match: "^(?P<file>[^:]+\\.py)::(?P<name>.+)$"},
+  {argv: ["python3", "-m", "unittest", "{test}"], match: "^(?P<mod>[A-Za-z_][\\w]*(\\.[A-Za-z_][\\w]*)+)$"},
+  {match: "^cmd:(?P<cmd>.+)$", shell: true},
+ ],
+ verify_timeout_s: 900,
+}

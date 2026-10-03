@@ -1,0 +1,89 @@
+// existence.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agents: {
+  architect: {
+   cited: 99,
+   existing: 99,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-consensus": {
+   cited: 98,
+   existing: 98,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-frontend": {
+   cited: 65,
+   existing: 65,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-maestros": {
+   cited: 48,
+   existing: 48,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-platform": {
+   cited: 96,
+   existing: 96,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-self-improve": {
+   cited: 94,
+   existing: 94,
+   missing: [],
+   ratio: 1.0
+  },
+  "dev-storage-network": {
+   cited: 83,
+   existing: 83,
+   missing: [],
+   ratio: 1.0
+  },
+  ops: {
+   cited: 88,
+   existing: 88,
+   missing: [],
+   ratio: 1.0
+  },
+  po: {
+   cited: 35,
+   existing: 35,
+   missing: [],
+   ratio: 1.0
+  },
+  qa: {
+   cited: 58,
+   existing: 58,
+   missing: [],
+   ratio: 1.0
+  },
+  reviewer: {
+   cited: 77,
+   existing: 77,
+   missing: [],
+   ratio: 1.0
+  },
+  security: {
+   cited: 63,
+   existing: 63,
+   missing: [],
+   ratio: 1.0
+  }
+ },
+ cited: 908,
+ core: {
+  cited: 4,
+  existing: 4,
+  missing: [],
+  ratio: 1.0
+ },
+ existing: 908,
+ gate: "G2",
+ pass: true,
+ ratio: 1.0,
+ threshold: 1.0
+}

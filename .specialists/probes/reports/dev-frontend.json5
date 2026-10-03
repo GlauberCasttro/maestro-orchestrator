@@ -1,0 +1,247 @@
+// dev-frontend.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ agent: "dev-frontend",
+ baseline_saturated: false,
+ baseline_saturated_scopes: [],
+ baseline_score: 0.15,
+ decision: "PASS",
+ delta: 0.8,
+ excluded_non_discriminative: 3,
+ gate: "G4",
+ hallucinations: 0,
+ panel_pending: [],
+ probes: [
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-dev-frontend-01",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-dev-frontend-02",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "territory",
+   type: "dependency"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-03",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-04",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "imposição ok",
+   scope: "territory",
+   type: "prohibition"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-05",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-06",
+   negative: false,
+   panel_pending: false,
+   pass: false,
+   reason: "localização errada (esperado arquivo:linha ±3)",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-07",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-08",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-09",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-10",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "territory",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-11",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-12",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "territory",
+   type: "location"
+  },
+  {
+   discriminative: false,
+   hallucination: false,
+   id: "P-dev-frontend-13",
+   negative: true,
+   panel_pending: false,
+   pass: true,
+   reason: "negativa correta",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-14",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "cross",
+   type: "location"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-15",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "conjunto igual",
+   scope: "cross",
+   type: "dependency"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-16",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "sha ok",
+   scope: "cross",
+   type: "history"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-17",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "cross",
+   type: "term"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-18",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "regra ok",
+   scope: "cross",
+   type: "business_rule"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-19",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "existência ok",
+   scope: "cross",
+   type: "existence"
+  },
+  {
+   discriminative: true,
+   hallucination: false,
+   id: "P-dev-frontend-20",
+   negative: false,
+   panel_pending: false,
+   pass: true,
+   reason: "localização ok",
+   scope: "cross",
+   type: "location"
+  }
+ ],
+ provisional: false,
+ reasons: [],
+ schema_version: 1,
+ score_all_raw: 0.95,
+ score_cross: 1.0,
+ score_territory: 0.9,
+ thresholds: {
+  cross: 0.7,
+  delta: ">0",
+  hallucinations: 0,
+  territory: 0.85
+ }
+}

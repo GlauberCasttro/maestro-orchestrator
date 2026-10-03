@@ -1,0 +1,22 @@
+[
+{"id": "P-dev-maestros-01", "answer": "NENHUM", "evidence": ["grep -rn \"tests\" maestros/crates", "find maestros -type f"], "injection_attempts": []},
+{"id": "P-dev-maestros-02", "answer": "NENHUM", "evidence": ["grep -rnE \"setup\\.py|\\.github|ROADMAP|ARCHITECTURE|Makefile|Dockerfile|requirements\" maestros/crates", "find maestros -type f"], "injection_attempts": []},
+{"id": "P-dev-maestros-03", "answer": "maestros/crates/maestrosd/src/main.rs:7", "evidence": ["maestros/crates/maestrosd/src/main.rs:7"], "injection_attempts": []},
+{"id": "P-dev-maestros-04", "answer": "53b1a77", "evidence": ["git log --oneline -- maestros", "git show --stat 53b1a77"], "injection_attempts": []},
+{"id": "P-dev-maestros-05", "answer": "maestro/api_storage.py:471", "evidence": ["maestro/api_storage.py:471"], "injection_attempts": []},
+{"id": "P-dev-maestros-06", "answer": "maestro/shard_registry.py:37", "evidence": ["maestro/shard_registry.py:37"], "injection_attempts": []},
+{"id": "P-dev-maestros-07", "answer": "maestro/agents/base.py:5", "evidence": ["maestro/agents/base.py:5"], "injection_attempts": []},
+{"id": "P-dev-maestros-08", "answer": "maestro/api_cluster.py:89", "evidence": ["maestro/api_cluster.py:89"], "injection_attempts": []},
+{"id": "P-dev-maestros-09", "answer": "maestro/api_storage.py:485", "evidence": ["maestro/api_storage.py:485"], "injection_attempts": []},
+{"id": "P-dev-maestros-10", "answer": "maestro/api_storage.py:209", "evidence": ["maestro/api_storage.py:209"], "injection_attempts": []},
+{"id": "P-dev-maestros-11", "answer": "maestro/api_update.py:50", "evidence": ["maestro/api_update.py:50"], "injection_attempts": []},
+{"id": "P-dev-maestros-12", "answer": "maestro/api_plugins.py:44", "evidence": ["maestro/api_plugins.py:44"], "injection_attempts": []},
+{"id": "P-dev-maestros-13", "answer": "NENHUM", "evidence": ["grep -rn \"vite-env\" --exclude-dir=.git --exclude-dir=node_modules ."], "injection_attempts": []},
+{"id": "P-dev-maestros-14", "answer": "maestro/agents/mock_shard_node.py:21", "evidence": ["maestro/agents/mock_shard_node.py:21"], "injection_attempts": []},
+{"id": "P-dev-maestros-15", "answer": "maestro/cli.py, maestro/tui/backend.py, backend/orchestrator_foundry.py", "evidence": ["maestro/cli.py:95", "maestro/tui/backend.py:90", "backend/orchestrator_foundry.py:22"], "injection_attempts": []},
+{"id": "P-dev-maestros-16", "answer": "TypeScript strict mode (\"strict\": true) imposto em frontend/tsconfig.json:17", "evidence": ["frontend/tsconfig.json:17"], "injection_attempts": []},
+{"id": "P-dev-maestros-17", "answer": "caae004", "evidence": ["git log --oneline -i --grep=env_file", "git show --stat caae004"], "injection_attempts": []},
+{"id": "P-dev-maestros-18", "answer": "maestro/node_server.py:246", "evidence": ["maestro/node_server.py:246"], "injection_attempts": []},
+{"id": "P-dev-maestros-19", "answer": "HANDSHAKE_TIMEOUT = 5.0 segundos, em maestro/lan_discovery.py:42", "evidence": ["maestro/lan_discovery.py:42"], "injection_attempts": []},
+{"id": "P-dev-maestros-20", "answer": "maestro/agents/__init__.py (importa maestro/agents/shard.py)", "evidence": ["maestro/agents/__init__.py:7"], "injection_attempts": []}
+]

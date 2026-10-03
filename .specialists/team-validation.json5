@@ -1,0 +1,59 @@
+// team-validation.json5 — gerado por codebase-specialists (não editar à mão)
+{
+ pass: true,
+ rules: {
+  "1": {
+   errors: [],
+   rule: 1,
+   status: "PASS",
+   warnings: []
+  },
+  "2": {
+   errors: [],
+   rule: 2,
+   status: "PASS",
+   warnings: []
+  },
+  "3": {
+   coverage: 1.0,
+   errors: [],
+   overlaps: 0,
+   rule: 3,
+   status: "PASS",
+   warnings: []
+  },
+  "4": {
+   errors: [],
+   rule: 4,
+   status: "PASS",
+   warnings: []
+  },
+  "5": {
+   errors: [],
+   existence_ratio: 1.0,
+   rule: 5,
+   status: "PASS",
+   warnings: []
+  },
+  "6": {
+   errors: [],
+   rule: 6,
+   status: "PASS",
+   warnings: []
+  },
+  "7": {
+   errors: [],
+   rule: 7,
+   status: "PASS",
+   warnings: []
+  },
+  "8": {
+   errors: [],
+   rule: 8,
+   status: "PASS",
+   warnings: []
+  }
+ },
+ schema_version: 1,
+ stage: "final"
+}

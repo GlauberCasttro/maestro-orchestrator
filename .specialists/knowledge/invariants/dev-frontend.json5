@@ -1,0 +1,15 @@
+// codebase-specialists:generated: invariantes de dev-frontend (lista completa, priorizada); não edite: altere team.json5 e rode `cs.py emit`
+{
+ agent: "dev-frontend",
+ invariants: [
+  {class: "entrevista", rank: 1, text: "Entrevista ui-primary: Qual interface é a principal e mantida: TUI Textual (maestro/tui/) ou web (frontend/ React + backend/main.py)? — resposta do dono (literal): Ambas"},
+  {class: "proibição", rank: 2, text: "Invariante: tipo any tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)"},
+  {class: "proibição", rank: 3, text: "Invariante: eval() tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)"},
+  {class: "proibição", rank: 4, text: "Invariante: non-null assertion (!.) tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)"},
+  {class: "proibição", rank: 5, text: "Invariante: @ts-ignore tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)"},
+  {class: "regra", rank: 6, text: "TypeScript em modo strict (frontend/tsconfig.json)"}
+ ],
+ order: "decisão registrada > entrevista > proibição > regra de negócio > configuração",
+ schema_version: 1,
+ total: 6
+}

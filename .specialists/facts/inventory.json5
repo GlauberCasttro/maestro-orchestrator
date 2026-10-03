@@ -1,0 +1,2278 @@
+// inventory (L0) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ directories: [
+  {
+   also: ["setup.py", "setup.sh"],
+   category: "product",
+   dir: ".",
+   files: 23,
+   reason: "centralidade (PageRank 0.00762)",
+   representative: "entrypoint.py"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: ".github",
+   files: 0,
+   reason: "pasta sem arquivos diretos; melhor descendente por único arquivo da pasta",
+   representative: ".github/ISSUE_TEMPLATE/config.yml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: ".github/ISSUE_TEMPLATE",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: ".github/ISSUE_TEMPLATE/config.yml"
+  },
+  {
+   also: ["backend/main.py", "backend/requirements.txt"],
+   category: "product",
+   dir: "backend",
+   files: 3,
+   reason: "centralidade (PageRank 0.00606)",
+   representative: "backend/orchestrator_foundry.py"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/example_prompts.txt"
+  },
+  {
+   also: ["data/plugins/installed/defcon.shard-agent/manifest.json", "data/plugins/disabled/.gitkeep"],
+   category: "product",
+   dir: "data/plugins",
+   files: 0,
+   reason: "pasta sem arquivos diretos; melhor descendente por centralidade (PageRank 0.00566)",
+   representative: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/plugins/disabled",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/plugins/disabled/.gitkeep"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/plugins/installed",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/plugins/installed/.gitkeep"
+  },
+  {
+   also: ["data/plugins/installed/defcon.shard-agent/manifest.json"],
+   category: "product",
+   dir: "data/plugins/installed/defcon.shard-agent",
+   files: 2,
+   reason: "centralidade (PageRank 0.00566)",
+   representative: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/plugins/snapshots",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/plugins/snapshots/.gitkeep"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/r2",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/r2/.gitkeep"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/sessions",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/sessions/.gitkeep"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/storage_nodes",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/storage_nodes/.gitkeep"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "data/storage_proofs",
+   files: 1,
+   reason: "único arquivo da pasta",
+   representative: "data/storage_proofs/.gitkeep"
+  },
+  {
+   also: ["docs/env.example", "docs/storage-network.md"],
+   category: "product",
+   dir: "docs",
+   files: 19,
+   reason: "referências (11)",
+   representative: "docs/architecture.md"
+  },
+  {
+   also: ["frontend/package.json", "frontend/package-lock.json"],
+   category: "product",
+   dir: "frontend",
+   files: 6,
+   reason: "centralidade (PageRank 0.00566)",
+   representative: "frontend/vite.config.ts"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "frontend/public",
+   files: 1,
+   reason: "referências (1)",
+   representative: "frontend/public/vite.svg"
+  },
+  {
+   also: ["frontend/src/app.tsx", "frontend/src/main.tsx"],
+   category: "product",
+   dir: "frontend/src",
+   files: 5,
+   reason: "centralidade (PageRank 0.01456)",
+   representative: "frontend/src/maestroUI.tsx"
+  },
+  {
+   also: ["maestro/keyring.py", "maestro/session.py"],
+   category: "product",
+   dir: "maestro",
+   files: 40,
+   reason: "centralidade (PageRank 0.06047)",
+   representative: "maestro/storage_proof.py"
+  },
+  {
+   also: ["maestro/agents/mock.py", "maestro/agents/shard.py"],
+   category: "product",
+   dir: "maestro/agents",
+   files: 9,
+   reason: "centralidade (PageRank 0.04787)",
+   representative: "maestro/agents/base.py"
+  },
+  {
+   also: ["maestro/ncg/generator.py", "maestro/ncg/__init__.py"],
+   category: "product",
+   dir: "maestro/ncg",
+   files: 3,
+   reason: "centralidade (PageRank 0.02003)",
+   representative: "maestro/ncg/drift.py"
+  },
+  {
+   also: ["maestro/plugins/base.py", "maestro/plugins/__init__.py"],
+   category: "product",
+   dir: "maestro/plugins",
+   files: 3,
+   reason: "centralidade (PageRank 0.02607)",
+   representative: "maestro/plugins/manager.py"
+  },
+  {
+   also: ["maestro/tui/app.py", "maestro/tui/__main__.py"],
+   category: "product",
+   dir: "maestro/tui",
+   files: 6,
+   reason: "centralidade (PageRank 0.00990)",
+   representative: "maestro/tui/backend.py"
+  },
+  {
+   also: ["maestros/README.md", "maestros/Cargo.toml"],
+   category: "product",
+   dir: "maestros",
+   files: 5,
+   reason: "referências (3)",
+   representative: "maestros/DESIGN.md"
+  },
+  {
+   also: ["maestros/crates/maestros-quorum/src/lib.rs", "maestros/crates/maestros-lance/src/lib.rs"],
+   category: "product",
+   dir: "maestros/crates",
+   files: 0,
+   reason: "pasta sem arquivos diretos; melhor descendente por centralidade (PageRank 0.00566)",
+   representative: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-core",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-core/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-core/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-embed",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-embed/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-embed/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-embed/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-host",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-host/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-host/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-host/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-lance",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-lance/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-lance/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-lance/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-mesh",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-mesh/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-mesh/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-mesh/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-proof",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-proof/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-proof/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-proof/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-proto",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-proto/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-proto/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-proto/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-quorum",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestros-quorum/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestros-quorum/src",
+   files: 1,
+   reason: "referências (8)",
+   representative: "maestros/crates/maestros-quorum/src/lib.rs"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestrosd",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestrosd/Cargo.toml"
+  },
+  {
+   also: [],
+   category: "product",
+   dir: "maestros/crates/maestrosd/src",
+   files: 1,
+   reason: "referências (1)",
+   representative: "maestros/crates/maestrosd/src/main.rs"
+  },
+  {
+   also: ["tests/test_code_injection.py", "tests/test_self_improvement.py"],
+   category: "product",
+   dir: "tests",
+   files: 18,
+   reason: "referências (6)",
+   representative: "tests/__init__.py"
+  }
+ ],
+ examples: {},
+ facts: [
+  {
+   claim: "171 arquivos listados: 170 analisáveis (170 produto, 0 reservados ao harness), 1 ignorados (fixture/vendor/generated)",
+   confidence: "high",
+   evidence: [
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "61b8d17153d41746f10b676b468b929f0aac20e5357cc7ec2c2259d48a53e774",
+   id: "inv.total",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["**"]
+  },
+  {
+   claim: "python: 83 arquivos, 22619 linhas não-vazias",
+   confidence: "high",
+   evidence: [
+    {file: "backend/main.py"},
+    {file: "backend/orchestrator_foundry.py"},
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"},
+    {file: "entrypoint.py"},
+    {file: "maestro/__init__.py"},
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "70689f2231c58edca5916516be3ed43d8a68de14b22ded93457db62222d5881d",
+   id: "inv.lang.python",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["*", "backend/**", "data/**", "maestro/**", "tests/**"]
+  },
+  {
+   claim: "typescript: 5 arquivos, 2559 linhas não-vazias",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/src/app.tsx"},
+    {file: "frontend/src/maestroUI.tsx"},
+    {file: "frontend/src/main.tsx"},
+    {file: "frontend/src/vite-env.d.ts"},
+    {file: "frontend/vite.config.ts"},
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "604dbaf1f3a40f5598e361802899b045d0312da3c978f66dbb4724335885ed83",
+   id: "inv.lang.typescript",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "rust: 9 arquivos, 136 linhas não-vazias",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-core/src/lib.rs"},
+    {file: "maestros/crates/maestros-embed/src/lib.rs"},
+    {file: "maestros/crates/maestros-host/src/lib.rs"},
+    {file: "maestros/crates/maestros-lance/src/lib.rs"},
+    {file: "maestros/crates/maestros-mesh/src/lib.rs"},
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "70d4e2cdd74440e573c8f5b652f84d948629d30ac90166ae16a948a20e7d59ca",
+   id: "inv.lang.rust",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/**"]
+  },
+  {
+   claim: "shell: 1 arquivos, 117 linhas não-vazias",
+   confidence: "high",
+   evidence: [
+    {file: "setup.sh"},
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "e0b5bdf544c1eae5585ab08f7db7b0fc7e94b23e57048579b00485dd60536108",
+   id: "inv.lang.shell",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["*"]
+  },
+  {
+   claim: "Manifesto Dockerfile (docker) em Dockerfile",
+   confidence: "high",
+   evidence: [
+    {file: "Dockerfile"}
+   ],
+   fingerprint: "13036dfc58785c263abafa8043dbffa581a4f1981dfd87d7a0ec5cfed8558e86",
+   id: "inv.manifest.dockerfile",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["Dockerfile"]
+  },
+  {
+   claim: "Manifesto Makefile (make) em Makefile",
+   confidence: "high",
+   evidence: [
+    {file: "Makefile"}
+   ],
+   fingerprint: "b4e34cd4b26da3ddb0087e29cfc1a43df05f64d5f623c548de3e014311fb6114",
+   id: "inv.manifest.makefile",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["Makefile"]
+  },
+  {
+   claim: "Manifesto requirements.txt (python) em backend/requirements.txt",
+   confidence: "high",
+   evidence: [
+    {file: "backend/requirements.txt"}
+   ],
+   fingerprint: "31f6c9ed2d5af396f4925a557e046b0d15d0f91951956cf0e1bf96402da46cae",
+   id: "inv.manifest.backend-requirements.txt",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["backend/requirements.txt"]
+  },
+  {
+   claim: "Manifesto package.json (node) em frontend/package.json",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package.json"}
+   ],
+   fingerprint: "3af026a256fc86d92115b684e72a3d4855f7369755ad6427fc0fc02ddf7ee7a8",
+   id: "inv.manifest.frontend-package.json",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/package.json"]
+  },
+  {
+   claim: "Manifesto tsconfig.json (node) em frontend/tsconfig.json",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/tsconfig.json"}
+   ],
+   fingerprint: "57abf631d9e11f93dc0251684118ceb136c6f46dfc432983477bb4cf00d41bab",
+   id: "inv.manifest.frontend-tsconfig.json",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/tsconfig.json"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/Cargo.toml"}
+   ],
+   fingerprint: "056245c55435090fd202b8c2ca6986a0eae1260498df3de353f629fefa19c32f",
+   id: "inv.manifest.maestros-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-core/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-core/Cargo.toml"}
+   ],
+   fingerprint: "5abf7579635c37bdab163ed10a341898320beb5209e5551f5c5395e3149f227d",
+   id: "inv.manifest.maestros-crates-maestros-core-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-core/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-embed/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-embed/Cargo.toml"}
+   ],
+   fingerprint: "70da83412987878c987e904d7a89b19913e58b2018b270f5cb2a64aaae2be38e",
+   id: "inv.manifest.maestros-crates-maestros-embed-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-embed/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-host/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-host/Cargo.toml"}
+   ],
+   fingerprint: "8fba0d4bcbff4c909b1995d238ff9961b4918002f06871aaf3e698ae3036fb79",
+   id: "inv.manifest.maestros-crates-maestros-host-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-host/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-lance/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-lance/Cargo.toml"}
+   ],
+   fingerprint: "f2514e81a49523863b366dd5195ea3d5f524abbbba424ac08e932d256c5b94a7",
+   id: "inv.manifest.maestros-crates-maestros-lance-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-lance/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-mesh/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-mesh/Cargo.toml"}
+   ],
+   fingerprint: "9e56893869dbb7919e123c175761844c0a30563c4d7997e5be156568c5326903",
+   id: "inv.manifest.maestros-crates-maestros-mesh-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-mesh/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-proof/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proof/Cargo.toml"}
+   ],
+   fingerprint: "ade0d5f548c0f303707b9dafae35ce29e44144c69d0a9c992f5aaa711340cfa0",
+   id: "inv.manifest.maestros-crates-maestros-proof-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proof/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-proto/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proto/Cargo.toml"}
+   ],
+   fingerprint: "461105c3fe06acc596dcc02d309b106ba7bee9a13dc299deaf3fd8fe43f33502",
+   id: "inv.manifest.maestros-crates-maestros-proto-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proto/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestros-quorum/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-quorum/Cargo.toml"}
+   ],
+   fingerprint: "4d5e7ad98e868717d77c91a1fa686a4f55a2a1133dbe33af0773995bd1990efc",
+   id: "inv.manifest.maestros-crates-maestros-quorum-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-quorum/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto Cargo.toml (rust) em maestros/crates/maestrosd/Cargo.toml",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestrosd/Cargo.toml"}
+   ],
+   fingerprint: "0e6ad00b68a28a1b5a96a90db34e5e809c1174295995f9f3bc9da1e6186457de",
+   id: "inv.manifest.maestros-crates-maestrosd-cargo.toml",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestrosd/Cargo.toml"]
+  },
+  {
+   claim: "Manifesto requirements.txt (python) em requirements.txt",
+   confidence: "high",
+   evidence: [
+    {file: "requirements.txt"}
+   ],
+   fingerprint: "0c8fd79196ec40f7cb2bf734bb5c08d755b2f794e71582e32f8d6cd5d2e1bd2a",
+   id: "inv.manifest.requirements.txt",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["requirements.txt"]
+  },
+  {
+   claim: "Manifesto setup.py (python) em setup.py",
+   confidence: "high",
+   evidence: [
+    {file: "setup.py"}
+   ],
+   fingerprint: "a7ed8f872390a22ab7003534812c1f6fc152eee4edb314a0e1498c2c230b28a2",
+   id: "inv.manifest.setup.py",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["setup.py"]
+  },
+  {
+   claim: "Lockfile package-lock.json (node) em frontend/package-lock.json",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/package-lock.json"}
+   ],
+   fingerprint: "07e2a396ad989164cf29003e8d76ddfb36f694892a0699005c561c69f22b9dde",
+   id: "inv.lockfile.frontend-package-lock.json",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/package-lock.json"]
+  },
+  {
+   claim: "1 arquivos generated ignorados em toda análise: maestros/Cargo.lock (1)",
+   confidence: "high",
+   evidence: [
+    {cmd: "git ls-files -z --cached --others --exclude-standard (sem .specialists/)", exit: 0, out_sha256: "80a9cae65791087fb14dc1b1cdef034466673506593ef9d00611ad5aae850c9e"}
+   ],
+   fingerprint: "61b8d17153d41746f10b676b468b929f0aac20e5357cc7ec2c2259d48a53e774",
+   id: "inv.ignored.generated",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/Cargo.lock"]
+  },
+  {
+   claim: "Pasta . (23 arquivos): representativo entrypoint.py — centralidade (PageRank 0.00762)",
+   confidence: "high",
+   evidence: [
+    {file: "entrypoint.py"}
+   ],
+   fingerprint: "16313590f74963c5eeab0ceecdc581b9064206680f13b17e5df0b4eecd639c20",
+   id: "inv.dir.x",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["*"]
+  },
+  {
+   claim: "Pasta .github (0 arquivos): representativo .github/ISSUE_TEMPLATE/config.yml — pasta sem arquivos diretos; melhor descendente por único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: ".github/ISSUE_TEMPLATE/config.yml"}
+   ],
+   fingerprint: "76458ab037700426dc17645bb6db8822b770fcdd55acdeffa7c842d13f56bdf9",
+   id: "inv.dir.github",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: [".github/*"]
+  },
+  {
+   claim: "Pasta .github/ISSUE_TEMPLATE (1 arquivos): representativo .github/ISSUE_TEMPLATE/config.yml — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: ".github/ISSUE_TEMPLATE/config.yml"}
+   ],
+   fingerprint: "76458ab037700426dc17645bb6db8822b770fcdd55acdeffa7c842d13f56bdf9",
+   id: "inv.dir.github-issue_template",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: [".github/ISSUE_TEMPLATE/*"]
+  },
+  {
+   claim: "Pasta backend (3 arquivos): representativo backend/orchestrator_foundry.py — centralidade (PageRank 0.00606)",
+   confidence: "high",
+   evidence: [
+    {file: "backend/orchestrator_foundry.py"}
+   ],
+   fingerprint: "4b0039da19c27df809f3ea4a0cbcb3f2c7cbce135a7690192dd19f5cfaa45386",
+   id: "inv.dir.backend",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["backend/*"]
+  },
+  {
+   claim: "Pasta data (1 arquivos): representativo data/example_prompts.txt — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/example_prompts.txt"}
+   ],
+   fingerprint: "ec2f1b82b48e85c3c8dd2266d6f5c83c2815b3f0421a021435c2a5209e304f35",
+   id: "inv.dir.data",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/*"]
+  },
+  {
+   claim: "Pasta data/plugins (0 arquivos): representativo data/plugins/installed/defcon.shard-agent/plugin.py — pasta sem arquivos diretos; melhor descendente por centralidade (PageRank 0.00566)",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"}
+   ],
+   fingerprint: "429193aec8e72209ae47e0338629114b46071390996a59273e45cb83bcbf12f0",
+   id: "inv.dir.data-plugins",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/plugins/*"]
+  },
+  {
+   claim: "Pasta data/plugins/disabled (1 arquivos): representativo data/plugins/disabled/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/disabled/.gitkeep"}
+   ],
+   fingerprint: "555cab8fc70d2ae17056746df997e443e8b4d099d0609df5053d4a68b46923b3",
+   id: "inv.dir.data-plugins-disabled",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/plugins/disabled/*"]
+  },
+  {
+   claim: "Pasta data/plugins/installed (1 arquivos): representativo data/plugins/installed/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/installed/.gitkeep"}
+   ],
+   fingerprint: "415aa7e4a504e6d3c09afd1b7e94ce84e1e28fa02937a6923d1a71c222fa0261",
+   id: "inv.dir.data-plugins-installed",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/plugins/installed/*"]
+  },
+  {
+   claim: "Pasta data/plugins/installed/defcon.shard-agent (2 arquivos): representativo data/plugins/installed/defcon.shard-agent/plugin.py — centralidade (PageRank 0.00566)",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/installed/defcon.shard-agent/plugin.py"}
+   ],
+   fingerprint: "429193aec8e72209ae47e0338629114b46071390996a59273e45cb83bcbf12f0",
+   id: "inv.dir.data-plugins-installed-defcon.shard-agent",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/plugins/installed/defcon.shard-agent/*"]
+  },
+  {
+   claim: "Pasta data/plugins/snapshots (1 arquivos): representativo data/plugins/snapshots/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/plugins/snapshots/.gitkeep"}
+   ],
+   fingerprint: "35e3b377df1cc55390126d629c157473244e698448a261fcf382f84c91e915fa",
+   id: "inv.dir.data-plugins-snapshots",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/plugins/snapshots/*"]
+  },
+  {
+   claim: "Pasta data/r2 (1 arquivos): representativo data/r2/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/r2/.gitkeep"}
+   ],
+   fingerprint: "e94766c65ce56127dfe912485f29c5021dbe520929b3b1bf45ed60c6aa1c4a72",
+   id: "inv.dir.data-r2",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/r2/*"]
+  },
+  {
+   claim: "Pasta data/sessions (1 arquivos): representativo data/sessions/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/sessions/.gitkeep"}
+   ],
+   fingerprint: "b645eb4b708cc1e6db2a67c203fb6f77b1283fe9c6438c719c8987d533a521a5",
+   id: "inv.dir.data-sessions",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/sessions/*"]
+  },
+  {
+   claim: "Pasta data/storage_nodes (1 arquivos): representativo data/storage_nodes/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/storage_nodes/.gitkeep"}
+   ],
+   fingerprint: "02dc2ca8d077e819190a8be640c7989c8e68e270245ddc446bb041d605ea7397",
+   id: "inv.dir.data-storage_nodes",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/storage_nodes/*"]
+  },
+  {
+   claim: "Pasta data/storage_proofs (1 arquivos): representativo data/storage_proofs/.gitkeep — único arquivo da pasta",
+   confidence: "high",
+   evidence: [
+    {file: "data/storage_proofs/.gitkeep"}
+   ],
+   fingerprint: "a75fa0164e1d3eeac50604016f9a38b29dfc6e069a74d5758b1ffd4761af20cb",
+   id: "inv.dir.data-storage_proofs",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["data/storage_proofs/*"]
+  },
+  {
+   claim: "Pasta docs (19 arquivos): representativo docs/architecture.md — referências (11)",
+   confidence: "high",
+   evidence: [
+    {file: "docs/architecture.md"}
+   ],
+   fingerprint: "bd52e4a16d181a0eb6df979790c12783e829559ade75c8255fb44095b40d299b",
+   id: "inv.dir.docs",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["docs/*"]
+  },
+  {
+   claim: "Pasta frontend (6 arquivos): representativo frontend/vite.config.ts — centralidade (PageRank 0.00566)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/vite.config.ts"}
+   ],
+   fingerprint: "155d726afe10151211bdf071ce5a67d0f4974b32c01184ad9e3a8870c990742b",
+   id: "inv.dir.frontend",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/*"]
+  },
+  {
+   claim: "Pasta frontend/public (1 arquivos): representativo frontend/public/vite.svg — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/public/vite.svg"}
+   ],
+   fingerprint: "1f56fccc167a2e14286eab5ded36cb42cc325f0c0f2344f162eb493e80e96312",
+   id: "inv.dir.frontend-public",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/public/*"]
+  },
+  {
+   claim: "Pasta frontend/src (5 arquivos): representativo frontend/src/maestroUI.tsx — centralidade (PageRank 0.01456)",
+   confidence: "high",
+   evidence: [
+    {file: "frontend/src/maestroUI.tsx"}
+   ],
+   fingerprint: "f2d04a5fe5f590e3913abea7b3770e69ee1a5708bdb3abbf40891ddfea9912c1",
+   id: "inv.dir.frontend-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["frontend/src/*"]
+  },
+  {
+   claim: "Pasta maestro (40 arquivos): representativo maestro/storage_proof.py — centralidade (PageRank 0.06047)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/storage_proof.py"}
+   ],
+   fingerprint: "c2baa6bd831ae1539f264dfe97baa434d23728a23433d7fe6c3dea372e9df478",
+   id: "inv.dir.maestro",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestro/*"]
+  },
+  {
+   claim: "Pasta maestro/agents (9 arquivos): representativo maestro/agents/base.py — centralidade (PageRank 0.04787)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/agents/base.py"}
+   ],
+   fingerprint: "a4d2efff7e251d3a121014ee5febd3cfe66be1c2cf42e9741142aa285fbbdb58",
+   id: "inv.dir.maestro-agents",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestro/agents/*"]
+  },
+  {
+   claim: "Pasta maestro/ncg (3 arquivos): representativo maestro/ncg/drift.py — centralidade (PageRank 0.02003)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/ncg/drift.py"}
+   ],
+   fingerprint: "e75daf6576fe5f8477508e51ee98409a8a0b971c576ada70168fde37ce29ef6d",
+   id: "inv.dir.maestro-ncg",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestro/ncg/*"]
+  },
+  {
+   claim: "Pasta maestro/plugins (3 arquivos): representativo maestro/plugins/manager.py — centralidade (PageRank 0.02607)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/plugins/manager.py"}
+   ],
+   fingerprint: "b6e2a083b847c4d960d05b472c571a5ccab44123d4aa415f28c1b81ac2fda51f",
+   id: "inv.dir.maestro-plugins",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestro/plugins/*"]
+  },
+  {
+   claim: "Pasta maestro/tui (6 arquivos): representativo maestro/tui/backend.py — centralidade (PageRank 0.00990)",
+   confidence: "high",
+   evidence: [
+    {file: "maestro/tui/backend.py"}
+   ],
+   fingerprint: "85ecb555d4649be55cb2c257a26dee2843e33ed932e85b53b37f1ff2493e801a",
+   id: "inv.dir.maestro-tui",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestro/tui/*"]
+  },
+  {
+   claim: "Pasta maestros (5 arquivos): representativo maestros/DESIGN.md — referências (3)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/DESIGN.md"}
+   ],
+   fingerprint: "bf1a124ee433d7b198ca60c665a8933a8d4c7196e34651cb2113c52a1fc70d77",
+   id: "inv.dir.maestros",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/*"]
+  },
+  {
+   claim: "Pasta maestros/crates (0 arquivos): representativo maestros/crates/maestros-core/src/lib.rs — pasta sem arquivos diretos; melhor descendente por centralidade (PageRank 0.00566)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-core/src/lib.rs"}
+   ],
+   fingerprint: "1f0c409fba3fce344d27e085694dab85131c555fca8f61f6dc1a653e6d911aa4",
+   id: "inv.dir.maestros-crates",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-core (1 arquivos): representativo maestros/crates/maestros-core/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-core/Cargo.toml"}
+   ],
+   fingerprint: "5abf7579635c37bdab163ed10a341898320beb5209e5551f5c5395e3149f227d",
+   id: "inv.dir.maestros-crates-maestros-core",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-core/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-core/src (1 arquivos): representativo maestros/crates/maestros-core/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-core/src/lib.rs"}
+   ],
+   fingerprint: "1f0c409fba3fce344d27e085694dab85131c555fca8f61f6dc1a653e6d911aa4",
+   id: "inv.dir.maestros-crates-maestros-core-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-core/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-embed (1 arquivos): representativo maestros/crates/maestros-embed/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-embed/Cargo.toml"}
+   ],
+   fingerprint: "70da83412987878c987e904d7a89b19913e58b2018b270f5cb2a64aaae2be38e",
+   id: "inv.dir.maestros-crates-maestros-embed",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-embed/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-embed/src (1 arquivos): representativo maestros/crates/maestros-embed/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-embed/src/lib.rs"}
+   ],
+   fingerprint: "869db43e0fe0cdcf40d46f2811c2486e6d9484a85afd66db95ce7a29703af118",
+   id: "inv.dir.maestros-crates-maestros-embed-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-embed/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-host (1 arquivos): representativo maestros/crates/maestros-host/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-host/Cargo.toml"}
+   ],
+   fingerprint: "8fba0d4bcbff4c909b1995d238ff9961b4918002f06871aaf3e698ae3036fb79",
+   id: "inv.dir.maestros-crates-maestros-host",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-host/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-host/src (1 arquivos): representativo maestros/crates/maestros-host/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-host/src/lib.rs"}
+   ],
+   fingerprint: "1609695f0a60ac7f7be94dd69b6d1caf3f406276638ca6ce657406e0e41059ce",
+   id: "inv.dir.maestros-crates-maestros-host-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-host/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-lance (1 arquivos): representativo maestros/crates/maestros-lance/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-lance/Cargo.toml"}
+   ],
+   fingerprint: "f2514e81a49523863b366dd5195ea3d5f524abbbba424ac08e932d256c5b94a7",
+   id: "inv.dir.maestros-crates-maestros-lance",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-lance/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-lance/src (1 arquivos): representativo maestros/crates/maestros-lance/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-lance/src/lib.rs"}
+   ],
+   fingerprint: "d9babcdf4f7b87ffc7d764d87f1650cc5ae52ca4ab4a99eb6c23e7f35e870b9c",
+   id: "inv.dir.maestros-crates-maestros-lance-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-lance/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-mesh (1 arquivos): representativo maestros/crates/maestros-mesh/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-mesh/Cargo.toml"}
+   ],
+   fingerprint: "9e56893869dbb7919e123c175761844c0a30563c4d7997e5be156568c5326903",
+   id: "inv.dir.maestros-crates-maestros-mesh",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-mesh/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-mesh/src (1 arquivos): representativo maestros/crates/maestros-mesh/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-mesh/src/lib.rs"}
+   ],
+   fingerprint: "ebacff4fd1846958b1bbbb2334e9166a82d453619522ec795134f4393aef33ef",
+   id: "inv.dir.maestros-crates-maestros-mesh-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-mesh/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-proof (1 arquivos): representativo maestros/crates/maestros-proof/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proof/Cargo.toml"}
+   ],
+   fingerprint: "ade0d5f548c0f303707b9dafae35ce29e44144c69d0a9c992f5aaa711340cfa0",
+   id: "inv.dir.maestros-crates-maestros-proof",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proof/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-proof/src (1 arquivos): representativo maestros/crates/maestros-proof/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proof/src/lib.rs"}
+   ],
+   fingerprint: "6dd286b6b1ea4b5b7de7200b0c617818cf61dffafba2719cd3d47fd9f16b7e97",
+   id: "inv.dir.maestros-crates-maestros-proof-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proof/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-proto (1 arquivos): representativo maestros/crates/maestros-proto/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proto/Cargo.toml"}
+   ],
+   fingerprint: "461105c3fe06acc596dcc02d309b106ba7bee9a13dc299deaf3fd8fe43f33502",
+   id: "inv.dir.maestros-crates-maestros-proto",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proto/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-proto/src (1 arquivos): representativo maestros/crates/maestros-proto/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-proto/src/lib.rs"}
+   ],
+   fingerprint: "1c45a4feaf0a939315b75a3f4efffb0cf1f9f63bee757857633e5765902aaf92",
+   id: "inv.dir.maestros-crates-maestros-proto-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-proto/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-quorum (1 arquivos): representativo maestros/crates/maestros-quorum/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-quorum/Cargo.toml"}
+   ],
+   fingerprint: "4d5e7ad98e868717d77c91a1fa686a4f55a2a1133dbe33af0773995bd1990efc",
+   id: "inv.dir.maestros-crates-maestros-quorum",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-quorum/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestros-quorum/src (1 arquivos): representativo maestros/crates/maestros-quorum/src/lib.rs — referências (8)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestros-quorum/src/lib.rs"}
+   ],
+   fingerprint: "e26dcb6c7fbefac5344def5de0a6da5cb221374bc9f76804652e5149ce5461c2",
+   id: "inv.dir.maestros-crates-maestros-quorum-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestros-quorum/src/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestrosd (1 arquivos): representativo maestros/crates/maestrosd/Cargo.toml — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestrosd/Cargo.toml"}
+   ],
+   fingerprint: "0e6ad00b68a28a1b5a96a90db34e5e809c1174295995f9f3bc9da1e6186457de",
+   id: "inv.dir.maestros-crates-maestrosd",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestrosd/*"]
+  },
+  {
+   claim: "Pasta maestros/crates/maestrosd/src (1 arquivos): representativo maestros/crates/maestrosd/src/main.rs — referências (1)",
+   confidence: "high",
+   evidence: [
+    {file: "maestros/crates/maestrosd/src/main.rs"}
+   ],
+   fingerprint: "cffd332b924ea8f64da091cc6f0f8ea8b78f16383a947e82c07c109720bdbb4d",
+   id: "inv.dir.maestros-crates-maestrosd-src",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["maestros/crates/maestrosd/src/*"]
+  },
+  {
+   claim: "Pasta tests (18 arquivos): representativo tests/__init__.py — referências (6)",
+   confidence: "high",
+   evidence: [
+    {file: "tests/__init__.py"}
+   ],
+   fingerprint: "0c52ff9022a4bbf0990579beb4e0784868bd6d8583df3dbabef2fd27daeb07a6",
+   id: "inv.dir.tests",
+   layer: "inventory",
+   origin: "mechanical",
+   scope: ["tests/*"]
+  }
+ ],
+ files: [
+  {
+   category: "product",
+   lang: "other",
+   loc: 30,
+   path: ".dockerignore"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 29,
+   path: ".env.example"
+  },
+  {
+   category: "product",
+   lang: "yaml",
+   loc: 5,
+   path: ".github/ISSUE_TEMPLATE/config.yml"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 38,
+   path: ".gitignore"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 88,
+   path: "ARCHITECTURE.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 138,
+   path: "CLUSTERING.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 110,
+   path: "CONTRIBUTING.md"
+  },
+  {
+   category: "product",
+   lang: "docker",
+   loc: 60,
+   path: "Dockerfile"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 37,
+   path: "LICENSE.md"
+  },
+  {
+   category: "product",
+   lang: "make",
+   loc: 66,
+   path: "Makefile"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 310,
+   path: "ORCHESTRA.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 24,
+   path: "PROJECT_EXPLAINED.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 306,
+   path: "RELEASE.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 133,
+   path: "ROADMAP.md"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 159,
+   path: "backend/main.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 121,
+   path: "backend/orchestrator_foundry.py"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 14,
+   path: "backend/requirements.txt"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 380,
+   path: "changelog.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 53,
+   path: "commercial_license.md"
+  },
+  {
+   category: "product",
+   lang: "html",
+   loc: 1400,
+   path: "dashboard.html"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 10,
+   path: "data/example_prompts.txt"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/plugins/disabled/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/plugins/installed/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "json",
+   loc: 22,
+   path: "data/plugins/installed/defcon.shard-agent/manifest.json"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 75,
+   path: "data/plugins/installed/defcon.shard-agent/plugin.py"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/plugins/snapshots/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/r2/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/sessions/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/storage_nodes/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 0,
+   path: "data/storage_proofs/.gitkeep"
+  },
+  {
+   category: "product",
+   lang: "yaml",
+   loc: 142,
+   path: "docker-compose.yml"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 85,
+   path: "docs/agents.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 377,
+   path: "docs/architecture.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 188,
+   path: "docs/deliberation.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 172,
+   path: "docs/deployment.md"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 9,
+   path: "docs/env.example"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 98,
+   path: "docs/index.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 56,
+   path: "docs/logging.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 94,
+   path: "docs/maestro-whitepaper.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 95,
+   path: "docs/magi.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 302,
+   path: "docs/mod-manager.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 72,
+   path: "docs/ncg.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 62,
+   path: "docs/quorum_logic.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 125,
+   path: "docs/r2-engine.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 89,
+   path: "docs/roadmap.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 250,
+   path: "docs/self-improvement-pipeline.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 342,
+   path: "docs/storage-network.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 103,
+   path: "docs/troubleshooting.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 186,
+   path: "docs/ui-guide.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 45,
+   path: "docs/vision.md"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 265,
+   path: "entrypoint.py"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 22,
+   path: "frontend/.gitignore"
+  },
+  {
+   category: "product",
+   lang: "html",
+   loc: 13,
+   path: "frontend/index.html"
+  },
+  {
+   category: "product",
+   lang: "json",
+   loc: 1728,
+   path: "frontend/package-lock.json"
+  },
+  {
+   category: "product",
+   lang: "json",
+   loc: 22,
+   path: "frontend/package.json"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 1,
+   path: "frontend/public/vite.svg"
+  },
+  {
+   category: "product",
+   lang: "typescript",
+   loc: 6,
+   path: "frontend/src/app.tsx"
+  },
+  {
+   category: "product",
+   lang: "typescript",
+   loc: 2521,
+   path: "frontend/src/maestroUI.tsx"
+  },
+  {
+   category: "product",
+   lang: "typescript",
+   loc: 12,
+   path: "frontend/src/main.tsx"
+  },
+  {
+   category: "product",
+   lang: "css",
+   loc: 1175,
+   path: "frontend/src/style.css"
+  },
+  {
+   category: "product",
+   lang: "typescript",
+   loc: 1,
+   path: "frontend/src/vite-env.d.ts"
+  },
+  {
+   category: "product",
+   lang: "json",
+   loc: 23,
+   path: "frontend/tsconfig.json"
+  },
+  {
+   category: "product",
+   lang: "typescript",
+   loc: 19,
+   path: "frontend/vite.config.ts"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 5,
+   path: "maestro/__init__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 7,
+   path: "maestro/agents/__init__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 53,
+   path: "maestro/agents/aria.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 23,
+   path: "maestro/agents/base.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 14,
+   path: "maestro/agents/mock.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 59,
+   path: "maestro/agents/mock_shard_node.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 70,
+   path: "maestro/agents/prism.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 164,
+   path: "maestro/agents/shard.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 54,
+   path: "maestro/agents/sol.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 52,
+   path: "maestro/agents/tempagent.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 177,
+   path: "maestro/aggregator.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 191,
+   path: "maestro/api_cluster.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 76,
+   path: "maestro/api_instances.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 93,
+   path: "maestro/api_keys.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 39,
+   path: "maestro/api_magi.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 112,
+   path: "maestro/api_plugins.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 219,
+   path: "maestro/api_self_improve.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 42,
+   path: "maestro/api_sessions.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 409,
+   path: "maestro/api_storage.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 170,
+   path: "maestro/api_update.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 329,
+   path: "maestro/applicator.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 683,
+   path: "maestro/cli.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 119,
+   path: "maestro/cli_keys.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 85,
+   path: "maestro/cluster.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 211,
+   path: "maestro/deliberation.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 338,
+   path: "maestro/dependency_resolver.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 197,
+   path: "maestro/dissent.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 144,
+   path: "maestro/injection_guard.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 672,
+   path: "maestro/instances.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 454,
+   path: "maestro/introspect.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 255,
+   path: "maestro/keyring.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 489,
+   path: "maestro/lan_discovery.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 407,
+   path: "maestro/magi.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 492,
+   path: "maestro/magi_vir.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 4,
+   path: "maestro/ncg/__init__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 189,
+   path: "maestro/ncg/drift.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 177,
+   path: "maestro/ncg/generator.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 231,
+   path: "maestro/node_cli.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 440,
+   path: "maestro/node_server.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 400,
+   path: "maestro/optimization.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 626,
+   path: "maestro/orchestrator.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 9,
+   path: "maestro/plugins/__init__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 97,
+   path: "maestro/plugins/base.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 657,
+   path: "maestro/plugins/manager.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 419,
+   path: "maestro/r2.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 178,
+   path: "maestro/rollback.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 227,
+   path: "maestro/selector.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 354,
+   path: "maestro/self_improve.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 123,
+   path: "maestro/session.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 418,
+   path: "maestro/shard_manager.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 322,
+   path: "maestro/shard_registry.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 218,
+   path: "maestro/shard_utils.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 189,
+   path: "maestro/state_bus.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 306,
+   path: "maestro/storage_proof.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 1,
+   path: "maestro/tui/__init__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 40,
+   path: "maestro/tui/__main__.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 2289,
+   path: "maestro/tui/app.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 241,
+   path: "maestro/tui/backend.py"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 98,
+   path: "maestro/tui/maestro_tui.tcss"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 598,
+   path: "maestro/tui/widgets.py"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 618,
+   path: "maestro/updater.py"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 7,
+   path: "maestros/.gitignore"
+  },
+  {category: "generated", lang: "other", path: "maestros/Cargo.lock"},
+  {
+   category: "product",
+   lang: "toml",
+   loc: 43,
+   path: "maestros/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 170,
+   path: "maestros/DESIGN.md"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 43,
+   path: "maestros/README.md"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 15,
+   path: "maestros/crates/maestros-core/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 19,
+   path: "maestros/crates/maestros-core/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 13,
+   path: "maestros/crates/maestros-embed/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 11,
+   path: "maestros/crates/maestros-embed/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 19,
+   path: "maestros/crates/maestros-host/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 16,
+   path: "maestros/crates/maestros-host/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 13,
+   path: "maestros/crates/maestros-lance/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 17,
+   path: "maestros/crates/maestros-lance/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 14,
+   path: "maestros/crates/maestros-mesh/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 13,
+   path: "maestros/crates/maestros-mesh/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 16,
+   path: "maestros/crates/maestros-proof/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 17,
+   path: "maestros/crates/maestros-proof/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 16,
+   path: "maestros/crates/maestros-proto/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 16,
+   path: "maestros/crates/maestros-proto/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 14,
+   path: "maestros/crates/maestros-quorum/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 19,
+   path: "maestros/crates/maestros-quorum/src/lib.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 14,
+   path: "maestros/crates/maestrosd/Cargo.toml"
+  },
+  {
+   category: "product",
+   lang: "rust",
+   loc: 8,
+   path: "maestros/crates/maestrosd/src/main.rs"
+  },
+  {
+   category: "product",
+   lang: "toml",
+   loc: 4,
+   path: "maestros/rust-toolchain.toml"
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 311,
+   path: "readme.md"
+  },
+  {
+   category: "product",
+   lang: "other",
+   loc: 4,
+   path: "requirements.txt"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 669,
+   path: "setup.py"
+  },
+  {
+   category: "product",
+   lang: "shell",
+   loc: 117,
+   path: "setup.sh"
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 0,
+   path: "tests/__init__.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 118,
+   path: "tests/test_cluster.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 548,
+   path: "tests/test_code_injection.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 350,
+   path: "tests/test_instances.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 176,
+   path: "tests/test_keyring.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 329,
+   path: "tests/test_lan_discovery.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 306,
+   path: "tests/test_mod_manager.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 806,
+   path: "tests/test_orchestration.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 201,
+   path: "tests/test_orchestrator_snapshot.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 114,
+   path: "tests/test_plugin_hooks.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 888,
+   path: "tests/test_self_improvement.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 85,
+   path: "tests/test_shard_agent.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 206,
+   path: "tests/test_shard_manager.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 169,
+   path: "tests/test_shard_registry.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 261,
+   path: "tests/test_shard_utils.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 232,
+   path: "tests/test_startup.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 167,
+   path: "tests/test_storage_proof.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "python",
+   loc: 99,
+   path: "tests/test_weight_snapshots.py",
+   test: true
+  },
+  {
+   category: "product",
+   lang: "markdown",
+   loc: 53,
+   path: "use_policy.md"
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ ignored: {generated: {"maestros/Cargo.lock": 1}},
+ languages: {
+  css: {code: false, files: 1, loc: 1175},
+  docker: {code: false, files: 1, loc: 60},
+  html: {code: false, files: 2, loc: 1413},
+  json: {code: false, files: 4, loc: 1795},
+  make: {code: false, files: 1, loc: 66},
+  markdown: {code: false, files: 32, loc: 4897},
+  other: {code: false, files: 18, loc: 262},
+  python: {code: true, files: 83, loc: 22619},
+  rust: {code: true, files: 9, loc: 136},
+  shell: {code: true, files: 1, loc: 117},
+  toml: {code: false, files: 11, loc: 181},
+  typescript: {code: true, files: 5, loc: 2559},
+  yaml: {code: false, files: 2, loc: 147}
+ },
+ layer: "inventory",
+ lockfiles: [
+  {kind: "node", path: "frontend/package-lock.json"}
+ ],
+ manifests: [
+  {kind: "docker", path: "Dockerfile"},
+  {kind: "make", path: "Makefile"},
+  {kind: "python", path: "backend/requirements.txt"},
+  {kind: "node", path: "frontend/package.json"},
+  {kind: "node", path: "frontend/tsconfig.json"},
+  {kind: "rust", path: "maestros/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-core/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-embed/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-host/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-lance/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-mesh/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-proof/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-proto/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestros-quorum/Cargo.toml"},
+  {kind: "rust", path: "maestros/crates/maestrosd/Cargo.toml"},
+  {kind: "python", path: "requirements.txt"},
+  {kind: "python", path: "setup.py"}
+ ],
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ reserved_prefixes: [".specialists/", ".claude/", ".cursor/", ".codex/", ".github/agents/", ".github/instructions/", "scripts/harness/"],
+ scan_key: "L0",
+ schema_version: 1,
+ symlinks_outside: []
+}

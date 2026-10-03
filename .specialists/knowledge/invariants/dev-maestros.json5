@@ -1,0 +1,12 @@
+// codebase-specialists:generated: invariantes de dev-maestros (lista completa, priorizada); não edite: altere team.json5 e rode `cs.py emit`
+{
+ agent: "dev-maestros",
+ invariants: [
+  {class: "entrevista", rank: 1, text: "Entrevista rust-maestros: Qual o papel do workspace Rust maestros/ (v0.0.1, 136 LOC) em relação ao Python maestro/: substituto futuro, experimento paralelo ou congelado? Agentes devem escrever nele? — resposta do dono (literal): o que recomenda"},
+  {class: "proibição", rank: 2, text: "Invariante: bloco unsafe tem 0 ocorrências em 9 arquivos rust de produto (não introduzir)"},
+  {class: "proibição", rank: 3, text: "Invariante: .unwrap() tem 0 ocorrências em 9 arquivos rust de produto (não introduzir)"}
+ ],
+ order: "decisão registrada > entrevista > proibição > regra de negócio > configuração",
+ schema_version: 1,
+ total: 3
+}

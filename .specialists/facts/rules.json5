@@ -1,0 +1,648 @@
+// rules (L4) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ configs: [
+  {
+   claim: "TypeScript em modo strict (frontend/tsconfig.json)",
+   file: "frontend/tsconfig.json",
+   id: "tsconfig.strict",
+   line: 17
+  }
+ ],
+ facts: [
+  {
+   claim: "TypeScript em modo strict (frontend/tsconfig.json)",
+   confidence: "high",
+   data: {kind: "config", tool: "tsconfig.strict"},
+   evidence: [
+    {file: "frontend/tsconfig.json", line: 17}
+   ],
+   fingerprint: "57abf631d9e11f93dc0251684118ceb136c6f46dfc432983477bb4cf00d41bab",
+   id: "rules.cfg.tsconfig.strict",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "tests: 18 arquivos de teste (python), 422 casos, 916 asserts; maiores: tests/test_orchestration.py (192), tests/test_self_improvement.py (129), tests/test_code_injection.py (73)",
+   confidence: "high",
+   data: {
+    asserts: 916,
+    cases: 422,
+    component: "tests",
+    files: 18,
+    kind: "tests"
+   },
+   evidence: [
+    {file: "tests/test_orchestration.py"},
+    {file: "tests/test_self_improvement.py"},
+    {file: "tests/test_code_injection.py"},
+    {file: "tests/test_mod_manager.py"},
+    {file: "tests/test_lan_discovery.py"}
+   ],
+   fingerprint: "699c7496cc6ee68c33d0a2925a9f94241b6dd950a0e70db6b41fb7d9e2a96d6f",
+   id: "rules.tests.tests",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["tests/**"]
+  },
+  {
+   claim: "1 arquivos de teste sem assert detectável: tests/__init__.py",
+   confidence: "medium",
+   evidence: [
+    {file: "tests/__init__.py"}
+   ],
+   fingerprint: "0c52ff9022a4bbf0990579beb4e0784868bd6d8583df3dbabef2fd27daeb07a6",
+   id: "rules.tests.no-asserts",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["tests/__init__.py"]
+  },
+  {
+   claim: "Invariante: eval() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "eval()",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "(?<![\\w.])eval\\(",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '(?<![\\w.])eval\\(' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "a776f7f57a6585431e23ac6811448f109ed22380a7a4621f17e61548d28aa38e",
+   id: "rules.never.python.eval",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: exec() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "exec()",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "(?<![\\w.])exec\\(",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '(?<![\\w.])exec\\(' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "778443ae33304984d3aaec8696eb8d040a47e53ae919329157881479f418a957",
+   id: "rules.never.python.exec",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: subprocess com shell=True tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "subprocess com shell=True",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "shell\\s*=\\s*True",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E 'shell\\s*=\\s*True' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "cbaf40c6f9c6044527b4dcefbc92c4c045003e1c36f30c820dde8ca75e594c59",
+   id: "rules.never.python.shell-true",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: pickle.load(s) tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "pickle.load(s)",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "pickle\\.loads?\\(",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E 'pickle\\.loads?\\(' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "c8f88cc848abae4947f016356b35c729fe7902d769e5f476278f3661b41a80d3",
+   id: "rules.never.python.pickle-loads",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: import * tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "import *",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "^\\s*from\\s+\\S+\\s+import\\s+\\*",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '^\\s*from\\s+\\S+\\s+import\\s+\\*' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "43dda63371fd275c3c1b20e692b6c30716385801046a7bb5f061cfbc2874f658",
+   id: "rules.never.python.star-import",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: except: sem tipo tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "except: sem tipo",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "^\\s*except\\s*:",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '^\\s*except\\s*:' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "2c85f845658999be18c21f709afb82a9bbb617713a60a049834d94c265970761",
+   id: "rules.never.python.bare-except",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: os.system() tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "os.system()",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "\\bos\\.system\\(",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '\\bos\\.system\\(' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "e9c88eeaeac6dda60497238425ee9b9ed9e9f510f8768648d657f78e43194501",
+   id: "rules.never.python.os-system",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: yaml.load sem Loader tem 0 ocorrências em 65 arquivos python de produto (não introduzir)",
+   confidence: "high",
+   data: {
+    count: 0,
+    desc: "yaml.load sem Loader",
+    files_checked: 65,
+    kind: "negative",
+    lang: "python",
+    pattern: "\\byaml\\.load\\((?![^)]*Loader)",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '\\byaml\\.load\\((?![^)]*Loader)' (65 arquivos python)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "c977e585b6fcfeae8b95c2f0e088bf3a9914e053cade64c5bb1299a25eda0d31"}
+   ],
+   fingerprint: "9b48bcc27d3a046bcf7d8ee5c08c4994eb1e66db1e8166bdde1fb3c0af4612cc",
+   id: "rules.never.python.yaml-load",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["backend/**", "data/**", "entrypoint.py", "maestro/**", "setup.py"]
+  },
+  {
+   claim: "Invariante: bloco unsafe tem 0 ocorrências em 9 arquivos rust de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: "bloco unsafe",
+    files_checked: 9,
+    kind: "negative",
+    lang: "rust",
+    pattern: "\\bunsafe\\s*\\{",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '\\bunsafe\\s*\\{' (9 arquivos rust)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "b8ae1482148f2cdeacd38f0d61a646588f7204926445b5fda10b2690e7c0daad"}
+   ],
+   fingerprint: "b4125ed3b83bad37fa3c13c4410ee90eabb0f4573fcf89a10330411810671d44",
+   id: "rules.never.rust.unsafe",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["maestros/**"]
+  },
+  {
+   claim: "Invariante: .unwrap() tem 0 ocorrências em 9 arquivos rust de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: ".unwrap()",
+    files_checked: 9,
+    kind: "negative",
+    lang: "rust",
+    pattern: "\\.unwrap\\(\\)",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '\\.unwrap\\(\\)' (9 arquivos rust)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "b8ae1482148f2cdeacd38f0d61a646588f7204926445b5fda10b2690e7c0daad"}
+   ],
+   fingerprint: "827051efdb0b0447998b9f2196a0b6640d62bf02209e169e274bbdbd306a751a",
+   id: "rules.never.rust.unwrap",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["maestros/**"]
+  },
+  {
+   claim: "Invariante: tipo any tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: "tipo any",
+    files_checked: 5,
+    kind: "negative",
+    lang: "typescript",
+    pattern: ":\\s*any\\b|<any>|as\\s+any\\b",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E ':\\s*any\\b|<any>|as\\s+any\\b' (5 arquivos typescript)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "ebba5980a30384480de30fc452bfdfc6d1faead6c02bafd3d0e133a623bbd74a"}
+   ],
+   fingerprint: "960eb3488d71da9797b719fa6fd954a384e7e870088e6a5aca0abbd865564bd2",
+   id: "rules.never.typescript.any",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Invariante: @ts-ignore tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: "@ts-ignore",
+    files_checked: 5,
+    kind: "negative",
+    lang: "typescript",
+    pattern: "@ts-ignore",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '@ts-ignore' (5 arquivos typescript)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "ebba5980a30384480de30fc452bfdfc6d1faead6c02bafd3d0e133a623bbd74a"}
+   ],
+   fingerprint: "0ef8bd150681652ad1b283f98cfaeba894aba8aa4179fd74e8140cb5672353c4",
+   id: "rules.never.typescript.ts-ignore",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Invariante: eval() tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: "eval()",
+    files_checked: 5,
+    kind: "negative",
+    lang: "typescript",
+    pattern: "(?<![\\w.])eval\\(",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '(?<![\\w.])eval\\(' (5 arquivos typescript)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "ebba5980a30384480de30fc452bfdfc6d1faead6c02bafd3d0e133a623bbd74a"}
+   ],
+   fingerprint: "e85d69baa33a0cdad73c93d3c5c690e519bcad82dada52681fcc3a74c865c2c6",
+   id: "rules.never.typescript.eval",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  },
+  {
+   claim: "Invariante: non-null assertion (!.) tem 0 ocorrências em 5 arquivos typescript de produto (não introduzir)",
+   confidence: "medium",
+   data: {
+    count: 0,
+    desc: "non-null assertion (!.)",
+    files_checked: 5,
+    kind: "negative",
+    lang: "typescript",
+    pattern: "\\w!\\.",
+    regex: true
+   },
+   evidence: [
+    {cmd: "scan:grep -E '\\w!\\.' (5 arquivos typescript)", exit: 1, out_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {cmd: "scan:lista de arquivos verificados", exit: 0, out_sha256: "ebba5980a30384480de30fc452bfdfc6d1faead6c02bafd3d0e133a623bbd74a"}
+   ],
+   fingerprint: "22a3994e861e8d920e1ccc773ab2c87a30f0dc17e7e59d01e8655ff02a741cab",
+   id: "rules.never.typescript.non-null-bang",
+   layer: "rules",
+   origin: "mechanical",
+   scope: ["frontend/**"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "rules",
+ negative_checks: [
+  {
+   desc: "eval()",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "eval",
+   lang: "python",
+   pattern: "(?<![\\w.])eval\\("
+  },
+  {
+   desc: "exec()",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "exec",
+   lang: "python",
+   pattern: "(?<![\\w.])exec\\("
+  },
+  {
+   desc: "subprocess com shell=True",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "shell-true",
+   lang: "python",
+   pattern: "shell\\s*=\\s*True"
+  },
+  {
+   desc: "pickle.load(s)",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "pickle-loads",
+   lang: "python",
+   pattern: "pickle\\.loads?\\("
+  },
+  {
+   desc: "import *",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "star-import",
+   lang: "python",
+   pattern: "^\\s*from\\s+\\S+\\s+import\\s+\\*"
+  },
+  {
+   desc: "except: sem tipo",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "bare-except",
+   lang: "python",
+   pattern: "^\\s*except\\s*:"
+  },
+  {
+   desc: "os.system()",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "os-system",
+   lang: "python",
+   pattern: "\\bos\\.system\\("
+  },
+  {
+   desc: "yaml.load sem Loader",
+   examples: [],
+   files: 65,
+   hits: 0,
+   key: "yaml-load",
+   lang: "python",
+   pattern: "\\byaml\\.load\\((?![^)]*Loader)"
+  },
+  {
+   desc: "bloco unsafe",
+   examples: [],
+   files: 9,
+   hits: 0,
+   key: "unsafe",
+   lang: "rust",
+   pattern: "\\bunsafe\\s*\\{"
+  },
+  {
+   desc: ".unwrap()",
+   examples: [],
+   files: 9,
+   hits: 0,
+   key: "unwrap",
+   lang: "rust",
+   pattern: "\\.unwrap\\(\\)"
+  },
+  {
+   desc: "tipo any",
+   examples: [],
+   files: 5,
+   hits: 0,
+   key: "any",
+   lang: "typescript",
+   pattern: ":\\s*any\\b|<any>|as\\s+any\\b"
+  },
+  {
+   desc: "@ts-ignore",
+   examples: [],
+   files: 5,
+   hits: 0,
+   key: "ts-ignore",
+   lang: "typescript",
+   pattern: "@ts-ignore"
+  },
+  {
+   desc: "eval()",
+   examples: [],
+   files: 5,
+   hits: 0,
+   key: "eval",
+   lang: "typescript",
+   pattern: "(?<![\\w.])eval\\("
+  },
+  {
+   desc: "non-null assertion (!.)",
+   examples: [],
+   files: 5,
+   hits: 0,
+   key: "non-null-bang",
+   lang: "typescript",
+   pattern: "\\w!\\."
+  }
+ ],
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L4",
+ schema_version: 1,
+ test_units: [
+  {
+   asserts: 0,
+   component: "tests",
+   file: "tests/__init__.py",
+   lang: "python",
+   test_names: [],
+   tests: 0
+  },
+  {
+   asserts: 30,
+   component: "tests",
+   file: "tests/test_cluster.py",
+   lang: "python",
+   test_names: ["test_standalone_by_default", "test_orchestrator_role", "test_shard_role", "test_shard_with_redis", "test_shard_count_1_degrades_to_standalone", "test_orchestrator_with_shard_count_1", "test_case_insensitive_role", "test_unknown_role_treated_as_standalone", "test_deterministic", "test_within_range", "test_distribution", "test_is_task_owned", "test_disconnected_bus_safe"],
+   tests: 13
+  },
+  {
+   asserts: 73,
+   component: "tests",
+   file: "tests/test_code_injection.py",
+   lang: "python",
+   test_names: ["test_snapshot_runtime", "test_snapshot_persists_to_disk", "test_mark_rolled_back", "test_mark_rolled_back_not_found", "test_mark_rolled_back_already_rolled_back", "test_get_by_cycle", "test_get_active_by_cycle", "test_snapshot_source_creates_backup", "test_count_active", "test_list_all", "test_is_enabled_default", "test_is_enabled_via_env", "test_is_enabled_via_config", "test_injectable_threshold_allowed", "test_injectable_architecture_blocked", "test_injectable_unknown_category_blocked", "test_injectable_rejected_status", "test_check_bounds_within", "test_check_bounds_out_of_range", "test_check_bounds_non_numeric_passes", "test_rate_limit_allows", "test_rate_limit_blocks", "test_smoke_test_runs", "test_grade_rank_ordering", "test_runtime_injection_applies", "test_runtime_injection_rollback", "test_dry_run_does_not_mutate", "test_blocked_category_skipped", "test_rate_limit_blocks_injection", "test_apply_batch", "test_rollback_cycle", "test_rollback_nonexistent", "test_config_injection", "test_out_of_bounds_proposal_skipped", "test_injection_updates_proposal_status", "test_auto_inject_disabled_no_injections", "test_auto_inject_enabled_applies_proposals", "test_improvement_cycle_fields", "test_inject_cycle_manual", "test_inject_cycle_not_found"],
+   tests: 40
+  },
+  {
+   asserts: 59,
+   component: "tests",
+   file: "tests/test_instances.py",
+   lang: "python",
+   test_names: ["test_format", "test_randomness", "test_instance_1", "test_instance_2", "test_instance_5", "test_project_name", "test_save_and_load", "test_register_and_unregister", "test_load_missing_file", "test_orchestrator_env", "test_redis_port_not_in_env", "test_shard_env", "test_shard_env_index_increments", "test_empty_registry", "test_with_shards", "test_no_running", "test_with_running", "test_defaults", "test_shard_instance", "test_free_port", "test_occupied_port", "test_raises_when_port_occupied", "test_raises_when_docker_run_fails", "test_first_spawn_is_orchestrator", "test_second_spawn_is_shard", "test_spawn_no_docker", "test_stop_unregisters", "test_stop_no_docker"],
+   tests: 28
+  },
+  {
+   asserts: 46,
+   component: "tests",
+   file: "tests/test_keyring.py",
+   lang: "python",
+   test_names: ["test_empty_string", "test_short_key", "test_normal_key", "test_exact_boundary", "test_long_key", "test_upsert_creates_new_file", "test_upsert_updates_existing_key", "test_upsert_appends_new_key", "test_remove_key", "test_remove_from_nonexistent_file", "test_get_key_missing", "test_set_and_get_key", "test_remove_key", "test_list_keys_all_missing", "test_list_keys_some_configured", "test_set_unknown_provider_raises", "test_remove_unknown_provider_raises", "test_placeholder_values_not_configured", "test_validate_unconfigured_key", "test_validate_all_returns_all_providers", "test_validate_unknown_provider_raises", "test_all_providers_have_required_fields", "test_provider_count"],
+   tests: 23
+  },
+  {
+   asserts: 62,
+   component: "tests",
+   file: "tests/test_lan_discovery.py",
+   lang: "python",
+   test_names: ["test_generates_adjective_animal", "test_uniqueness", "test_creation", "test_to_dict", "test_is_alive_fresh", "test_is_alive_stale", "test_is_adjacent_requires_confirmed_and_alive", "test_is_not_adjacent_when_discovered", "test_to_dict", "test_default_not_formed", "test_to_dict", "test_auto_generates_uid_and_name", "test_custom_identity", "test_beacon_creates_peer", "test_beacon_ignored_from_self", "test_handshake_init_sends_ack", "test_handshake_ack_confirms_adjacency", "test_handshake_confirm_finalizes", "test_node_forms_at_quorum", "test_node_not_formed_below_quorum", "test_node_dissolves_when_peers_go_stale", "test_node_with_excess_peers", "test_snapshot_structure", "test_peer_summary", "test_peer_goes_stale", "test_detect_returns_string"],
+   tests: 26
+  },
+  {
+   asserts: 63,
+   component: "tests",
+   file: "tests/test_mod_manager.py",
+   lang: "python",
+   test_names: ["test_discover_finds_plugins", "test_discover_empty_dir", "test_discover_skips_invalid_manifests", "test_validate_good_manifest", "test_validate_missing_entry_point", "test_validate_bad_category", "test_load_plugin", "test_enable_plugin", "test_disable_plugin", "test_unload_plugin", "test_reload_plugin", "test_full_lifecycle", "test_get_set_config", "test_register_and_run_hooks", "test_hook_modifies_context", "test_async_hook", "test_invalid_hook_point_raises", "test_unregister_hook", "test_all_hook_points_exist", "test_emit_and_subscribe", "test_save_and_list", "test_save_and_restore", "test_diff_snapshots", "test_delete_snapshot", "test_load_snapshot_data", "test_list_plugins", "test_get_plugin_info", "test_health_check_all"],
+   tests: 28
+  },
+  {
+   asserts: 192,
+   component: "tests",
+   file: "tests/test_orchestration.py",
+   lang: "python",
+   test_names: ["test_mock_agent_is_agent", "test_sol_is_agent", "test_aria_is_agent", "test_prism_is_agent", "test_tempagent_is_agent", "test_mock_agent_fetch", "test_mock_agent_styles", "test_agent_name_and_model", "test_agent_custom_model", "test_agents_without_keys_return_error", "test_mock_responses", "test_orchestration_with_ncg", "test_orchestration_ncg_disabled", "test_named_responses_in_output", "test_custom_headless_generator", "test_identical_responses_high_quorum", "test_similar_responses_reach_quorum", "test_all_different_low_quorum", "test_quorum_fields_in_orchestration_output", "test_fallback_without_dissent_report", "test_agreement_ratio_range", "test_mock_headless_generate", "test_mock_headless_model_id", "test_basic_drift_analysis", "test_silent_collapse_detection", "test_compression_ratio", "test_semantic_distance_identical", "test_identical_responses_no_dissent", "test_different_responses_show_dissent", "test_three_agents_pairwise_count", "test_outlier_detection", "test_agreement_score_range", "test_dissent_level_classification", "test_two_agents_no_outlier", "test_cross_session_analysis", "test_cross_session_skips_single_agent", "test_dissent_in_final_output", "test_save_and_load", "test_list_sessions", "test_list_sessions_limit_offset", "test_count", "test_delete", "test_delete_nonexistent", "test_load_nonexistent_raises", "test_session_record_has_uuid_and_timestamp", "test_ncg_benchmark_persisted", "test_list_all_ids", "test_orchestration_creates_session_file", "test_orchestration_session_logging_disabled", "test_strong_grade", "test_suspicious_grade_silent_collapse", "test_suspicious_grade_high_agreement_high_drift", "test_weak_grade_no_quorum", "test_weak_grade_high_dissent", "test_acceptable_grade_with_outliers", "test_confidence_score_range", "test_no_ncg_no_penalty", "test_signals_silent_collapse", "test_signals_persistent_outlier", "test_signals_compression", "test_signals_healthy_dissent", "test_signals_agent_degradation", "test_no_signals_clean_session", "test_index_creates_file", "test_index_and_load", "test_list_entries", "test_trend_analysis_insufficient_data", "test_trend_analysis_with_data", "test_r2_in_final_output", "test_r2_creates_ledger_entry", "test_r2_without_session_logging", "test_empty_analysis", "test_healthy_system", "test_persistent_outlier_recommendation", "test_frequent_collapse_recommendation", "test_report_fields"],
+   tests: 76
+  },
+  {
+   asserts: 33,
+   component: "tests",
+   file: "tests/test_orchestrator_snapshot.py",
+   lang: "python",
+   test_names: ["test_returns_expected_top_level_keys", "test_named_responses_match_agents", "test_all_responses_are_strings", "test_final_output_has_consensus", "test_r2_present_in_final_output", "test_session_id_none_when_logging_disabled", "test_agent_errors_empty_with_mock_agents", "test_pipeline_survives_single_agent_failure", "test_stream_emits_expected_event_types", "test_stream_agent_response_events", "test_stream_done_event_has_complete_shape", "test_stream_ncg_event_when_enabled", "test_stream_no_ncg_event_when_disabled", "test_stream_survives_agent_failure"],
+   tests: 14
+  },
+  {
+   asserts: 14,
+   component: "tests",
+   file: "tests/test_plugin_hooks.py",
+   lang: "python",
+   test_names: ["test_hooks_fire_in_registration_order", "test_hook_can_transform_prompt", "test_hook_returning_none_skips", "test_hook_error_doesnt_crash_pipeline", "test_async_orchestration_with_mod_manager", "test_stream_orchestration_with_mod_manager", "test_orchestration_works_without_mod_manager"],
+   tests: 7
+  },
+  {
+   asserts: 129,
+   component: "tests",
+   file: "tests/test_self_improvement.py",
+   lang: "python",
+   test_names: ["test_discover_source_files", "test_analyze_source", "test_complexity_hotspots", "test_map_signals_to_code_suspicious_consensus", "test_map_signals_to_code_persistent_outlier", "test_map_signals_unknown_type", "test_analyze_token_patterns_empty", "test_analyze_token_patterns_with_compression", "test_full_introspection", "test_introspect_no_signals", "test_code_target_deduplication", "test_empty_introspection_no_proposals", "test_threshold_proposal_generation", "test_threshold_proposal_respects_bounds", "test_agent_config_proposal", "test_architecture_proposal_from_hotspot", "test_proposal_deduplication", "test_proposal_has_required_fields", "test_priority_breakdown", "test_vir_has_unique_id", "test_vir_validate_with_proposals", "test_vir_comparison_fields", "test_vir_sandbox_cleanup", "test_vir_grade_ranking", "test_vir_overall_improvement_range", "test_vir_node_id", "test_vir_validate_batch", "test_register_and_get", "test_list_available", "test_select_node_with_capabilities", "test_select_node_none_available", "test_unregister", "test_unregister_nonexistent", "test_update_status", "test_empty_ledger_no_proposals", "test_cycle_with_signals", "test_cycle_persisted", "test_list_cycles", "test_count_cycles", "test_analysis_only_mode", "test_cycle_duration_tracked", "test_cycle_fields", "test_analyze_with_introspection_empty", "test_analyze_with_introspection_populated", "test_code_optimization_recommendations", "test_introspection_summary_not_empty", "test_proposal_batch_returned", "test_full_pipeline_collapse_scenario", "test_full_pipeline_healthy_system"],
+   tests: 49
+  },
+  {
+   asserts: 14,
+   component: "tests",
+   file: "tests/test_shard_agent.py",
+   lang: "python",
+   test_names: ["test_no_registry_returns_error", "test_no_nodes_returns_error", "test_name_and_model", "test_reputation_filter_removes_low_nodes", "test_handle_infer", "test_handle_challenge", "test_health"],
+   tests: 7
+  },
+  {
+   asserts: 42,
+   component: "tests",
+   file: "tests/test_shard_manager.py",
+   lang: "python",
+   test_names: ["test_index_single_file", "test_index_multiple_files", "test_index_with_gaps", "test_manifest_persists", "test_load_manifest_nonexistent", "test_generate_config", "test_generate_config_with_layer_filter", "test_generate_config_to_file", "test_verify_all_pass", "test_verify_missing_file", "test_verify_corrupted_file", "test_verify_no_manifest", "test_list_models", "test_list_models_empty", "test_disk_usage_single_model", "test_disk_usage_all", "test_remove_model", "test_remove_nonexistent", "test_existing_file", "test_missing_file"],
+   tests: 20
+  },
+  {
+   asserts: 33,
+   component: "tests",
+   file: "tests/test_shard_registry.py",
+   lang: "python",
+   test_names: ["test_register_and_get", "test_unregister", "test_unregister_nonexistent", "test_list_nodes", "test_heartbeat", "test_persistence", "test_find_nodes_for_shard", "test_find_nodes_no_match", "test_build_full_pipeline", "test_build_pipeline_prefers_reputation", "test_build_pipeline_empty_for_missing_model", "test_build_pipeline_skips_offline_nodes", "test_redundancy_map", "test_prune_stale_nodes", "test_prune_keeps_fresh_nodes", "test_find_embedding_nodes", "test_update_reputation", "test_eviction_on_low_reputation"],
+   tests: 18
+  },
+  {
+   asserts: 53,
+   component: "tests",
+   file: "tests/test_shard_utils.py",
+   lang: "python",
+   test_names: ["test_read_valid_header", "test_read_header_with_metadata", "test_read_truncated_file", "test_read_oversized_header", "test_llama_naming", "test_gpt2_naming", "test_bert_naming", "test_gguf_naming", "test_metadata_excluded", "test_layer_range_from_file", "test_layer_range_middle", "test_no_layer_tensors", "test_byte_ranges", "test_hash_deterministic", "test_different_ranges_different_hashes", "test_hash_matches_manual", "test_full_file_hash", "test_descriptor_from_file", "test_auto_generated_shard_id", "test_custom_shard_id", "test_scan_finds_all_files", "test_scan_skips_non_safetensors", "test_scan_empty_directory", "test_valid_file", "test_corrupted_file", "test_common_dtypes", "test_unknown_dtype"],
+   tests: 27
+  },
+  {
+   asserts: 26,
+   component: "tests",
+   file: "tests/test_startup.py",
+   lang: "python",
+   test_names: ["test_dialog_available_returns_bool", "test_dialog_not_found", "test_plain_prompt_tui", "test_plain_prompt_cli", "test_plain_prompt_web", "test_plain_prompt_default", "test_plain_prompt_eof", "test_plain_prompt_ctrl_c", "test_env_mode_web", "test_env_mode_cli", "test_no_tty_defaults_to_web", "test_wrap_helper", "test_grade_icons", "test_minimal_result", "test_full_result", "test_result_with_flags", "test_quit_command", "test_exit_command", "test_eof_exits", "test_ctrl_c_exits", "test_empty_input_ignored", "test_help_command", "test_keys_command", "test_prompt_runs_orchestration"],
+   tests: 24
+  },
+  {
+   asserts: 32,
+   component: "tests",
+   file: "tests/test_storage_proof.py",
+   lang: "python",
+   test_names: ["test_issue_byte_range_challenge", "test_issue_latency_probe", "test_issue_canary_inference", "test_validate_correct_byte_range_hash", "test_validate_wrong_hash_fails", "test_validate_latency_probe_pass", "test_validate_latency_probe_fail", "test_validate_expired_challenge", "test_initial_reputation", "test_reputation_increases_with_successes", "test_reputation_decreases_with_failures", "test_eviction_on_low_reputation", "test_r2_contribution_affects_reputation", "test_reputation_persists_to_disk", "test_list_reputations"],
+   tests: 15
+  },
+  {
+   asserts: 15,
+   component: "tests",
+   file: "tests/test_weight_snapshots.py",
+   lang: "python",
+   test_names: ["test_default_fields", "test_save_load_roundtrip", "test_multiple_snapshots", "test_diff_detects_agent_changes", "test_diff_nonexistent_snapshot", "test_restore_enables_correct_plugins", "test_restore_nonexistent_fails"],
+   tests: 7
+  }
+ ]
+}

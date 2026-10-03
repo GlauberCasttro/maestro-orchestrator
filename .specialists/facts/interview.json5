@@ -1,0 +1,88 @@
+// interview — respostas literais do dono como fatos (layer interview); gerado por cs.py interview
+{
+ facts: [
+  {
+   claim: "Entrevista protected-areas: Há áreas que exigem aprovação humana antes de mudar (ex.: limiares QUORUM_THRESHOLD/SIMILARITY_THRESHOLD, storage_proof, self_improvement/code_injection, updater, licença)? — resposta do dono (literal): Limiares de consenso, Self-improvement, Storage proof / rede",
+   confidence: "high",
+   data: {
+    answer: "Limiares de consenso, Self-improvement, Storage proof / rede",
+    by: "glauber",
+    context: "",
+    question: "Há áreas que exigem aprovação humana antes de mudar (ex.: limiares QUORUM_THRESHOLD/SIMILARITY_THRESHOLD, storage_proof, self_improvement/code_injection, updater, licença)?",
+    question_id: "protected-areas",
+    source: "founder"
+   },
+   evidence: [
+    {file: ".specialists/interview.jsonl", line: 8}
+   ],
+   fingerprint: "c7cf5471897d23bf3778ad75379d62d28b90a9cadb632427d37fa72b8cb591b2",
+   id: "interview.protected-areas",
+   layer: "interview",
+   origin: "mechanical",
+   scope: ["maestro/**"]
+  },
+  {
+   claim: "Entrevista rust-maestros: Qual o papel do workspace Rust maestros/ (v0.0.1, 136 LOC) em relação ao Python maestro/: substituto futuro, experimento paralelo ou congelado? Agentes devem escrever nele? — resposta do dono (literal): o que recomenda",
+   confidence: "high",
+   data: {
+    answer: "o que recomenda",
+    by: "glauber",
+    context: "",
+    question: "Qual o papel do workspace Rust maestros/ (v0.0.1, 136 LOC) em relação ao Python maestro/: substituto futuro, experimento paralelo ou congelado? Agentes devem escrever nele?",
+    question_id: "rust-maestros",
+    source: "founder"
+   },
+   evidence: [
+    {file: ".specialists/interview.jsonl", line: 9}
+   ],
+   fingerprint: "25a3c846d641c03ebab553fe86b91e780fff16281689e86ca26a6416b2d7befe",
+   id: "interview.rust-maestros",
+   layer: "interview",
+   origin: "mechanical",
+   scope: ["maestros/**"]
+  },
+  {
+   claim: "Entrevista test-gate: Qual é o comando oficial de teste/gate antes de merge? (não há CI nem config pytest; CONTRIBUTING.md:109 cita pytest tests/ em prosa) — resposta do dono (literal): pytest tests/",
+   confidence: "high",
+   data: {
+    answer: "pytest tests/",
+    by: "glauber",
+    context: "",
+    question: "Qual é o comando oficial de teste/gate antes de merge? (não há CI nem config pytest; CONTRIBUTING.md:109 cita pytest tests/ em prosa)",
+    question_id: "test-gate",
+    source: "founder"
+   },
+   evidence: [
+    {file: ".specialists/interview.jsonl", line: 6}
+   ],
+   fingerprint: "e9b14a407e857fc2be35a0a6453258a5a2477834171f00bdb14231f0bd43ae9b",
+   id: "interview.test-gate",
+   layer: "interview",
+   origin: "mechanical",
+   scope: ["tests/**"]
+  },
+  {
+   claim: "Entrevista ui-primary: Qual interface é a principal e mantida: TUI Textual (maestro/tui/) ou web (frontend/ React + backend/main.py)? — resposta do dono (literal): Ambas",
+   confidence: "high",
+   data: {
+    answer: "Ambas",
+    by: "glauber",
+    context: "",
+    question: "Qual interface é a principal e mantida: TUI Textual (maestro/tui/) ou web (frontend/ React + backend/main.py)?",
+    question_id: "ui-primary",
+    source: "founder"
+   },
+   evidence: [
+    {file: ".specialists/interview.jsonl", line: 7}
+   ],
+   fingerprint: "1b09db2fd7d86d5685f8c2d03fb6b4f1292391e50c4efd04668a7f0e8f9cd2e4",
+   id: "interview.ui-primary",
+   layer: "interview",
+   origin: "mechanical",
+   scope: ["backend/**", "frontend/**", "maestro/tui/**"]
+  }
+ ],
+ generator: "cs.py interview",
+ layer: "interview",
+ schema_version: 1
+}

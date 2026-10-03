@@ -1,0 +1,25 @@
+// resume.json5 — sessão salva por cs-session save (não editar)
+{
+ active: [],
+ active_session: null,
+ auto: false,
+ blocked: null,
+ branch: "main",
+ decision: null,
+ did: "codebase-specialists --fast concluído: 12 agentes especialistas, G1-G16 verdes, GO do founder",
+ dirty_by_area: {"(raiz)": ["akefile", "CLAUDE.md", "specialists.mk"], ".claude": [".claude/"], ".specialists": [".specialists/"]},
+ event_count: 1,
+ gates: {acceptance: {at: "2026-10-03T21:03:15+00:00", ok: null}, selftest: {at: "2026-10-03T21:02:09.189929Z", ok: true}},
+ head: "efa0300ce503162b972e0995c1e0e111938a350c",
+ last_events: [
+  {entity: null, seq: 0, type: "init"},
+ ],
+ lessons_new: [],
+ next: "usar o time: cs-state next; considerar --full para dev-storage-network/dev-consensus",
+ next_cmd: "sem sessão ativa → cs-state session start --request '<pedido do usuário>'",
+ phase: null,
+ saved_at: "2026-10-03T21:03:34.504943Z",
+ stamp: "eb4bb7e823267467ebe48c43132ceceffdb6bdc67456052f216a46e0406a05e7",
+ task_status: {},
+ tasks_by_status: {},
+}

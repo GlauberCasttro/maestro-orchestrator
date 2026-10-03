@@ -1,0 +1,181 @@
+// rationale (L6) — fatos mecânicos do scan; gerado por cs.py scan (codebase-specialists); não editar à mão
+{
+ adrs: [],
+ commit_rationale: [
+  {
+   files: ["maestro/tui/widgets.py"],
+   sha: "c415a88fc363107b20591238ffb5cfb41683d644",
+   subject: "Fix ClusterDashboard crash: rename _render to avoid Textual collision",
+   why: ["Fix ClusterDashboard crash: rename _render to avoid Textual collision", "to _refresh_display() to avoid the collision"]
+  },
+  {
+   files: ["maestro/tui/app.py", "maestro/tui/widgets.py"],
+   sha: "9a8c467be88aeea757a2c220c1d73ac68f119b4c",
+   subject: "Add auto-updater integration to the TUI",
+   why: ["- Update check and apply run in background threads to avoid blocking"]
+  },
+  {
+   files: ["backend/main.py", "maestro/updater.py"],
+   sha: "f140be7bd37f7eaec004221bcb12e2648a9d8f77",
+   subject: "Fix container restart 404 caused by updater nuking frontend build",
+   why: ["Since frontend/dist only exists in the Docker image and not"]
+  },
+  {
+   files: ["frontend/src/maestroUI.tsx", "maestro/updater.py"],
+   sha: "70062c73d040fe5308c1b6e2ab9bed6ca61cfe68",
+   subject: "Fix updater bugs: double error prefix, copytree EEXIST, overlapping UI cards",
+   why: ["- Remove redundant \"Update failed:\" prefix from _apply_docker_mode since the"]
+  },
+  {
+   files: ["frontend/src/maestroUI.tsx", "maestro/updater.py"],
+   sha: "28e47794a482877ee97e7b6d6297f04506943f9a",
+   subject: "Fix updater showing \"0 new commits\" when local version is unknown",
+   why: ["failed because \"unknown\" isn't a valid git ref → 0 commits shown"]
+  },
+  {
+   files: ["docs/deployment.md", "docs/roadmap.md", "maestro/updater.py"],
+   sha: "a7e9ac7fd9a72fbe98b3d7f403fd972f6cf33577",
+   subject: "Add built-in auto-updater to avoid manual re-cloning",
+   why: ["Add built-in auto-updater to avoid manual re-cloning"]
+  },
+  {
+   files: ["readme.md"],
+   sha: "bf2d77156ebb31c3c54bea0b81c2572873e75503",
+   subject: "Improve README with structure, clarity, and missing sections",
+   why: ["- Rename duplicate '🧠' Agent Council header to '👥' to avoid visual collision"]
+  }
+ ],
+ facts: [
+  {
+   claim: "Por quê (commit c415a88fc363 em hotspot maestro/tui/widgets.py): Fix ClusterDashboard crash: rename _render to avoid Textual collision | to _refresh_display() to avoid the collision",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "c415a88fc363107b20591238ffb5cfb41683d644",
+    topic: "Fix ClusterDashboard crash: rename _render to avoid Textual collision",
+    why: ["Fix ClusterDashboard crash: rename _render to avoid Textual collision", "to _refresh_display() to avoid the collision"]
+   },
+   evidence: [
+    {commit: "c415a88fc363107b20591238ffb5cfb41683d644", files: ["maestro/tui/widgets.py"]}
+   ],
+   fingerprint: "63b3ac461f4452d8b89c3aa594eb2cefa7f9b5219bddb800ab08ac6e7690f224",
+   id: "rat.commit.c415a88fc363",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["maestro/tui/widgets.py"]
+  },
+  {
+   claim: "Por quê (commit 9a8c467be88a em hotspot maestro/tui/app.py, maestro/tui/widgets.py): - Update check and apply run in background threads to avoid blocking",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "9a8c467be88aeea757a2c220c1d73ac68f119b4c",
+    topic: "Add auto-updater integration to the TUI",
+    why: ["- Update check and apply run in background threads to avoid blocking"]
+   },
+   evidence: [
+    {commit: "9a8c467be88aeea757a2c220c1d73ac68f119b4c", files: ["maestro/tui/app.py", "maestro/tui/widgets.py"]}
+   ],
+   fingerprint: "87674299ae24cf99e5d4bf9f14f7a3d4bee00baa5f142b337f0a4b6d4d4ab00b",
+   id: "rat.commit.9a8c467be88a",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["maestro/tui/app.py", "maestro/tui/widgets.py"]
+  },
+  {
+   claim: "Por quê (commit f140be7bd37f em hotspot backend/main.py, maestro/updater.py): Since frontend/dist only exists in the Docker image and not",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "f140be7bd37f7eaec004221bcb12e2648a9d8f77",
+    topic: "Fix container restart 404 caused by updater nuking frontend build",
+    why: ["Since frontend/dist only exists in the Docker image and not"]
+   },
+   evidence: [
+    {commit: "f140be7bd37f7eaec004221bcb12e2648a9d8f77", files: ["backend/main.py", "maestro/updater.py"]}
+   ],
+   fingerprint: "e4206e9d789f88b6f76a87f62fca6edbfe27c3e50417d106eb15e2b75e5c6f09",
+   id: "rat.commit.f140be7bd37f",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["backend/main.py", "maestro/updater.py"]
+  },
+  {
+   claim: "Por quê (commit 70062c73d040 em hotspot frontend/src/maestroUI.tsx, maestro/updater.py): - Remove redundant \"Update failed:\" prefix from _apply_docker_mode since the",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "70062c73d040fe5308c1b6e2ab9bed6ca61cfe68",
+    topic: "Fix updater bugs: double error prefix, copytree EEXIST, overlapping UI cards",
+    why: ["- Remove redundant \"Update failed:\" prefix from _apply_docker_mode since the"]
+   },
+   evidence: [
+    {commit: "70062c73d040fe5308c1b6e2ab9bed6ca61cfe68", files: ["frontend/src/maestroUI.tsx", "maestro/updater.py"]}
+   ],
+   fingerprint: "cae4e184c81d26aa244b724731e3605a12a5420493eee81440386b72acc98da1",
+   id: "rat.commit.70062c73d040",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["frontend/src/maestroUI.tsx", "maestro/updater.py"]
+  },
+  {
+   claim: "Por quê (commit 28e47794a482 em hotspot frontend/src/maestroUI.tsx, maestro/updater.py): failed because \"unknown\" isn't a valid git ref → 0 commits shown",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "28e47794a482877ee97e7b6d6297f04506943f9a",
+    topic: "Fix updater showing \"0 new commits\" when local version is unknown",
+    why: ["failed because \"unknown\" isn't a valid git ref → 0 commits shown"]
+   },
+   evidence: [
+    {commit: "28e47794a482877ee97e7b6d6297f04506943f9a", files: ["frontend/src/maestroUI.tsx", "maestro/updater.py"]}
+   ],
+   fingerprint: "34851dac5cc0b8a39a575dec853b425236181fc41831c0b8b0e3b6c7c8dd1a52",
+   id: "rat.commit.28e47794a482",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["frontend/src/maestroUI.tsx", "maestro/updater.py"]
+  },
+  {
+   claim: "Por quê (commit a7e9ac7fd9a7 em hotspot docs/deployment.md, docs/roadmap.md, maestro/updater.py): Add built-in auto-updater to avoid manual re-cloning",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "a7e9ac7fd9a72fbe98b3d7f403fd972f6cf33577",
+    topic: "Add built-in auto-updater to avoid manual re-cloning",
+    why: ["Add built-in auto-updater to avoid manual re-cloning"]
+   },
+   evidence: [
+    {commit: "a7e9ac7fd9a72fbe98b3d7f403fd972f6cf33577", files: ["docs/deployment.md", "docs/roadmap.md", "maestro/updater.py"]}
+   ],
+   fingerprint: "6afa7e4f79a6023b4c3bbf682349b976683a274b612ec9182c20489dd9fa525c",
+   id: "rat.commit.a7e9ac7fd9a7",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["docs/deployment.md", "docs/roadmap.md", "maestro/updater.py"]
+  },
+  {
+   claim: "Por quê (commit bf2d77156ebb em hotspot readme.md): - Rename duplicate '🧠' Agent Council header to '👥' to avoid visual collision",
+   confidence: "medium",
+   data: {
+    kind: "commit_why",
+    sha: "bf2d77156ebb31c3c54bea0b81c2572873e75503",
+    topic: "Improve README with structure, clarity, and missing sections",
+    why: ["- Rename duplicate '🧠' Agent Council header to '👥' to avoid visual collision"]
+   },
+   evidence: [
+    {commit: "bf2d77156ebb31c3c54bea0b81c2572873e75503", files: ["readme.md"]}
+   ],
+   fingerprint: "b4d31c119b0033a1f506cbf2e71b9bc3c25cecc20552df1f0f750f35282a4917",
+   id: "rat.commit.bf2d77156ebb",
+   layer: "rationale",
+   origin: "mechanical",
+   scope: ["readme.md"]
+  }
+ ],
+ generator: "cs.py scan (codebase-specialists)",
+ layer: "rationale",
+ repo_commit: "efa0300ce503162b972e0995c1e0e111938a350c",
+ scan_key: "L6",
+ schema_version: 1
+}
