@@ -18,7 +18,7 @@
    title: "Provedores de LLM",
   },
  ],
- event_count: 56,
+ event_count: 59,
  features: [
   {
    acceptance: [],
@@ -41,7 +41,7 @@
    title: "Integração Groq como provedor disponível (fora do conselho)",
   },
  ],
- last_event_hash: "1a44ed6011f5e5ea5ac4bab1d5ff8d0c563563b01cfb5d7818e6f41d8c5ddfa5",
+ last_event_hash: "c3bd226be71607249b7a46aa0384b8359890f092c1b5b2f6f4b19eadb8544db3",
  schema_version: 2,
  sessions: [
   {
@@ -108,6 +108,35 @@
    title: "GroqAgent e chave GROQ_API_KEY",
    type: "us",
    updated_at: "2026-10-04T00:25:01.416211Z",
+  },
+  {
+   created_at: "2026-10-04T00:39:35.570274Z",
+   feature: "FEAT-2",
+   findings: [],
+   id: "FIX-1",
+   proving_test: "test -f maestro/agents/groq.py && .venv/bin/python -m pytest tests/test_orchestration.py::test_groq_agent -q",
+   severity: "P1",
+   state: "BACKLOG",
+   title: "GroqAgent: re-verificação com .venv + Haiku",
+   type: "fix",
+  },
+  {
+   created_at: "2026-10-04T00:49:55.441808Z",
+   feature: "FEAT-2",
+   findings: [],
+   id: "US-4",
+   state: "BACKLOG",
+   title: "Keyring & Provedor Groq (sem bloqueio de GroqAgent)",
+   type: "us",
+  },
+  {
+   created_at: "2026-10-04T00:49:59.412099Z",
+   feature: "FEAT-2",
+   findings: [],
+   id: "US-5",
+   state: "BACKLOG",
+   title: "KEY: Registrar groq no keyring e dependency_resolver",
+   type: "us",
   },
  ],
  tasks: [
