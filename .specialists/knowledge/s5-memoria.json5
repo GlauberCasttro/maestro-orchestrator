@@ -6,7 +6,7 @@
    facts: ["gloss.dissent-analyzer", "gloss.dissent-report"],
    id: "s5.dev-consensus.1",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "DissentAnalyzer / DissentReport: análise de dissenso entre os agentes, em `maestro/dissent.py`."
   },
   {
@@ -14,7 +14,7 @@
    facts: ["gloss.r2-engine", "gloss.r2-score", "gloss.improvement-signal", "docs.docs-r2-engine.md"],
    id: "s5.dev-consensus.2",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "R2 Engine / R2Score / ImprovementSignal: a camada reflexa que pontua cada sessão juntando dissenso, drift do NCG e quórum (`maestro/r2.py`)."
   },
   {
@@ -22,7 +22,7 @@
    facts: ["gloss.session-logger", "gloss.session-record", "docs.docs-logging.md"],
    id: "s5.dev-consensus.3",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "SessionLogger / SessionRecord: cada sessão de orquestração é persistida como JSON estruturado (`maestro/session.py`)."
   },
   {
@@ -30,7 +30,7 @@
    facts: ["gloss.mock-agent", "gloss.mock-headless-generator"],
    id: "s5.dev-consensus.4",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "MockAgent (`maestro/agents/mock.py`) e MockHeadlessGenerator (`maestro/ncg/generator.py`): substitutos sem chamada de rede, usados em testes."
   },
   {
@@ -38,7 +38,7 @@
    facts: ["gloss.shard-agent", "gloss.mock-shard-node"],
    id: "s5.dev-consensus.5",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "ShardAgent (`maestro/agents/shard.py`) e MockShardNode (`maestro/agents/mock_shard_node.py`, nó simulado), ambos fora do território: ShardAgent tem a mesma interface `fetch(prompt) -> str` dos agentes centralizados; testes de shard importam os dois."
   },
   {
@@ -46,7 +46,7 @@
    facts: ["interview.ui-primary"],
    id: "s5.dev-consensus.6",
    kind: "fact",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "As interfaces TUI (`maestro/tui/`) e web (frontend + `backend/main.py`) são ambas mantidas e consomem o resultado da orquestração."
   },
   {
@@ -54,7 +54,7 @@
    facts: ["docs.stale.docs-agents.md.39", "docs.stale.docs-agents.md.40", "docs.stale.readme.md.147"],
    id: "s5.dev-consensus.7",
    kind: "fact",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "`docs/agents.md`, `docs/architecture.md` e `readme.md` citam nomes de modelo de agentes que o scan marcou como defasados."
   },
   {
@@ -62,7 +62,7 @@
    facts: ["gloss.injections"],
    id: "s5.dev-consensus.8",
    kind: "term",
-   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   scope: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    text: "injections (fora do território, self-improvement): o glossário define o termo na rota de listagem de injeções ativas em `maestro/api_self_improve.py`; também é campo do ciclo em `maestro/self_improve.py`. Para 'onde é definido', usar o ponto do glossário em `answer`; o outro uso não entra em `answer`."
   },
   {

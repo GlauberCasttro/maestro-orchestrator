@@ -14,6 +14,7 @@ paths:
   - "maestro/agents/sol.py"
   - "maestro/agents/prism.py"
   - "maestro/agents/tempagent.py"
+  - "maestro/agents/groq.py"
   - "maestro/agents/mock.py"
   - "maestro/__init__.py"
 ---

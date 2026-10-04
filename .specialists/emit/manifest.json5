@@ -13,7 +13,7 @@
    mode: "owned",
    path: ".claude/agents/dev-consensus.md",
    platform: "claude-code",
-   sha256: "4043baadcb664e2a95830f670ae0fe887b4038cdd503d19e3180ac94b8b6176c"
+   sha256: "154515313464f397788e16deafe681c6cc7c6f01ca814e248925e276dc18f080"
   },
   {
    kind: "claude.agent",
@@ -104,7 +104,7 @@
    mode: "owned",
    path: ".claude/rules/cs-dev-consensus.md",
    platform: "claude-code",
-   sha256: "f7007cc6affd332df7aa0e1dbc42921c253a4dc3ee5d60ef7b6a45691b5f0718"
+   sha256: "4e400575470849413ac3be8b071546f7bd068eb1cbc750aa01def924d115d41d"
   },
   {
    kind: "claude.rule",
@@ -349,7 +349,7 @@
    mode: "owned",
    path: ".specialists/knowledge/s5-memoria.json5",
    platform: "maps",
-   sha256: "2bb2d455251c7ecd49647b10a406fd834fe80534be8921d7718c4e932746b4fe"
+   sha256: "9ebfc20d06395b7281a4e5b0216386343859f121e32f0edff04071c9c821a4e6"
   },
   {
    kind: "maps.stack",
@@ -370,7 +370,7 @@
    mode: "block",
    path: "CLAUDE.md",
    platform: "claude-code",
-   sha256: "7a6a19c307bca12e7b94715b378f11008d0227351681b99e801a1896ee7a4c02"
+   sha256: "2cd16a09c6420ce6198bc1d581cee652e963d1d5a1f388ab417f83fd70bfeb5c"
   }
  ],
  generator: "codebase-specialists/emit",

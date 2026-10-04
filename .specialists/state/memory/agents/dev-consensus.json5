@@ -1,0 +1,40 @@
+// lições do agente dev-consensus — DADO, escrito só por cs-mem (correct/add/captura automática)
+{
+ agent: "dev-consensus",
+ lessons: [
+  {
+   count: 1,
+   evidence: [
+    {attempt: 2, event_seq: 48, task: "TASK-02-001-AGT"},
+   ],
+   fingerprint: "8b3892b607a07ead407194eea56f8ec2b0a242a20d8b590e354fccba2ea06128",
+   first_seen: "2026-10-04T00:30:05Z",
+   id: "L-dev-consensus-917fc9b0",
+   last_hit: "2026-10-04T00:34:43Z",
+   occurrences: ["TASK-02-001-AGT#2"],
+   recurrences: 0,
+   rule: "verification_command exit=1 (sha saída 253103b13182): \"/Users/glaubercastro/Repositorios/maestro-orchestrator/maestro/agents/__init__.py\", line 3, in <module> from .sol import Sol File \"/Users/glaubercastro/Repositorios/maestro-orchestrator/maestro/agents/sol.py\", line 2, in <module> impo",
+   source: "reject",
+   status: "active",
+   trigger: {kinds: [], paths: ["maestro/agents/groq.py", "maestro/agents/__init__.py"]},
+   why: "verify reprovou",
+  },
+  {
+   count: 1,
+   evidence: [
+    {attempt: 3, event_seq: 54, task: "TASK-02-001-AGT"},
+   ],
+   fingerprint: "9e4eb92984e5a1838489614c380f52c54ca32c4e423d25e1a5abc2d95389526c",
+   first_seen: "2026-10-04T00:34:43Z",
+   id: "L-dev-consensus-d3289099",
+   last_hit: "2026-10-04T00:34:43Z",
+   occurrences: ["TASK-02-001-AGT#3"],
+   recurrences: 0,
+   rule: "declarado em files_changed mas não alterado segundo git: maestro/agents/groq.py",
+   source: "reject",
+   status: "active",
+   trigger: {kinds: [], paths: ["maestro/agents/groq.py", "maestro/agents/__init__.py"]},
+   why: "verify reprovou",
+  },
+ ],
+}

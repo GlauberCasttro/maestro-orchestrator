@@ -1,0 +1,57 @@
+// lições do agente lead — DADO, escrito só por cs-mem (correct/add/captura automática)
+{
+ agent: "lead",
+ lessons: [
+  {
+   count: 1,
+   evidence: [
+    {attempt: 1, event_seq: 14, task: "TASK-01-001-DOC"},
+   ],
+   fingerprint: "b0569dff854fd2650162f1e59caab803cacc5431074b8d5e7cd104d846fc7be5",
+   first_seen: "2026-10-03T21:48:46Z",
+   id: "L-lead-8b7de6b8",
+   last_hit: "2026-10-03T21:48:46Z",
+   occurrences: ["TASK-01-001-DOC#1"],
+   recurrences: 0,
+   rule: "Brief citava NCG fallback em orchestrator.py:96-97 (e a docstring); a linha real do codigo e 215. Backend/CLI/TUI escolhem gerador real por chave de API, mock so sem chaves. Outras divergencias: docs/architecture.md:18 chama quorum de 66% similarity; msg de make up fixa porta 8000. Pytest nao execut",
+   source: "brief",
+   status: "active",
+   trigger: {kinds: [], paths: ["docs/visao-geral.md"]},
+   why: "erro de brief apontado pelo especialista",
+  },
+  {
+   count: 1,
+   evidence: [
+    {attempt: 2, event_seq: 21, task: "TASK-01-001-DOC"},
+   ],
+   fingerprint: "87f20d6451f1c6be20615efcf1b91c9f01cc58bc4c469c9f09da5dcd18a0aa6d",
+   first_seen: "2026-10-04T00:13:59Z",
+   id: "L-lead-f13b2d80",
+   last_hit: "2026-10-04T00:13:59Z",
+   occurrences: ["TASK-01-001-DOC#2"],
+   recurrences: 0,
+   rule: "Brief divergia do código: (a) ShardAgent não está no conselho padrão (backend/orchestrator_foundry.py:34, maestro/cli.py:107, maestro/tui/backend.py:99 usam Sol, Aria, Prism, TempAgent) e o diagrama mostra só os quatro; (b) o código rotula confiança High/Medium/Low e quorum_met só em >=0.66 (aggrega",
+   source: "brief",
+   status: "active",
+   trigger: {kinds: [], paths: ["docs/visao-geral.md"]},
+   why: "erro de brief apontado pelo especialista",
+  },
+  {
+   count: 1,
+   evidence: [
+    {attempt: 2, event_seq: 47, task: "TASK-02-001-AGT"},
+   ],
+   fingerprint: "dad1d497ec871c9d111bc54edd8222bbe846fde6d7636f06cf1df0047c0b7dc4",
+   first_seen: "2026-10-04T00:29:45Z",
+   id: "L-lead-4b22ef2e",
+   last_hit: "2026-10-04T00:29:45Z",
+   occurrences: ["TASK-02-001-AGT#2"],
+   recurrences: 0,
+   rule: "Comando de prova do brief nao roda literal no ambiente: python3 global nao tem httpx nem pytest e o cs-guard bloqueia python3 -c e substituicao de comando; verifiquei as mesmas condicoes em passos separados usando uv run --no-project (env efemero, sem alterar o python global). Checklist pede teste a",
+   source: "brief",
+   status: "active",
+   trigger: {kinds: [], paths: ["maestro/agents/groq.py", "maestro/agents/__init__.py"]},
+   why: "erro de brief apontado pelo especialista",
+  },
+ ],
+}

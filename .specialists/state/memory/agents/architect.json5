@@ -1,0 +1,57 @@
+// lições do agente architect — DADO, escrito só por cs-mem (correct/add/captura automática)
+{
+ agent: "architect",
+ lessons: [
+  {
+   count: 1,
+   evidence: [
+    {attempt: 1, event_seq: 17, task: "TASK-01-001-DOC"},
+   ],
+   fingerprint: "4f0e900f1e6577382fd128b6cb32fcc3ab454bc1d58a58777237a3377c714a83",
+   first_seen: "2026-10-04T00:12:07Z",
+   id: "L-architect-32d09593",
+   last_hit: "2026-10-04T00:19:11Z",
+   occurrences: ["TASK-01-001-DOC#1"],
+   recurrences: 0,
+   rule: "Dono pediu diagrama do fluxo: incluir diagrama Mermaid do fluxo de uma pergunta (agentes em paralelo, deliberação, dissenso, NCG, agregação/quórum 0.66, R2, hooks) e citar o fallback de streaming em maestro/orchestrator.py:554",
+   source: "reject",
+   status: "active",
+   trigger: {kinds: [], paths: ["docs/visao-geral.md"]},
+   why: "causa de rejeição",
+  },
+  {
+   count: 1,
+   evidence: [
+    {attempt: 2, event_seq: 23, task: "TASK-01-001-DOC"},
+   ],
+   fingerprint: "6dc1924919d24c7d236fb78f64bdc43b307f28dca7042ce404a11aeb11ee62e8",
+   first_seen: "2026-10-04T00:17:33Z",
+   id: "L-architect-d4816a91",
+   last_hit: "2026-10-04T00:19:11Z",
+   occurrences: ["TASK-01-001-DOC#2"],
+   recurrences: 0,
+   rule: "1) docs/visao-geral.md:86: aresta REP -- '0.7 ou mais' --> TR[trusted] diverge de maestro/storage_proof.py:290-292: com score >= 0.7 o status so vira trusted se era probation ou untrusted; um no evicted continua evicted (o else nao toca nele), e trusted e o valor inicial (storage_proof.py:92). Diff ",
+   source: "review",
+   status: "active",
+   trigger: {kinds: [], paths: ["docs/visao-geral.md"]},
+   why: "achado de review de reviewer",
+  },
+  {
+   count: 1,
+   evidence: [
+    {attempt: 2, event_seq: 24, task: "TASK-01-001-DOC"},
+   ],
+   fingerprint: "2f400393c727355d591227823ef2b18983957cfce86e915c42e30d4dafb1462e",
+   first_seen: "2026-10-04T00:18:10Z",
+   id: "L-architect-10e5a65e",
+   last_hit: "2026-10-04T00:19:11Z",
+   occurrences: ["TASK-01-001-DOC#2"],
+   recurrences: 0,
+   rule: "reviewer FAIL: diagrama de reputação em docs/visao-geral.md:86 diz que 0.7+ leva sempre a trusted; código (storage_proof.py:285-291) só promove probation/untrusted",
+   source: "reject",
+   status: "active",
+   trigger: {kinds: [], paths: ["docs/visao-geral.md"]},
+   why: "causa de rejeição",
+  },
+ ],
+}

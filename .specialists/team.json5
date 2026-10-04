@@ -92,7 +92,7 @@
    model: "inherit",
    name: "dev-consensus",
    reads: ["maestro/magi.py", "backend/**", "tests/**", "docs/**"],
-   territory: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/mock.py", "maestro/__init__.py"],
+   territory: ["maestro/orchestrator.py", "maestro/aggregator.py", "maestro/deliberation.py", "maestro/dissent.py", "maestro/session.py", "maestro/api_sessions.py", "maestro/r2.py", "maestro/ncg/**", "maestro/agents/__init__.py", "maestro/agents/base.py", "maestro/agents/aria.py", "maestro/agents/sol.py", "maestro/agents/prism.py", "maestro/agents/tempagent.py", "maestro/agents/groq.py", "maestro/agents/mock.py", "maestro/__init__.py"],
    tools: ["Read", "Grep", "Glob", "Bash", "Edit", "Write"]
   },
   {

@@ -4,4 +4,5 @@ from .sol import Sol
 from .aria import Aria
 from .prism import Prism
 from .tempagent import TempAgent
+from .groq import GroqAgent
 from .shard import ShardAgent
